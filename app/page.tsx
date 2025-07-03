@@ -21,7 +21,7 @@ export default function ArabicSnoringClinic() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] bg-primary/5 flex items-center justify-center">
+      <section className="relative min-h-[95vh] bg-primary/5 flex items-center justify-center">
       <div className="absolute inset-0 z-0">
   <Swiper
     modules={[Pagination, Autoplay]}
@@ -49,11 +49,11 @@ export default function ArabicSnoringClinic() {
 </div>
 
         <div className="container mx-auto px-6 py-20 relative z-10 flex flex-col items-center">
-<div className="bg-black/30 backdrop-blur-sm px-6 py-5 rounded-xl mb-6 flex flex-col items-center">
-  <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white drop-shadow-sm">
+<div className="bg-black/30 md:backdrop-blur-sm backdrop-blur-none px-6 py-5 rounded-xl mb-6 flex flex-col items-center">
+  <h1 className="text-2xl md:text-5xl font-bold leading-tight mb-6 text-white drop-shadow-sm">
     الشخير والتنفس الفموي يؤثران على صحتك
   </h1>
-  <p className="text-xl md:text-2xl text-secondary mb-8 leading-relaxed max-w-2xl mx-auto font-bold">
+  <p className="text-lg md:text-2xl text-secondary mb-8 leading-relaxed max-w-2xl mx-auto font-bold">
     احصل على نوم هادئ وصحة أفضل مع أحدث تقنيات العلاج
   </p>
 </div>
@@ -251,16 +251,16 @@ export default function ArabicSnoringClinic() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="rounded-lg overflow-hidden shadow-md bg-blue-50 w-full max-w-md mx-auto sm:max-w-full">
-                <div className="text-center p-4 sm:p-6">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Play className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+            <div className=" ">
+              <div className="rounded-lg overflow-hidden shadow-md bg-blue-50  max-w-[100%] md:max-w-[100%] ">
+                <div className="text-center p-3 sm:p-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-2">فيديو ترحيبي من د. مهند</h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4">تعرف على العيادة وأهمية علاج الشخير</p>
+                  <h3 className="text-sm sm:text-lg font-bold text-gray-800 mb-1 sm:mb-2">فيديو ترحيبي من د. مهند</h3>
+                  <p className="text-xs sm:text-base text-gray-600 mb-3 sm:mb-4">تعرف على العيادة وأهمية علاج الشخير</p>
                   <a href="https://wa.me/962796759251?text=أريد مشاهدة الفيديو الترحيبي" target="_blank">
-                    <Button className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base px-4 sm:px-6 py-2">
+                    <Button className="bg-blue-500 hover:bg-blue-600 text-white text-xs sm:text-base px-3 sm:px-6 py-2 flex items-center justify-center mx-auto">
                       <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                       شاهد الفيديو
                     </Button>
@@ -268,46 +268,46 @@ export default function ArabicSnoringClinic() {
                 </div>
               </div>
             </div>
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-800">د. مهند الكسواني</h3>
-              <p className="text-lg text-gray-600">
-                أخصائي علاج الشخير واضطرابات النوم المتعلقة بصحة الفم
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <Award className="w-5 h-5 text-blue-600 mt-1" />
-                  <span className="text-gray-600">خبرة أكثر من 15 عاماً</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-blue-600 mt-1" />
-                  <span className="text-gray-600">أكثر من 5000 مريض تم علاجهم</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Star className="w-5 h-5 text-blue-600 mt-1" />
-                  <span className="text-gray-600">تقييم 4.9/5 من المرضى</span>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Link href="/contact">
-                  <Button className="bg-blue-500 hover:bg-blue-600 text-white">
-                    <Calendar className="w-4 h-4 ml-2" />
-                    احجز عبر النموذج
-                  </Button>
-                </Link>
-                <a href="https://wa.me/962796759251?text=أريد حجز موعد لاستشارة طبية" target="_blank">
-                  <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50">
-                    <MessageCircle className="w-4 h-4 ml-2" />
-                    احجز عبر واتساب
-                  </Button>
-                </a>
-                <Link href="/about">
-                  <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50">
-                    <BookOpen className="w-4 h-4 ml-2" />
-                    المزيد عن الدكتور
-                  </Button>
-                </Link>
-              </div>
-            </div>
+        <div className="space-y-4 md:space-y-6">
+  <h3 className="text-xl md:text-2xl font-bold text-gray-800">د. مهند الكسواني</h3>
+  <p className="text-base md:text-lg text-gray-600">
+    أخصائي علاج الشخير واضطرابات النوم المتعلقة بصحة الفم
+  </p>
+  <div className="space-y-2 md:space-y-3">
+    <div className="flex items-start gap-2 md:gap-3">
+      <Award className="w-4 h-4 md:w-5 md:h-5 text-blue-600 mt-1" />
+      <span className="text-sm md:text-base text-gray-600">خبرة أكثر من 15 عاماً</span>
+    </div>
+    <div className="flex items-start gap-2 md:gap-3">
+      <Users className="w-4 h-4 md:w-5 md:h-5 text-blue-600 mt-1" />
+      <span className="text-sm md:text-base text-gray-600">أكثر من 5000 مريض تم علاجهم</span>
+    </div>
+    <div className="flex items-start gap-2 md:gap-3">
+      <Star className="w-4 h-4 md:w-5 md:h-5 text-blue-600 mt-1" />
+      <span className="text-sm md:text-base text-gray-600">تقييم 4.9/5 من المرضى</span>
+    </div>
+  </div>
+  <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+    <Link href="/contact">
+      <Button className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base py-2 md:py-2 px-3 md:px-4 w-full md:w-auto">
+        <Calendar className="w-4 h-4 ml-2" />
+        احجز عبر النموذج
+      </Button>
+    </Link>
+    <a href="https://wa.me/962796759251?text=أريد حجز موعد لاستشارة طبية" target="_blank">
+      <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50 text-sm md:text-base py-2 md:py-2 px-3 md:px-4 w-full md:w-auto">
+        <MessageCircle className="w-4 h-4 ml-2" />
+        احجز عبر واتساب
+      </Button>
+    </a>
+    <Link href="/about">
+      <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50 text-sm md:text-base py-2 md:py-2 px-3 md:px-4 w-full md:w-auto">
+        <BookOpen className="w-4 h-4 ml-2" />
+        المزيد عن الدكتور
+      </Button>
+    </Link>
+  </div>
+</div>
           </div>
         </div>
       </section>
