@@ -1,0 +1,287 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Phone, MapPin, Clock, MessageCircle, Calendar, Navigation } from "lucide-react"
+import Navbar from "@/components/Navbar"
+import WhatsAppButton from "@/components/WhatsAppButton"
+
+export default function ContactPage() {  return (
+    <div className="min-h-screen bg-white" dir="rtl">
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Contact Hero Section */}
+      <section className="bg-gradient-to-l from-blue-50 to-blue-100 py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+              تواصل معنا - احجز موعدك الآن
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              فريقنا الطبي جاهز لمساعدتك في علاج الشخير واضطرابات النوم
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://wa.me/962796759251?text=أريد حجز موعد لعلاج الشخير" target="_blank">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg">
+                  <MessageCircle className="w-5 h-5 ml-2" />
+                  احجز عبر الواتساب
+                </Button>
+              </a>
+              <a href="tel:+96267592513">
+                <Button size="lg" variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
+                  <Phone className="w-5 h-5 ml-2" />
+                  اتصل الآن
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Details */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">معلومات التواصل</h2>
+                <div className="space-y-6">
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Phone className="w-6 h-6 text-blue-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">الهاتف</h3>
+                          <p className="text-gray-600 mb-2">للمواعيد والاستفسارات</p>
+                          <a href="tel:+96267592513" className="text-blue-600 font-medium hover:underline">
+                            06-6759-2513
+                          </a>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MessageCircle className="w-6 h-6 text-green-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">الواتساب</h3>
+                          <p className="text-gray-600 mb-2">حجز سريع ومباشر</p>
+                          <a href="https://wa.me/962796759251?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="text-green-600 font-medium hover:underline">
+                            اضغط للدردشة
+                          </a>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MapPin className="w-6 h-6 text-red-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">العنوان</h3>
+                          <p className="text-gray-600 mb-2">المركز الأوروبي، جبل عمان</p>
+                          <p className="text-gray-700">عمان، الأردن</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Clock className="w-6 h-6 text-purple-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">ساعات العمل</h3>
+                          <div className="space-y-1 text-gray-600">
+                            <p>السبت - الخميس: 9:00 ص - 8:00 م</p>
+                            <p>الجمعة: مغلق</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div>
+              <Card>
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">احجز موعدك عبر النموذج الإلكتروني</h2>
+                  <p className="text-gray-600 mb-6">املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة لتأكيد موعدك</p>
+                  <form className="space-y-6">
+                    <div>
+                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">الاسم الكامل</label>
+                      <input
+                        id="fullName"
+                        type="text"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="اكتب اسمك الكامل"
+                        required
+                      />                    </div>
+                    <div>
+                      <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-2">رقم الهاتف</label>
+                      <input
+                        id="phoneNumber"
+                        type="tel"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="07xxxxxxxx"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="your.email@example.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="treatment-type" className="block text-sm font-medium text-gray-700 mb-2">نوع العلاج المطلوب</label>
+                      <select id="treatment-type" name="treatment-type" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">اختر نوع العلاج</option>
+                        <option value="adult">علاج الشخير للبالغين</option>
+                        <option value="child">علاج الشخير للأطفال</option>
+                        <option value="consultation">استشارة عامة</option>
+                        <option value="follow-up">مراجعة</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="preferred-date" className="block text-sm font-medium text-gray-700 mb-2">التاريخ المفضل</label>
+                      <input
+                        type="date"
+                        id="preferred-date"
+                        name="preferred-date"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="additional-notes" className="block text-sm font-medium text-gray-700 mb-2">ملاحظات إضافية</label>
+                      <textarea
+                        rows={4}
+                        id="additional-notes"
+                        name="additional-notes"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="اكتب أي ملاحظات أو أسئلة إضافية..."
+                      ></textarea>
+                    </div>
+                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                      <Calendar className="w-5 h-5 ml-2" />
+                      إرسال طلب الموعد
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Contact */}
+      <section className="bg-red-50 py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-red-800 mb-4">حالات الطوارئ</h2>
+            <p className="text-red-700 mb-6">
+              في حالة وجود صعوبة شديدة في التنفس أو توقف التنفس أثناء النوم، يرجى التوجه فوراً لأقرب مستشفى
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:911">
+                <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+                  <Phone className="w-5 h-5 ml-2" />
+                  اتصل بالطوارئ: 911
+                </Button>
+              </a>
+              <a href="https://wa.me/962796759251?text=لدي حالة طارئة متعلقة بالتنفس" target="_blank">
+                <Button size="lg" variant="outline" className="border-red-500 text-red-600 hover:bg-red-50">
+                  <MessageCircle className="w-5 h-5 ml-2" />
+                  واتساب الطوارئ
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Quick Access */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">أسئلة شائعة</h2>
+            <p className="text-gray-600 mb-8">اطلع على الأسئلة الأكثر شيوعاً حول علاج الشخير</p>
+            <Link href="/faq">
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100">
+                <Navigation className="w-5 h-5 ml-2" />
+                اطلع على الأسئلة الشائعة
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-bold text-lg mb-4">عيادة علاج الشخير</h3>
+              <p className="text-gray-400 mb-4">المركز الأوروبي للطب المتقدم</p>
+              <div className="space-y-2 text-sm text-gray-400">
+                <p>د. مهند الكسواني</p>
+                <p>أخصائي علاج الشخير واضطرابات النوم</p>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">روابط سريعة</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/adults" className="hover:text-white">علاج البالغين</Link></li>
+                <li><Link href="/children" className="hover:text-white">علاج الأطفال</Link></li>
+                <li><Link href="/medical-library" className="hover:text-white">المكتبة الطبية</Link></li>
+                <li><Link href="/sleep-challenge" className="hover:text-white">تحدي النوم</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">خدماتنا</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>تشخيص أسباب الشخير</li>
+                <li>علاج انقطاع التنفس النومي</li>
+                <li>تقويم الفكين</li>
+                <li>العلاج الوقائي للأطفال</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">تواصل معنا</h4>
+              <div className="space-y-2 text-sm text-gray-400">
+                <p>📞 06-6759-2513</p>
+                <p>📍 المركز الأوروبي، جبل عمان</p>
+                <p>🕒 السبت - الخميس: 9:00 ص - 8:00 م</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+            <p>&copy; 2024 عيادة علاج الشخير - المركز الأوروبي. جميع الحقوق محفوظة.</p>
+          </div>
+        </div>      </footer>
+
+      {/* WhatsApp Button */}
+      <WhatsAppButton />
+    </div>
+  )
+}
