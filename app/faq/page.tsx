@@ -27,30 +27,18 @@ export default function FAQPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-blue-600">50+</div>
-                  <div className="text-sm text-gray-600">سؤال وجواب</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-green-600">30+</div>
-                  <div className="text-sm text-gray-600">فيديو توضيحي</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-purple-600">24/7</div>
-                  <div className="text-sm text-gray-600">دعم متاح</div>
-                </div>
-              </div>
+            
             </div>
 
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/86.jpg"
                   alt="د. مهند الكسواني يجيب على الأسئلة الشائعة"
                   width={600}
                   height={500}
                   className="w-full h-auto"
+                       loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4">
@@ -62,24 +50,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      {/* Search FAQ */}
-      <section className="py-12 bg-white border-b">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="relative">
-              <Search className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
-              <input
-                type="text"
-                placeholder="ابحث في الأسئلة الشائعة... (مثل: العلاج بالليزر، الأطفال، المدة)"
-                className="w-full pr-14 pl-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg"
-              />
-              <Button className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2">
-                بحث
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Quick Categories */}
       <section className="py-8 bg-gray-50">
@@ -495,14 +466,14 @@ export default function FAQPage() {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">لم تجد إجابة سؤالك؟</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">لم تجد إجابة سؤالك؟</h2>
             <p className="text-xl text-blue-100">اسأل د. مهند مباشرة واحصل على إجابة شخصية</p>
           </div>
 
           <div className="max-w-2xl mx-auto">
             <Card className="bg-white/10 backdrop-blur-sm border border-white/20">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-6 text-center">🤔 اطرح سؤالك الآن</h3>
+                <h3 className="text-xl font-bold mb-6 text-center text-white">🤔 اطرح سؤالك الآن</h3>
                 <div className="space-y-4">
                   <input
                     type="text"

@@ -219,15 +219,7 @@ export default function InteractiveSleepChallenge() {
                 </div>
               )}
               
-              <div className="bg-purple-50 rounded-lg p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <Gift className="w-5 h-5 text-purple-600" />
-                  <span className="font-semibold text-purple-800">مكافأة خاصة</span>
-                </div>
-                <p className="text-purple-700 text-sm">
-                  احصل على استشارة مجانية عند الانضمام اليوم
-                </p>
-              </div>
+          
             </div>
           </div>
 
@@ -282,7 +274,7 @@ export default function InteractiveSleepChallenge() {
               <RadioGroupItem value={option.value} id={option.value} />
               <Label 
                 htmlFor={option.value} 
-                className="flex-1 cursor-pointer p-4 rounded-lg border-2 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 font-medium"
+                className="flex-1 cursor-pointer p-4 rounded-lg border-2 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 font-medium text-right"
               >
                 {option.label}
               </Label>

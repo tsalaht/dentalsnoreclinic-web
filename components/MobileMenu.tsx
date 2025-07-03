@@ -101,7 +101,7 @@ export default function MobileMenu() {
               </ul>
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <a
-                  href="https://wa.me/962796759251?text=أريد حجز موعد في عيادة علاج الشخير"
+                  href="https://wa.me/962796759251?text=أريد حجز موعد في Dentalsnore Clinic"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full"

@@ -29,10 +29,10 @@ export default function Navbar() {
               <div className="rounded-lg p-2 transition-all duration-300 hover:bg-blue-50">
                 <Image
                   src="/Artboard 2.svg"
-                  alt="عيادة علاج الشخير - المركز الأوروبي"
+                  alt="Dentalsnore Clinic - المركز الأوروبي"
                   width={240}
                   height={80}
-                  className="h-8 md:h-10 lg:h-12 w-auto max-w-[160px] md:max-w-[180px] lg:max-w-[200px] transition-all duration-300"
+                  className="h-8 md:h-10 lg:h-14 w-auto max-w-[160px] md:max-w-[180px] lg:max-w-[200px] transition-all duration-300"
                   priority
                 />
               </div>

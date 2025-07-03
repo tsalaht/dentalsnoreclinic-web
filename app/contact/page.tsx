@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -5,7 +6,8 @@ import { Phone, MapPin, Clock, MessageCircle, Calendar, Navigation } from "lucid
 import Navbar from "@/components/Navbar"
 import WhatsAppButton from "@/components/WhatsAppButton"
 
-export default function ContactPage() {  return (
+export default function ContactPage() {
+  return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Navigation */}
       <Navbar />
@@ -56,8 +58,8 @@ export default function ContactPage() {  return (
                         <div>
                           <h3 className="font-bold text-lg mb-2">الهاتف</h3>
                           <p className="text-gray-600 mb-2">للمواعيد والاستفسارات</p>
-                          <a href="tel:+96267592513" className="text-blue-600 font-medium hover:underline">
-                            06-6759-2513
+                          <a href="tel:+962796611561" className="text-blue-600 font-medium hover:underline">
+                            07-9737-71-31
                           </a>
                         </div>
                       </div>
@@ -73,7 +75,7 @@ export default function ContactPage() {  return (
                         <div>
                           <h3 className="font-bold text-lg mb-2">الواتساب</h3>
                           <p className="text-gray-600 mb-2">حجز سريع ومباشر</p>
-                          <a href="https://wa.me/962796759251?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="text-green-600 font-medium hover:underline">
+                          <a href="https://wa.me/+96279661 1561?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="text-green-600 font-medium hover:underline">
                             اضغط للدردشة
                           </a>
                         </div>
@@ -89,7 +91,7 @@ export default function ContactPage() {  return (
                         </div>
                         <div>
                           <h3 className="font-bold text-lg mb-2">العنوان</h3>
-                          <p className="text-gray-600 mb-2">المركز الأوروبي، جبل عمان</p>
+                          <p className="text-gray-600 mb-2"> لأردن-عمان- الصوفية-شارع باريس-مجمع 15</p>
                           <p className="text-gray-700">عمان، الأردن</p>
                         </div>
                       </div>
@@ -105,10 +107,37 @@ export default function ContactPage() {  return (
                         <div>
                           <h3 className="font-bold text-lg mb-2">ساعات العمل</h3>
                           <div className="space-y-1 text-gray-600">
-                            <p>السبت - الخميس: 9:00 ص - 8:00 م</p>
-                            <p>الجمعة: مغلق</p>
+                            <p>السبت - الأربعاء : 11:00  - 6:00 </p>
+                            <p>الخميس  : 11:00  - 2:00 </p>
+                            <p>الجمعة:  عطلة </p>
                           </div>
                         </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Google Map */}
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MapPin className="w-6 h-6 text-blue-600" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">موقعنا على الخريطة</h3>
+                          <p className="text-gray-600 mb-4">زورونا في المركز الأوروبي لطب الأسنان</p>
+                        </div>
+                      </div>
+                      <div className="mt-4">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.168010193968!2d35.8571081150921!3d31.956571981231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca10fe790e783%3A0x8e8500e7e7762c87!2z2YXYr9mF2LHYqSDYp9mE2KzYsdmF2K3YqSDYp9mE2YPYqNin2K3Yrw!5e0!3m2!1sar!2sjo!4v1697051234567"
+                          width="100%"
+                          height="300"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
                       </div>
                     </CardContent>
                   </Card>
@@ -131,7 +160,8 @@ export default function ContactPage() {  return (
                         className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="اكتب اسمك الكامل"
                         required
-                      />                    </div>
+                      />
+                    </div>
                     <div>
                       <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-2">رقم الهاتف</label>
                       <input
@@ -241,7 +271,7 @@ export default function ContactPage() {  return (
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">عيادة علاج الشخير</h3>
+              <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
               <p className="text-gray-400 mb-4">المركز الأوروبي للطب المتقدم</p>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>د. مهند الكسواني</p>
@@ -269,16 +299,19 @@ export default function ContactPage() {  return (
             <div>
               <h4 className="font-semibold mb-4">تواصل معنا</h4>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📞 06-6759-2513</p>
+                <p>📞 07-9737-71-31</p>
                 <p>📍 المركز الأوروبي، جبل عمان</p>
-                <p>🕒 السبت - الخميس: 9:00 ص - 8:00 م</p>
+             <p>السبت - الأربعاء : 11:00  - 6:00 </p>
+                            <p>الخميس  : 11:00  - 2:00 </p>
+                            <p>الجمعة:  عطلة </p>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 عيادة علاج الشخير - المركز الأوروبي. جميع الحقوق محفوظة.</p>
+            <p>© 2024 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
-        </div>      </footer>
+        </div>
+      </footer>
 
       {/* WhatsApp Button */}
       <WhatsAppButton />

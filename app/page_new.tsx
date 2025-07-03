@@ -22,7 +22,7 @@ export default function ArabicSnoringClinic() {  return (
                   الشخير والتنفس الفموي يؤثران على صحتك - اكتشف العلاج المناسب لك!
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  عيادة علاج الشخير - المركز الأوروبي، د. مهند الكسواني كأفضل طبيب لعلاج الشخير واضطرابات النوم المتعلقة بصحة الفم في الأردن
+                  Dentalsnore Clinic - المركز الأوروبي، د. مهند الكسواني كأفضل طبيب لعلاج الشخير واضطرابات النوم المتعلقة بصحة الفم في الأردن
                 </p>
               </div>
 
@@ -314,7 +314,7 @@ export default function ArabicSnoringClinic() {  return (
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">عيادة علاج الشخير</h3>
+              <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
               <p className="text-gray-400 mb-4">المركز الأوروبي للطب المتقدم</p>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>د. مهند الكسواني</p>
@@ -343,9 +343,11 @@ export default function ArabicSnoringClinic() {  return (
             <div>
               <h4 className="font-semibold mb-4">تواصل معنا</h4>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📞 06-6759-2513</p>
+                <p>📞 07-9737-71-31</p>
                 <p>📍 المركز الأوروبي، جبل عمان</p>
-                <p>🕒 السبت - الخميس: 9:00 ص - 8:00 م</p>
+                <p>السبت - الأربعاء : 11:00  - 6:00 </p>
+                            <p>الخميس  : 11:00  - 2:00 </p>
+                            <p>الجمعة:  عطلة </p>
                 <div className="flex gap-2 mt-4">
                   <a href="https://wa.me/962796759251" target="_blank" className="hover:text-green-400">
                     <MessageCircle className="w-5 h-5" />
@@ -358,7 +360,7 @@ export default function ArabicSnoringClinic() {  return (
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 عيادة علاج الشخير - المركز الأوروبي. جميع الحقوق محفوظة.</p>
+            <p>&copy; 2024 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>

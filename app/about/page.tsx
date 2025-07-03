@@ -23,35 +23,20 @@ export default function AboutPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   د. مهند الكسواني - رائد علاج الشخير في الأردن
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  خبرة أكثر من 15 عاماً في علاج اضطرابات النوم والشخير، وأكثر من 5000 مريض تم علاجهم بنجاح
-                </p>
+           
               </div>
 
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-blue-600">15+</div>
-                  <div className="text-sm text-gray-600">عام خبرة</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-green-600">5000+</div>
-                  <div className="text-sm text-gray-600">مريض شفي</div>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="text-2xl font-bold text-purple-600">4.9/5</div>
-                  <div className="text-sm text-gray-600">تقييم المرضى</div>
-                </div>
-              </div>
             </div>
 
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/79.jpg"
                   alt="د. مهند الكسواني في عيادة علاج الشخير"
                   width={600}
                   height={500}
                   className="w-full h-auto"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4">
@@ -64,97 +49,97 @@ export default function AboutPage() {
       </section>
 
       {/* Doctor Profile */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Image
-                  src="/placeholder.svg?height=600&width=500"
-                  alt="د. مهند الكسواني"
-                  width={500}
-                  height={600}
-                  className="rounded-2xl shadow-lg w-full h-auto"
-                />
+   <section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <Image
+            src="/73.jpg"
+            alt="د. مهند الكسواني"
+            width={500}
+            height={600}
+            className="rounded-2xl shadow-lg w-full h-auto"
+                 loading="lazy"
+          />
+        </div>
+        <div className="space-y-8">
+          <div>
+            <Badge className="bg-blue-100 text-blue-800 mb-4">الطبيب المتخصص</Badge>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">د. مهند الكسواني</h2>
+            <p className="text-xl text-blue-600 font-semibold mb-6">
+              المحاضر الدولي في علوم طب الأسنان الرقمي وإطباق الأسنان والابتسامة الرقمية وطب الأسنان المتعلق بالشخير واضطراب التنفس أثناء النوم
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              د. مهند الكسواني، مؤسس ومدير المركز الأوروبي لطب الأسنان، يتميز بخبرته الواسعة في طب الأسنان وزراعة الأسنان، مع التركيز على تقنيات متقدمة مثل زراعة الأسنان الموجهة بالحاسوب والزراعة الفورية خلال 48 ساعة. يشتهر المركز بتقديم خدمات شاملة عالية الجودة مع فريق من الأطباء والأخصائيين المتميزين.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="w-6 h-6 text-blue-600" />
               </div>
-              <div className="space-y-8">
-                <div>
-                  <Badge className="bg-blue-100 text-blue-800 mb-4">الطبيب المتخصص</Badge>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">د. مهند الكسواني</h2>
-                  <p className="text-xl text-blue-600 font-semibold mb-6">
-                    أفضل طبيب لعلاج الشخير واضطرابات النوم المتعلقة بصحة الفم في الأردن
-                  </p>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    د. مهند الكسواني هو رائد في مجال علاج الشخير واضطرابات النوم في المنطقة، ومؤسس أول عيادة متخصصة في علاج الشخير في الأردن. يجمع بين الخبرة الطبية الواسعة والتقنيات الحديثة لتقديم أفضل النتائج لمرضاه.
-                  </p>
-                </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 text-lg">التحصيل العلمي</h4>
+                <ul className="text-gray-600 space-y-1 mt-2">
+                  <li>• دكتور في طب الأسنان - الجامعة الأردنية</li>
+                  <li>• ماجستير في علوم الخدمة الصحية - كلية الجراحين، لندن</li>
+                  <li>• شهادات متقدمة في طب الأسنان الرقمي وزراعة الأسنان</li>
+                </ul>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 text-lg">التحصيل العلمي</h4>
-                      <ul className="text-gray-600 space-y-1 mt-2">
-                        <li>• دكتور في طب الأسنان - الجامعة الأردنية</li>
-                        <li>• ماجستير في علاج اضطرابات النوم - جامعة برمنغهام، بريطانيا</li>
-                        <li>• دبلوم في طب النوم - الجمعية الأمريكية لطب النوم</li>
-                        <li>• شهادة في تقنيات الليزر الطبي - ألمانيا</li>
-                      </ul>
-                    </div>
-                  </div>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Award className="w-6 h-6 text-green-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 text-lg">الخبرة المهنية</h4>
+                <ul className="text-gray-600 space-y-1 mt-2">
+                  <li>• مؤسس ومدير المركز الأوروبي لطب الأسنان</li>
+                  <li>• خبير في زراعة الأسنان الموجهة بالحاسوب والزراعة الفورية</li>
+                  <li>• عضو في الجمعية الأوروبية لتجميل الأسنان</li>
+                  <li>• محاضر دولي في طب الأسنان الرقمي والابتسامة الرقمية</li>
+                </ul>
+              </div>
+            </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Award className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 text-lg">الخبرة المهنية</h4>
-                      <ul className="text-gray-600 space-y-1 mt-2">
-                        <li>• أكثر من 15 عام في علاج اضطرابات النوم والشخير</li>
-                        <li>• أول طبيب يدخل تقنية الليزر لعلاج الشخير في الأردن</li>
-                        <li>• خبير في أجهزة Myobrace للأطفال والبالغين</li>
-                        <li>• عضو في الجمعية الدولية لطب النوم</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Trophy className="w-6 h-6 text-purple-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 text-lg">الإنجازات والجوائز</h4>
-                      <ul className="text-gray-600 space-y-1 mt-2">
-                        <li>• جائزة أفضل طبيب في علاج الشخير - الأردن 2023</li>
-                        <li>• محاضر في المؤتمرات الدولية لطب النوم</li>
-                        <li>• مؤلف عدة أبحاث علمية منشورة دولياً</li>
-                        <li>• تقييم 4.9/5 من أكثر من 5000 مريض</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <a href="https://wa.me/962796759251?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
-                      <Calendar className="w-4 h-4 ml-2" />
-                      احجز استشارة
-                    </Button>
-                  </a>
-                  <Link href="/medical-library">
-                    <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3">
-                      <BookOpen className="w-4 h-4 ml-2" />
-                      شاهد محاضراته
-                    </Button>
-                  </Link>
-                </div>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Trophy className="w-6 h-6 text-purple-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 text-lg">الإنجازات والجوائز</h4>
+                <ul className="text-gray-600 space-y-1 mt-2">
+                  <li>• رائد في تقديم محتوى طبي عبر منصات التواصل الاجتماعي</li>
+                  <li>• يؤمن بالممارسات الأخلاقية ومشاركة المريض في قرارات العلاج</li>
+                  <li>• محاضر في المؤتمرات الدولية لطب الأسنان الرقمي</li>
+                  <li>• تقييم عالي من المرضى لخدمات المركز الأوروبي لطب الأسنان</li>
+                </ul>
               </div>
             </div>
           </div>
+
+          <div className="flex gap-4">
+            <a href="https://wa.me/962796759251?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
+              <Button className="bg-blue-600 hover:bg BLUE-700 text-white px-6 py-3">
+                <Calendar className="w-4 h-4 ml-2" />
+                احجز استشارة
+              </Button>
+            </a>
+            <Link href="/medical-library">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3">
+                <BookOpen className="w-4 h-4 ml-2" />
+                شاهد محاضراته
+              </Button>
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Clinic Information */}
       <section className="py-16 bg-gray-50">
@@ -246,11 +231,12 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/DSC00016.JPG"
                 alt="عيادة علاج الشخير الحديثة"
                 width={500}
                 height={400}
                 className="rounded-2xl shadow-lg w-full h-auto"
+                     loading="lazy"
               />
             </div>
           </div>
@@ -258,7 +244,7 @@ export default function AboutPage() {
       </section>
 
       {/* Statistics and Achievements */}
-      <section className="py-16 bg-blue-600 text-white">
+      {/* <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">إنجازاتنا بالأرقام</h2>
@@ -296,10 +282,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Services */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">خدماتنا المتخصصة</h2>
@@ -377,10 +363,10 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Patient Testimonials */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">شهادات المرضى</h2>
@@ -452,12 +438,12 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">ابدأ رحلتك نحو نوم أفضل اليوم</h2>
+          <h2 className="text-3xl font-bold mb-6 text-white">ابدأ رحلتك نحو نوم أفضل اليوم</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             احجز استشارتك مع د. مهند الكسواني واكتشف الحل المناسب لحالتك
           </p>
@@ -469,7 +455,7 @@ export default function AboutPage() {
               </Button>
             </a>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-600 px-8 py-4 text-lg">
                 <Phone className="w-5 h-5 ml-2" />
                 معلومات التواصل
               </Button>

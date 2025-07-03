@@ -68,6 +68,7 @@ export default function ModernHero({
             fill
             className="object-cover"
             priority
+                 loading="lazy"
           />
         </div>
       )}
