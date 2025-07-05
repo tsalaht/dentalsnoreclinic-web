@@ -32,7 +32,7 @@ export default function Navbar() {
                   alt="Dentalsnore Clinic - المركز الأوروبي"
                   width={240}
                   height={80}
-                  className="h-8 md:h-10 lg:h-14 w-auto max-w-[160px] md:max-w-[180px] lg:max-w-[200px] transition-all duration-300"
+                  className="h-10 md:h-10 lg:h-16 w-auto max-w-[160px] md:max-w-[180px] lg:max-w-[200px] transition-all duration-300"
                   priority
                 />
               </div>

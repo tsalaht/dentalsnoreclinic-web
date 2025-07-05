@@ -21,7 +21,7 @@ export default function ArabicSnoringClinic() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[20vh] md:min-h-[95vh] bg-primary/5 flex items-center justify-center">
+      <section className="relative min-h-[20vh] md:min-h-[92vh] bg-primary/5 flex items-center justify-center">
 <div className="absolute inset-0 z-0">
   <Swiper
     modules={[Pagination, Autoplay]}
@@ -30,7 +30,7 @@ export default function ArabicSnoringClinic() {
     loop
     className="w-full h-full bg-[#028FC5]"
   >
-    {["/1.png", "/baby.png", "/5.jpg", "/6.JPG"].map((src, idx) => (
+    {["/2.jpg", "/baby.png", "/4.JPG", "/2.jpg"].map((src, idx) => (
       <SwiperSlide key={idx}>
         <div
           className="w-full h-auto opacity-85"
@@ -95,11 +95,13 @@ export default function ArabicSnoringClinic() {
         </div>
         <div className="w-full md:w-1/2 text-center md:text-right">
           <h3 className="text-3xl font-bold text-primary mb-3 relative">
-            تقنيات متقدمة وجهاز Myosa
+علاج الشخير بالليزر والجهاز العضلي الوظيفي الفموي
+
+
             <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
           </h3>
           <p className="text-gray-600 text-lg leading-relaxed">
-            نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق وجهاز Myosa الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
+    نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق والجهاز العضلي الوظيفي الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
           </p>
         </div>
       </div>
@@ -421,10 +423,10 @@ export default function ArabicSnoringClinic() {
         </button>
         <div className="p-6 text-gray-600 hidden">
           <p className="text-lg leading-relaxed">
-            عندما يكون جهاز Myosa® for Snorers في مكانه، فإنه يفتح مجرى الهواء ويتحكم في التنفس الزائد من خلال الفم. تعمل الجوانب المرنة للجهاز مع قاعدة الزنبرك الهوائي على تقليل التأثير على مفصل الفك (TMJ)، مما يجعله مناسبًا أيضًا للمستخدمين الذين يعانون من اضطراب المفصل الفكي الصدغي أو يصكون أسنانهم.
+          عندما يكون الجهاز العضلي الوظيفي الفموي المخصص لمشكلة الشخير في مكانه، فإنه يفتح مجرى الهواء ويتحكم في التنفس الزائد من خلال الفم. تعمل الجوانب المرنة للجهاز مع قاعدة الزنبرك الهوائي على تقليل التأثير على مفصل الفك (TMJ)، مما يجعله مناسبًا أيضًا للمستخدمين الذين يعانون من اضطراب المفصل الفكي الصدغي أو يصكون أسنانهم.
           </p>
           <p className="text-lg leading-relaxed mt-4">
-            بدلاً من التركيز فقط على تخفيف أعراض المشكلة، يهدف الجهاز إلى تصحيح مجرى الهواء العلوي والخلل العصبي العضلي، الذي يمكن أن يسبب اضطراب التنفس أثناء النوم (SDB). تعمل أجهزة Myosa® For Snorers (S1 وS2) عن طريق وضع الفك السفلي للأمام وفتح العض، مما يعمل على فتح مجرى الهواء وتنظيم التنفس.
+          بدلاً من التركيز فقط على تخفيف أعراض المشكلة، يهدف الجهاز إلى تصحيح مجرى الهواء العلوي والخلل العصبي العضلي، الذي يمكن أن يسبب اضطراب التنفس أثناء النوم (SDB). تعمل أجهزة الجهاز العضلي الوظيفي الفموي (S1 وS2) عن طريق وضع الفك السفلي للأمام وفتح العض، مما يعمل على فتح مجرى الهواء وتنظيم التنفس.
           </p>
         </div>
       </div>
@@ -492,7 +494,7 @@ export default function ArabicSnoringClinic() {
               <h4 className="font-semibold mb-4">تواصل معنا</h4>
               <div className="space-y-2 text-sm text-gray-300">
                 <p>📞 07-9737-71-31</p>
-                <p>📍 المركز الأوروبي، جبل عمان</p>
+                <p>📍 الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
                <p>السبت - الأربعاء : 11:00  - 6:00 </p>
                             <p>الخميس  : 11:00  - 2:00 </p>
                             <p>الجمعة:  عطلة </p>
