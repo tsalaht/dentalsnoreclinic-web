@@ -10,6 +10,8 @@ export default function Navbar() {
   const pathname = usePathname()
   const [servicesOpen, setServicesOpen] = useState(false)
   const servicesRef = useRef<HTMLDivElement>(null)
+  const [studiesOpen, setStudiesOpen] = useState(false)
+  const studiesRef = useRef<HTMLDivElement>(null)
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -17,8 +19,11 @@ export default function Navbar() {
       if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
         setServicesOpen(false)
       }
+      if (studiesRef.current && !studiesRef.current.contains(event.target as Node)) {
+        setStudiesOpen(false)
+      }
     }
-    if (servicesOpen) {
+    if (servicesOpen || studiesOpen) {
       document.addEventListener('mousedown', handleClickOutside)
     } else {
       document.removeEventListener('mousedown', handleClickOutside)
@@ -26,7 +31,7 @@ export default function Navbar() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [servicesOpen])
+  }, [servicesOpen, studiesOpen])
 
   const navigationItems = [
     { href: "/", label: "الرئيسية" },
@@ -40,7 +45,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-6 lg:px-8 relative">
+      <div className="container mx-auto px-3 relative">
         <div className="flex items-center justify-between " dir="rtl">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -98,7 +103,7 @@ export default function Navbar() {
                 }`}
                 aria-haspopup="true"
                 aria-expanded={servicesOpen}
-            role='button'
+                role='button'
               >
                 خدماتنا
                 <svg className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
@@ -122,14 +127,57 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            {/* CTA Button */}
-            <div className="mr-4">
-              <Link href="/contact">
-                <button className="bg-blue-500 text-white font-medium px-6 py-2 rounded-md shadow-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 focus:outline-none transition-all duration-300">
-                  احجز موعد
-                </button>
-              </Link>
+            {/* Dropdown for دراسات علمية */}
+            <div className="relative" ref={studiesRef}>
+              <div
+                onClick={() => setStudiesOpen((open) => !open)}
+                className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300 flex items-center gap-1 cursor-pointer ${
+                  ["/scientific-studies", "/scientific-studies/laser-effectiveness", "/scientific-studies/oral-devices-effectiveness", "/scientific-studies/muscle-exercises-effectiveness", "/scientific-studies/misc-studies"].includes(pathname)
+                    ? "text-blue-700"
+                    : "text-gray-600 hover:text-blue-700"
+                }`}
+                aria-haspopup="true"
+                aria-expanded={studiesOpen}
+                role='button'
+              >
+                دراسات علمية
+                <svg className={`w-4 h-4 transition-transform duration-200 ${studiesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </div>
+              {studiesOpen && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
+                  <Link
+                    href="/scientific-studies/laser-effectiveness"
+                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setStudiesOpen(false)}
+                  >
+                    فعالية اجهزة الليزر
+                  </Link>
+                  <Link
+                    href="/scientific-studies/oral-devices-effectiveness"
+                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setStudiesOpen(false)}
+                  >
+                    فعالية الأجهزة الفموية
+                  </Link>
+                  <Link
+                    href="/scientific-studies/muscle-exercises-effectiveness"
+                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setStudiesOpen(false)}
+                  >
+                    فعالية التمارين العضلية
+                  </Link>
+                  <Link
+                    href="/scientific-studies/misc-studies"
+                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setStudiesOpen(false)}
+                  >
+                    دراسات متفرقة
+                  </Link>
+                </div>
+              )}
             </div>
+            {/* CTA Button */}
+        
           </div>
           {/* Mobile Menu */}
           <div className="lg:hidden">

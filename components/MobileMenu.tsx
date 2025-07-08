@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [studiesOpen, setStudiesOpen] = useState(false)
 
   const menuItems = [
     { href: "/", label: "الرئيسية" },
@@ -16,6 +17,7 @@ export default function MobileMenu() {
     { href: "/faq", label: "الأسئلة الشائعة" },
     { href: "/about", label: "عن العيادة" },
     { href: "/contact", label: "تواصل معنا" },
+    { href: "/blog", label: "المدونة" },
   ]
 
   // Handle Escape key
@@ -106,6 +108,55 @@ export default function MobileMenu() {
                           onClick={() => { setIsOpen(false); setServicesOpen(false); }}
                         >
                           علاج الأطفال
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+                <li className="transition-all duration-300">
+                  <div
+                    className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    onClick={() => setStudiesOpen((open) => !open)}
+                  >
+                    <span>دراسات علمية</span>
+                    <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${studiesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </div>
+                  {studiesOpen && (
+                    <ul className="pl-6 mt-1 space-y-1">
+                      <li>
+                        <Link
+                          href="/scientific-studies/laser-effectiveness"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
+                        >
+                          فعالية اجهزة الليزر
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/scientific-studies/oral-devices-effectiveness"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
+                        >
+                          فعالية الأجهزة الفموية
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/scientific-studies/muscle-exercises-effectiveness"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
+                        >
+                          فعالية التمارين العضلية
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/scientific-studies/misc-studies"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
+                        >
+                          دراسات متفرقة
                         </Link>
                       </li>
                     </ul>
