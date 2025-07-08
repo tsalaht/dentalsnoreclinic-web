@@ -13,137 +13,181 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import ggg from '../assets/1.jpg'
+import { useState } from 'react'
+
+const heroSlides = [
+  {
+    image: "/confirense.JPG",
+    headline: "الشخير واضطرابات التنفس أثناء النوم",
+    subheadline: "بروتوكول علاجي متعدد التخصصات",
+    headlineClass: "text-white text-center",
+    subheadlineClass: "text-secondary text-center",
+    // Add more custom style fields if needed
+  },
+  {
+    image: "/baby.png",
+    headline: "هل يشخر طفلك ويطحن أسنانه؟",
+    subheadline: " طفلك ليس هادئاً كما تعتقد!!",
+    headlineClass: "text-yellow-200 text-center",
+    subheadlineClass: "text-yellow-400 text-center",
+  },
+  {
+    image: "/doctor.JPG",
+    headline: "الدكتور مهنـد الكسواني",
+    subheadline: `المحاضر الدولي في علوم علاج الشخير والتنفس الفموي،
+والتخصصات المتعلقة بطب الأسنان، والابتسامة الرقمية، وعلوم إطباق الأسنان.
+`,
+    headlineClass: "text-blue-200 text-center",
+    subheadlineClass: "text-blue-400 text-center  ",
+  },
+  {
+    image: "/2.jpg",
+    headline: "الشخير والتنفس الفموي يؤثران على صحتك",
+    subheadline: "احصل على نوم هادئ وصحة أفضل مع أحدث تقنيات العلاج",
+    headlineClass: "text-green-200 text-center",
+    subheadlineClass: "text-green-400 text-center",
+  },
+]
 
 export default function ArabicSnoringClinic() {
+  
+  const [activeSlide, setActiveSlide] = useState(0)
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Navigation */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[20vh] md:min-h-[92vh] bg-primary/5 flex items-center justify-center">
-<div className="absolute inset-0 z-0">
-  <Swiper
-    modules={[Pagination, Autoplay]}
-    pagination={{ clickable: true }}
-    autoplay={{ delay: 4000, disableOnInteraction: false }}
-    loop
-    className="w-full h-full bg-[#028FC5]"
-  >
-    {["/2.jpg", "/baby.png", "/4.JPG", "/2.jpg"].map((src, idx) => (
-      <SwiperSlide key={idx}>
-        <div
-          className="w-full h-auto opacity-85"
-          style={{
-            backgroundImage: `url(${src})`,
-            backgroundSize: "cover",         
-            backgroundPosition: "center",     
-            backgroundRepeat: "no-repeat",    
-            position: "absolute",
-            inset: 0,
-          }}
-        />
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</div>
+      <section className="relative min-h-[70vh] md:min-h-[92vh] bg-primary/5 flex items-center justify-center">
+        <div className="absolute inset-0 z-0">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            loop
+            className="w-full h-full bg-[#028FC5]"
+            onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
+          >
+            {heroSlides.map((slide, idx) => (
+              <SwiperSlide key={idx}>
+                <div
+                  className="w-full h-full min-h-[20vh] md:min-h-[92vh] flex items-center justify-center relative"
+                  style={{
+                    backgroundImage: `url(${slide.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div className="absolute inset-0 bg-black/30 z-10" />
+                  <div className="relative z-10 flex flex-col items-center px-6 md:py-16 py-6 bg-black/30 rounded-lg md:mt-0 mt-14">
+                    <h1 className={`text-lg md:text-5xl font-bold leading-tight mb-6 drop-shadow-sm ${slide.headlineClass}`}>
+                      {slide.headline}
+                    </h1>
+                    <p className={`text-base md:text-2xl  leading-relaxed max-w-2xl mx-auto font-bold ${slide.subheadlineClass}`}>
+                      {slide.subheadline}
+                    </p>
+                    {/* You can add per-slide buttons or other content here if needed */}
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
-        <div className="container mx-auto px-6 py-20 relative z-10 flex flex-col items-center">
-<div className="bg-black/30  px-6 py-5 rounded-xl mb-6 flex flex-col items-center">
-  <h1 className="text-2xl md:text-5xl font-bold leading-tight mb-6 text-white drop-shadow-sm">
-    الشخير والتنفس الفموي يؤثران على صحتك
-  </h1>
-  <p className="text-lg md:text-2xl text-secondary mb-8 leading-relaxed max-w-2xl mx-auto font-bold">
-    احصل على نوم هادئ وصحة أفضل مع أحدث تقنيات العلاج
-  </p>
-</div>
-
-        
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-lg mx-auto">
+        {/* {activeSlide !== 2 && (
+          <div className="md:flex hidden flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-44 mt-60 ">
             <Link href="/children" className="w-full sm:w-auto">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-lg font-semibold w-full rounded-2xl shadow-md transition-all duration-300">
+              <Button 
+        size={'sm'}
+                className="bg-accent hover:bg-accent/90 text-white px-3 md:py-2 py-0 text-xs font-semibold w-full rounded-2xl shadow-md transition-all duration-300 sm:px-8 sm:py-3 sm:text-lg"
+              >
                 طفلي يعاني من الشخير
               </Button>
             </Link>
             <Link href="/adults" className="w-full sm:w-auto">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 text-lg font-semibold w-full rounded-2xl shadow-md transition-all duration-300">
+              <Button 
+                size="sm" 
+                className="bg-secondary hover:bg-secondary/90 text-white px-3 md:py-2 py-0 text-xs font-semibold w-full rounded-2xl shadow-md transition-all duration-300 sm:px-8 sm:py-3 sm:text-lg"
+              >
                 أنا بالغ وأريد العلاج
               </Button>
             </Link>
           </div>
-          
-        </div>
+        )} */}
       </section>
 
       {/* Features Section */}
-<section className="py-20 bg-gradient-to-r from-blue-50 to-teal-50">
-  <div className="container mx-auto px-6 lg:px-12">
-    <div className="text-center mb-16">
-      <h2 className="text-5xl md:text-6xl font-extrabold text-primary mb-4 animate-fade-in-down relative">
-        لماذا تختار Dentalsnore Clinic؟
-        <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
-      </h2>
-      <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed tracking-wide">
-        تفخر Dentalsnore Clinic التابعة للمركز الأوروبي لطب الأسنان بتقديم علاج متكامل وفعال للشخير، انقطاع التنفس أثناء النوم، والتنفس الفموي. صُمم برنامجنا لتوفير الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
-      </p>
-    </div>
-    <div className="space-y-16">
-      <div className="flex flex-col md:flex-row items-center gap-12">
-        <div className="w-full md:w-1/2 h-80 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
-          <img src="/DSC00023.JPG" alt="Medical Devices" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-        </div>
-        <div className="w-full md:w-1/2 text-center md:text-right">
-          <h3 className="text-3xl font-bold text-primary mb-3 relative">
-علاج الشخير بالليزر والجهاز العضلي الوظيفي الفموي
+      <section className="py-20 bg-gradient-to-r from-blue-50 to-teal-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-extrabold text-primary mb-4 animate-fade-in-down relative">
+              لماذا تختار Dentalsnore Clinic؟
+              <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed tracking-wide">
+              تفخر Dentalsnore Clinic التابعة للمركز الأوروبي لطب الأسنان  تقديم بروتوكول علاجي متكامل  واضطرابات التنفس الليلي، والتنفس الفموي.يتضمن برنامجنا حصولك على الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
+            </p>
+          </div>
+          <div className="space-y-16">
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2 h-80 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
+                <img src="/DSC00023.JPG" alt="Medical Devices" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-right">
+                <h3 className="md:text-3xl text-2xl  font-bold text-primary mb-3 relative">
+                  علاج الشخير بالليزر والجهاز العضلي الوظيفي الفموي
 
 
-            <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-    نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق والجهاز العضلي الوظيفي الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
-          </p>
+                  <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق والجهاز العضلي الوظيفي الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+              <div className="w-full md:w-1/2 h-80 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
+                <img src="/70.jpg" alt="Healthcare Center" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-right">
+                <h3 className="md:text-3xl text-2xl  font-bold text-primary mb-3 relative">
+                  رواد الشرق الأوسط
+                  <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  نحن من المراكز الرائدة في الشرق الأوسط في علاج اضطرابات التنفس أثناء النوم بمعايير عالمية، مع فريق طبي متخصص ونتائج مثبتة.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-12">
+              <div className="w-full md:w-1/2 h-96 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
+                <img src="/1.jpg" alt="Medical Devices" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-right">
+                <h3 className="md:text-3xl text-2xl font-bold text-primary mb-3 relative">
+              ديفيد ماكنتوش مؤلف كتاب (الشخير حتى الموت )
+                  <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+               بعد أسبوع من تبادل الخبرات مع الطبيب الاسترالي الشهير ديفيد ماكنتوش مؤلف كتاب (الشخير حتى الموت ) … في المركز الأوروبي لطب الأسنان والإشراف على دورة تدريب متقدمة في علاج الشخير واضطرابات التنفس … ويهدي كتابه إلى د.مهند الكسواني
+
+بداية تعاون مثمر مع أحد أعلام الطب في جراحة الأنف والأذن والحنجرة في العالم
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-16">
+            <p className="text-xl text-gray-700 font-semibold animate-pulse relative">
+              مع Dentalsnore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
+              <span className="block w-32 h-1 bg-primary mx-auto mt-3 rounded-full"></span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col md:flex-row-reverse items-center gap-12">
-        <div className="w-full md:w-1/2 h-80 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
-          <img src="/70.jpg" alt="Healthcare Center" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-        </div>
-        <div className="w-full md:w-1/2 text-center md:text-right">
-          <h3 className="text-3xl font-bold text-primary mb-3 relative">
-            رواد الشرق الأوسط
-            <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            نحن من المراكز الرائدة في الشرق الأوسط في علاج اضطرابات التنفس أثناء النوم بمعايير عالمية، مع فريق طبي متخصص ونتائج مثبتة.
-          </p>
-        </div>
-      </div>
-        <div className="flex flex-col md:flex-row items-center gap-12">
-        <div className="w-full md:w-1/2 h-80 flex items-center justify-center rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 relative">
-          <img src="/18.png" alt="Medical Devices" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-        </div>
-        <div className="w-full md:w-1/2 text-center md:text-right">
-          <h3 className="text-3xl font-bold text-primary mb-3 relative">
-      المركز الأوروبي  لطب الأسنان
-            <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-           حاصلون على اعتمادية تيموس في الجودة المهنية والطبية
-          </p>
-        </div>
-      </div>
-    </div>
-    <div className="text-center mt-16">
-      <p className="text-xl text-gray-700 font-semibold animate-pulse relative">
-        مع Dentalsnore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
-        <span className="block w-32 h-1 bg-primary mx-auto mt-3 rounded-full"></span>
-      </p>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Services Overview */}
       <section className="py-20 bg-primary/5">
@@ -216,223 +260,381 @@ export default function ArabicSnoringClinic() {
 
 
       {/* Doctor Introduction */}
-  <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
-  <div className="container mx-auto px-6 lg:px-12">
-    <div className="grid lg:grid-cols-2 gap-12 items-center">
-      <div className="relative">
-        <div className="rounded-3xl overflow-hidden shadow-2xl bg-blue-50 transform hover:scale-105 transition-transform duration-500">
-          <img src="/79.jpg" alt="Medical Devices" className="w-full h-auto object-fill" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-        </div>
-      </div>
-      <div className="space-y-6">
-        <h3 className="text-2xl md:text-3xl font-extrabold text-primary relative">
-          د. مهند الكسواني
-          <span className="block w-16 h-1 bg-secondary mt-2 rounded-full"></span>
-        </h3>
-        <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
-          أخصائي علاج الشخير واضطرابات النوم المتعلقة بصحة الفم
-        </p>
-        <div className="space-y-4">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-              <Award className="w-6 h-6 text-blue-600" />
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="rounded-3xl overflow-hidden shadow-2xl bg-blue-50 transform hover:scale-105 transition-transform duration-500">
+                <img src="/79.jpg" alt="Medical Devices" className="w-full h-auto object-fill" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
             </div>
-            <span className="text-base md:text-lg text-gray-600">خبرة أكثر من 15 عاماً</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-              <Users className="w-6 h-6 text-blue-600" />
+            <div className="space-y-6">
+              <h3 className="text-2xl md:text-3xl font-extrabold text-primary relative">
+                د. مهند الكسواني
+                <span className="block w-16 h-1 bg-secondary mt-2 rounded-full"></span>
+              </h3>
+              <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+     المحاضر الدولي في علوم علاج الشخير والتنفس الفموي المتعلق
+بطب الأسنان، والابتسامة الرقمية، وعلوم إطباق الأسنان.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Award className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <span className="text-base md:text-lg text-gray-600">خبرة أكثر من 15 عاماً</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Users className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <span className="text-base md:text-lg text-gray-600">أكثر من 5000 مريض تم علاجهم</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Star className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <span className="text-base md:text-lg text-gray-600">نسبة نجاح تصل إلى 80% في معظم الحالات</span>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                <Link href="/contact">
+                  <Button className="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
+                    <Calendar className="w-5 h-5 ml-2" />
+                    احجز عبر النموذج
+                  </Button>
+                </Link>
+                <a href="https://wa.me/962796759251?text=أريد حجز موعد لاستشارة طبية" target="_blank">
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
+                    <MessageCircle className="w-5 h-5 ml-2" />
+                    احجز عبر واتساب
+                  </Button>
+                </a>
+                <Link href="/about">
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
+                    <BookOpen className="w-5 h-5 ml-2" />
+                    المزيد عن الدكتور
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <span className="text-base md:text-lg text-gray-600">أكثر من 5000 مريض تم علاجهم</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-              <Star className="w-6 h-6 text-blue-600" />
-            </div>
-            <span className="text-base md:text-lg text-gray-600">تقييم 4.9/5 من المرضى</span>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
-          <Link href="/contact">
-            <Button className="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
-              <Calendar className="w-5 h-5 ml-2" />
-              احجز عبر النموذج
-            </Button>
-          </Link>
-          <a href="https://wa.me/962796759251?text=أريد حجز موعد لاستشارة طبية" target="_blank">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
-              <MessageCircle className="w-5 h-5 ml-2" />
-              احجز عبر واتساب
-            </Button>
-          </a>
-          <Link href="/about">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
-              <BookOpen className="w-5 h-5 ml-2" />
-              المزيد عن الدكتور
-            </Button>
-          </Link>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-   <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
+              تجارب المرضى
+              <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              استمع إلى تجارب مرضانا الذين حققوا تحسناً ملحوظاً في جودة نومهم مع علاج الشخير في المركز الأوروبي لطب الأسنان
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+              <div className="relative h-48">
+                <iframe
+                  className="w-full h-full object-cover"
+                  src="https://www.youtube.com/embed/SvJikdXAySI"
+                  title="تجربة السيد عمار من موسكو"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-primary mb-3 relative">
+                  تجربة السيد عمار من موسكو
+                  <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  تجربة السيد عمار من موسكو في علاج الشخير في المركز الأوروبي
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+              <div className="relative h-48">
+                <iframe
+                  className="w-full h-full object-cover"
+                  src="https://www.youtube.com/embed/nmog1iNuFAQ"
+                  title="تجربة السيد ماهر التميمي"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-primary mb-3 relative">
+                  تجربة السيد ماهر التميمي
+                  <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  تجربة السيد ماهر التميمي في علاج الشخير داخل المركز الأوروبي
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+              <div className="relative h-48">
+                <iframe
+                  className="w-full h-full object-cover"
+                  src="https://www.youtube.com/embed/uN9LpOMKswA"
+                  title="تجربة الدكتور محمد نور العبسي"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-primary mb-3 relative">
+                  تجربة الدكتور محمد نور العبسي
+                  <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  تجربة الدكتور محمد نور العبسي في علاج الشخير داخل المركز الأوروبي
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
+    حملتنـا تنفس صح، بتعيش صح
+              <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+             أطلقنا حملة "تنفس صح، بتعيش صح" لتسليط الضوء على أهمية علاج مشاكل التنفس الفموي والشخير باستخدام أحدث التقنيات الطبية والليزر، لتحسين جودة حياتك من أول نفس.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+              <div className="relative h-[320px]">
+                <video
+                  controls
+                  className="w-full h-full object-cover"
+                  src="/correct.mp4"
+                ></video>
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-primary mb-3 relative">
+          
+تنفس صح تعيش صح
+                  <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+              من الشخير إلى التنفس الصحي
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+              <div className="relative h-[320px]">
+                   <video
+                  controls
+                  className="w-full h-full object-cover"
+                  src="/v3.mp4"
+                ></video>
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-primary mb-3 relative">
+ لماذا التنفس من الأنف أفضل من التنفس من الفم
+                  <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+              تعلم الفوائد الصحية للتنفس الأنفي  .
+                </p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+      {/* About Us Section */}
+<section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50" dir="rtl">
   <div className="container mx-auto px-6 lg:px-12">
+    {/* Section Header */}
     <div className="text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
-        تجارب المرضى
+        من نحن
         <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
       </h2>
       <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        استمع إلى تجارب مرضانا الذين حققوا تحسناً ملحوظاً في جودة نومهم مع علاج الشخير في المركز الأوروبي لطب الأسنان
+        تعرف على عيادة Dentalsnore Clinic، الرائدة في علاج الشخير واضطرابات التنفس أثناء النوم في الأردن والمنطقة
       </p>
     </div>
-    <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-        <div className="relative h-48">
-          <iframe
-            className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/SvJikdXAySI"
-            title="تجربة السيد عمار من موسكو"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="p-6 text-center">
-          <h3 className="text-xl font-bold text-primary mb-3 relative">
-            تجربة السيد عمار من موسكو
-            <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 leading-relaxed">
-            تجربة السيد عمار من موسكو في علاج الشخير في المركز الأوروبي
-          </p>
-        </div>
+
+    {/* Mission and Vision */}
+    <div className="mb-20">
+      <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
+        رسالتنا ورؤيتنا
+        <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+      </h3>
+      <div className="grid md:grid-cols-2 gap-8">
+        <Card className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+          <CardContent>
+            <h4 className="text-xl font-semibold text-primary mb-4">رسالتنا</h4>
+            <p className="text-gray-600 leading-relaxed text-base">
+              في عيادة علاج الشخير Dental Snore Clinic، نسعى لتحسين جودة حياة مرضانا من خلال تقديم حلول طبية متقدمة وغير جراحية لعلاج الشخير والتنفس الفموي، وانقطاع التنفس أثناء النوم، مع تركيزنا على نهج العلاج الشامل. نلتزم بتوفير أعلى مستوى من الرعاية والراحة باستخدام أحدث التقنيات الطبية، ومواكبة كل جديد، وندرك أن الصحة العامة مرتبطة بالنوم الجيد والصحة النفسية؛ مما يضمن لكم أفضل النتائج الممكنة.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+          <CardContent>
+            <h4 className="text-xl font-semibold text-primary mb-4">رؤيتنا</h4>
+            <p className="text-gray-600 leading-relaxed text-base">
+              أن نكون ونبقى الروّاد في مجال علاج الشخير في الأردن والمنطقة من خلال تقديم خدمات مبتكرة ومتكاملة تعتمد على الأسس العلمية والتكنولوجيا المتطورة والكوادر الطبية المؤهلة، مع تركيزنا على النهج الشامل في العلاج الذي يأخذ الجوانب المختلفة المتعلقة في العلاج لتحقيق الصحة والعافية الشمولية.
+            </p>
+          </CardContent>
+        </Card>
       </div>
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-        <div className="relative h-48">
-          <iframe
-            className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/nmog1iNuFAQ"
-            title="تجربة السيد ماهر التميمي"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="p-6 text-center">
-          <h3 className="text-xl font-bold text-primary mb-3 relative">
-            تجربة السيد ماهر التميمي
-            <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 leading-relaxed">
-            تجربة السيد ماهر التميمي في علاج الشخير داخل المركز الأوروبي
+    </div>
+
+    {/* Dental Sleep Medicine */}
+    <div className="mb-20">
+      <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
+        طب الأسنان المتعلق بأمراض النوم
+        <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+      </h3>
+      <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+        <CardContent>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            عيادتنا مستحدثة ضمن دائرة المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني، وهي الأولى من نوعها في الأردن، عيادة متخصصة في علاج اضطرابات التنفس عند النوم (التنفس الفموي بشكل خاص) لدى الأطفال والبالغين، والتي تؤثر بشكل كبير على شكل نمو الأسنان والفكين.
           </p>
-        </div>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            البرنامج المتكامل من جهاز الليزر R3 snore يحتوي على ثلاث جلسات علاجية منفصلة يتم إعطاءها خلال 12 أسبوع، وتبقى نتائج العلاج فعالة لحوالي سنتين إلى ثلاث سنوات، ويمكن إعادة العلاج مرة أخرى بعد ذلك. جهاز Lightwalker AST من شركة Fotona متعدد الاستخدامات، يُستخدم ضمن بروتوكول علاج الشخير في عيادة علاج الشخير.
+          </p>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            التنفس من الفم من أسوأ التصرفات التي قد تؤثر في حيوية أجسامنا. التنفس الأنفي يساعد على زيادة النشاط البدني، ويشجع على إنقاص الوزن والتخلص من نزلات الزكام المتكررة والدخول في النوم العميق الهانئ.
+          </p>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            يؤدي تخصص طب الأسنان المتعلق بالنوم أو ما يعرف بـ Dental Sleep Medicine دوراً مهماً في معالجة مشكلة الشخير واضطراب التنفس والتنفس الفموي أثناء النوم. منذ عام 2015 ظهرت توصيات أمريكية حديثة فيما يتعلق بتشخيص ومعالجة الشخير واضطراب التنفس أثناء النوم، والتي تؤكد دور طبيب الأسنان مع أطباء النوم في معالجة هذه المشكلة للحد من الآثار السلبية الناجمة منها.
+          </p>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            إن من أحد طرق المعالجة هو استخدام أجهزة فموية مخصصة يرتديها المريض لتقدم الفك السفلي وفتح مجرى النفس بشكل أكبر. من المثير للاهتمام أن مثل هذه الأجهزة الفموية تعطي نتائج فعالة بشكل سريع بعد مدة 6 أسابيع من ارتدائها. كما أنه من غير الضروري تقديم الفك السفلي بشكل كبير لفتح مجرى النفس، بضعة ملليمترات تكفي لحل المشكلة!
+          </p>
+          <p className="text-gray-600 leading-relaxed text-base mb-6">
+            إضافة إلى ذلك، فإن الأجهزة الفموية التي يصفها طبيب الأسنان المختص تعتبر أقل كلفة وأكثر راحة من الحلول الأخرى لمعالجة الشخير واضطراب التنفس أثناء النوم. كما أن طبيب الأسنان المدرّب على استخدام الليزر لشد عضلة سقف الحلق واللهاة المرتخية، والمسببة للشخير وانسداد مجرى الهواء، يمكنه استعمال بروتوكول علاج الشخير بالليزر عن طريق جهازي Snore3 وLightwalker AST مثل المركز الأوروبي، علمًا أن دمج العلاج بالليزر والأجهزة الفموية بحسب تعليمات الطبيب المتخصص مثل د. مهند الكسواني وفريقه الطبي يقدّم أفضل النتائج للتخلص من الشخير، والحصول على نوم مريح وتنفس سهل.
+          </p>
+          <div className="flex justify-center">
+            <a href="tel:+962796759251" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
+              <Phone className="w-5 h-5 ml-2" />
+              تواصلوا معنا: 0797377131
+            </a>
+          </div>
+        </CardContent>
       </div>
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-        <div className="relative h-48">
-          <iframe
-            className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/uN9LpOMKswA"
-            title="تجربة الدكتور محمد نور العبسي"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="p-6 text-center">
-          <h3 className="text-xl font-bold text-primary mb-3 relative">
-            تجربة الدكتور محمد نور العبسي
-            <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
-          </h3>
-          <p className="text-gray-600 leading-relaxed">
-            تجربة الدكتور محمد نور العبسي في علاج الشخير داخل المركز الأوروبي
-          </p>
-        </div>
+    </div>
+
+    {/* Team Showcase */}
+    <div>
+      <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
+        فريق العمل
+        <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+      </h3>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير واضطرابات النوم", image: "/73.jpg" },
+          { name: "د. عايدة", role: "أخصائية طب الأسنان", image: "/73.jpg" },
+          { name: "د. مجد", role: "أخصائية طب الأسنان", image: "/73.jpg" },
+          { name: "د. إيمان", role: "أخصائية طب الأسنان", image: "/73.jpg" },
+        ].map((doctor, idx) => (
+          <Card key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <CardContent className="p-6 text-center">
+              <div className="w-48 h-auto mx-auto mb-4 rounded-xl overflow-hidden">
+                <img src={doctor.image} alt={doctor.name} className="w-full h-full object-contain" />
+              </div>
+              <h4 className="text-lg font-bold text-primary mb-2">{doctor.name}</h4>
+              <p className="text-gray-600 leading-relaxed text-base">{doctor.role}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   </div>
 </section>
-<section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
-  <div className="container mx-auto px-6 lg:px-12">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
-        الأسئلة الشائعة
-        <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
-      </h2>
-      <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        تعرف على إجابات الأسئلة الشائعة حول علاج الشخير واضطرابات النوم مع فريقنا المتخصص
-      </p>
-    </div>
-    <div className="space-y-6 max-w-4xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
-          <h3 className="text-xl md:text-2xl font-semibold text-primary">
-            هل أتنفس عن طريق الفم أثناء النوم؟
-          </h3>
-          <span className="text-primary text-2xl">+</span>
-        </button>
-        <div className="p-6 text-gray-600 hidden">
-          <p className="text-lg leading-relaxed">
-            قد لا تشعر أنك تتنفس عن طريق الفم بدلاً من الأنف، خاصة أثناء النوم، ولكن عادةً ما تظهر الأعراض التالية إذا كنت تقوم بذلك:
-          </p>
-          <ul className="list-disc list-inside mt-4 space-y-2">
-            <li>جفاف الشفاه وتشققها</li>
-            <li>النعاس في ساعات النهار</li>
-            <li>الشخير</li>
-            <li>رائحة الفم الكريهة</li>
-            <li>خشونة في الصوت</li>
-            <li>جفاف الفم</li>
-            <li>مشاكل في التركيز</li>
-          </ul>
-          <p className="text-lg leading-relaxed mt-4">
-            الأعراض التي تظهر لدى الأطفال:
-          </p>
-          <ul className="list-disc list-inside mt-2 space-y-2">
-            <li>تعب مزمن</li>
-            <li>تضخم اللوزتين</li>
-            <li>الاستيقاظ متعبًا</li>
-            <li>بطء في عملية النمو</li>
-            <li>السواد حول العينين</li>
-            <li>زيادة في نوبات البكاء، خاصة في ساعات الليل</li>
-          </ul>
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
+              الأسئلة الشائعة
+              <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              تعرف على إجابات الأسئلة الشائعة حول علاج الشخير واضطرابات النوم مع فريقنا المتخصص
+            </p>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  هل أتنفس عن طريق الفم أثناء النوم؟
+                </h3>
+                <span className="text-primary text-2xl">+</span>
+              </button>
+              <div className="p-6 text-gray-600 hidden">
+                <p className="text-lg leading-relaxed">
+                  قد لا تشعر أنك تتنفس عن طريق الفم بدلاً من الأنف، خاصة أثناء النوم، ولكن عادةً ما تظهر الأعراض التالية إذا كنت تقوم بذلك:
+                </p>
+                <ul className="list-disc list-inside mt-4 space-y-2">
+                  <li>جفاف الشفاه وتشققها</li>
+                  <li>النعاس في ساعات النهار</li>
+                  <li>الشخير</li>
+                  <li>رائحة الفم الكريهة</li>
+                  <li>خشونة في الصوت</li>
+                  <li>جفاف الفم</li>
+                  <li>مشاكل في التركيز</li>
+                </ul>
+                <p className="text-lg leading-relaxed mt-4">
+                  الأعراض التي تظهر لدى الأطفال:
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-2">
+                  <li>تعب مزمن</li>
+                  <li>تضخم اللوزتين</li>
+                  <li>الاستيقاظ متعبًا</li>
+                  <li>بطء في عملية النمو</li>
+                  <li>السواد حول العينين</li>
+                  <li>زيادة في نوبات البكاء، خاصة في ساعات الليل</li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  هل علاج الليزر مؤلم؟
+                </h3>
+                <span className="text-primary text-2xl">+</span>
+              </button>
+              <div className="p-6 text-gray-600 hidden">
+                <p className="text-lg leading-relaxed">
+                  لا، علاج الليزر غير مؤلم إلى حد كبير. يبلغ معظم المرضى عن إحساس دافئ خفيف أثناء الإجراء.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  كيف يعمل الجهاز الفموي؟
+                </h3>
+                <span className="text-primary text-2xl">+</span>
+              </button>
+              <div className="p-6 text-gray-600 hidden">
+                <p className="text-lg leading-relaxed">
+                عندما يكون الجهاز العضلي الوظيفي الفموي المخصص لمشكلة الشخير في مكانه، فإنه يفتح مجرى الهواء ويتحكم في التنفس الزائد من خلال الفم. تعمل الجوانب المرنة للجهاز مع قاعدة الزنبرك الهوائي على تقليل التأثير على مفصل الفك (TMJ)، مما يجعله مناسبًا أيضًا للمستخدمين الذين يعانون من اضطراب المفصل الفكي الصدغي أو يصكون أسنانهم.
+                </p>
+                <p className="text-lg leading-relaxed mt-4">
+                بدلاً من التركيز فقط على تخفيف أعراض المشكلة، يهدف الجهاز إلى تصحيح مجرى الهواء العلوي والخلل العصبي العضلي، الذي يمكن أن يسبب اضطراب التنفس أثناء النوم (SDB). تعمل أجهزة الجهاز العضلي الوظيفي الفموي (S1 وS2) عن طريق وضع الفك السفلي للأمام وفتح العض، مما يعمل على فتح مجرى الهواء وتنظيم التنفس.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
-          <h3 className="text-xl md:text-2xl font-semibold text-primary">
-            هل علاج الليزر مؤلم؟
-          </h3>
-          <span className="text-primary text-2xl">+</span>
-        </button>
-        <div className="p-6 text-gray-600 hidden">
-          <p className="text-lg leading-relaxed">
-            لا، علاج الليزر غير مؤلم إلى حد كبير. يبلغ معظم المرضى عن إحساس دافئ خفيف أثناء الإجراء.
-          </p>
-        </div>
-      </div>
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <button className="w-full flex justify-between items-center p-6 bg-primary/5 hover:bg-primary/10 transition-colors duration-300" onClick={(e) => e.currentTarget.nextElementSibling.classList.toggle('hidden')}>
-          <h3 className="text-xl md:text-2xl font-semibold text-primary">
-            كيف يعمل الجهاز الفموي؟
-          </h3>
-          <span className="text-primary text-2xl">+</span>
-        </button>
-        <div className="p-6 text-gray-600 hidden">
-          <p className="text-lg leading-relaxed">
-          عندما يكون الجهاز العضلي الوظيفي الفموي المخصص لمشكلة الشخير في مكانه، فإنه يفتح مجرى الهواء ويتحكم في التنفس الزائد من خلال الفم. تعمل الجوانب المرنة للجهاز مع قاعدة الزنبرك الهوائي على تقليل التأثير على مفصل الفك (TMJ)، مما يجعله مناسبًا أيضًا للمستخدمين الذين يعانون من اضطراب المفصل الفكي الصدغي أو يصكون أسنانهم.
-          </p>
-          <p className="text-lg leading-relaxed mt-4">
-          بدلاً من التركيز فقط على تخفيف أعراض المشكلة، يهدف الجهاز إلى تصحيح مجرى الهواء العلوي والخلل العصبي العضلي، الذي يمكن أن يسبب اضطراب التنفس أثناء النوم (SDB). تعمل أجهزة الجهاز العضلي الوظيفي الفموي (S1 وS2) عن طريق وضع الفك السفلي للأمام وفتح العض، مما يعمل على فتح مجرى الهواء وتنظيم التنفس.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       {/* Quick Contact CTA */}
       <section className="py-16 bg-blue-500 text-white">
         <div className="container mx-auto px-6">

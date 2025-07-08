@@ -7,11 +7,10 @@ import { Button } from "@/components/ui/button"
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
 
   const menuItems = [
     { href: "/", label: "الرئيسية" },
-    { href: "/adults", label: "علاج البالغين" },
-    { href: "/children", label: "علاج الأطفال" },
     { href: "/medical-library", label: "المكتبة الطبية" },
     { href: "/sleep-challenge", label: "تحدي النوم" },
     { href: "/faq", label: "الأسئلة الشائعة" },
@@ -64,7 +63,7 @@ export default function MobileMenu() {
             onClick={() => setIsOpen(false)}
             aria-hidden="true"
           />
-          <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out">
+          <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out overflow-y-auto max-h-screen">
             <div className="flex items-center justify-between p-6 border-b bg-blue-50">
               <h2 className="text-xl font-semibold text-gray-800">
                 القائمة الرئيسية
@@ -81,6 +80,37 @@ export default function MobileMenu() {
             </div>
             <nav className="p-6">
               <ul className="space-y-4">
+                 <li className="transition-all duration-300">
+                  <div
+                    className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    onClick={() => setServicesOpen((open) => !open)}
+                  >
+                    <span>خدماتنا</span>
+                    <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </div>
+                  {servicesOpen && (
+                    <ul className="pl-6 mt-1 space-y-1">
+                      <li>
+                        <Link
+                          href="/adults"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setServicesOpen(false); }}
+                        >
+                          علاج البالغين
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/children"
+                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setServicesOpen(false); }}
+                        >
+                          علاج الأطفال
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
                 {menuItems.map((item, index) => (
                   <li
                     key={item.href}
@@ -98,6 +128,8 @@ export default function MobileMenu() {
                     </Link>
                   </li>
                 ))}
+                {/* Dropdown for خدماتنا */}
+               
               </ul>
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <a
