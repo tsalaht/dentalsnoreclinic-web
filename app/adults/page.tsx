@@ -310,6 +310,9 @@ export default function AdultsPage() {
 
 
 
+      {/* Certificates Section */}
+     
+
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">

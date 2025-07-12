@@ -107,8 +107,8 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-bold text-lg mb-2">ساعات العمل</h3>
                           <div className="space-y-1 text-gray-600">
-                            <p>السبت - الأربعاء : 11:00  - 6:00 </p>
-                            <p>الخميس  : 11:00  - 2:00 </p>
+                            <p>السبت - الأربعاء : 10:00  - 6:00 </p>
+                            <p>الخميس  : 10:00  - 2:00 </p>
                             <p>الجمعة:  عطلة </p>
                           </div>
                         </div>
@@ -272,7 +272,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
-              <p className="text-gray-400 mb-4">المركز الأوروبي للطب المتقدم</p>
+              <p className="text-gray-400 mb-4">المركز الأوروبي للطب الأسنان</p>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>د. مهند الكسواني</p>
                 <p>أخصائي علاج الشخير واضطرابات النوم</p>
@@ -301,8 +301,8 @@ export default function ContactPage() {
               <div className="space-y-2 text-sm text-gray-400">
                 <p>📞 07-9737-71-31</p>
                 <p>📍الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
-             <p>السبت - الأربعاء : 11:00  - 6:00 </p>
-                            <p>الخميس  : 11:00  - 2:00 </p>
+             <p>السبت - الأربعاء : 10:00  - 6:00 </p>
+                            <p>الخميس  : 10:00  - 2:00 </p>
                             <p>الجمعة:  عطلة </p>
               </div>
             </div>

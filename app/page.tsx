@@ -41,7 +41,7 @@ const heroSlides = [
     subheadlineClass: "text-blue-400 text-center  ",
   },
   {
-    image: "/2.jpg",
+    image: "/couples.jpg",
     headline: "الشخير والتنفس الفموي يؤثران على صحتك",
     subheadline: "احصل على نوم هادئ وصحة أفضل مع أحدث تقنيات العلاج",
     headlineClass: "text-green-200 text-center",
@@ -50,7 +50,8 @@ const heroSlides = [
 ]
 
 export default function ArabicSnoringClinic() {
-  
+
+    const [isExpanded, setIsExpanded] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0)
   return (
     <div className="min-h-screen bg-white" dir="rtl">
@@ -95,7 +96,7 @@ export default function ArabicSnoringClinic() {
           </Swiper>
         </div>
 
-        {/* {activeSlide !== 2 && (
+        {activeSlide !== 2 && (
           <div className="md:flex hidden flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-44 mt-60 ">
             <Link href="/children" className="w-full sm:w-auto">
               <Button 
@@ -114,7 +115,7 @@ export default function ArabicSnoringClinic() {
               </Button>
             </Link>
           </div>
-        )} */}
+        )}
       </section>
 
       {/* Features Section */}
@@ -260,7 +261,7 @@ export default function ArabicSnoringClinic() {
 
 
       {/* Doctor Introduction */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -323,7 +324,7 @@ export default function ArabicSnoringClinic() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
@@ -401,7 +402,7 @@ export default function ArabicSnoringClinic() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
@@ -419,6 +420,7 @@ export default function ArabicSnoringClinic() {
                   controls
                   className="w-full h-full object-cover"
                   src="/correct.mp4"
+                  poster="/doctor.JPG"
                 ></video>
               </div>
               <div className="p-6 text-center">
@@ -439,6 +441,7 @@ export default function ArabicSnoringClinic() {
                   controls
                   className="w-full h-full object-cover"
                   src="/v3.mp4"
+                  poster="/couples.jpg"
                 ></video>
               </div>
               <div className="p-6 text-center">
@@ -456,7 +459,7 @@ export default function ArabicSnoringClinic() {
         </div>
       </section>
       {/* About Us Section */}
-<section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50" dir="rtl">
+<section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50" dir="rtl">
   <div className="container mx-auto px-6 lg:px-12">
     {/* Section Header */}
     <div className="text-center mb-16">
@@ -496,13 +499,13 @@ export default function ArabicSnoringClinic() {
     </div>
 
     {/* Dental Sleep Medicine */}
-    <div className="mb-20">
+<div className="mb-20">
       <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
         طب الأسنان المتعلق بأمراض النوم
         <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
       </h3>
       <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
-        <CardContent>
+        <div>
           <p className="text-gray-600 leading-relaxed text-base mb-6">
             عيادتنا مستحدثة ضمن دائرة المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني، وهي الأولى من نوعها في الأردن، عيادة متخصصة في علاج اضطرابات التنفس عند النوم (التنفس الفموي بشكل خاص) لدى الأطفال والبالغين، والتي تؤثر بشكل كبير على شكل نمو الأسنان والفكين.
           </p>
@@ -512,22 +515,34 @@ export default function ArabicSnoringClinic() {
           <p className="text-gray-600 leading-relaxed text-base mb-6">
             التنفس من الفم من أسوأ التصرفات التي قد تؤثر في حيوية أجسامنا. التنفس الأنفي يساعد على زيادة النشاط البدني، ويشجع على إنقاص الوزن والتخلص من نزلات الزكام المتكررة والدخول في النوم العميق الهانئ.
           </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            يؤدي تخصص طب الأسنان المتعلق بالنوم أو ما يعرف بـ Dental Sleep Medicine دوراً مهماً في معالجة مشكلة الشخير واضطراب التنفس والتنفس الفموي أثناء النوم. منذ عام 2015 ظهرت توصيات أمريكية حديثة فيما يتعلق بتشخيص ومعالجة الشخير واضطراب التنفس أثناء النوم، والتي تؤكد دور طبيب الأسنان مع أطباء النوم في معالجة هذه المشكلة للحد من الآثار السلبية الناجمة منها.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            إن من أحد طرق المعالجة هو استخدام أجهزة فموية مخصصة يرتديها المريض لتقدم الفك السفلي وفتح مجرى النفس بشكل أكبر. من المثير للاهتمام أن مثل هذه الأجهزة الفموية تعطي نتائج فعالة بشكل سريع بعد مدة 6 أسابيع من ارتدائها. كما أنه من غير الضروري تقديم الفك السفلي بشكل كبير لفتح مجرى النفس، بضعة ملليمترات تكفي لحل المشكلة!
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            إضافة إلى ذلك، فإن الأجهزة الفموية التي يصفها طبيب الأسنان المختص تعتبر أقل كلفة وأكثر راحة من الحلول الأخرى لمعالجة الشخير واضطراب التنفس أثناء النوم. كما أن طبيب الأسنان المدرّب على استخدام الليزر لشد عضلة سقف الحلق واللهاة المرتخية، والمسببة للشخير وانسداد مجرى الهواء، يمكنه استعمال بروتوكول علاج الشخير بالليزر عن طريق جهازي Snore3 وLightwalker AST مثل المركز الأوروبي، علمًا أن دمج العلاج بالليزر والأجهزة الفموية بحسب تعليمات الطبيب المتخصص مثل د. مهند الكسواني وفريقه الطبي يقدّم أفضل النتائج للتخلص من الشخير، والحصول على نوم مريح وتنفس سهل.
-          </p>
+          {isExpanded && (
+            <>
+              <p className="text-gray-600 leading-relaxed text-base mb-6">
+                يؤدي تخصص طب الأسنان المتعلق بالنوم أو ما يعرف بـ Dental Sleep Medicine دوراً مهماً في معالجة مشكلة الشخير واضطراب التنفس والتنفس الفموي أثناء النوم. منذ عام 2015 ظهرت توصيات أمريكية حديثة فيما يتعلق بتشخيص ومعالجة الشخير واضطراب التنفس أثناء النوم، والتي تؤكد دور طبيب الأسنان مع أطباء النوم في معالجة هذه المشكلة للحد من الآثار السلبية الناجمة منها.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-base mb-6">
+                إن من أحد طرق المعالجة هو استخدام أجهزة فموية مخصصة يرتديها المريض لتقدم الفك السفلي وفتح مجرى النفس بشكل أكبر. من المثير للاهتمام أن مثل هذه الأجهزة الفموية تعطي نتائج فعالة بشكل سريع بعد مدة 6 أسابيع من ارتدائها. كما أنه من غير الضروري تقديم الفك السفلي بشكل كبير لفتح مجرى النفس، بضعة ملليمترات تكفي لحل المشكلة!
+              </p>
+              <p className="text-gray-600 leading-relaxed text-base mb-6">
+                إضافة إلى ذلك، فإن الأجهزة الفموية التي يصفها طبيب الأسنان المختص تعتبر أقل كلفة وأكثر راحة من الحلول الأخرى لمعالجة الشخير واضطراب التنفس أثناء النوم. كما أن طبيب الأسنان المدرّب على استخدام الليزر لشد عضلة سقف الحلق واللهاة المرتخية، والمسببة للشخير وانسداد مجرى الهواء، يمكنه استعمال بروتوكول علاج الشخير بالليزر عن طريق جهازي Snore3 وLightwalker AST مثل المركز الأوروبي، علمًا أن دمج العلاج بالليزر والأجهزة الفموية بحسب تعليمات الطبيب المتخصص مثل د. مهند الكسواني وفريقه الطبي يقدّم أفضل النتائج للتخلص من الشخير، والحصول على نوم مريح وتنفس سهل.
+              </p>
+            </>
+          )}
+          <div className="flex justify-center mb-6">
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-primary font-semibold hover:underline focus:outline-none"
+            >
+              {isExpanded ? 'اقرأ أقل' : 'اقرأ المزيد'}
+            </button>
+          </div>
           <div className="flex justify-center">
             <a href="tel:+962796759251" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
               <Phone className="w-5 h-5 ml-2" />
               تواصلوا معنا: 0797377131
             </a>
           </div>
-        </CardContent>
+        </div>
       </div>
     </div>
 
@@ -539,10 +554,10 @@ export default function ArabicSnoringClinic() {
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير واضطرابات النوم", image: "/73.jpg" },
-          { name: "د. عايدة", role: "أخصائية طب الأسنان", image: "/73.jpg" },
-          { name: "د. مجد", role: "أخصائية طب الأسنان", image: "/73.jpg" },
-          { name: "د. إيمان", role: "أخصائية طب الأسنان", image: "/73.jpg" },
+          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير والتنفس الفموي الليلي", image: "/73.jpg" },
+          { name: "د. عايدة", role: "أخصائية علاج الشخير والتنفس الفموي الليلي", image: "/aida.jpg" },
+          { name: "د. مجد", role: "أخصائية علاج الشخير والتنفس الفموي الليلي", image: "/majd.png" },
+          { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG" },
         ].map((doctor, idx) => (
           <Card key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
             <CardContent className="p-6 text-center">
@@ -558,7 +573,7 @@ export default function ArabicSnoringClinic() {
     </div>
   </div>
 </section>
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
@@ -667,7 +682,7 @@ export default function ArabicSnoringClinic() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
-              <p className="text-gray-300 mb-4">المركز الأوروبي للطب المتقدم</p>
+              <p className="text-gray-300 mb-4">المركز الأوروبي للطب الأسنان</p>
               <div className="space-y-2 text-sm text-gray-300">
                 <p>د. مهند الكسواني</p>
                 <p>أخصائي علاج الشخير واضطرابات النوم</p>
@@ -697,8 +712,8 @@ export default function ArabicSnoringClinic() {
               <div className="space-y-2 text-sm text-gray-300">
                 <p>📞 07-9737-71-31</p>
                 <p>📍 الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
-               <p>السبت - الأربعاء : 11:00  - 6:00 </p>
-                            <p>الخميس  : 11:00  - 2:00 </p>
+               <p>السبت - الأربعاء : 10:00  - 6:00 </p>
+                            <p>الخميس  : 10:00  - 2:00 </p>
                             <p>الجمعة:  عطلة </p>
                 <div className="flex gap-2 mt-4">
                   <a href="https://wa.me/962796759251" target="_blank" className="hover:text-green-300">

@@ -13,12 +13,14 @@ export default function MobileMenu() {
 
   const menuItems = [
     { href: "/", label: "الرئيسية" },
-    { href: "/medical-library", label: "المكتبة الطبية" },
+    { href: "/about", label: "من نحن" },
+    // خدماتنا (dropdown)
+    // دراسات علمية (dropdown)
+    // شهادات نجاح (dropdown)
     { href: "/sleep-challenge", label: "تحدي النوم" },
-    // { href: "/faq", label: "الأسئلة الشائعة" },
-    { href: "/about", label: "عن العيادة" },
-    { href: "/contact", label: "تواصل معنا" },
     { href: "/blog", label: "المدونة" },
+    { href: "/medical-library", label: "المكتبة الطبية" },
+    { href: "/contact", label: "تواصل معنا" },
   ]
 
   // Handle Escape key
@@ -83,7 +85,28 @@ export default function MobileMenu() {
             </div>
             <nav className="p-6">
               <ul className="space-y-4">
-                 <li className="transition-all duration-300">
+                {/* الرئيسية */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    الرئيسية
+                  </Link>
+                </li>
+                {/* من نحن */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/about"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    من نحن
+                  </Link>
+                </li>
+                {/* خدماتنا (dropdown) */}
+                <li className="transition-all duration-300">
                   <div
                     className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
                     onClick={() => setServicesOpen((open) => !open)}
@@ -114,6 +137,7 @@ export default function MobileMenu() {
                     </ul>
                   )}
                 </li>
+                {/* دراسات علمية (dropdown) */}
                 <li className="transition-all duration-300">
                   <div
                     className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
@@ -163,12 +187,13 @@ export default function MobileMenu() {
                     </ul>
                   )}
                 </li>
+                {/* شهادات نجاح (dropdown) */}
                 <li className="transition-all duration-300">
                   <div
                     className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
                     onClick={() => setTestimonialsOpen((open) => !open)}
                   >
-                    <span>شهادات</span>
+                    <span>شهادات نجاح</span>
                     <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${testimonialsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                   </div>
                   {testimonialsOpen && (
@@ -194,25 +219,46 @@ export default function MobileMenu() {
                     </ul>
                   )}
                 </li>
-                {menuItems.map((item, index) => (
-                  <li
-                    key={item.href}
-                    className="transition-all duration-300"
-                    style={{
-                      animationDelay: `${index * 0.1}s`,
-                    }}
+                {/* تحدي النوم */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/sleep-challenge"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
                   >
-                    <Link
-                      href={item.href}
-                      className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-                {/* Dropdown for خدماتنا */}
-               
+                    تحدي النوم
+                  </Link>
+                </li>
+                {/* المدونة */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/blog"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    المدونة
+                  </Link>
+                </li>
+                {/* المكتبة الطبية */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/medical-library"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    المكتبة الطبية
+                  </Link>
+                </li>
+                {/* تواصل معنا */}
+                <li className="transition-all duration-300">
+                  <Link
+                    href="/contact"
+                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    تواصل معنا
+                  </Link>
+                </li>
               </ul>
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <a

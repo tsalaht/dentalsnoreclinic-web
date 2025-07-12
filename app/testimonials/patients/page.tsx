@@ -25,6 +25,16 @@ const videoTestimonials = [
     src: "https://www.youtube.com/embed/uN9LpOMKswA",
     description: "تجربة الدكتور محمد نور العبسي في علاج الشخير داخل المركز الأوروبي",
   },
+  {
+    title: "",
+    src: "https://www.youtube.com/embed/IREdfY7anSI",
+    description: "من تجارب مرضانا في عيادتنا لعلاج الشخير والتنفس الفموي أثناء النوم",
+  },
+  {
+    title: "",
+    src: "https://www.youtube.com/embed/sKNnEGkkJ0U",
+    description: "من تجارب مرضانا في عيادتنا لعلاج الشخير والتنفس الفموي أثناء النوم",
+  },
 ]
 
 export default function PatientTestimonialsPage() {
