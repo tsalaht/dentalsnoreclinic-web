@@ -270,7 +270,7 @@ export default function ChildrenPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className="relative">
-                  <video className="w-full h-64 object-cover" controls>
+                  <video className="w-full h-64 object-cover" controls poster="/baby.png">
                     <source src="/v1.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>
@@ -289,7 +289,7 @@ export default function ChildrenPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className="relative">
-                  <video className="w-full h-64 object-cover" controls>
+                  <video className="w-full h-64 object-cover" controls poster="/baby.png">
                     <source src="/v2.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>
@@ -308,7 +308,7 @@ export default function ChildrenPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className="relative">
-                  <video className="w-full h-64 object-cover" controls >
+                  <video className="w-full h-64 object-cover" controls poster="/baby.png" >
                     <source src="/v3.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>
@@ -330,7 +330,135 @@ export default function ChildrenPage() {
           </div>
         </div>
       </section>
+{/* Before and After Treatment Section */}
+<section className="py-16 bg-gradient-to-b from-white to-gray-50">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+          أم توثق رحلة علاج طفلها في عيادتنا
+        </h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          صورة تبرز كيف ساهم علاجنا في إنهاء شخير طفلها وعادته في التنفس من الفم، ليحظى بأسنان مستقيمة ووجه أكثر تناغما
+        </p>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Before and After Box 1 */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 card-hover-lift">
+          <div className="grid grid-cols-2 gap-4 p-6">
+            <div className="relative">
+              <Image
+                src="/bf1.png"
+                alt="قبل العلاج - الطفل 1"
+                width={250}
+                height={200}
+                className="w-full h-auto rounded-xl object-cover"
+                loading="lazy"
+              />
+              <Badge className="absolute top-3 right-3 bg-red-500 text-white">قبل العلاج</Badge>
+            </div>
+            <div className="relative">
+              <Image
+                src="/af1.png"
+                alt="بعد العلاج - الطفل 1"
+                width={250}
+                height={200}
+                className="w-full h-auto rounded-xl object-cover"
+                loading="lazy"
+              />
+              <Badge className="absolute top-3 right-3 bg-green-500 text-white">بعد العلاج</Badge>
+            </div>
+          </div>
+        </div>
+        {/* Before and After Box 2 */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 card-hover-lift">
+          <div className="grid grid-cols-2 gap-4 p-6">
+            <div className="relative">
+              <Image
+                src="/bf2.png"
+                alt="قبل العلاج - الطفل 2"
+                width={250}
+                height={200}
+                className="w-full h-auto rounded-xl object-cover"
+                loading="lazy"
+              />
+              <Badge className="absolute top-3 right-3 bg-red-500 text-white">قبل العلاج</Badge>
+            </div>
+            <div className="relative">
+              <Image
+                src="/af2.png"
+                alt="بعد العلاج - الطفل 2"
+                width={250}
+                height={200}
+                className="w-full h-auto rounded-xl object-cover"
+                loading="lazy"
+              />
+              <Badge className="absolute top-3 right-3 bg-green-500 text-white">بعد العلاج</Badge>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+{/* Mother's Story Section */}
+<section className="py-16 bg-gray-100">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+          قصة نجاح أم وطفلها
+        </h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          قد تكون قصة هذه الأم والنصيحة التي قلبت حياة طفلها للأفضل مصدر إلهام للكثير!! لتي تروي رحلة علاج طفلها لسنوات من التنفس الفموي مسببا له الهالات السوداء تحت عينيه وشخير مزمن، مما كان يجعله يستيقظ متعبا في الصباح، إلى أن أصبح يتنفس من أنفه بشكل طبيعي.
+        </p>
+      </div>
+      <div className="grid md:grid-cols-4 gap-4">
+        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+          <Image
+            src="/tr4.png"
+            alt="رحلة علاج الطفل - صورة 1"
+            width={250}
+            height={200}
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+          <Image
+            src="/tr3.png"
+            alt="رحلة علاج الطفل - صورة 2"
+            width={250}
+            height={200}
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+          <Image
+            src="/tr2.png"
+            alt="رحلة علاج الطفل - صورة 3"
+            width={250}
+            height={200}
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+          <Image
+            src="/tr1.png"
+            alt="رحلة علاج الطفل - صورة 4"
+            width={250}
+            height={200}
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Assessment Section */}
       <section className="py-16 bg-gradient-to-r from-green-50 to-emerald-50 border-t-4 border-green-400" id="assessment">
         <div className="container mx-auto px-4">

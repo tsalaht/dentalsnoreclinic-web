@@ -257,7 +257,183 @@ export default function AdultsPage() {
     </div>
   </div>
 </section>
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4">
+          البروتوكول العلاجي في Dentalsnore Clinic
+        </h2>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          ندرك في Dentalsnore Clinic أهمية اتباع طرق العلاج التي توصل لها العلم الحديث في علاج الشخير المتعلق بمجال طب الأسنان والتنفس الفموي. نقدم لك بروتوكول علاجي متكامل وفعال للتخلص من هذه المشكلة المزعجة، بدءًا من التشخيص الدقيق مع الدكتور مهند باستخدام أحدث التقنيات وصولًا إلى خطط علاجية مخصصة تناسب احتياجاتك الفردية.
+        </p>
+      </div>
+      <div className="space-y-16">
+        {/* الأشعة والصور الطبقية */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              الأشعة والصور الطبقية لتشخيص دقيق
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              الخطوة الأولى في رحلتك العلاجية هي الحصول على صورة واضحة وشاملة لمجرى الهواء لديك. باستخدام أحدث تقنيات الأشعة والصور الطبقية ثلاثية الأبعاد (CBCT)، مما يساعدنا على فهم أسباب المشكلة التي قد لا تكون ظاهرة من الخارج.
+            </p>
+          </div>
+          <div className="md:w-1/2 ">
+            <Image
+              src="/b1.JPG"
+              alt="الأشعة الطبقية"
+              width={300}
+              height={200}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+       
+          </div>
+        </div>
 
+        {/* قياس ضغط الدم */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-secondary mb-4">
+              قياس ضغط الدم
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              هذا الإجراء الحيوي يساعدنا على تقييم صحتك العامة، خاصة وأن اضطرابات التنفس أثناء النوم غالبًا ما تكون مرتبطة بارتفاع ضغط الدم.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <Image
+              src="/b2.JPG"
+              alt="قياس ضغط الدم"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+    
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-accent mb-4">
+           الفحص السريري مع جهاز Oral ID
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+            خلال الفحص السريري مع الدكتورة عايدة، نقوم بمعاينة الحجرة الفموية والأنسجة الرخوة في سقف الحلق. ونستخدم جهاز Oral ID المتطور، الذي يساعدنا في فحص الأنسجة باستخدام ضوء خاص، مما يضمن أننا لا نغفل أي تغيرات دقيقة قد تكون مؤثراً في خطة العلاج.
+
+            </p>
+          </div>
+          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Image
+              src="/b3-1.JPG"
+              alt="الفحص السريري مع جهاز Oral ID"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+            <Image
+              src="/b3-2.JPG"
+              alt="الفحص السريري مع جهاز Oral ID"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-secondary mb-4">
+              دراسة صور الطبقية للجيوب الأنفية
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              نعلم أن انسداد الجيوب الأنفية قد يكون سبباً رئيسياً للتنفس الفموي والشخير، هذا الإجراء ضروري لضمان أن خطتنا العلاجية تشمل كل العوامل المسببة للمشكلة، وتقدم لك حلاً شاملاً.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <Image
+              src="/b4.JPG"
+              alt="صور الجيوب الأنفية"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        {/* وضع الخطة العلاجية */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              وضع الخطة العلاجية
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              بعد جمع كل هذه المعلومات من الدكتورة عايدة ودراستها مع الدكتور مهند الكسواني، نقوم بوضع خطة علاجية مصممة خصيصاً لحالتك، ويتم شرحها لك بالتفصيل، لكي نصل معًا إلى أفضل قرار يناسب احتياجاتك.
+            </p>
+          </div>
+          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Image
+              src="/b5.JPG"
+              alt="وضع الخطة العلاجية"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+            <Image
+              src="/doctor.JPG"
+              alt="وضع الخطة العلاجية"
+              width={400}
+              height={250}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        {/* خطة العلاج للبالغين */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+          <div className="md:w-1/2">
+            <h3 className="text-2xl font-bold text-accent mb-4">
+              خطة العلاج للبالغين المتاحة
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              بناءً على الخطة العلاجية، نقدم مجموعة من الحلول الفعالة للبالغين، والتي قد تشمل:
+            </p>
+            <ul className="text-base text-gray-700 space-y-2 mt-4 text-right">
+              <li>✓ الليزر: يساعد الليزر على شد الأنسجة المرتخية في سقف الحلق، مما يقلل من اهتزازها ويخفف من صوت الشخير. هذا الإجراء يتم بجلسات قصيرة بدون جراحة وبدون ألم يذكر.</li>
+              <li>✓ الأجهزة الفموية: هي أجهزة مصممة خصيصاً لك، وتساعد على إبقاء مجرى الهواء مفتوحاً أثناء النوم عن طريق تعديل وضعية الفك السفلي واللسان.</li>
+              <li>✓ تمارين الوجه: نعلمك مجموعة من التمارين البسيطة التي تساعد على تقوية العضلات المسؤولة عن التنفس والبلع، مما يساهم في تقليل الشخير على المدى الطويل.</li>
+              <li>✓ تغيير أسلوب الحياة: سنقدم لك نصائح عملية حول تغيير نمط حياتك وسلوكياتك، مثل تحسين وضعية النوم أو التحكم بالوزن. هذه التغييرات هي مفتاحك الأساسي للحصول على نتائج دائمة والتحكم في الشخير.</li>
+            </ul>
+          </div>
+          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Image
+              src="/b7.JPG"
+              alt="العلاج بالليزر"
+              width={300}
+              height={200}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+            <Image
+              src="/b6.JPG"
+              alt="الأجهزة الفموية"
+              width={300}
+              height={200}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
       {/* Assessment Section */}
