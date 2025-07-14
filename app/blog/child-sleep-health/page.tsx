@@ -15,8 +15,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/baby.png" alt="صحة نوم الأطفال" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">صحة نوم الأطفال: نصائح ذهبية للأهل</h1>
-              <p className="text-gray-700 text-lg mb-4">اكتشف كيف يؤثر الشخير واضطرابات التنفس على نمو الأطفال وأفضل طرق الوقاية والعلاج المبكر.</p>
-              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
+              <p className="text-primary/90 text-lg mb-4">اكتشف كيف يؤثر الشخير واضطرابات التنفس على نمو الأطفال وأفضل طرق الوقاية والعلاج المبكر.</p>
+              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
                 <p>نوم الأطفال الصحي هو أساس نموهم الجسدي والعقلي. الشخير واضطرابات التنفس أثناء النوم قد تؤثر سلبًا على تركيز الطفل، نموه، وحتى سلوكه اليومي.</p>
                 <p>من المهم مراقبة علامات اضطرابات النوم مثل الشخير، صعوبة الاستيقاظ، أو التعب المزمن. التدخل المبكر من خلال استشارة الطبيب المختص يمكن أن يمنع المضاعفات ويحسن جودة حياة الطفل.</p>
                 <p>احرص على توفير بيئة نوم هادئة، واتباع روتين نوم منتظم، وطلب الاستشارة الطبية عند ظهور أي أعراض غير طبيعية.</p>

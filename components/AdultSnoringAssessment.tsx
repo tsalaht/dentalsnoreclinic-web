@@ -179,29 +179,29 @@ export default function AdultSnoringAssessment() {
               مستوى الخطر: {results.level} ({score}/18 نقطة)
             </Badge>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{results.title}</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">{results.title}</h3>
             <p className="text-lg text-gray-600 mb-6">{results.description}</p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="text-right">
-                <h4 className="font-semibold text-gray-900 mb-3">التوصيات:</h4>
+                <h4 className="font-semibold text-primary mb-3">التوصيات:</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   {results.recommendations.map((rec, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-blue-500 mt-1">•</span>
+                      <span className="text-primary/70 mt-1">•</span>
                       {rec}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="text-right">
-                <h4 className="font-semibold text-gray-900 mb-3">خطوات العلاج:</h4>
+                <h4 className="font-semibold text-primary mb-3">خطوات العلاج:</h4>
                 <div className={`p-4 rounded-lg ${
                   results.color === 'green' ? 'bg-green-100' :
                   results.color === 'yellow' ? 'bg-yellow-100' :
                   'bg-red-100'
                 }`}>
-                  <p className="font-medium text-gray-900 mb-2">{results.urgency}</p>
+                  <p className="font-medium text-primary mb-2">{results.urgency}</p>
                   <p className="text-sm text-gray-600">
                     {results.color === 'red' ? 
                       "حالتك تتطلب تدخل طبي فوري" :
@@ -250,7 +250,7 @@ export default function AdultSnoringAssessment() {
                 key={index}
                 className={`w-3 h-3 rounded-full ${
                   index < currentQuestion 
-                    ? 'bg-blue-500' 
+                    ? 'bg-primary/70' 
                     : index === currentQuestion 
                     ? 'bg-blue-300' 
                     : 'bg-gray-200'
@@ -269,7 +269,7 @@ export default function AdultSnoringAssessment() {
 
       <Card className="bg-white shadow-lg">
         <CardContent className="p-8">
-          <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+          <h3 className="text-xl font-bold text-primary mb-6 text-center">
             {questions[currentQuestion].question}
           </h3>
           
@@ -278,7 +278,7 @@ export default function AdultSnoringAssessment() {
               <button
                 key={index}
                 onClick={() => handleAnswer(option.value)}
-                className="w-full p-4 text-right border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all"
+                className="w-full p-4 text-right border-2 border-gray-200 rounded-lg hover:border-primary/70 hover:bg-blue-50 transition-all"
               >
                 <span className="font-medium">{option.text}</span>
               </button>

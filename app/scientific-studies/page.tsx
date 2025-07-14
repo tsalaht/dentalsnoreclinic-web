@@ -37,7 +37,7 @@ export default function ScientificStudiesPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <Badge className="bg-green-100 text-green-800 hover:bg-green-100 animate-fade-in-up mb-4">دراسات علمية</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-down relative">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4 animate-fade-in-down relative">
               أحدث الدراسات العلمية حول علاج الشخير واضطرابات النوم
               <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h2>

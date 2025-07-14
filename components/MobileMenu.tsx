@@ -54,9 +54,9 @@ export default function MobileMenu() {
           aria-label="فتح القائمة"
         >
           {isOpen ? (
-            <X className="h-7 w-7 text-gray-600" />
+            <X className="h-7 w-7 text-primary/90" />
           ) : (
-            <Menu className="h-7 w-7 text-gray-600" />
+            <Menu className="h-7 w-7 text-primary/90" />
           )}
         </Button>
       </div>
@@ -80,7 +80,7 @@ export default function MobileMenu() {
                 className="p-2 hover:bg-blue-100 rounded-lg transition-all duration-300"
                 aria-label="إغلاق القائمة"
               >
-                <X className="h-6 w-6 text-gray-600" />
+                <X className="h-6 w-6 text-primary/90" />
               </Button>
             </div>
             <nav className="p-6">
@@ -89,7 +89,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     الرئيسية
@@ -99,7 +99,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/about"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     من نحن
@@ -108,7 +108,7 @@ export default function MobileMenu() {
                 {/* خدماتنا (dropdown) */}
                 <li className="transition-all duration-300">
                   <div
-                    className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    className="flex items-center justify-between py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
                     onClick={() => setServicesOpen((open) => !open)}
                   >
                     <span>خدماتنا</span>
@@ -119,7 +119,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/adults"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setServicesOpen(false); }}
                         >
                           علاج البالغين
@@ -128,7 +128,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/children"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setServicesOpen(false); }}
                         >
                           علاج الأطفال
@@ -140,7 +140,7 @@ export default function MobileMenu() {
                 {/* دراسات علمية (dropdown) */}
                 <li className="transition-all duration-300">
                   <div
-                    className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    className="flex items-center justify-between py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
                     onClick={() => setStudiesOpen((open) => !open)}
                   >
                     <span>دراسات علمية</span>
@@ -151,7 +151,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/scientific-studies/laser-effectiveness"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
                         >
                           فعالية اجهزة الليزر
@@ -160,7 +160,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/scientific-studies/oral-devices-effectiveness"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
                         >
                           فعالية الأجهزة الفموية
@@ -169,7 +169,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/scientific-studies/muscle-exercises-effectiveness"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
                         >
                           فعالية التمارين العضلية
@@ -178,7 +178,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/scientific-studies/misc-studies"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setStudiesOpen(false); }}
                         >
                           دراسات متفرقة
@@ -190,7 +190,7 @@ export default function MobileMenu() {
                 {/* شهادات نجاح (dropdown) */}
                 <li className="transition-all duration-300">
                   <div
-                    className="flex items-center justify-between py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    className="flex items-center justify-between py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
                     onClick={() => setTestimonialsOpen((open) => !open)}
                   >
                     <span>شهادات نجاح</span>
@@ -201,7 +201,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/testimonials/patients"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setTestimonialsOpen(false); }}
                         >
                           شهادات المرضى
@@ -210,7 +210,7 @@ export default function MobileMenu() {
                       <li>
                         <Link
                           href="/testimonials/doctors"
-                          className="block py-2 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
                           onClick={() => { setIsOpen(false); setTestimonialsOpen(false); }}
                         >
                           شهادات الأطباء
@@ -223,7 +223,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/sleep-challenge"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     تحدي النوم
@@ -233,7 +233,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/blog"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     المدونة
@@ -243,7 +243,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/medical-library"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     المكتبة الطبية
@@ -253,7 +253,7 @@ export default function MobileMenu() {
                 <li className="transition-all duration-300">
                   <Link
                     href="/contact"
-                    className="block py-3 px-4 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
+                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
                     تواصل معنا
@@ -268,7 +268,7 @@ export default function MobileMenu() {
                   className="block w-full"
                   onClick={() => setIsOpen(false)}
                 >
-                  <Button className="w-full bg-blue-500 text-white py-3 text-lg font-medium rounded-lg hover:bg-blue-600 transition-all duration-300">
+                  <Button className="w-full bg-primary/70 text-white py-3 text-lg font-medium rounded-lg hover:bg-blue-600 transition-all duration-300">
                     احجز موعداً الآن
                   </Button>
                 </a>

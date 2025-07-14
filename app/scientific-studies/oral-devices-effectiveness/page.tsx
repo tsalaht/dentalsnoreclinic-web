@@ -16,8 +16,8 @@ export default function OralDevicesEffectivenessPage() {
           <Card className="bg-white border-0 shadow-xl rounded-2xl">
             <CardContent className="p-8">
               <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">فعالية الأجهزة الفموية في علاج اضطرابات النوم</h1>
-              <p className="text-gray-700 text-lg mb-4">تستعرض هذه الصفحة نتائج الدراسات حول استخدام الأجهزة الفموية في علاج الشخير وانقطاع التنفس أثناء النوم.</p>
-              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
+              <p className="text-primary/90 text-lg mb-4">تستعرض هذه الصفحة نتائج الدراسات حول استخدام الأجهزة الفموية في علاج الشخير وانقطاع التنفس أثناء النوم.</p>
+              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
                 <p>تُظهر الدراسات أن الأجهزة الفموية المخصصة تساعد في إبقاء مجرى الهواء مفتوحًا أثناء النوم، مما يقلل من الشخير ويحسن جودة النوم.</p>
                 <p>في دراسة سريرية، أبلغ 80% من المرضى عن تحسن ملحوظ في الأعراض بعد استخدام الأجهزة الفموية لمدة 6 أسابيع.</p>
                 <p>تتميز الأجهزة الفموية بسهولة الاستخدام وفعاليتها السريعة، وتعتبر خيارًا مناسبًا للمرضى الذين لا يفضلون العلاجات الجراحية.</p>

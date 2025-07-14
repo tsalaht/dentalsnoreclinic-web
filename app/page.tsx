@@ -14,6 +14,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import ggg from '../assets/1.jpg'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const heroSlides = [
   {
@@ -28,8 +29,8 @@ const heroSlides = [
     image: "/baby.png",
     headline: "هل يشخر طفلك ويطحن أسنانه؟",
     subheadline: " طفلك ليس هادئاً كما تعتقد!!",
-    headlineClass: "text-yellow-200 text-center",
-    subheadlineClass: "text-yellow-400 text-center",
+    headlineClass: "text-secondary text-center",
+    subheadlineClass: "text-secondary/90 text-center",
   },
   {
     image: "/doctor.JPG",
@@ -51,6 +52,7 @@ const heroSlides = [
 
 export default function ArabicSnoringClinic() {
 
+    const router = useRouter();
     const [isExpanded, setIsExpanded] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0)
   return (
@@ -59,7 +61,7 @@ export default function ArabicSnoringClinic() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] md:min-h-[92vh] bg-primary/5 flex items-center justify-center">
+      <section className="relative min-h-[70vh] md:min-h-[92vh] bg-primary/5 flex items-center  justify-center">
         <div className="absolute inset-0 z-0">
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -96,8 +98,8 @@ export default function ArabicSnoringClinic() {
           </Swiper>
         </div>
 
-        {activeSlide !== 2 && (
-          <div className="md:flex hidden flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-44 mt-60 ">
+      
+          <div className="md:flex hidden flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-52 mt-60 ">
             <Link href="/children" className="w-full sm:w-auto">
               <Button 
         size={'sm'}
@@ -115,7 +117,7 @@ export default function ArabicSnoringClinic() {
               </Button>
             </Link>
           </div>
-        )}
+
       </section>
 
       {/* Features Section */}
@@ -126,7 +128,7 @@ export default function ArabicSnoringClinic() {
               لماذا تختار Dentalsnore Clinic؟
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed tracking-wide">
+            <p className="text-xl text-primary/90 max-w-4xl mx-auto leading-relaxed tracking-wide">
               تفخر Dentalsnore Clinic التابعة للمركز الأوروبي لطب الأسنان  تقديم بروتوكول علاجي متكامل  واضطرابات التنفس الليلي، والتنفس الفموي.يتضمن برنامجنا حصولك على الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
             </p>
           </div>
@@ -182,7 +184,7 @@ export default function ArabicSnoringClinic() {
             </div>
           </div>
           <div className="text-center mt-16">
-            <p className="text-xl text-gray-700 font-semibold animate-pulse relative">
+            <p className="text-xl text-primary/90 font-semibold animate-pulse relative">
               مع Dentalsnore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
               <span className="block w-32 h-1 bg-primary mx-auto mt-3 rounded-full"></span>
             </p>
@@ -191,13 +193,13 @@ export default function ArabicSnoringClinic() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-primary/5">
+      <section className="pb-20 bg-primary/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               خدماتنا المتخصصة
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-primary/90 max-w-2xl mx-auto leading-relaxed">
               علاج شامل ومخصص لكل عمر ولكل حالة
             </p>
           </div>
@@ -209,7 +211,7 @@ export default function ArabicSnoringClinic() {
                     <User className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-primary mb-4">علاج البالغين</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
+                  <p className="text-primary/90 leading-relaxed text-base">
                     علاج الشخير وانقطاع التنفس النومي
                   </p>
                 </CardContent>
@@ -222,7 +224,7 @@ export default function ArabicSnoringClinic() {
                     <Baby className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-accent mb-4">علاج الأطفال</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
+                  <p className="text-primary/90 leading-relaxed text-base">
                     العلاج المبكر والوقاية
                   </p>
                 </CardContent>
@@ -235,7 +237,7 @@ export default function ArabicSnoringClinic() {
                     <BookOpen className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-secondary mb-4">المكتبة الطبية</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
+                  <p className="text-primary/90 leading-relaxed text-base">
                     مقالات ودراسات علمية
                   </p>
                 </CardContent>
@@ -248,7 +250,7 @@ export default function ArabicSnoringClinic() {
                     <GamepadIcon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-primary mb-4">تحدي النوم</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
+                  <p className="text-primary/90 leading-relaxed text-base">
                     اختبر جودة نومك بطريقة تفاعلية
                   </p>
                 </CardContent>
@@ -275,7 +277,7 @@ export default function ArabicSnoringClinic() {
                 د. مهند الكسواني
                 <span className="block w-16 h-1 bg-secondary mt-2 rounded-full"></span>
               </h3>
-              <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+              <p className="text-lg md:text-xl text-primary/90 font-medium leading-relaxed">
      المحاضر الدولي في علوم علاج الشخير والتنفس الفموي المتعلق
 بطب الأسنان، والابتسامة الرقمية، وعلوم إطباق الأسنان.
               </p>
@@ -331,7 +333,7 @@ export default function ArabicSnoringClinic() {
               تجارب المرضى
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
               استمع إلى تجارب مرضانا الذين حققوا تحسناً ملحوظاً في جودة نومهم مع علاج الشخير في المركز الأوروبي لطب الأسنان
             </p>
           </div>
@@ -409,7 +411,7 @@ export default function ArabicSnoringClinic() {
     حملتنـا تنفس صح، بتعيش صح
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
              أطلقنا حملة "تنفس صح، بتعيش صح" لتسليط الضوء على أهمية علاج مشاكل التنفس الفموي والشخير باستخدام أحدث التقنيات الطبية والليزر، لتحسين جودة حياتك من أول نفس.
             </p>
           </div>
@@ -420,7 +422,7 @@ export default function ArabicSnoringClinic() {
                   controls
                   className="w-full h-full object-cover"
                   src="/correct.mp4"
-                  poster="/doctor.JPG"
+                  poster="/logoTnafsSah.png"
                 ></video>
               </div>
               <div className="p-6 text-center">
@@ -441,7 +443,7 @@ export default function ArabicSnoringClinic() {
                   controls
                   className="w-full h-full object-cover"
                   src="/v3.mp4"
-                  poster="/couples.jpg"
+                  poster="/logoTnafsSah.png"
                 ></video>
               </div>
               <div className="p-6 text-center">
@@ -467,7 +469,7 @@ export default function ArabicSnoringClinic() {
         من نحن
         <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
       </h2>
-      <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
         تعرف على عيادة Dentalsnore Clinic، الرائدة في علاج الشخير واضطرابات التنفس أثناء النوم في الأردن والمنطقة
       </p>
     </div>
@@ -530,7 +532,13 @@ export default function ArabicSnoringClinic() {
           )}
           <div className="flex justify-center mb-6">
             <button
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={() => {
+                if (!isExpanded) {
+                  router.push('/about');
+                } else {
+                  setIsExpanded(false);
+                }
+              }}
               className="text-primary font-semibold hover:underline focus:outline-none"
             >
               {isExpanded ? 'اقرأ أقل' : 'اقرأ المزيد'}
@@ -554,20 +562,22 @@ export default function ArabicSnoringClinic() {
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير والتنفس الفموي الليلي", image: "/73.jpg" },
-          { name: "د. عايدة", role: "أخصائية علاج الشخير والتنفس الفموي الليلي", image: "/aida.jpg" },
-          { name: "د. مجد", role: "أخصائية علاج الشخير والتنفس الفموي الليلي", image: "/majd.png" },
-          { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG" },
+          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير والتنفس الفموي", image: "/73.jpg", slug: "mohannad" },
+          { name: "د. عايدة", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/aida.jpg", slug: "aida" },
+          { name: "د. مجد", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/majd.png", slug: "majd" },
+          { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG", slug: "iman" },
         ].map((doctor, idx) => (
-          <Card key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            <CardContent className="p-6 text-center">
-              <div className="w-48 h-auto mx-auto mb-4 rounded-xl overflow-hidden">
-                <img src={doctor.image} alt={doctor.name} className="w-full h-full object-contain" />
-              </div>
-              <h4 className="text-lg font-bold text-primary mb-2">{doctor.name}</h4>
-              <p className="text-gray-600 leading-relaxed text-base">{doctor.role}</p>
-            </CardContent>
-          </Card>
+          <Link key={idx} href={`/team/${doctor.slug}`}>
+            <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
+              <CardContent className="p-6 text-center">
+                <div className="w-48 h-auto mx-auto mb-4 rounded-xl overflow-hidden">
+                  <img src={doctor.image} alt={doctor.name} className="w-full h-full object-contain" />
+                </div>
+                <h4 className="text-lg font-bold text-primary mb-2">{doctor.name}</h4>
+                <p className="text-gray-600 leading-relaxed text-base">{doctor.role}</p>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
@@ -580,7 +590,7 @@ export default function ArabicSnoringClinic() {
               الأسئلة الشائعة
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
               تعرف على إجابات الأسئلة الشائعة حول علاج الشخير واضطرابات النوم مع فريقنا المتخصص
             </p>
           </div>
@@ -651,7 +661,7 @@ export default function ArabicSnoringClinic() {
         </div>
       </section>
       {/* Quick Contact CTA */}
-      <section className="py-16 bg-blue-500 text-white">
+      <section className="py-16 bg-primary/70 text-white">
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6 text-white">لا تدع الشخير يؤثر على حياتك</h2>
@@ -660,13 +670,13 @@ export default function ArabicSnoringClinic() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <Link href="/contact" className="flex-1">
-                <Button size="lg" className="bg-white text-blue-500 hover:bg-gray-100 w-full">
+                <Button size="lg" className="bg-white text-primary/70 hover:bg-gray-100 w-full">
                   <Calendar className="w-5 h-5 ml-2" />
                   احجز عبر النموذج
                 </Button>
               </Link>
               <a href="https://wa.me/962796759251?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="flex-1">
-                <Button size="lg" variant="outline" className="border-white text-blue-500 hover:bg-white hover:text-blue-500 w-full">
+                <Button size="lg" variant="outline" className="border-white text-primary/70 hover:bg-white hover:text-primary/70 w-full">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   احجز عبر واتساب
                 </Button>

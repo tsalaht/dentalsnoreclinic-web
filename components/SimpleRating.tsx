@@ -100,7 +100,7 @@ export default function SimpleRating({ question, type = "stars", onRate }: Simpl
   return (
     <Card className="bg-blue-50 border-blue-200">
       <CardContent className="p-6 text-center">
-        <h4 className="font-semibold text-gray-900 mb-4">{question}</h4>
+        <h4 className="font-semibold text-primary mb-4">{question}</h4>
         
         <div className="flex justify-center mb-4">
           {type === "stars" && renderStars()}

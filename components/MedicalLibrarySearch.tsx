@@ -124,7 +124,7 @@ export default function MedicalLibrarySearch() {
       case 'video':
         return 'bg-red-500'
       case 'article':
-        return 'bg-blue-500'
+        return 'bg-primary/70'
       case 'study':
         return 'bg-purple-500'
       default:
@@ -157,14 +157,14 @@ export default function MedicalLibrarySearch() {
               placeholder="ابحث عن المواد التعليمية..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pr-12 pl-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full pr-12 pl-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/70 focus:border-transparent"
             />
           </div>
           
           <select
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
-            className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+            className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/70"
           >
             <option value="all">جميع الأنواع</option>
             <option value="video">الفيديوهات</option>
@@ -175,7 +175,7 @@ export default function MedicalLibrarySearch() {
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+            className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/70"
           >
             <option value="all">جميع الفئات</option>
             <option value="adults">البالغين</option>
@@ -183,7 +183,7 @@ export default function MedicalLibrarySearch() {
             <option value="general">عام</option>
           </select>
           
-          <Button onClick={handleSearch} className="bg-blue-600 hover:bg-blue-700 text-white px-8">
+          <Button onClick={handleSearch} className="bg-blue-600 hover:bg-primary text-white px-8">
             بحث
           </Button>
         </div>
@@ -192,7 +192,7 @@ export default function MedicalLibrarySearch() {
       {/* Results */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-bold text-gray-900">
+          <h3 className="text-xl font-bold text-primary">
             النتائج ({filteredItems.length})
           </h3>
           {searchTerm && (
@@ -233,7 +233,7 @@ export default function MedicalLibrarySearch() {
                     </Badge>
                   </div>
                   
-                  <h4 className="font-bold text-lg text-gray-900 mb-2 line-clamp-2">
+                  <h4 className="font-bold text-lg text-primary mb-2 line-clamp-2">
                     {item.title}
                   </h4>
                   <p className="text-gray-600 text-sm mb-4 line-clamp-3">
@@ -252,7 +252,7 @@ export default function MedicalLibrarySearch() {
                   </div>
                   
                   <a href={`https://wa.me/962796759251?text=أريد معرفة المزيد عن: ${item.title}`} target="_blank">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2">
+                    <Button className="w-full bg-blue-600 hover:bg-primary text-white flex items-center justify-center gap-2">
                       {item.type === 'video' ? (
                         <>
                           <Play className="w-4 h-4" />
@@ -280,7 +280,7 @@ export default function MedicalLibrarySearch() {
         {filteredItems.length === 0 && (
           <div className="text-center py-12">
             <Search className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">لم نجد نتائج</h3>
+            <h3 className="text-xl font-semibold text-primary mb-2">لم نجد نتائج</h3>
             <p className="text-gray-600 mb-6">جرب تغيير كلمات البحث أو الفلاتر</p>
             <Button 
               onClick={() => {

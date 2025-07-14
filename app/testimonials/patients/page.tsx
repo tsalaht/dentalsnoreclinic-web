@@ -62,7 +62,7 @@ export default function PatientTestimonialsPage() {
 
           <div className="text-center mb-16">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 animate-fade-in-up mb-4">تجارب المرضى</Badge>
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+            <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-4 animate-fade-in-down">
               شهادات المرضى
               <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h1>
@@ -77,7 +77,7 @@ export default function PatientTestimonialsPage() {
 
           {/* Video Testimonials */}
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 animate-fade-in-down">
               تجارب مرضانا بالفيديو
               <span className="block w-16 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h2>
@@ -98,7 +98,7 @@ export default function PatientTestimonialsPage() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
-                    <Badge className="absolute top-3 right-3 bg-blue-500 text-white flex items-center gap-1">
+                    <Badge className="absolute top-3 right-3 bg-primary/70 text-white flex items-center gap-1">
                       <MessageCircle className="w-3 h-3" />
                       تجربة مريض
                     </Badge>

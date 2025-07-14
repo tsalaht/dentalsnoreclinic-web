@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -7,6 +9,10 @@ import { Star, Brain, Stethoscope, Baby, User, CheckCircle, AlertTriangle, Targe
 import WhatsAppButton from "@/components/WhatsAppButton"
 import Navbar from "@/components/Navbar"
 import Breadcrumb from "@/components/Breadcrumb"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 export default function ChildrenPage() {
   return (
@@ -33,7 +39,7 @@ export default function ChildrenPage() {
             <div className="space-y-6 relative z-20">
               <div className="space-y-4">
                 <Badge className="bg-green-100 text-green-800 hover:bg-green-100 animate-fade-in-up">علاج الأطفال</Badge>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+                <h1 className="text-3xl lg:text-4xl font-bold text-primary leading-tight animate-fade-in-up" style={{animationDelay: '0.1s'}}>
                   علاج الشخير والتنفس الفموي عند الأطفال
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -99,20 +105,20 @@ export default function ChildrenPage() {
                 لماذا الشخير عند الأطفال خطير جداً؟
                 <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
               </h2>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed tracking-wide">
+              <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed tracking-wide">
                 الشخير عند الأطفال ليس أمراً عادياً - إنه علامة على تحديات صحية قد تؤثر على تطورهم
               </p>
             </div>
 
             <div className="space-y-12 mb-16">
               <div className="flex flex-col md:flex-row items-start gap-8 group">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-red-100 shadow-md transition-transform duration-300 group-hover:scale-110">
-                  <Baby className="w-6 h-6 text-red-600" />
+                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-secondary/20 shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <Baby className="w-6 h-6 text-secondary" />
                 </div>
                 <div className="w-full md:w-3/4">
-                  <h3 className="text-2xl font-bold text-red-600 mb-2 relative">
+                  <h3 className="text-2xl font-bold text-secondary mb-2 relative">
                     تأثيره على النمو
-                    <span className="block w-16 h-0.5 bg-red-600 mt-2 rounded-full"></span>
+                    <span className="block w-16 h-0.5 bg-secondary mt-2 rounded-full"></span>
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
                     يعطل الشخير إفراز هرمونات النمو خلال النوم العميق، مما قد يؤدي إلى تأخر النمو وقصر القامة.
@@ -121,13 +127,13 @@ export default function ChildrenPage() {
               </div>
 
               <div className="flex flex-col md:flex-row items-start gap-8 group">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 shadow-md transition-transform duration-300 group-hover:scale-110">
-                  <User className="w-6 h-6 text-orange-600" />
+                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <User className="w-6 h-6 text-primary" />
                 </div>
                 <div className="w-full md:w-3/4">
-                  <h3 className="text-2xl font-bold text-orange-600 mb-2 relative">
+                  <h3 className="text-2xl font-bold text-primary mb-2 relative">
                     تشوهات الوجه والفك
-                    <span className="block w-16 h-0.5 bg-orange-600 mt-2 rounded-full"></span>
+                    <span className="block w-16 h-0.5 bg-primary mt-2 rounded-full"></span>
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
                     التنفس الفموي المزمن يسبب تغيرات دائمة في شكل الوجه والفكين لدى الأطفال.
@@ -136,13 +142,13 @@ export default function ChildrenPage() {
               </div>
 
               <div className="flex flex-col md:flex-row items-start gap-8 group">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 shadow-md transition-transform duration-300 group-hover:scale-110">
-                  <Brain className="w-6 h-6 text-purple-600" />
+                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-accent/20 shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <Brain className="w-6 h-6 text-accent" />
                 </div>
                 <div className="w-full md:w-3/4">
-                  <h3 className="text-2xl font-bold text-purple-600 mb-2 relative">
+                  <h3 className="text-2xl font-bold text-accent mb-2 relative">
                     ضعف الأداء المدرسي
-                    <span className="block w-16 h-0.5 bg-purple-600 mt-2 rounded-full"></span>
+                    <span className="block w-16 h-0.5 bg-accent mt-2 rounded-full"></span>
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed">
                     يسبب صعوبات في التركيز والذاكرة، مما يؤثر سلباً على الأداء الدراسي ومستقبل الطفل.
@@ -177,7 +183,7 @@ export default function ChildrenPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-primary mb-4">
                 علاج الأطفال: أجهزة فموية، تمارين عضلات الوجه
               </h2>
               <p className="text-lg text-gray-600">
@@ -188,10 +194,10 @@ export default function ChildrenPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <Card className="bg-white hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                     <Target className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">أجهزة Myobrace</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">أجهزة Myobrace</h3>
                   <p className="text-gray-600 mb-4">
                     أجهزة فموية مثل Myobrace تدفع الفك السفلي للأمام، تعزز تدفق الهواء وتحسن التنفس الأنفي
                   </p>
@@ -202,7 +208,7 @@ export default function ChildrenPage() {
                     <li>✓ تعزز التنفس الطبيعي</li>
                   </ul>
                   <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن أجهزة Myobrace للأطفال" target="_blank">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full">
+                    <Button className="bg-primary/90 hover:bg-primary text-white w-full">
                       اعرف المزيد
                     </Button>
                   </a>
@@ -211,10 +217,10 @@ export default function ChildrenPage() {
 
               <Card className="bg-white hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
                     <Baby className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">تمارين عضلات الوجه</h3>
+                  <h3 className="text-xl font-bold text-accent mb-4">تمارين عضلات الوجه</h3>
                   <p className="text-gray-600 mb-4">
                     تمارين لتقوية عضلات الوجه، تساعد على تقليل التنفس الفموي وإيقاف الشخير
                   </p>
@@ -225,7 +231,7 @@ export default function ChildrenPage() {
                     <li>✓ نتائج ملحوظة بسرعة</li>
                   </ul>
                   <a href="https://wa.me/962796759251?text=أريد تعلم تمارين الوجه والفم للأطفال" target="_blank">
-                    <Button className="bg-green-600 hover:bg-green-700 text-white w-full">
+                    <Button className="bg-accent/90 hover:bg-accent text-white w-full">
                       تعلم التمارين
                     </Button>
                   </a>
@@ -234,10 +240,10 @@ export default function ChildrenPage() {
 
               <Card className="bg-white hover:shadow-lg transition-shadow">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                     <Stethoscope className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">علاج شامل مخصص</h3>
+                  <h3 className="text-xl font-bold text-secondary mb-4">علاج شامل مخصص</h3>
                   <p className="text-gray-600 mb-4">
                     برامج علاجية مدمجة مع أجهزة Myobrace وتمارين الوجه لنتائج مثالية
                   </p>
@@ -248,7 +254,7 @@ export default function ChildrenPage() {
                     <li>✓ متابعة طبية مستمرة</li>
                   </ul>
                   <a href="https://wa.me/962796759251?text=أريد استشارة حول علاج شخير الأطفال" target="_blank">
-                    <Button className="bg-purple-600 hover:bg-purple-700 text-white w-full">
+                    <Button className="bg-secondary/90 hover:bg-secondary text-white w-full">
                       احجز استشارة
                     </Button>
                   </a>
@@ -263,7 +269,7 @@ export default function ChildrenPage() {
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">فيديوهات تعليمية للأطفال</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">فيديوهات تعليمية للأطفال</h2>
             <p className="text-lg text-gray-600">اكتشف محتوى تعليمي حول صحة الأطفال</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -274,13 +280,13 @@ export default function ChildrenPage() {
                     <source src="/v1.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>
-                  <Badge className="absolute top-3 right-3 bg-blue-500 text-white flex items-center gap-1">
+                  <Badge className="absolute top-3 right-3 bg-primary/70 text-white flex items-center gap-1">
                     <Play className="w-3 h-3" />
                     فيديو تعليمي
                   </Badge>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">السمنة والتنفس مربوطين مع بعض</h3>
+                  <h3 className="font-bold text-lg text-primary mb-2">السمنة والتنفس مربوطين مع بعض</h3>
                   <p className="text-gray-600 text-sm mb-4">تعرف على العلاقة بين السمنة ومشاكل التنفس عند الأطفال.</p>
                 </div>
               </CardContent>
@@ -299,7 +305,7 @@ export default function ChildrenPage() {
                   </Badge>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">قلة التركيز لدى الأطفال</h3>
+                  <h3 className="font-bold text-lg text-primary mb-2">قلة التركيز لدى الأطفال</h3>
                   <p className="text-gray-600 text-sm mb-4">استكشف الأسباب وراء ضعف التركيز وكيفية تحسينه.</p>
                 </div>
               </CardContent>
@@ -318,7 +324,7 @@ export default function ChildrenPage() {
                   </Badge>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">
+                  <h3 className="font-bold text-lg text-primary mb-2">
                     لماذا التنفس من الأنف أفضل من التنفس من الفم
                     </h3>
                   <p className="text-gray-600 text-sm mb-4">
@@ -335,7 +341,7 @@ export default function ChildrenPage() {
   <div className="container mx-auto px-4">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+        <h2 className="text-3xl font-bold text-primary mb-4 animate-fade-in-down">
           أم توثق رحلة علاج طفلها في عيادتنا
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
@@ -407,54 +413,52 @@ export default function ChildrenPage() {
   <div className="container mx-auto px-4">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+        <h2 className="text-3xl font-bold text-primary mb-4 animate-fade-in-down">
           قصة نجاح أم وطفلها
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           قد تكون قصة هذه الأم والنصيحة التي قلبت حياة طفلها للأفضل مصدر إلهام للكثير!! لتي تروي رحلة علاج طفلها لسنوات من التنفس الفموي مسببا له الهالات السوداء تحت عينيه وشخير مزمن، مما كان يجعله يستيقظ متعبا في الصباح، إلى أن أصبح يتنفس من أنفه بشكل طبيعي.
         </p>
       </div>
-      <div className="grid md:grid-cols-4 gap-4">
-        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
-          <Image
-            src="/tr4.png"
-            alt="رحلة علاج الطفل - صورة 1"
-            width={250}
-            height={200}
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
-          <Image
-            src="/tr3.png"
-            alt="رحلة علاج الطفل - صورة 2"
-            width={250}
-            height={200}
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
-          <Image
-            src="/tr2.png"
-            alt="رحلة علاج الطفل - صورة 3"
-            width={250}
-            height={200}
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-        <div className="relative rounded-xl overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
-          <Image
-            src="/tr1.png"
-            alt="رحلة علاج الطفل - صورة 4"
-            width={250}
-            height={200}
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
+      <div className="max-w-2xl mx-auto">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          loop
+            dir="ltr"
+          spaceBetween={20}
+          slidesPerView={2}
+          className="rounded-2xl shadow-lg"
+           breakpoints={{
+    0: {
+      slidesPerView: 1, // for small screens (mobile)
+    },
+    640: {
+      slidesPerView: 2, // from 640px and up
+    },
+  }}
+        >
+          {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).map((src, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="relative flex flex-col items-center">
+                <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl border-2 border-primary/30">
+                  <Image
+                    src={src}
+                    alt={`رحلة علاج الطفل - صورة ${idx + 1}`}
+                    width={500}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    loading="lazy"
+                  />
+                  {/* Image number badge */}
+                  <div className="absolute bottom-3 left-3 bg-primary/80 text-white text-xs px-3 py-1 rounded-full shadow-lg">
+                    {idx + 1} / {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).length}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   </div>
@@ -464,27 +468,27 @@ export default function ChildrenPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">علامات تحتاج انتباهك فوراً</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">علامات تحتاج انتباهك فوراً</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <AlertTriangle className="w-6 h-6 text-red-600" />
+                  <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <AlertTriangle className="w-6 h-6 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">التنفس الفموي</h4>
+                  <h4 className="font-semibold text-accent mb-2">التنفس الفموي</h4>
                   <p className="text-sm text-gray-600">الطفل يتنفس من فمه باستمرار</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <Moon className="w-6 h-6 text-orange-600" />
+                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Moon className="w-6 h-6 text-secondary" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">نوم متقطع</h4>
+                  <h4 className="font-semibold text-secondary mb-2">نوم متقطع</h4>
                   <p className="text-sm text-gray-600">الطفل يستيقظ كثيراً أثناء الليل</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <Brain className="w-6 h-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Brain className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">تراجع الدرجات</h4>
+                  <h4 className="font-semibold text-primary mb-2">تراجع الدرجات</h4>
                   <p className="text-sm text-gray-600">ضعف في الانتباه والتحصيل المدرسي</p>
                 </div>
               </div>

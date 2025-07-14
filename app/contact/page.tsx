@@ -16,7 +16,7 @@ export default function ContactPage() {
       <section className="bg-gradient-to-l from-blue-50 to-blue-100 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl font-bold text-primary mb-6">
               تواصل معنا - احجز موعدك الآن
             </h1>
             <p className="text-xl text-gray-600 mb-8">
@@ -30,7 +30,7 @@ export default function ContactPage() {
                 </Button>
               </a>
               <a href="tel:+96267592513">
-                <Button size="lg" variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
+                <Button size="lg" variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
                   <Phone className="w-5 h-5 ml-2" />
                   اتصل الآن
                 </Button>
@@ -47,7 +47,7 @@ export default function ContactPage() {
             {/* Contact Details */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">معلومات التواصل</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">معلومات التواصل</h2>
                 <div className="space-y-6">
                   <Card>
                     <CardContent className="p-6">
@@ -92,7 +92,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-bold text-lg mb-2">العنوان</h3>
                           <p className="text-gray-600 mb-2"> لأردن-عمان- الصوفية-شارع باريس-مجمع 15</p>
-                          <p className="text-gray-700">عمان، الأردن</p>
+                          <p className="text-primary/90">عمان، الأردن</p>
                         </div>
                       </div>
                     </CardContent>
@@ -149,43 +149,43 @@ export default function ContactPage() {
             <div>
               <Card>
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">احجز موعدك عبر النموذج الإلكتروني</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-6">احجز موعدك عبر النموذج الإلكتروني</h2>
                   <p className="text-gray-600 mb-6">املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة لتأكيد موعدك</p>
                   <form className="space-y-6">
                     <div>
-                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">الاسم الكامل</label>
+                      <label htmlFor="fullName" className="block text-sm font-medium text-primary/90 mb-2">الاسم الكامل</label>
                       <input
                         id="fullName"
                         type="text"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70"
                         placeholder="اكتب اسمك الكامل"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-2">رقم الهاتف</label>
+                      <label htmlFor="phoneNumber" className="block text-sm font-medium text-primary/90 mb-2">رقم الهاتف</label>
                       <input
                         id="phoneNumber"
                         type="tel"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70"
                         placeholder="07xxxxxxxx"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-primary/90 mb-2">البريد الإلكتروني</label>
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70"
                         placeholder="your.email@example.com"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="treatment-type" className="block text-sm font-medium text-gray-700 mb-2">نوع العلاج المطلوب</label>
-                      <select id="treatment-type" name="treatment-type" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <label htmlFor="treatment-type" className="block text-sm font-medium text-primary/90 mb-2">نوع العلاج المطلوب</label>
+                      <select id="treatment-type" name="treatment-type" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70">
                         <option value="">اختر نوع العلاج</option>
                         <option value="adult">علاج الشخير للبالغين</option>
                         <option value="child">علاج الشخير للأطفال</option>
@@ -194,25 +194,25 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="preferred-date" className="block text-sm font-medium text-gray-700 mb-2">التاريخ المفضل</label>
+                      <label htmlFor="preferred-date" className="block text-sm font-medium text-primary/90 mb-2">التاريخ المفضل</label>
                       <input
                         type="date"
                         id="preferred-date"
                         name="preferred-date"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70"
                       />
                     </div>
                     <div>
-                      <label htmlFor="additional-notes" className="block text-sm font-medium text-gray-700 mb-2">ملاحظات إضافية</label>
+                      <label htmlFor="additional-notes" className="block text-sm font-medium text-primary/90 mb-2">ملاحظات إضافية</label>
                       <textarea
                         rows={4}
                         id="additional-notes"
                         name="additional-notes"
-                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70"
                         placeholder="اكتب أي ملاحظات أو أسئلة إضافية..."
                       ></textarea>
                     </div>
-                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button size="lg" className="w-full bg-blue-600 hover:bg-primary text-white">
                       <Calendar className="w-5 h-5 ml-2" />
                       إرسال طلب الموعد
                     </Button>
@@ -254,10 +254,10 @@ export default function ContactPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">أسئلة شائعة</h2>
+            <h2 className="text-3xl font-bold text-primary mb-6">أسئلة شائعة</h2>
             <p className="text-gray-600 mb-8">اطلع على الأسئلة الأكثر شيوعاً حول علاج الشخير</p>
             <Link href="/faq">
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100">
+              <Button size="lg" variant="outline" className="border-gray-300 text-primary/90 hover:bg-gray-100">
                 <Navigation className="w-5 h-5 ml-2" />
                 اطلع على الأسئلة الشائعة
               </Button>
@@ -307,7 +307,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+          <div className="border-t border-primary/90 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>© 2024 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
         </div>

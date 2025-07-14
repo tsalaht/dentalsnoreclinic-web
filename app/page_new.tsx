@@ -18,7 +18,7 @@ export default function ArabicSnoringClinic() {  return (
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-red-100 text-red-800 hover:bg-red-100">تحذير صحي مهم</Badge>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-primary leading-tight">
                   الشخير والتنفس الفموي يؤثران على صحتك - اكتشف العلاج المناسب لك!
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -28,7 +28,7 @@ export default function ArabicSnoringClinic() {  return (
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/adults">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg w-full">
+                  <Button size="lg" className="bg-blue-600 hover:bg-primary text-white px-8 py-4 text-lg w-full">
                     <User className="w-5 h-5 ml-2" />
                     أنا بالغ وأريد علاج الشخير
                   </Button>
@@ -82,7 +82,7 @@ export default function ArabicSnoringClinic() {  return (
               <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-white" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-primary mb-4">
                 🔍 اكتشف مدى خطورة شخيرك - اختبار مجاني شامل
               </h2>
               <p className="text-lg text-gray-600 mb-8">
@@ -96,10 +96,10 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <User className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">اختبار البالغين</h3>
+                  <h3 className="text-xl font-bold text-primary mb-3">اختبار البالغين</h3>
                   <p className="text-gray-600 mb-4">تقييم شامل للشخير وانقطاع التنفس أثناء النوم</p>
                   <a href="https://wa.me/962796759251?text=أريد إجراء اختبار الشخير للبالغين" target="_blank" className="w-full">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
+                    <Button className="w-full bg-blue-600 hover:bg-primary text-white py-3 text-lg">
                       ابدأ اختبار البالغين
                     </Button>
                   </a>
@@ -111,7 +111,7 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Baby className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">اختبار الأطفال</h3>
+                  <h3 className="text-xl font-bold text-primary mb-3">اختبار الأطفال</h3>
                   <p className="text-gray-600 mb-4">فحص مبكر للتنفس الفموي ومشاكل النوم عند الأطفال</p>
                   <a href="https://wa.me/962796759251?text=أريد إجراء اختبار الشخير للأطفال" target="_blank" className="w-full">
                     <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg">
@@ -123,27 +123,27 @@ export default function ArabicSnoringClinic() {  return (
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-yellow-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">ما الذي ستحصل عليه من الاختبار؟</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">ما الذي ستحصل عليه من الاختبار؟</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <Target className="w-6 h-6 text-red-600" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">تقييم فوري</h4>
+                  <h4 className="font-semibold text-primary mb-2">تقييم فوري</h4>
                   <p className="text-sm text-gray-600">نتيجة دقيقة لمدى خطورة حالتك</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <FileText className="w-6 h-6 text-blue-600" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">تقرير مفصل</h4>
+                  <h4 className="font-semibold text-primary mb-2">تقرير مفصل</h4>
                   <p className="text-sm text-gray-600">توصيات طبية مخصصة لحالتك</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <Calendar className="w-6 h-6 text-green-600" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">موعد مجاني</h4>
+                  <h4 className="font-semibold text-primary mb-2">موعد مجاني</h4>
                   <p className="text-sm text-gray-600">استشارة مجانية إذا كانت الحالة تستدعي</p>
                 </div>
               </div>
@@ -163,7 +163,7 @@ export default function ArabicSnoringClinic() {  return (
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">خدماتنا المتخصصة</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">خدماتنا المتخصصة</h2>
             <p className="text-lg text-gray-600">علاج شامل ومخصص لكل عمر ولكل حالة</p>
           </div>
 
@@ -174,7 +174,7 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <User className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">علاج البالغين</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">علاج البالغين</h3>
                   <p className="text-gray-600 text-sm">علاج الشخير وانقطاع التنفس النومي</p>
                 </CardContent>
               </Card>
@@ -186,7 +186,7 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Baby className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">علاج الأطفال</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">علاج الأطفال</h3>
                   <p className="text-gray-600 text-sm">العلاج المبكر والوقاية</p>
                 </CardContent>
               </Card>
@@ -198,7 +198,7 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <BookOpen className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">المكتبة الطبية</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">المكتبة الطبية</h3>
                   <p className="text-gray-600 text-sm">فيديوهات ودراسات تعليمية</p>
                 </CardContent>
               </Card>
@@ -210,7 +210,7 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <GamepadIcon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">تحدي النوم</h3>
+                  <h3 className="text-lg font-bold text-primary mb-2">تحدي النوم</h3>
                   <p className="text-gray-600 text-sm">اختبر جودة نومك بطريقة تفاعلية</p>
                 </CardContent>
               </Card>
@@ -229,10 +229,10 @@ export default function ArabicSnoringClinic() {  return (
                   <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Play className="w-8 h-8 text-white mr-1" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">فيديو ترحيبي من د. مهند</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">فيديو ترحيبي من د. مهند</h3>
                   <p className="text-gray-600 mb-4">تعرف على العيادة وأهمية علاج الشخير</p>
                   <a href="https://wa.me/962796759251?text=أريد مشاهدة الفيديو الترحيبي" target="_blank">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button className="bg-blue-600 hover:bg-primary text-white">
                       <PlayCircle className="w-5 h-5 ml-2" />
                       شاهد الفيديو
                     </Button>
@@ -243,29 +243,29 @@ export default function ArabicSnoringClinic() {  return (
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">د. مهند الكسواني</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">د. مهند الكسواني</h3>
                 <p className="text-lg text-gray-600 mb-4">
                   أفضل طبيب لعلاج الشخير واضطرابات النوم المتعلقة بصحة الفم في الأردن
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <Award className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-gray-700">خبرة أكثر من 15 عاماً في علاج اضطرابات النوم</span>
+                    <span className="text-primary/90">خبرة أكثر من 15 عاماً في علاج اضطرابات النوم</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Users className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-gray-700">أكثر من 5000 مريض تم علاجهم بنجاح</span>
+                    <span className="text-primary/90">أكثر من 5000 مريض تم علاجهم بنجاح</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Star className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-gray-700">تقييم 4.9/5 من المرضى السابقين</span>
+                    <span className="text-primary/90">تقييم 4.9/5 من المرضى السابقين</span>
                   </div>
                 </div>
               </div>
               
               <div className="flex gap-4">
                 <Link href="/contact">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Button className="bg-blue-600 hover:bg-primary text-white">
                     <Calendar className="w-4 h-4 ml-2" />
                     احجز استشارة
                   </Button>
@@ -359,7 +359,7 @@ export default function ArabicSnoringClinic() {  return (
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+          <div className="border-t border-primary/90 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>&copy; 2024 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
         </div>

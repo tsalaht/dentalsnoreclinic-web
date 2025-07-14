@@ -33,7 +33,7 @@ export default function SleepChallengePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100">🎮 تحدي النوم الصحي</Badge>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-10">
+                <h1 className="text-3xl lg:text-4xl font-bold text-primary leading-10">
             تحدي النوم لمدة 14 يوم: نوم أفضل، حياة أفضل! مع الدكتور مهند الكسواني
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -84,7 +84,7 @@ export default function SleepChallengePage() {
       <section className="py-16 bg-white" id="interactive-challenge">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">🎯 ابدأ تحدي النوم لمدة 14 يوم</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">🎯 ابدأ تحدي النوم لمدة 14 يوم</h2>
             <p className="text-lg text-gray-600 mb-6">
               اتبع خطة يومية بسيطة لتحسين جودة نومك والتخلص من الشخير
             </p>
@@ -103,19 +103,19 @@ export default function SleepChallengePage() {
                   <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
                     <span className="text-white text-xs font-bold">1</span>
                   </div>
-                  <p className="text-sm text-blue-700 font-medium">سجل في التحدي</p>
+                  <p className="text-sm text-primary font-medium">سجل في التحدي</p>
                 </div>
                 <div className="text-center">
                   <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-2">
                     <span className="text-white text-xs font-bold">2</span>
                   </div>
-                  <p className="text-sm text-blue-700 font-medium">اتبع المهام اليومية</p>
+                  <p className="text-sm text-primary font-medium">اتبع المهام اليومية</p>
                 </div>
                 <div className="text-center">
                   <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-2">
                     <span className="text-white text-xs font-bold">3</span>
                   </div>
-                  <p className="text-sm text-blue-700 font-medium">اربح صحتك</p>
+                  <p className="text-sm text-primary font-medium">اربح صحتك</p>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function SleepChallengePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">خطة تحدي النوم لمدة 14 يوم</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">خطة تحدي النوم لمدة 14 يوم</h2>
             <p className="text-lg text-gray-600">مهام يومية بسيطة لتحسين نومك وتقليل الشخير</p>
           </div>
 
@@ -158,7 +158,7 @@ export default function SleepChallengePage() {
                   <div className={`w-12 h-12 bg-${color}-600 rounded-full flex items-center justify-center mx-auto mb-4`}>
                     <span className="text-white font-bold">{day}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">اليوم {day}</h3>
+                  <h3 className="text-lg font-bold text-primary mb-3">اليوم {day}</h3>
                   {visibleTask === day && (
                     <div className="text-gray-600 text-base leading-7" dangerouslySetInnerHTML={{ __html: task }} />
                   )}
@@ -173,7 +173,7 @@ export default function SleepChallengePage() {
       <section className="py-16 bg-gray-50" id="how-it-works">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">كيف يعمل تحدي النوم؟</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">كيف يعمل تحدي النوم؟</h2>
             <p className="text-lg text-gray-600">خطوات بسيطة لتحسين نومك في 14 يوم</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -181,21 +181,21 @@ export default function SleepChallengePage() {
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">التسجيل</h3>
+              <h3 className="text-lg font-bold text-primary mb-3">التسجيل</h3>
               <p className="text-gray-600 text-sm">سجل في التحدي عبر واتساب لتلقي المهام اليومية.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">2</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">المهام اليومية</h3>
+              <h3 className="text-lg font-bold text-primary mb-3">المهام اليومية</h3>
               <p className="text-gray-600 text-sm">اتبع المهام اليومية البسيطة لتحسين نومك.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">تتبع التقدم</h3>
+              <h3 className="text-lg font-bold text-primary mb-3">تتبع التقدم</h3>
               <p className="text-gray-600 text-sm">سجل تقدمك يومياً وشاركنا نتائجك عبر واتساب.</p>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function SleepChallengePage() {
       {/* Join Challenge CTA */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🚀 انضم لتحدي النوم وغيّر حياتك</h2>
+          <h2 className="text-3xl font-bold text-primary mb-6">🚀 انضم لتحدي النوم وغيّر حياتك</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             انضم إلى أكثر من 5000 مشارك وبدأ رحلة تحسين نومك مع تحدي النوم لمدة 14 يوم
           </p>

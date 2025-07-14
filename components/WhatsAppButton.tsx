@@ -32,7 +32,7 @@ export default function WhatsAppButton() {
         </svg>
         
         {/* Enhanced tooltip with modern design */}
-        <div className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-gray-900/95 backdrop-blur-lg text-white px-5 py-4 rounded-2xl text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none shadow-2xl border border-gray-700/50 glass-effect-dark">
+        <div className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-gray-900/95 backdrop-blur-lg text-white px-5 py-4 rounded-2xl text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none shadow-2xl border border-primary/90/50 glass-effect-dark">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center animate-pulse">
               <MessageCircle className="w-4 h-4" />

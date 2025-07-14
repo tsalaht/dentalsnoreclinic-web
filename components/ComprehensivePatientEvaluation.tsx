@@ -263,14 +263,14 @@ export default function ComprehensivePatientEvaluation() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-blue-50 rounded-lg p-6 text-center">
               <Award className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <h3 className="font-bold text-gray-900 mb-2">تقييمك مهم لنا</h3>
+              <h3 className="font-bold text-primary mb-2">تقييمك مهم لنا</h3>
               <p className="text-sm text-gray-600">
                 نستخدم ملاحظاتك لتحسين خدماتنا باستمرار
               </p>
             </div>
             <div className="bg-green-50 rounded-lg p-6 text-center">
               <Clock className="w-8 h-8 text-green-600 mx-auto mb-3" />
-              <h3 className="font-bold text-gray-900 mb-2">متابعة دورية</h3>
+              <h3 className="font-bold text-primary mb-2">متابعة دورية</h3>
               <p className="text-sm text-gray-600">
                 سنتواصل معك لمتابعة تجربتك وتحسينها
               </p>
@@ -300,7 +300,7 @@ export default function ComprehensivePatientEvaluation() {
       <Card className="sticky top-4 z-10 shadow-lg">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-xl font-bold text-gray-900">تقييم تجربة المريض الشامل</h2>
+            <h2 className="text-xl font-bold text-primary">تقييم تجربة المريض الشامل</h2>
             <Badge variant="outline" className="text-sm">
               {getCompletedQuestions()}/{getTotalQuestions()} أسئلة
             </Badge>
@@ -335,7 +335,7 @@ export default function ComprehensivePatientEvaluation() {
           className="scroll-mt-24"
         >
           <CardHeader className="bg-gradient-to-r from-gray-50 to-blue-50">
-            <CardTitle className="text-xl text-gray-900 flex items-center gap-2">
+            <CardTitle className="text-xl text-primary flex items-center gap-2">
               <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                 {sectionIndex + 1}
               </span>
@@ -346,7 +346,7 @@ export default function ComprehensivePatientEvaluation() {
             <div className="space-y-8">
               {section.questions.map((question) => (
                 <div key={question.id} className="text-center">
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="font-semibold text-primary mb-2">
                     {question.question}
                     {question.required && <span className="text-red-500 mr-1">*</span>}
                   </h4>
@@ -366,7 +366,7 @@ export default function ComprehensivePatientEvaluation() {
       {/* Submit Section */}
       <Card className="border-green-200 bg-green-50">
         <CardContent className="p-6 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">
+          <h3 className="text-xl font-bold text-primary mb-4">
             إنهاء التقييم
           </h3>
           <p className="text-gray-600 mb-6">

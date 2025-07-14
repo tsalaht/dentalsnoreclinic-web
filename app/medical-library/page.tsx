@@ -30,7 +30,7 @@ export default function MedicalLibraryPage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100">المكتبة الطبية</Badge>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-primary leading-tight">
                   تعلم كل شيء عن الشخير واضطرابات النوم
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -59,14 +59,11 @@ export default function MedicalLibraryPage() {
         </div>
       </section>      
 
-      {/* Featured Content */}
-   
-
       {/* Popular Videos Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">الفيديوهات الأكثر مشاهدة</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">الفيديوهات الأكثر مشاهدة</h2>
             <p className="text-lg text-gray-600">المحتوى الذي يهتم به المرضى أكثر</p>
           </div>
 
@@ -84,7 +81,7 @@ export default function MedicalLibraryPage() {
                   ></iframe>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">مكافحة الشخير مع طبيب الأسنان</h4>
+                  <h4 className="font-bold text-primary mb-2">مكافحة الشخير مع طبيب الأسنان</h4>
                   <p className="text-sm text-gray-600 mb-3"> يعمل أطباء الأسنان على تشخيص وعلاج العديد من الحالات التي تؤدي إلى الشخير</p>
                 </div>
               </CardContent>
@@ -103,7 +100,7 @@ export default function MedicalLibraryPage() {
                   ></iframe>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">ما هو التنفس الفموي؟!</h4>
+                  <h4 className="font-bold text-primary mb-2">ما هو التنفس الفموي؟!</h4>
                   <p className="text-sm text-gray-600 mb-3">تعرف على أسباب التنفس الفموي</p>
                 </div>
               </CardContent>
@@ -125,7 +122,7 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">كيف يساعد الليزر؟</h4>
+                  <h4 className="font-bold text-primary mb-2">كيف يساعد الليزر؟</h4>
                   <p className="text-sm text-gray-600 mb-3">العلاج بالليزر وفوائده في علاج الشخير</p>
                   <div className="text-xs text-gray-500">👁️ 32,100 مشاهدة</div>
                 </div>
@@ -148,7 +145,7 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">الشخير عند الأطفال - الخطر الخفي</h4>
+                  <h4 className="font-bold text-primary mb-2">الشخير عند الأطفال - الخطر الخفي</h4>
                   <p className="text-sm text-gray-600 mb-3">لماذا الشخير عند الأطفال خطير جداً؟</p>
                   <div className="text-xs text-gray-500">👁️ 29,800 مشاهدة</div>
                 </div>
@@ -171,7 +168,7 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">توقف التنفس أثناء النوم</h4>
+                  <h4 className="font-bold text-primary mb-2">توقف التنفس أثناء النوم</h4>
                   <p className="text-sm text-gray-600 mb-3">الأعراض والمخاطر وطرق العلاج</p>
                   <div className="text-xs text-gray-500">👁️ 25,600 مشاهدة</div>
                 </div>
@@ -194,7 +191,7 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-gray-900 mb-2">الأجهزة الفموية - دليل شامل</h4>
+                  <h4 className="font-bold text-primary mb-2">الأجهزة الفموية - دليل شامل</h4>
                   <p className="text-sm text-gray-600 mb-3">كيفية عمل الأجهزة الفموية وفعاليتها</p>
                   <div className="text-xs text-gray-500">👁️ 22,400 مشاهدة</div>
                 </div>
@@ -204,7 +201,7 @@ export default function MedicalLibraryPage() {
 
           <div className="text-center mt-12">
             <a href="https://www.youtube.com/@EuroDentalCenterJO" target="_blank">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
+              <Button size="lg" className="bg-blue-600 hover:bg-primary text-white px-8 py-4">
                 <Video className="w-5 h-5 ml-2" />
                 شاهد جميع الفيديوهات
               </Button>
@@ -212,17 +209,135 @@ export default function MedicalLibraryPage() {
           </div>
         </div>
       </section>
-   <section className="py-16 bg-gray-50">
+
+      {/* Snoring Conference Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">أحدث المواد التعليمية والأكثر مشاهدة</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">مؤتمر الشخير</h2>
+            <p className="text-lg text-gray-600">ورشة علمية نظمها المركز الأوروبي لطب الأسنان بتاريخ 30-4-2024</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-primary">“الشخير واضطرابات التنفس أثناء النوم / بروتوكول علاجي متعدد الاختصاصات”</h3>
+              <p className="text-gray-600 leading-relaxed">
+                إيمانًا من الدكتور مهند الكسواني بما يقدمه من علم في مجال طب الأسنان المتعلق بمشكلة الشخير وتقديم طرق علاج حديثة له، نظم المركز الأوروبي لطب الأسنان ورشة علمية بتاريخ 30-4-2024. جمعت الندوة نخبة من أطباء الأسنان المهتمين بعلاج الشخير والتنفس الفموي، واستشاريين طب وجراحة الأنف والأذن والحنجرة، واستشاريين الأمراض الصدرية، واستشاريين طب الأطفال.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                يوفر المركز الأوروبي لطب الأسنان أجهزة فموية خاصة لكسر عادة التنفس الفموي، بالإضافة إلى استخدام ليزر عالي التردد لعلاج الشخير أثناء النوم بدون جراحة وبدون بنج، من خلال شد اللهاة وأنسجة الحلق الطرية إلى الأعلى لفتح مجرى التنفس.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/confirense.JPG"
+                  alt="مؤتمر الشخير 2024"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-sm font-medium text-gray-800">ورشة علمية - 30 أبريل 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/ANSU1PZ6A4U"
+                    title="جلسة افتتاح مؤتمر الشخير"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  {/* <h4 className="font-bold text-primary mb-2">جلسة افتتاح مؤتمر الشخير</h4> */}
+                  <p className="text-sm text-gray-600 mb-3">نظم المركز الأوروبي ورشة بحث علمية حول الشخير واضطرابات التنفس أثناء النوم</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/-92gKrJaegI"
+                    title="التنفس الفموي وعلاجه"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  {/* <h4 className="font-bold text-primary mb-2">التنفس الفموي وعلاجه</h4> */}
+                  <p className="text-sm text-gray-600 mb-3">ورشة علمية بعنوان "الشخير واضطربات التنفس أثناء النوم/ بروتوكول علاجي متعدد الاختصاصات</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/YoYGb9DZ5io"
+                    title="تقنيات الليزر في علاج الشخير"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  {/* <h4 className="font-bold text-primary mb-2">تقنيات الليزر في علاج الشخير</h4> */}
+                  <p className="text-sm text-gray-600 mb-3">  لقطات من ورشة الشخير التي أقامها المركز الأوروبي وحضرها عدد من الأطباء المهتمين</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/K4-KYwk8n8U"
+                    title="الشخير عند الأطفال"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  {/* <h4 className="font-bold text-primary mb-2">الشخير عند الأطفال</h4> */}
+                  <p className="text-sm text-gray-600 mb-3">مقتطفات من مؤتمر المركز الأوروبي لطب الأسنان لعرض البروتوكول الخاص بعلاج الشخير 22 May 2024</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Content */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">أحدث المواد التعليمية والأكثر مشاهدة</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
               <CardContent className="p-0 flex-grow">
                 <div className="relative bg-blue-100 p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">كيف أعرف أنني أتنفس عن طريق الفم عندما أكون نائمًا؟</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">كيف أعرف أنني أتنفس عن طريق الفم عندما أكون نائمًا؟</h3>
                   <p className="text-gray-600 text-sm mb-4">قد لا تشعر أنك تقوم بالتنفس عن طريق الفم بدلًا من الأنف، بالأخص في ساعات النوم، ولكن عادة ما تظهر الأعراض الآتية عليك إن كنت تقوم بذلك:</p>
                 </div>
                 <div className="p-6">
@@ -249,7 +364,7 @@ export default function MedicalLibraryPage() {
               </CardContent>
               <div className="px-6 pb-6">
                 <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white btn-hover-scale">
+                  <Button className="w-full bg-blue-600 hover:bg-primary text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
                   </Button>
@@ -260,7 +375,7 @@ export default function MedicalLibraryPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
               <CardContent className="p-0 flex-grow">
                 <div className="relative bg-green-100 p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">تعرف على حالات طبيعية للتنفس عن طريق الفم؟</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">تعرف على حالات طبيعية للتنفس عن طريق الفم؟</h3>
                   <p className="text-gray-600 text-sm mb-4">هناك بعض الحالات التي تكون حقًا بحاجة خلالها إلى اللجوء إلى التنفس عن طريق الفم لأخذ الشهيق، ولكن إن لاحظت أنك تتنفس عبر الفم طوال الوقت وخلال النوم، فهذا قد يكون يؤدي إلى الإصابة بمشكلة ما.</p>
                 </div>
                 <div className="p-6">
@@ -282,7 +397,7 @@ export default function MedicalLibraryPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
               <CardContent className="p-0 flex-grow">
                 <div className="relative bg-orange-100 p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">لماذا تقوم بالتنفس عن طريق الفم؟</h3>
+                  <h3 className="text-xl font-bold text-primary mb-2">لماذا تقوم بالتنفس عن طريق الفم؟</h3>
                   <p className="text-gray-600 text-sm mb-4">هناك دائمًا أسباب كامنة وراء قيامك بالتنفس عن طريق الفم، ومن أهم هذه الأسباب هو انسداد مجرى الأنف، فعندما يحدث ذلك يقوم الجسم بشكل تلقائي بالتوجه إلى الفم كبديل عن الأنف لتزويده بالأكسجين اللازم. ومن الأسباب التي تؤدي إلى انسداد مجرى الأنف:</p>
                 </div>
                 <div className="p-6">
@@ -308,7 +423,6 @@ export default function MedicalLibraryPage() {
               </div>
             </Card>
 
-            {/* Original Cards (Unchanged) */}
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
               <CardContent className="p-0 flex-grow">
                 <div className="relative">
@@ -320,25 +434,25 @@ export default function MedicalLibraryPage() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                  <Badge className="absolute top-3 right-3 bg-red-500 text-white flex items-center gap-1">
+                  <Badge className="absolute top-3 right-3 bg-primary text-white flex items-center gap-1">
                     <Video className="w-3 h-3" />
                     فيديو جديد
                   </Badge>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="bg-red-100 p-1 rounded">
-                      <Video className="w-4 h-4 text-red-600" />
+                    <div className="bg-primary/20 p-1 rounded">
+                      <Video className="w-4 h-4 text-primary" />
                     </div>
-                    <span className="text-sm font-medium text-red-600">فيديو تعليمي</span>
+                    <span className="text-sm font-medium text-primary">فيديو تعليمي</span>
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">علاج الشخير بالليزر | الدكتور مهند الكسواني</h3>
+                  <h3 className="font-bold text-lg text-primary mb-2">علاج الشخير بالليزر | الدكتور مهند الكسواني</h3>
                   <p className="text-gray-600 text-sm mb-4">في هذا الفيديو، يشرح الدكتور مهند الكسواني، المحاضر الدولي في علوم طب الأسنان، أحدث طرق علاج الشخير باستخدام تقنية الليزر. يعتمد العلاج على تقنيات متطورة لشد عضلات سقف الحلق وتقليل الشخير بشكل فعال ودون الحاجة للجراحة.</p>
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
                 <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white btn-hover-scale">
+                  <Button className="w-full bg-primary/80 hover:bg-primary text-white btn-hover-scale">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     مشاهدة الفيديو التعليمي
                   </Button>
@@ -364,18 +478,18 @@ export default function MedicalLibraryPage() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="bg-green-100 p-1 rounded">
-                      <Video className="w-4 h-4 text-green-600" />
+                    <div className="bg-accent/20 0 p-1 rounded">
+                      <Video className="w-4 h-4 text-accent" />
                     </div>
-                    <span className="text-sm font-medium text-green-600">فيديو تعليمي</span>
+                    <span className="text-sm font-medium text-accent">فيديو تعليمي</span>
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">كتاب "الشخير حتى الموت" | مناقشة مع الدكتور مهند الكسواني</h3>
+                  <h3 className="font-bold text-lg text-accent mb-2">كتاب "الشخير حتى الموت" | مناقشة مع الدكتور مهند الكسواني</h3>
                   <p className="text-gray-600 text-sm mb-4">في هذا الفيديو، يستعرض الدكتور مهند الكسواني، المحاضر الدولي في علوم طب الأسنان، كتاب "الشخير حتى الموت" لمؤلفه ديفيد ماكنتوش. يقدم الدكتور مهند رؤىً شاملة حول المخاطر الصحية المرتبطة بالشخير وتأثيراته السلبية على نوعية الحياة.</p>
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
                 <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-scale">
+                  <Button className="w-full bg-accent/80 hover:bg-accent text-white btn-hover-scale">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     مشاهدة الفيديو التعليمي
                   </Button>
@@ -394,25 +508,25 @@ export default function MedicalLibraryPage() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                  <Badge className="absolute top-3 right-3 bg-purple-500 text-white flex items-center gap-1">
+                  <Badge className="absolute top-3 right-3 bg-secondary text-white flex items-center gap-1">
                     <Brain className="w-3 h-3" />
                     دراسة علمية
                   </Badge>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="bg-purple-100 p-1 rounded">
-                      <Brain className="w-4 h-4 text-purple-600" />
+                    <div className="bg-secondary/20 p-1 rounded">
+                      <Brain className="w-4 h-4 text-secondary" />
                     </div>
-                    <span className="text-sm font-medium text-purple-600">دراسة علمية</span>
+                    <span className="text-sm font-medium text-secondary">دراسة علمية</span>
                   </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">الشخير المزمن هو القاتل الصامت!!</h3>
+                  <h3 className="font-bold text-lg text-secondary mb-2">الشخير المزمن هو القاتل الصامت!!</h3>
                   <p className="text-gray-600 text-sm mb-4">الشخير المزمن ليس مجرد إزعاج بسيط، بل هو مؤشر على مشكلة صحية قد تؤثر على صحتك ونومك وجودة حياتك.</p>
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
                 <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white btn-hover-scale">
+                  <Button className="w-full bg-secondary/80 hover:bg-secondary text-white btn-hover-scale">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     مشاهدة الفيديو التعليمي
                   </Button>
@@ -422,22 +536,23 @@ export default function MedicalLibraryPage() {
           </div>
         </div>
       </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">هل تحتاج لاستشارة مخصصة؟</h2>
+          <h2 className="text-3xl font-bold text-primary mb-6">هل تحتاج لاستشارة مخصصة؟</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             بعد مراجعة المواد التعليمية، احجز استشارة مع د. مهند للحصول على تشخيص دقيق وخطة علاج مخصصة
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/962796759251?text=راجعت المكتبة الطبية وأريد استشارة مخصصة" target="_blank">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+              <Button size="lg" className="bg-blue-600 hover:bg-primary text-white px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز استشارة الآن
               </Button>
             </a>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
                 <Phone className="w-5 h-5 ml-2" />
                 معلومات التواصل
               </Button>

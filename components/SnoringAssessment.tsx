@@ -130,16 +130,16 @@ export default function SnoringAssessment() {
               مستوى الخطر: {result.level}
             </div>
             
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{result.title}</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">{result.title}</h3>
             <p className="text-gray-600 mb-6">{result.description}</p>
             
             <div className="mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">توصياتنا لك:</h4>
+              <h4 className="text-lg font-semibold text-primary mb-4">توصياتنا لك:</h4>
               <ul className="text-right space-y-2">
                 {result.recommendations.map((rec, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">{rec}</span>
+                    <span className="text-primary/90">{rec}</span>
                   </li>
                 ))}
               </ul>
@@ -183,7 +183,7 @@ export default function SnoringAssessment() {
               </div>
             </div>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-6">
+            <h3 className="text-xl font-bold text-primary mb-6">
               {questions[currentQuestion].text}
             </h3>
           </div>
@@ -193,7 +193,7 @@ export default function SnoringAssessment() {
               <button
                 key={index}
                 onClick={() => handleAnswer(questions[currentQuestion].values[index])}
-                className="w-full p-4 text-right border border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors"
+                className="w-full p-4 text-right border border-gray-300 rounded-lg hover:border-primary/70 hover:bg-blue-50 transition-colors"
               >
                 {option}
               </button>

@@ -60,7 +60,7 @@ export default function BlogPage() {
 
           <div className="text-center mb-16">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 animate-fade-in-up mb-4">المدونة الطبية</Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-down relative">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4 animate-fade-in-down relative">
               اكتشف أحدث المقالات الطبية
               <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h2>
@@ -88,7 +88,7 @@ export default function BlogPage() {
                         />
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                      <Badge className="absolute top-3 right-3 bg-blue-500 text-white flex items-center gap-1 animate-fade-in-up">
+                      <Badge className="absolute top-3 right-3 bg-primary/70 text-white flex items-center gap-1 animate-fade-in-up">
                         <BookOpen className="w-3 h-3" />
                         مقالة
                       </Badge>

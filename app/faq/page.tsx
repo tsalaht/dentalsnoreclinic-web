@@ -19,7 +19,7 @@ export default function FAQPage() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">❓ الأسئلة الشائعة</Badge>
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold text-primary leading-tight">
                   إجابات شاملة من د. مهند الكسواني
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -56,7 +56,7 @@ export default function FAQPage() {
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-3 justify-center">
-            <Button variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50">
+            <Button variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50">
               <Video className="w-4 h-4 ml-2" />
               العلاج بالليزر
             </Button>
@@ -84,7 +84,7 @@ export default function FAQPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">الأسئلة الأكثر شيوعاً</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">الأسئلة الأكثر شيوعاً</h2>
             <p className="text-lg text-gray-600">الأسئلة التي يطرحها المرضى أكثر مع إجابات بالفيديو</p>
           </div>
 
@@ -102,7 +102,7 @@ export default function FAQPage() {
                     <Badge className="bg-red-500 text-white">الأكثر مشاهدة</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">ما الفرق بين الشخير الطبيعي والمرضي؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">ما الفرق بين الشخير الطبيعي والمرضي؟</h4>
                 <p className="text-sm text-gray-600 mb-4">د. مهند يشرح كيفية التمييز بين الشخير العادي والشخير الذي يحتاج علاج</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -115,7 +115,7 @@ export default function FAQPage() {
                   </span>
                 </div>
                 <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو الفرق بين الشخير الطبيعي والمرضي" target="_blank">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                  <Button className="w-full bg-blue-600 hover:bg-primary text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
                   </Button>
@@ -136,7 +136,7 @@ export default function FAQPage() {
                     <Badge className="bg-green-500 text-white">شائع</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">هل يمكن علاج الشخير بدون جراحة؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">هل يمكن علاج الشخير بدون جراحة؟</h4>
                 <p className="text-sm text-gray-600 mb-4">البدائل غير الجراحية المتاحة والعلاجات الحديثة وفعاليتها</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -170,7 +170,7 @@ export default function FAQPage() {
                     <Badge className="bg-purple-500 text-white">للوالدين</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">كيف أعرف أن طفلي يحتاج علاج؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">كيف أعرف أن طفلي يحتاج علاج؟</h4>
                 <p className="text-sm text-gray-600 mb-4">العلامات التي تدل على ضرورة فحص الطفل للتنفس أثناء النوم</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -204,7 +204,7 @@ export default function FAQPage() {
                     <Badge className="bg-orange-500 text-white">علاج حديث</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">ما هي فعالية العلاج بالليزر؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">ما هي فعالية العلاج بالليزر؟</h4>
                 <p className="text-sm text-gray-600 mb-4">شرح تفصيلي عن تقنية الليزر ونسب نجاحها والنتائج المتوقعة</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -238,7 +238,7 @@ export default function FAQPage() {
                     <Badge className="bg-pink-500 text-white">مدة العلاج</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">كم يستغرق العلاج للحصول على نتائج؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">كم يستغرق العلاج للحصول على نتائج؟</h4>
                 <p className="text-sm text-gray-600 mb-4">الجدول الزمني المتوقع لعلاج الشخير والنتائج المنتظرة</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -272,7 +272,7 @@ export default function FAQPage() {
                     <Badge className="bg-teal-500 text-white">أمان</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-gray-900 mb-2">هل العلاج آمن للأطفال؟</h4>
+                <h4 className="font-bold text-lg text-primary mb-2">هل العلاج آمن للأطفال؟</h4>
                 <p className="text-sm text-gray-600 mb-4">أمان العلاجات المختلفة وخصوصيتها للأطفال والآثار الجانبية</p>
                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
@@ -300,7 +300,7 @@ export default function FAQPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">تصفح حسب الموضوع</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">تصفح حسب الموضوع</h2>
             <p className="text-lg text-gray-600">أسئلة منظمة حسب الموضوع لسهولة الوصول</p>
           </div>
 
@@ -310,12 +310,12 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">العلاج بالليزر</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">العلاج بالليزر</h3>
                 <p className="text-gray-600 text-sm mb-4">كل ما تريد معرفته عن تقنية الليزر</p>
                 <div className="text-xs text-gray-500 mb-4">
                   <span>📹 12 فيديو • 📝 8 إجابات نصية</span>
                 </div>
-                <Button variant="outline" className="w-full border-blue-500 text-blue-600 hover:bg-blue-50">
+                <Button variant="outline" className="w-full border-primary/70 text-blue-600 hover:bg-blue-50">
                   <Video className="w-4 h-4 ml-2" />
                   شاهد الأسئلة
                 </Button>
@@ -327,7 +327,7 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Baby className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">علاج الأطفال</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">علاج الأطفال</h3>
                 <p className="text-gray-600 text-sm mb-4">أسئلة الوالدين حول مشاكل الأطفال</p>
                 <div className="text-xs text-gray-500 mb-4">
                   <span>📹 15 فيديو • 📝 12 إجابة نصية</span>
@@ -344,7 +344,7 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Stethoscope className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">الأجهزة الفموية</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">الأجهزة الفموية</h3>
                 <p className="text-gray-600 text-sm mb-4">معلومات عن أجهزة الفم والعلاج</p>
                 <div className="text-xs text-gray-500 mb-4">
                   <span>📹 10 فيديو • 📝 6 إجابات نصية</span>
@@ -361,7 +361,7 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Heart className="w-6 h-6 text-orange-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">التكلفة والأسعار</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">التكلفة والأسعار</h3>
                 <p className="text-gray-600 text-sm mb-4">أسئلة حول تكلفة العلاج والتأمين</p>
                 <div className="text-xs text-gray-500 mb-4">
                   <span>📹 8 فيديو • 📝 10 إجابات نصية</span>
@@ -381,14 +381,14 @@ export default function FAQPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">الأسئلة النصية الشائعة</h2>
+              <h2 className="text-3xl font-bold text-primary mb-4">الأسئلة النصية الشائعة</h2>
               <p className="text-lg text-gray-600">إجابات سريعة ومفصلة للأسئلة الأكثر تكراراً</p>
             </div>
 
             <div className="space-y-6">
               <Card className="bg-blue-50 border-blue-200">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-blue-600" />
                     كم تبلغ تكلفة العلاج بالليزر؟
                   </h3>
@@ -396,7 +396,7 @@ export default function FAQPage() {
                     تكلفة العلاج بالليزر تتراوح من 500-800 دينار حسب حالة المريض وعدد الجلسات المطلوبة. نقدم استشارة مجانية لتحديد الخطة والتكلفة المناسبة.
                   </p>
                   <a href="https://wa.me/962796759251?text=أريد معرفة تكلفة العلاج بالليزر لحالتي" target="_blank">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button className="bg-blue-600 hover:bg-primary text-white">
                       <MessageCircle className="w-4 h-4 ml-2" />
                       استفسر عن التكلفة
                     </Button>
@@ -406,7 +406,7 @@ export default function FAQPage() {
 
               <Card className="bg-green-50 border-green-200">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-green-600" />
                     كم مدة علاج الأطفال بأجهزة Myobrace؟
                   </h3>
@@ -424,7 +424,7 @@ export default function FAQPage() {
 
               <Card className="bg-purple-50 border-purple-200">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-purple-600" />
                     هل يغطي التأمين الصحي علاج الشخير؟
                   </h3>
@@ -442,7 +442,7 @@ export default function FAQPage() {
 
               <Card className="bg-orange-50 border-orange-200">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-orange-600" />
                     هل هناك آثار جانبية للعلاج؟
                   </h3>
@@ -516,7 +516,7 @@ export default function FAQPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">قد يهمك أيضاً</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">قد يهمك أيضاً</h2>
             <p className="text-lg text-gray-600">روابط مفيدة لمعلومات إضافية</p>
           </div>
 
@@ -526,10 +526,10 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">المكتبة الطبية</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">المكتبة الطبية</h3>
                 <p className="text-gray-600 text-sm mb-4">فيديوهات ومقالات تعليمية شاملة</p>
                 <Link href="/medical-library">
-                  <Button variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 w-full">
+                  <Button variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50 w-full">
                     تصفح المكتبة
                   </Button>
                 </Link>
@@ -541,7 +541,7 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">اختبار التقييم</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">اختبار التقييم</h3>
                 <p className="text-gray-600 text-sm mb-4">قيّم حالتك واكتشف مدى خطورة الشخير</p>
                 <a href="https://wa.me/962796759251?text=أريد إجراء اختبار تقييم الشخير" target="_blank">
                   <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50 w-full">
@@ -556,7 +556,7 @@ export default function FAQPage() {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Calendar className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">احجز استشارة</h3>
+                <h3 className="text-lg font-bold text-primary mb-3">احجز استشارة</h3>
                 <p className="text-gray-600 text-sm mb-4">احجز موعد مع د. مهند للفحص والعلاج</p>
                 <Link href="/contact">
                   <Button variant="outline" className="border-purple-500 text-purple-600 hover:bg-purple-50 w-full">

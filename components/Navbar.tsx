@@ -76,19 +76,19 @@ export default function Navbar() {
             <Link
               key="/"
               href="/"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">الرئيسية</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/" ? " bg-primary w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* من نحن */}
             <Link
               key="/about"
               href="/about"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/about" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/about" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">من نحن</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/about" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/about" ? " bg-primary-80 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* Dropdown for خدماتنا */}
             <div className="relative" ref={servicesRef}>
@@ -96,8 +96,8 @@ export default function Navbar() {
                 onClick={() => setServicesOpen((open) => !open)}
                 className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300 flex items-center gap-1 cursor-pointer ${
                   ["/adults", "/children"].includes(pathname)
-                    ? "text-blue-700"
-                    : "text-gray-600 hover:text-blue-700"
+                    ? "text-primary"
+                    : "text-primary/90 hover:text-primary"
                 }`}
                 aria-haspopup="true"
                 aria-expanded={servicesOpen}
@@ -110,14 +110,14 @@ export default function Navbar() {
                 <div className="absolute right-0 mt-2 w-44 bg-white border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
                   <Link
                     href="/adults"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setServicesOpen(false)}
                   >
                     علاج البالغين
                   </Link>
                   <Link
                     href="/children"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setServicesOpen(false)}
                   >
                     علاج الأطفال
@@ -131,8 +131,8 @@ export default function Navbar() {
                 onClick={() => setStudiesOpen((open) => !open)}
                 className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300 flex items-center gap-1 cursor-pointer ${
                   ["/scientific-studies", "/scientific-studies/laser-effectiveness", "/scientific-studies/oral-devices-effectiveness", "/scientific-studies/muscle-exercises-effectiveness", "/scientific-studies/misc-studies"].includes(pathname)
-                    ? "text-blue-700"
-                    : "text-gray-600 hover:text-blue-700"
+                    ? "text-primary"
+                    : "text-primary/90 hover:text-primary"
                 }`}
                 aria-haspopup="true"
                 aria-expanded={studiesOpen}
@@ -145,28 +145,28 @@ export default function Navbar() {
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
                   <Link
                     href="/scientific-studies/laser-effectiveness"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setStudiesOpen(false)}
                   >
                     فعالية اجهزة الليزر
                   </Link>
                   <Link
                     href="/scientific-studies/oral-devices-effectiveness"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setStudiesOpen(false)}
                   >
                     فعالية الأجهزة الفموية
                   </Link>
                   <Link
                     href="/scientific-studies/muscle-exercises-effectiveness"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setStudiesOpen(false)}
                   >
                     فعالية التمارين العضلية
                   </Link>
                   <Link
                     href="/scientific-studies/misc-studies"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setStudiesOpen(false)}
                   >
                     دراسات متفرقة
@@ -180,8 +180,8 @@ export default function Navbar() {
                 onClick={() => setTestimonialsOpen((open) => !open)}
                 className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300 flex items-center gap-1 cursor-pointer ${
                   ["/testimonials", "/testimonials/patients", "/testimonials/doctors"].includes(pathname)
-                    ? "text-blue-700"
-                    : "text-gray-600 hover:text-blue-700"
+                    ? "text-primary"
+                    : "text-primary/90 hover:text-primary"
                 }`}
                 aria-haspopup="true"
                 aria-expanded={testimonialsOpen}
@@ -194,14 +194,14 @@ export default function Navbar() {
                 <div className="absolute -right-8 mt-2 w-56 bg-white border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
                   <Link
                     href="/testimonials/patients"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setTestimonialsOpen(false)}
                   >
                     شهادات المرضى
                   </Link>
                   <Link
                     href="/testimonials/doctors"
-                    className="block px-4 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary transition"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
                     onClick={() => setTestimonialsOpen(false)}
                   >
                     شهادات الأطباء
@@ -213,37 +213,37 @@ export default function Navbar() {
             <Link
               key="/sleep-challenge"
               href="/sleep-challenge"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/sleep-challenge" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/sleep-challenge" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">تحدي النوم</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/sleep-challenge" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/sleep-challenge" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* المدونة */}
             <Link
               key="/blog"
               href="/blog"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/blog" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/blog" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">المدونة</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/blog" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/blog" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* المكتبة الطبية */}
             <Link
               key="/medical-library"
               href="/medical-library"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/medical-library" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/medical-library" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">المكتبة الطبية</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/medical-library" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/medical-library" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* تواصل معنا */}
             <Link
               key="/contact"
               href="/contact"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/contact" ? " text-blue-700" : " text-gray-600 hover:text-blue-700"}`}
+              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/contact" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">تواصل معنا</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/contact" ? " bg-blue-500 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/contact" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
           </div>
           {/* Mobile Menu */}

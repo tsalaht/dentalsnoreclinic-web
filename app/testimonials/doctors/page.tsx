@@ -23,6 +23,12 @@ const testimonials = [
 
 const doctorContent = [
   {
+    text: `بعد أسبوع من تبادل الخبرات في المركز الأوروبي لطب الأسنان مع المحاضر الدولي الأسترالي د. ديفيد ماكنتوش أخصائي جراحة الأنف والأذن والحنجرة، والدكتور فادي عنتر  أخصائي طب أسنان الأطفال.
+تعرف على رأي الأطباء في البرنامج العلاجي لدكتور مهند الكسواني والبروتوكول المتبع في علاج الشخير في `,
+    video: "https://www.youtube.com/embed/HlahCt5LN78", 
+    title: "رأي الدكتور ديفيد والدكتور فادي",
+  },
+  {
     text: `في إطار التعاون الطبي متعدد التخصصات، ثمّن الدكتور محمد الطراونةاستشاري أمراض الصدر واضطرابات النومالجهود المبذولة في المركز الأوروبي لطب الأسنان في مجال تشخيص وعلاج الشخير والتنفس الفموي.
 وقد عبّر عن دعمه للبروتوكول العلاجي المتبع في المركز، والذي يستند إلى أحدث الأبحاث العلمية ويعكس رؤية الدكتور مهند الكسواني في تطوير حلول فعالة تجمع بين الطب وطب الأسنان لتحقيق نتائج مستدامة وشاملة للمرضى`,
     video: "https://www.youtube.com/embed/_IO5Mk83qVg", 
@@ -103,7 +109,7 @@ export default function DoctorTestimonialsPage() {
           {/* Detailed Content with Videos */}
           <div className="text-center mb-12">
               <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 animate-fade-in-up mb-4">شهادات الأطباء</Badge>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 animate-fade-in-down">
               تجارب وآراء الأطباء
               <span className="block w-16 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h2>
@@ -135,7 +141,7 @@ export default function DoctorTestimonialsPage() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
-                      <Badge className="absolute top-3 right-3 bg-blue-500 text-white flex items-center gap-1">
+                      <Badge className="absolute top-3 right-3 bg-primary/70 text-white flex items-center gap-1">
                         <Stethoscope className="w-3 h-3" />
                         شهادة طبيب
                       </Badge>

@@ -88,12 +88,12 @@ export default function ModernHero({
           {/* Title */}
           <h1 className={cn(
             'font-bold leading-tight mb-8 animate-fade-in-up',
-            variant === 'minimal' ? 'text-gray-900' : 'text-white',
+            variant === 'minimal' ? 'text-primary' : 'text-white',
             'text-4xl lg:text-6xl xl:text-7xl'
           )} style={{animationDelay: '0.1s'}}>
             <span className={cn(
               'block gradient-text neon-glow',
-              variant === 'minimal' ? 'text-gray-900' : ''
+              variant === 'minimal' ? 'text-primary' : ''
             )}>
               {title}
             </span>
