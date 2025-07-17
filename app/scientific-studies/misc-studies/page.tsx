@@ -77,26 +77,35 @@ export default function MiscStudiesPage() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-lg sm:text-xl font-semibold text-primary">المراجع</h3>
-                <ul className="text-gray-600 text-xs sm:text-sm leading-relaxed overflow-hidden">
-                  <li className="break-words">
-                    [1] Alkhalil, M., & Alshammari, A. (2024). Sleep-Disordered Breathing: Advances in Diagnosis and Management. <i>Sleep Medicine: X</i>.{' '}
-                    <a
-                      href="https://www.sciencedirect.com/science/article/pii/S2667343624000027"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline break-all"
-                    >
-                      https://www.sciencedirect.com/science/article/pii/S2667343624000027
-                    </a>
+              <div className="space-y-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[1]</span>
+                    <div>
+                      <p className="font-medium">Alkhalil, M., & Alshammari, A. (2024).</p>
+                      <p className="italic">Sleep-Disordered Breathing: Advances in Diagnosis and Management.</p>
+                      <p><i>Sleep Medicine: X</i>.</p>
+                      <a
+                        href="https://www.sciencedirect.com/science/article/pii/S2667343624000027"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://www.sciencedirect.com/science/article/pii/S2667343624000027
+                      </a>
+                    </div>
                   </li>
-                  <li className="break-words">
-                    [2] The impact of mouth breathing on dentofacial development. (n.d.). Study on the effects of uncorrected mouth breathing on dental and facial development.
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[2]</span>
+                    <div>
+                      <p className="font-medium">The impact of mouth breathing on dentofacial development. (n.d.).</p>
+                      <p className="italic">Study on the effects of uncorrected mouth breathing on dental and facial development.</p>
+                    </div>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center" >
                 <a
                   href="https://wa.me/962796759251?text=أريد استشارة حول اضطرابات النوم"
                   target="_blank"
@@ -113,7 +122,7 @@ export default function MiscStudiesPage() {
                     className="border-blue-600 text-blue-600 hover:bg-blue-50 px-4 py-2 text-sm sm:text-base"
                   >
                     <BookOpen className="w-4 h-4 ml-2" />
-                    المزيد من الدراسات
+                    المزيد من الدراجات
                   </Button>
                 </Link>
               </div>

@@ -77,41 +77,56 @@ export default function LaserEffectivenessPage() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-lg sm:text-xl font-semibold text-primary">المراجع</h3>
-                <ul className="text-gray-600 text-xs sm:text-sm leading-relaxed overflow-hidden">
-                  <li className="break-words">
-                    [1] Kotecha, B., et al. (2023). Non-ablative laser therapy for snoring and obstructive sleep apnea. <i>Journal of Clinical Sleep Medicine</i>.{' '}
-                    <a
-                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline break-all"
-                    >
-                      https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/
-                    </a>
+              <div className="space-y-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[1]</span>
+                    <div>
+                      <p className="font-medium">Kotecha, B., et al. (2023).</p>
+                      <p className="italic">Non-ablative laser therapy for snoring and obstructive sleep apnea.</p>
+                      <p><i>Journal of Clinical Sleep Medicine</i>.</p>
+                      <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/
+                      </a>
+                    </div>
                   </li>
-                  <li className="break-words">
-                    [2] Camacho, M., et al. (2022). Laser-assisted uvulopalatoplasty for snoring: A systematic review. <i>European Archives of Oto-Rhino-Laryngology</i>.{' '}
-                    <a
-                      href="https://link.springer.com/article/10.1007/s00405-022-07539-9"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline break-all"
-                    >
-                      https://link.springer.com/article/10.1007/s00405-022-07539-9
-                    </a>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[2]</span>
+                    <div>
+                      <p className="font-medium">Camacho, M., et al. (2022).</p>
+                      <p className="italic">Laser-assisted uvulopalatoplasty for snoring: A systematic review.</p>
+                      <p><i>European Archives of Oto-Rhino-Laryngology</i>.</p>
+                      <a
+                        href="https://link.springer.com/article/10.1007/s00405-022-07539-9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://link.springer.com/article/10.1007/s00405-022-07539-9
+                      </a>
+                    </div>
                   </li>
-                  <li className="break-words">
-                    [3] Stupak, H. D. (2023). Efficacy of Er:YAG laser therapy (NightLase) in the treatment of snoring. <i>Lasers in Medical Science</i>.{' '}
-                    <a
-                      href="https://pubmed.ncbi.nlm.nih.gov/37579131/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline break-all"
-                    >
-                      https://pubmed.ncbi.nlm.nih.gov/37579131/
-                    </a>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[3]</span>
+                    <div>
+                      <p className="font-medium">Stupak, H. D. (2023).</p>
+                      <p className="italic">Efficacy of Er:YAG laser therapy (NightLase) in the treatment of snoring.</p>
+                      <p><i>Lasers in Medical Science</i>.</p>
+                      <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/37579131/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pubmed.ncbi.nlm.nih.gov/37579131/
+                      </a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -121,7 +136,9 @@ export default function LaserEffectivenessPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button className="bg-blue-600 hover:bg-primary text-white px-4 py-2 text-sm sm:text-base">
+                  <Button className="bg-blue-600 hover:bg-primary text-white px görül
+
+System: -4 py-2 text-sm sm:text-base">
                     <Calendar className="w-4 h-4 ml-2" />
                     احجز استشارة
                   </Button>

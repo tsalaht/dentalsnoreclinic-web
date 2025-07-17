@@ -293,27 +293,19 @@ export default function AboutPage() {
       </div>
     </div>
     {/* Dental Sleep Medicine */}
-<div className="mb-20">
+<div className="my-20">
       <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
         طب الأسنان المتعلق بأمراض النوم
         <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
       </h3>
       <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
         <div>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            عيادتنا مستحدثة ضمن دائرة المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني، وهي الأولى من نوعها في الأردن، عيادة متخصصة في علاج اضطرابات التنفس عند النوم (التنفس الفموي بشكل خاص) لدى الأطفال والبالغين، والتي تؤثر بشكل كبير على شكل نمو الأسنان والفكين.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            البرنامج المتكامل من جهاز الليزر R3 snore يحتوي على ثلاث جلسات علاجية منفصلة يتم إعطاءها خلال 12 أسبوع، وتبقى نتائج العلاج فعالة لحوالي سنتين إلى ثلاث سنوات، ويمكن إعادة العلاج مرة أخرى بعد ذلك. جهاز Lightwalker AST من شركة Fotona متعدد الاستخدامات، يُستخدم ضمن بروتوكول علاج الشخير في عيادة علاج الشخير.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            التنفس من الفم من أسوأ التصرفات التي قد تؤثر في حيوية أجسامنا. التنفس الأنفي يساعد على زيادة النشاط البدني، ويشجع على إنقاص الوزن والتخلص من نزلات الزكام المتكررة والدخول في النوم العميق الهانئ.
-          </p>
-          {isExpanded && (
-            <>
-              <p className="text-gray-600 leading-relaxed text-base mb-6">
+    <p className="text-gray-600 leading-relaxed text-base mb-6">
                 يؤدي تخصص طب الأسنان المتعلق بالنوم أو ما يعرف بـ Dental Sleep Medicine دوراً مهماً في معالجة مشكلة الشخير واضطراب التنفس والتنفس الفموي أثناء النوم. منذ عام 2015 ظهرت توصيات أمريكية حديثة فيما يتعلق بتشخيص ومعالجة الشخير واضطراب التنفس أثناء النوم، والتي تؤكد دور طبيب الأسنان مع أطباء النوم في معالجة هذه المشكلة للحد من الآثار السلبية الناجمة منها.
               </p>
+          {isExpanded && (
+            <>
+          
               <p className="text-gray-600 leading-relaxed text-base mb-6">
                 إن من أحد طرق المعالجة هو استخدام أجهزة فموية مخصصة يرتديها المريض لتقدم الفك السفلي وفتح مجرى النفس بشكل أكبر. من المثير للاهتمام أن مثل هذه الأجهزة الفموية تعطي نتائج فعالة بشكل سريع بعد مدة 6 أسابيع من ارتدائها. كما أنه من غير الضروري تقديم الفك السفلي بشكل كبير لفتح مجرى النفس، بضعة ملليمترات تكفي لحل المشكلة!
               </p>
@@ -360,7 +352,7 @@ export default function AboutPage() {
                   <Building className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-2">الموقع</h3>
-                <p className="text-gray-600 text-sm">المركز الأوروبي - جبل عمان</p>
+                <p className="text-gray-600 text-sm">الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
                 <p className="text-gray-600 text-sm">موقع متميز وسهل الوصول</p>
               </CardContent>
             </Card>

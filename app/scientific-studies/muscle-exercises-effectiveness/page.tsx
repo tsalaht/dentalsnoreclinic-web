@@ -50,7 +50,7 @@ export default function MuscleExercisesEffectivenessPage() {
                   <div>
                     <h4 className="font-semibold text-primary text-base sm:text-lg">تقليل شدة الشخير</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed break-words">
-                      أظهرت دراسة منهجية أن التمارين العضلية أدت إلى انخفاض بنسبة 51% في شدة الشخير لدى المرضى بعد ممارسة التمارين لمدة 3 أشهر، مما يساهم في تحسين جودة النوم للمريض وشريكه.
+                      أظهرت دراسة منهجية أن التمارين العضلية أدت إلى انخفاض بنسبة 51% في شدة الشخير لدى المرضى بعد ممارسة التمارين لمدة 3 أشهر، مما يساهم في تحسين جودة النوم للمريض وشريكه <sup>[1]</sup>.
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function MuscleExercisesEffectivenessPage() {
                   <div>
                     <h4 className="font-semibold text-accent text-base sm:text-lg">تحسين توقف التنفس أثناء النوم</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed break-words">
-                      وجدت الأبحاث أن التمارين العضلية قللت من مؤشر توقف التنفس ونقص التنفس (AHI) بنسبة تصل إلى 31% في الحالات الخفيفة إلى المتوسطة من توقف التنفس الانسدادي، مما يجعلها علاجًا غير جراحي فعال.
+                      وجدت الأبحاث أن التمارين العضلية قللت من مؤشر توقف التنفس ونقص التنفس (AHI) بنسبة تصل إلى 31% في الحالات الخفيفة إلى المتوسطة من توقف التنفس الانسدادي، مما يجعلها علاجًا غير جراحي فعال <sup>[2]</sup>.
                     </p>
                   </div>
                 </div>
@@ -72,10 +72,95 @@ export default function MuscleExercisesEffectivenessPage() {
                   <div>
                     <h4 className="font-semibold text-secondary text-base sm:text-lg">سهولة التطبيق والأمان</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed break-words">
-                      تعتبر التمارين العضلية خيارًا غير جراحي، آمن، ومنخفض التكلفة يمكن للمرضى تطبيقه بسهولة في المنزل. يمكن دمجها مع علاجات أخرى مثل الأجهزة الفموية لتحقيق نتائج أفضل، مع مستويات عالية من التزام المرضى.
+                      تعتبر التمارين العضلية خيارًا غير جراحي، آمن، ومنخفض التكلفة يمكن للمرضى تطبيقه بسهولة في المنزل. يمكن دمجها مع علاجات أخرى مثل الأجهزة الفموية لتحقيق نتائج أفضل، مع مستويات عالية من التزام المرضى <sup>[3]</sup>.
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="space-y-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[1]</span>
+                    <div>
+                      <p className="font-medium">Ramos, P., et al. (2023).</p>
+                      <p className="italic">Effect of Oropharyngeal Exercises on Snoring and Obstructive Sleep Apnea.</p>
+                      <p><i>Frontiers in Neurology</i>.</p>
+                      <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10136844/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pmc.ncbi.nlm.nih.gov/articles/PMC10136844/
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[2]</span>
+                    <div>
+                      <p className="font-medium">Ieto, V., et al. (2021).</p>
+                      <p className="italic">Effects of Oropharyngeal Exercises on Patients with Moderate Obstructive Sleep Apnea.</p>
+                      <p><i>American Journal of Respiratory and Critical Care Medicine</i>.</p>
+                      <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/34643521/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pubmed.ncbi.nlm.nih.gov/34643521/
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[3]</span>
+                    <div>
+                      <p className="font-medium">Camacho, M., et al. (2020).</p>
+                      <p className="italic">Myofunctional Therapy to Treat Obstructive Sleep Apnea: A Systematic Review.</p>
+                      <p><i>Sleep</i>.</p>
+                      <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/33141943/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pubmed.ncbi.nlm.nih.gov/33141943/
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[4]</span>
+                    <div>
+                      <p className="font-medium">Hsu, B., et al. (2023).</p>
+                      <p className="italic">Oropharyngeal Exercises for Sleep-Disordered Breathing: A Meta-Analysis.</p>
+                      <p><i>Journal of Clinical Sleep Medicine</i>.</p>
+                      <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/37606313/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pubmed.ncbi.nlm.nih.gov/37606313/
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[5]</span>
+                    <div>
+                      <p className="font-medium">Guimaraes, K. C., et al. (2018).</p>
+                      <p className="italic">Effects of Oropharyngeal Exercises on Snoring and Obstructive Sleep Apnea.</p>
+                      <p><i>Chest</i>.</p>
+                      <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/30233265/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://pubmed.ncbi.nlm.nih.gov/30233265/
+                      </a>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

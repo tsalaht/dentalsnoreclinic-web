@@ -10,6 +10,7 @@ export default function MobileMenu() {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [studiesOpen, setStudiesOpen] = useState(false)
   const [testimonialsOpen, setTestimonialsOpen] = useState(false)
+  const [medicalLibraryOpen, setMedicalLibraryOpen] = useState(false)
 
   const menuItems = [
     { href: "/", label: "الرئيسية" },
@@ -239,15 +240,46 @@ export default function MobileMenu() {
                     المدونة
                   </Link>
                 </li>
-                {/* المكتبة الطبية */}
+                {/* المكتبة الطبية (dropdown) */}
                 <li className="transition-all duration-300">
-                  <Link
-                    href="/medical-library"
-                    className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
-                    onClick={() => setIsOpen(false)}
+                  <div
+                    className="flex items-center justify-between py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg cursor-pointer select-none"
+                    onClick={() => setMedicalLibraryOpen((open) => !open)}
                   >
-                    المكتبة الطبية
-                  </Link>
+                    <span>المكتبة الطبية</span>
+                    <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${medicalLibraryOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </div>
+                  {medicalLibraryOpen && (
+                    <ul className="pl-6 mt-1 space-y-1">
+                      <li>
+                        <Link
+                          href="/medical-library/videos"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setMedicalLibraryOpen(false); }}
+                        >
+                          الفيديوهات التثقيفية
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/medical-library/conference"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setMedicalLibraryOpen(false); }}
+                        >
+                          مؤتمر الشخير
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/medical-library/materials"
+                          className="block py-2 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-base"
+                          onClick={() => { setIsOpen(false); setMedicalLibraryOpen(false); }}
+                        >
+                          المواد التثقيفية
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                 </li>
                 {/* تواصل معنا */}
                 <li className="transition-all duration-300">

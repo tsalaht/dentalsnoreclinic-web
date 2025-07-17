@@ -13,7 +13,9 @@ export default function Navbar() {
   const [studiesOpen, setStudiesOpen] = useState(false)
   const studiesRef = useRef<HTMLDivElement>(null)
   const [testimonialsOpen, setTestimonialsOpen] = useState(false)
+  const [medicalLibrary, setMedicalLibrary] = useState(false)
   const testimonialsRef = useRef<HTMLDivElement>(null)
+  const medicalLibraryRef = useRef<HTMLDivElement>(null)
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -228,14 +230,47 @@ export default function Navbar() {
               <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/blog" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* المكتبة الطبية */}
-            <Link
-              key="/medical-library"
-              href="/medical-library"
-              className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/medical-library" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
-            >
-              <span className="relative z-10">المكتبة الطبية</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/medical-library" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
-            </Link>
+            <div className="relative" ref={medicalLibraryRef}>
+              <div
+                onClick={() => setMedicalLibrary((open) => !open)}
+                className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300 flex items-center gap-1 cursor-pointer ${
+                  ["/medical-library/videos", "/medical-library/conference", "/medical-library/materials"].includes(pathname)
+                    ? "text-primary"
+                    : "text-primary/90 hover:text-primary"
+                }`}
+                aria-haspopup="true"
+                aria-expanded={medicalLibrary}
+                role='button'
+              >
+                المكتبة الطبية
+                <svg className={`w-4 h-4 transition-transform duration-200 ${medicalLibrary ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </div>
+              {medicalLibrary && (
+                <div className="absolute -right-8 mt-2 w-56 bg-white border rounded-lg shadow-lg py-2 z-50 animate-fade-in">
+                  <Link
+                    href="/medical-library/videos"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setTestimonialsOpen(false)}
+                  >
+                    الفيديوهات التثقيفية
+                  </Link>
+                  <Link
+                    href="/medical-library/conference"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setTestimonialsOpen(false)}
+                  >
+                    مؤتمر الشخير
+                  </Link>
+                  <Link
+                    href="/medical-library/materials"
+                    className="block px-4 py-2 text-primary/90 hover:bg-primary/10 hover:text-primary transition"
+                    onClick={() => setTestimonialsOpen(false)}
+                  >
+                    المواد التثقيفية
+                  </Link>
+                </div>
+              )}
+            </div>
             {/* تواصل معنا */}
             <Link
               key="/contact"

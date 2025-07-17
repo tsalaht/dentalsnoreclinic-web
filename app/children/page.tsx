@@ -276,7 +276,7 @@ export default function ChildrenPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className="relative">
-                  <video className="w-full h-64 object-cover" controls poster="/baby.png">
+                  <video className="w-full h-64 object-cover" controls poster="/blog2.png">
                     <source src="/v1.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>
@@ -295,7 +295,7 @@ export default function ChildrenPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className="relative">
-                  <video className="w-full h-64 object-cover" controls poster="/baby.png">
+                  <video className="w-full h-64 object-cover" controls poster="/blog3.jpg">
                     <source src="/v2.mp4" type="video/mp4" />
                     فيديو غير مدعوم
                   </video>

@@ -74,7 +74,7 @@ export default function ArabicSnoringClinic() {
             {heroSlides.map((slide, idx) => (
               <SwiperSlide key={idx}>
                 <div
-                  className="w-full h-full min-h-[20vh] md:min-h-[92vh] flex items-center justify-center relative"
+                  className="w-full h-full min-h-[19vh] md:min-h-[92vh] flex items-center justify-center relative"
                   style={{
                     backgroundImage: `url(${slide.image})`,
                     backgroundSize: "cover",
@@ -99,7 +99,7 @@ export default function ArabicSnoringClinic() {
         </div>
 
       
-          <div className="md:flex hidden flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-52 mt-60 ">
+          <div className="flex  flex-row gap-4 justify-center items-center max-w-lg mx-auto z-10 md:mt-52 mt-64 ">
             <Link href="/children" className="w-full sm:w-auto">
               <Button 
         size={'sm'}
@@ -140,13 +140,13 @@ export default function ArabicSnoringClinic() {
               </div>
               <div className="w-full md:w-1/2 text-center md:text-right">
                 <h3 className="md:text-3xl text-2xl  font-bold text-primary mb-3 relative">
-                  علاج الشخير بالليزر والجهاز العضلي الوظيفي الفموي
+                  علاج الشخير بالليزر والجهاز الموجّه العضلي الوظيفي الفموي
 
 
                   <span className="block w-16 h-1 bg-secondary mx-auto md:mx-0 mt-2 rounded-full"></span>
                 </h3>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق والجهاز العضلي الوظيفي الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
+                  نستخدم أحدث أجهزة الليزر لشد عضلات سقف الحلق المترهلة والجهاز الموجّه العضلي الوظيفي الفموي لتصحيح التنفس الفموي إلى التنفس الأنفي، مما يعزز جودة النوم ويقلل الشخير بفعالية.
                 </p>
               </div>
             </div>
@@ -278,8 +278,7 @@ export default function ArabicSnoringClinic() {
                 <span className="block w-16 h-1 bg-secondary mt-2 rounded-full"></span>
               </h3>
               <p className="text-lg md:text-xl text-primary/90 font-medium leading-relaxed">
-     المحاضر الدولي في علوم علاج الشخير والتنفس الفموي المتعلق
-بطب الأسنان، والابتسامة الرقمية، وعلوم إطباق الأسنان.
+طبيب أسنان متمرس بخبرة تمتد لأكثر من 30 عاماً، يُعرف دولياً كمحاضر في مجالات علاج الشخير واضطرابات التنفس الفموي، وطب تجميل الابتسامة الرقمية، وعلوم إطباق الأسنان. يتميز بخبرته العميقة في  تطبيقات طب الأسنان للعلاج لليزر ، ومعرفته الواسعة في علاج اضطرابات النوم والتنفس الفموي مما جعله من الرواد في تقديم أحدث الحلول العلاجية المتقدمة، مع حرصه الدائم على دمج الخبرة العلمية بالتقنيات الحديثة لخدمة مرضاه بأعلى المعايير.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
@@ -508,20 +507,12 @@ export default function ArabicSnoringClinic() {
       </h3>
       <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
         <div>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            عيادتنا مستحدثة ضمن دائرة المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني، وهي الأولى من نوعها في الأردن، عيادة متخصصة في علاج اضطرابات التنفس عند النوم (التنفس الفموي بشكل خاص) لدى الأطفال والبالغين، والتي تؤثر بشكل كبير على شكل نمو الأسنان والفكين.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            البرنامج المتكامل من جهاز الليزر R3 snore يحتوي على ثلاث جلسات علاجية منفصلة يتم إعطاءها خلال 12 أسبوع، وتبقى نتائج العلاج فعالة لحوالي سنتين إلى ثلاث سنوات، ويمكن إعادة العلاج مرة أخرى بعد ذلك. جهاز Lightwalker AST من شركة Fotona متعدد الاستخدامات، يُستخدم ضمن بروتوكول علاج الشخير في عيادة علاج الشخير.
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base mb-6">
-            التنفس من الفم من أسوأ التصرفات التي قد تؤثر في حيوية أجسامنا. التنفس الأنفي يساعد على زيادة النشاط البدني، ويشجع على إنقاص الوزن والتخلص من نزلات الزكام المتكررة والدخول في النوم العميق الهانئ.
-          </p>
-          {isExpanded && (
-            <>
-              <p className="text-gray-600 leading-relaxed text-base mb-6">
+       <p className="text-gray-600 leading-relaxed text-base mb-6">
                 يؤدي تخصص طب الأسنان المتعلق بالنوم أو ما يعرف بـ Dental Sleep Medicine دوراً مهماً في معالجة مشكلة الشخير واضطراب التنفس والتنفس الفموي أثناء النوم. منذ عام 2015 ظهرت توصيات أمريكية حديثة فيما يتعلق بتشخيص ومعالجة الشخير واضطراب التنفس أثناء النوم، والتي تؤكد دور طبيب الأسنان مع أطباء النوم في معالجة هذه المشكلة للحد من الآثار السلبية الناجمة منها.
               </p>
+          {isExpanded && (
+            <>
+          
               <p className="text-gray-600 leading-relaxed text-base mb-6">
                 إن من أحد طرق المعالجة هو استخدام أجهزة فموية مخصصة يرتديها المريض لتقدم الفك السفلي وفتح مجرى النفس بشكل أكبر. من المثير للاهتمام أن مثل هذه الأجهزة الفموية تعطي نتائج فعالة بشكل سريع بعد مدة 6 أسابيع من ارتدائها. كما أنه من غير الضروري تقديم الفك السفلي بشكل كبير لفتح مجرى النفس، بضعة ملليمترات تكفي لحل المشكلة!
               </p>
