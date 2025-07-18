@@ -98,22 +98,17 @@ export default function SleepChallengePage() {
               <p className="text-blue-800 text-base leading-relaxed mb-4">
                 لمدة 14 يوماً، ستتلقى مهام يومية بسيطة عبر واتساب لتحسين عادات نومك وتقليل الشخير. المهام تشمل تمارين، نصائح غذائية، وتوصيات للتنفس الصحي.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-                <div className="text-center">
-                  <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white text-xs font-bold">1</span>
-                  </div>
-                  <p className="text-sm text-primary font-medium">سجل في التحدي</p>
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+              
                 <div className="text-center">
                   <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white text-xs font-bold">2</span>
+                    <span className="text-white text-xs font-bold">1</span>
                   </div>
                   <p className="text-sm text-primary font-medium">اتبع المهام اليومية</p>
                 </div>
                 <div className="text-center">
                   <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white text-xs font-bold">3</span>
+                    <span className="text-white text-xs font-bold">2</span>
                   </div>
                   <p className="text-sm text-primary font-medium">اربح صحتك</p>
                 </div>
@@ -176,24 +171,18 @@ export default function SleepChallengePage() {
             <h2 className="text-3xl font-bold text-primary mb-4">كيف يعمل تحدي النوم؟</h2>
             <p className="text-lg text-gray-600">خطوات بسيطة لتحسين نومك في 14 يوم</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">1</span>
-              </div>
-              <h3 className="text-lg font-bold text-primary mb-3">التسجيل</h3>
-              <p className="text-gray-600 text-sm">سجل في التحدي عبر واتساب لتلقي المهام اليومية.</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8">
+           
             <div className="text-center">
               <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">2</span>
+                <span className="text-white font-bold text-xl">1</span>
               </div>
               <h3 className="text-lg font-bold text-primary mb-3">المهام اليومية</h3>
               <p className="text-gray-600 text-sm">اتبع المهام اليومية البسيطة لتحسين نومك.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">3</span>
+                <span className="text-white font-bold text-xl">2</span>
               </div>
               <h3 className="text-lg font-bold text-primary mb-3">تتبع التقدم</h3>
               <p className="text-gray-600 text-sm">سجل تقدمك يومياً وشاركنا نتائجك عبر واتساب.</p>
