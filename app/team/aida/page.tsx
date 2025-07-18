@@ -14,14 +14,14 @@ export default function AidaPage() {
             className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-primary/10"
             priority
           />
-          <h1 className="text-3xl font-extrabold text-gray-900 mt-6 mb-2">د. عايدة أبو سالم</h1>
+          <h1 className="text-3xl font-extrabold text-primary mt-6 mb-2">د. عايدة أبو سالم</h1>
           <p className="text-lg text-gray-600 mb-4">أخصائية علاج الشخير والتنفس الفموي</p>
           <p className="text-primary/80 text-base leading-relaxed">
             طبيبة أسنان وأخصائية علاج الشخير والتنفس الفموي
           </p>
         </div>
 
-        <div className="space-y-10 text-primary/90 text-right">
+        <div className="space-y-10 text-gray-700 text-right">
           {/* About Section with Second Image */}
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">

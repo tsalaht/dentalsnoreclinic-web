@@ -128,7 +128,7 @@ export default function ArabicSnoringClinic() {
               لماذا تختار Dentalsnore Clinic؟
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-primary/90 max-w-4xl mx-auto leading-relaxed tracking-wide">
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed tracking-wide">
               تفخر Dentalsnore Clinic التابعة للمركز الأوروبي لطب الأسنان  تقديم بروتوكول علاجي متكامل  واضطرابات التنفس الليلي، والتنفس الفموي.يتضمن برنامجنا حصولك على الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
             </p>
           </div>
@@ -184,7 +184,7 @@ export default function ArabicSnoringClinic() {
             </div>
           </div>
           <div className="text-center mt-16">
-            <p className="text-xl text-primary/90 font-semibold animate-pulse relative">
+            <p className="text-xl text-gray-700 font-semibold animate-pulse relative">
               مع Dentalsnore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
               <span className="block w-32 h-1 bg-primary mx-auto mt-3 rounded-full"></span>
             </p>
@@ -199,7 +199,7 @@ export default function ArabicSnoringClinic() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               خدماتنا المتخصصة
             </h2>
-            <p className="text-lg text-primary/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               علاج شامل ومخصص لكل عمر ولكل حالة
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function ArabicSnoringClinic() {
                     <User className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-primary mb-4">علاج البالغين</h3>
-                  <p className="text-primary/90 leading-relaxed text-base">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     علاج الشخير وانقطاع التنفس النومي
                   </p>
                 </CardContent>
@@ -224,7 +224,7 @@ export default function ArabicSnoringClinic() {
                     <Baby className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-accent mb-4">علاج الأطفال</h3>
-                  <p className="text-primary/90 leading-relaxed text-base">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     العلاج المبكر والوقاية
                   </p>
                 </CardContent>
@@ -237,7 +237,7 @@ export default function ArabicSnoringClinic() {
                     <BookOpen className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-secondary mb-4">المكتبة الطبية</h3>
-                  <p className="text-primary/90 leading-relaxed text-base">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     مقالات ودراسات علمية
                   </p>
                 </CardContent>
@@ -250,7 +250,7 @@ export default function ArabicSnoringClinic() {
                     <GamepadIcon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-primary mb-4">تحدي النوم</h3>
-                  <p className="text-primary/90 leading-relaxed text-base">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     اختبر جودة نومك بطريقة تفاعلية
                   </p>
                 </CardContent>
@@ -277,7 +277,7 @@ export default function ArabicSnoringClinic() {
                 د. مهند الكسواني
                 <span className="block w-16 h-1 bg-secondary mt-2 rounded-full"></span>
               </h3>
-              <p className="text-lg md:text-xl text-primary/90 font-medium leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
 طبيب أسنان متمرس بخبرة تمتد لأكثر من 30 عاماً، يُعرف دولياً كمحاضر في مجالات علاج الشخير واضطرابات التنفس الفموي، وطب تجميل الابتسامة الرقمية، وعلوم إطباق الأسنان. يتميز بخبرته العميقة في  تطبيقات طب الأسنان للعلاج لليزر ، ومعرفته الواسعة في علاج اضطرابات النوم والتنفس الفموي مما جعله من الرواد في تقديم أحدث الحلول العلاجية المتقدمة، مع حرصه الدائم على دمج الخبرة العلمية بالتقنيات الحديثة لخدمة مرضاه بأعلى المعايير.
               </p>
               <div className="space-y-4">
@@ -285,7 +285,7 @@ export default function ArabicSnoringClinic() {
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                     <Award className="w-6 h-6 text-blue-600" />
                   </div>
-                  <span className="text-base md:text-lg text-gray-600">خبرة أكثر من 15 عاماً</span>
+                  <span className="text-base md:text-lg text-gray-600">خبرة أكثر من 30 عاماً</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
@@ -332,7 +332,7 @@ export default function ArabicSnoringClinic() {
               تجارب المرضى
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               استمع إلى تجارب مرضانا الذين حققوا تحسناً ملحوظاً في جودة نومهم مع علاج الشخير في المركز الأوروبي لطب الأسنان
             </p>
           </div>
@@ -410,7 +410,7 @@ export default function ArabicSnoringClinic() {
     حملتنـا تنفس صح، بتعيش صح
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
              أطلقنا حملة "تنفس صح، بتعيش صح" لتسليط الضوء على أهمية علاج مشاكل التنفس الفموي والشخير باستخدام أحدث التقنيات الطبية والليزر، لتحسين جودة حياتك من أول نفس.
             </p>
           </div>
@@ -468,7 +468,7 @@ export default function ArabicSnoringClinic() {
         من نحن
         <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
       </h2>
-      <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
         تعرف على عيادة Dentalsnore Clinic، الرائدة في علاج الشخير واضطرابات التنفس أثناء النوم في الأردن والمنطقة
       </p>
     </div>
@@ -525,7 +525,7 @@ export default function ArabicSnoringClinic() {
             <button
               onClick={() => {
                 if (!isExpanded) {
-                  router.push('/about');
+                  router.push('/about#sleep-medicine');
                 } else {
                   setIsExpanded(false);
                 }
@@ -581,7 +581,7 @@ export default function ArabicSnoringClinic() {
               الأسئلة الشائعة
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
-            <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               تعرف على إجابات الأسئلة الشائعة حول علاج الشخير واضطرابات النوم مع فريقنا المتخصص
             </p>
           </div>

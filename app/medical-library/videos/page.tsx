@@ -2,8 +2,9 @@ import Navbar from "@/components/Navbar";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Video } from "lucide-react";
+import { Video,Badge } from "lucide-react";
 import Link from "next/link";
+import { MessageCircle, PlayCircle,  Brain } from "lucide-react";
 
 export default function MedicalLibraryVideosPage() {
   return (
@@ -149,6 +150,116 @@ export default function MedicalLibraryVideosPage() {
                 </div>
               </CardContent>
             </Card>
+              <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video"
+                    src="https://www.youtube.com/embed/_o9ohoJ8r9w"
+                    title="أحدث تقنيات العلاج بالليزر 2024"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                  <Badge className="absolute top-3 right-3 bg-primary text-white flex items-center gap-1">
+                    <Video className="w-3 h-3" />
+                    فيديو جديد
+                  </Badge>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="bg-primary/20 p-1 rounded">
+                      <Video className="w-4 h-4 text-primary" />
+                    </div>
+                    <span className="text-sm font-medium text-primary">فيديو تعليمي</span>
+                  </div>
+                  <h3 className="font-bold text-lg text-primary mb-2">علاج الشخير بالليزر | الدكتور مهند الكسواني</h3>
+                  <p className="text-gray-600 text-sm mb-4">في هذا الفيديو، يشرح الدكتور مهند الكسواني، المحاضر الدولي في علوم طب الأسنان، أحدث طرق علاج الشخير باستخدام تقنية الليزر. يعتمد العلاج على تقنيات متطورة لشد عضلات سقف الحلق وتقليل الشخير بشكل فعال ودون الحاجة للجراحة.</p>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
+                  <Button className="w-full bg-primary/80 hover:bg-primary text-white btn-hover-scale">
+                    <PlayCircle className="w-4 h-4 ml-2" />
+                    مشاهدة الفيديو التعليمي
+                  </Button>
+                </a>
+              </div>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video"
+                    src="https://www.youtube.com/embed/iClh79sqQ-Q"
+                    title="كيف تعمل أجهزة Myobrace للأطفال؟"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                  <Badge className="absolute top-3 right-3 bg-green-500 text-white flex items-center gap-1">
+                    <Video className="w-3 h-3" />
+                    الأكثر مشاهدة
+                  </Badge>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="bg-accent/20 0 p-1 rounded">
+                      <Video className="w-4 h-4 text-accent" />
+                    </div>
+                    <span className="text-sm font-medium text-accent">فيديو تعليمي</span>
+                  </div>
+                  <h3 className="font-bold text-lg text-accent mb-2">كتاب "الشخير حتى الموت" | مناقشة مع الدكتور مهند الكسواني</h3>
+                  <p className="text-gray-600 text-sm mb-4">في هذا الفيديو، يستعرض الدكتور مهند الكسواني، المحاضر الدولي في علوم طب الأسنان، كتاب "الشخير حتى الموت" لمؤلفه ديفيد ماكنتوش. يقدم الدكتور مهند رؤىً شاملة حول المخاطر الصحية المرتبطة بالشخير وتأثيراته السلبية على نوعية الحياة.</p>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
+                  <Button className="w-full bg-accent/80 hover:bg-accent text-white btn-hover-scale">
+                    <PlayCircle className="w-4 h-4 ml-2" />
+                    مشاهدة الفيديو التعليمي
+                  </Button>
+                </a>
+              </div>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video"
+                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    title="دراسة: العلاقة بين الشخير وأمراض القلب"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                  <Badge className="absolute top-3 right-3 bg-secondary text-white flex items-center gap-1">
+                    <Brain className="w-3 h-3" />
+                    دراسة علمية
+                  </Badge>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="bg-secondary/20 p-1 rounded">
+                      <Brain className="w-4 h-4 text-secondary" />
+                    </div>
+                    <span className="text-sm font-medium text-secondary">دراسة علمية</span>
+                  </div>
+                  <h3 className="font-bold text-lg text-secondary mb-2">الشخير المزمن هو القاتل الصامت!!</h3>
+                  <p className="text-gray-600 text-sm mb-4">الشخير المزمن ليس مجرد إزعاج بسيط، بل هو مؤشر على مشكلة صحية قد تؤثر على صحتك ونومك وجودة حياتك.</p>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://www.youtube.com/watch?v=nmog1iNuFAQ" target="_blank">
+                  <Button className="w-full bg-secondary/80 hover:bg-secondary text-white btn-hover-scale">
+                    <PlayCircle className="w-4 h-4 ml-2" />
+                    مشاهدة الفيديو التعليمي
+                  </Button>
+                </a>
+              </div>
+            </Card>
           </div>
 
           <div className="text-center mt-12">
@@ -159,8 +270,11 @@ export default function MedicalLibraryVideosPage() {
               </Button>
             </a>
           </div>
+          
         </div>
+        
       </section>
+ 
     </div>
   );
 } 

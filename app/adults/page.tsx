@@ -32,7 +32,7 @@ export default function AdultsPage() {
                 <h1 className="text-4xl font-bold text-primary leading-tight drop-shadow-sm">
                   علاج شامل للشخير عند البالغين
                 </h1>
-                <p className="text-lg text-primary/90 leading-relaxed">
+                <p className="text-lg text-gray-700 leading-relaxed">
                   حلول متقدمة ومخصصة لعلاج الشخير وانقطاع التنفس أثناء النوم باستخدام أحدث التقنيات الطبية
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function AdultsPage() {
           مخاطر الشخير عند البالغين - لا تتجاهل التحذيرات
           <span className="block w-28 h-1 bg-primary mx-auto mt-3 rounded-full opacity-90"></span>
         </h2>
-        <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed tracking-wide">
+        <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed tracking-wide">
           الشخير ليس مجرد إزعاج ليلي - إنه مؤشر على مشاكل صحية خطيرة قد تهدد حياتك
         </p>
       </div>
@@ -182,7 +182,7 @@ export default function AdultsPage() {
         <h2 className="text-3xl font-bold text-primary mb-4">
           علاج البالغين: ليزر، أجهزة فموية، تمارين وجه، تغيير أسلوب الحياة
         </h2>
-        <p className="text-lg text-primary/90">
+        <p className="text-lg text-gray-700">
           نستخدم أحدث التقنيات العالمية لضمان نتائج فعالة وآمنة
         </p>
       </div>
@@ -193,10 +193,10 @@ export default function AdultsPage() {
               <Zap className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-accent mb-4">العلاج بالليزر</h3>
-            <p className="text-primary/90 mb-4">
+            <p className="text-gray-700 mb-4">
               جلسات ليزر مخصصة لتقليص الأنسجة الرخوة في الحلق وتحسين تدفق الهواء
             </p>
-            <ul className="text-base text-primary/90 space-y-2 mb-6 text-right">
+            <ul className="text-base text-gray-700 space-y-2 mb-6 text-right">
               <li>✓ بدون جراحة أو ألم</li>
               <li>✓ عدد جلسات مناسب للحالة</li>
               <li>✓ تحسين فوري للتنفس</li>
@@ -215,10 +215,10 @@ export default function AdultsPage() {
               <Stethoscope className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">الأجهزة الفموية</h3>
-            <p className="text-primary/90 mb-4">
+            <p className="text-gray-700 mb-4">
               أجهزة فموية مخصصة لفتح مجرى الهواء أثناء النوم
             </p>
-            <ul className="text-base text-primary/90 space-y-2 mb-6 text-right">
+            <ul className="text-base text-gray-700 space-y-2 mb-6 text-right">
               <li>✓ كسر عادة التنفس الفموي وتحفيز التنفس الأنفي</li>
               <li>✓ تحسين التنفس في الشهر الأول</li>
               <li>✓ مريحة وسهلة الاستخدام</li>
@@ -237,10 +237,10 @@ export default function AdultsPage() {
               <Target className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-accent mb-4">تمارين الوجه وتغيير أسلوب الحياة</h3>
-            <p className="text-primary/90 mb-4">
+            <p className="text-gray-700 mb-4">
               تمارين لتقوية عضلات الوجه مع نصائح لتحسين نمط الحياة
             </p>
-            <ul className="text-base text-primary/90 space-y-2 mb-6 text-right">
+            <ul className="text-base text-gray-700 space-y-2 mb-6 text-right">
               <li>✓ تقوية عضلات الفم والحلق</li>
               <li>✓ تقليل التنفس الفموي</li>
               <li>✓ نصائح يومية للوقاية</li>
@@ -264,7 +264,7 @@ export default function AdultsPage() {
         <h2 className="text-3xl font-bold text-primary mb-4">
           البروتوكول العلاجي في Dentalsnore Clinic
         </h2>
-        <p className="text-lg text-primary/90 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
           ندرك في Dentalsnore Clinic أهمية اتباع طرق العلاج التي توصل لها العلم الحديث في علاج الشخير المتعلق بمجال طب الأسنان والتنفس الفموي. نقدم لك بروتوكول علاجي متكامل وفعال للتخلص من هذه المشكلة المزعجة، بدءًا من التشخيص الدقيق مع الدكتور مهند باستخدام أحدث التقنيات وصولًا إلى خطط علاجية مخصصة تناسب احتياجاتك الفردية.
         </p>
       </div>
@@ -404,7 +404,7 @@ export default function AdultsPage() {
             <p className="text-gray-600 text-lg leading-relaxed">
               بناءً على الخطة العلاجية، نقدم مجموعة من الحلول الفعالة للبالغين، والتي قد تشمل:
             </p>
-            <ul className="text-base text-primary/90 space-y-2 mt-4 text-right">
+            <ul className="text-base text-gray-700 space-y-2 mt-4 text-right">
               <li>✓ الليزر: يساعد الليزر على شد الأنسجة المرتخية في سقف الحلق، مما يقلل من اهتزازها ويخفف من صوت الشخير. هذا الإجراء يتم بجلسات قصيرة بدون جراحة وبدون ألم يذكر.</li>
               <li>✓ الأجهزة الفموية: هي أجهزة مصممة خصيصاً لك، وتساعد على إبقاء مجرى الهواء مفتوحاً أثناء النوم عن طريق تعديل وضعية الفك السفلي واللسان.</li>
               <li>✓ تمارين الوجه: نعلمك مجموعة من التمارين البسيطة التي تساعد على تقوية العضلات المسؤولة عن التنفس والبلع، مما يساهم في تقليل الشخير على المدى الطويل.</li>
@@ -446,7 +446,7 @@ export default function AdultsPage() {
               </div>
               <h2 className="text-3xl font-bold text-primary mb-4">
                 🔍 تقييم مخصص للبالغين - اكتشف مدى خطورة شخيرك
-              </h2>              <p className="text-xl text-primary/90 mb-6">
+              </h2>              <p className="text-xl text-gray-700 mb-6">
                 استبيان علمي معتمد يعتمد على مقياس Epworth Sleepiness Scale ومعايير طبية دقيقة
               </p>
             </div>

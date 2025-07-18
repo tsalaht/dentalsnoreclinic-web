@@ -194,7 +194,7 @@ export default function InteractiveSleepChallenge() {
 
           <div className="bg-gray-50 rounded-lg p-6">
             <h3 className="font-bold text-primary mb-3">التوصية المخصصة لك:</h3>
-            <p className="text-primary/90 mb-4">{getRecommendedChallenge()}</p>
+            <p className="text-gray-700 mb-4">{getRecommendedChallenge()}</p>
             
             <div className="grid md:grid-cols-2 gap-4">
               {percentage >= 60 ? (

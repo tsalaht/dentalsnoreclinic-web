@@ -38,7 +38,7 @@ export default function MuscleExercisesEffectivenessPage() {
             <CardContent className="p-4 sm:p-6 lg:p-8 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">دور التمارين العضلية في علاج الشخير وتوقف التنفس أثناء النوم</h2>
-                <p className="text-primary/90 text-sm sm:text-lg leading-relaxed break-words">
+                <p className="text-gray-700 text-sm sm:text-lg leading-relaxed break-words">
                   تشير الدراسات العلمية إلى أن التمارين العضلية للفم والحلق (Myofunctional Therapy) تلعب دورًا فعالًا في تقليل الشخير وتحسين جودة النوم لدى الأشخاص الذين يعانون من اضطرابات التنفس أثناء النوم، مثل توقف التنفس الانسدادي أثناء النوم (OSA). هذه التمارين تعزز قوة عضلات مجرى الهواء العلوي، مما يقلل من انسداده أثناء النوم.
                 </p>
               </div>

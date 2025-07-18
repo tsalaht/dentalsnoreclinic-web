@@ -92,7 +92,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-bold text-lg mb-2">العنوان</h3>
                           <p className="text-gray-600 mb-2"> لأردن-عمان- الصوفية-شارع باريس-مجمع 15</p>
-                          <p className="text-primary/90">عمان، الأردن</p>
+                          <p className="text-gray-700">عمان، الأردن</p>
                         </div>
                       </div>
                     </CardContent>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-6">املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة لتأكيد موعدك</p>
                   <form className="space-y-6">
                     <div>
-                      <label htmlFor="fullName" className="block text-sm font-medium text-primary/90 mb-2">الاسم الكامل</label>
+                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">الاسم الكامل</label>
                       <input
                         id="fullName"
                         type="text"
@@ -163,7 +163,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="phoneNumber" className="block text-sm font-medium text-primary/90 mb-2">رقم الهاتف</label>
+                      <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-2">رقم الهاتف</label>
                       <input
                         id="phoneNumber"
                         type="tel"
@@ -173,7 +173,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-primary/90 mb-2">البريد الإلكتروني</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
                       <input
                         type="email"
                         id="email"
@@ -184,7 +184,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="treatment-type" className="block text-sm font-medium text-primary/90 mb-2">نوع العلاج المطلوب</label>
+                      <label htmlFor="treatment-type" className="block text-sm font-medium text-gray-700 mb-2">نوع العلاج المطلوب</label>
                       <select id="treatment-type" name="treatment-type" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/70">
                         <option value="">اختر نوع العلاج</option>
                         <option value="adult">علاج الشخير للبالغين</option>
@@ -194,7 +194,7 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="preferred-date" className="block text-sm font-medium text-primary/90 mb-2">التاريخ المفضل</label>
+                      <label htmlFor="preferred-date" className="block text-sm font-medium text-gray-700 mb-2">التاريخ المفضل</label>
                       <input
                         type="date"
                         id="preferred-date"
@@ -203,7 +203,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="additional-notes" className="block text-sm font-medium text-primary/90 mb-2">ملاحظات إضافية</label>
+                      <label htmlFor="additional-notes" className="block text-sm font-medium text-gray-700 mb-2">ملاحظات إضافية</label>
                       <textarea
                         rows={4}
                         id="additional-notes"
@@ -257,7 +257,7 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-primary mb-6">أسئلة شائعة</h2>
             <p className="text-gray-600 mb-8">اطلع على الأسئلة الأكثر شيوعاً حول علاج الشخير</p>
             <Link href="/faq">
-              <Button size="lg" variant="outline" className="border-gray-300 text-primary/90 hover:bg-gray-100">
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100">
                 <Navigation className="w-5 h-5 ml-2" />
                 اطلع على الأسئلة الشائعة
               </Button>

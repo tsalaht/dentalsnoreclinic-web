@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog2.png" alt="طريقة بوتيكو" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">طريقة بوتيكو: المفتاح للتنفس عن طريق الأنف والصحة القصوى</h1>
-              <p className="text-primary/90 text-lg mb-4">اكتشف كيف يمكن لطريقة بوتيكو تحسين صحتك من خلال التنفس عن طريق الأنف وتأثيرها على صحة الفم والوجه.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">اكتشف كيف يمكن لطريقة بوتيكو تحسين صحتك من خلال التنفس عن طريق الأنف وتأثيرها على صحة الفم والوجه.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <p>عند الحديث عن تقويم الأسنان وإعادة تشكيل وجه البالغين نحو الجمال، يتضح أن اضطرابات الفم والوجه مترابطة بشكل عميق مع التنفس ووضعية الفم. تؤكد الأبحاث الحديثة أن تحقيق توازن عضلي بين الشفاه واللسان يمكن أن يغير ملامح الوجه بشكل ملحوظ.</p>
                 
                 <h2 className="text-2xl font-semibold">وضعية الفم وتأثيرها</h2>

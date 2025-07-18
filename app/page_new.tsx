@@ -250,15 +250,15 @@ export default function ArabicSnoringClinic() {  return (
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <Award className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-primary/90">خبرة أكثر من 15 عاماً في علاج اضطرابات النوم</span>
+                    <span className="text-gray-700">خبرة أكثر من 15 عاماً في علاج اضطرابات النوم</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Users className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-primary/90">أكثر من 5000 مريض تم علاجهم بنجاح</span>
+                    <span className="text-gray-700">أكثر من 5000 مريض تم علاجهم بنجاح</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Star className="w-5 h-5 text-blue-600 mt-1" />
-                    <span className="text-primary/90">تقييم 4.9/5 من المرضى السابقين</span>
+                    <span className="text-gray-700">تقييم 4.9/5 من المرضى السابقين</span>
                   </div>
                 </div>
               </div>

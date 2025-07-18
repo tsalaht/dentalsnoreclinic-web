@@ -14,14 +14,14 @@ export default function ImanPage() {
             className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-primary/10"
             priority
           />
-          <h1 className="text-3xl font-extrabold text-gray-900 mt-6 mb-2">د. إيمان نزال</h1>
+          <h1 className="text-3xl font-extrabold text-primary mt-6 mb-2">د. إيمان نزال</h1>
           <p className="text-lg text-gray-600 mb-4">أخصائية الأشعة السنية التشخيصية</p>
           <p className="text-primary/80 text-base leading-relaxed">
             تصوير الأسنان الإشعاعي – التصوير الطبقي ثلاثي الأبعاد (CBCT) وطب الأسنان الرقمي
           </p>
         </div>
 
-        <div className="space-y-10 text-primary/90 text-right">
+        <div className="space-y-10 text-gray-700 text-right">
           {/* About Section with Second Image */}
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
@@ -30,13 +30,7 @@ export default function ImanPage() {
                 الدكتورة إيمان نزال من الرواد في مجال طب الأسنان، حيث شاركت في تأسيس المركز الأوروبي لطب الأسنان وعملت على مساعدة الدكتور مهند الكسواني للوصول إلى التميز وتقديم خدمات متخصصة في طب الأسنان وعلاج الشخير والتنفس الفموي. كانت الدكتورة إيمان سباقة في تطبيق أحدث التقنيات في طب الأسنان، مما جعلها إضافة ثمينة للمركز.
               </p>
             </div>
-            <Image
-              src="/iman2.jpg"
-              alt="د. إيمان نزال - صورة إضافية"
-              width={160}
-              height={160}
-              className="w-40 h-40 rounded-2xl object-cover shadow-md md:w-48 md:h-48"
-            />
+        
           </div>
 
           {/* Academic and Professional Background Section */}

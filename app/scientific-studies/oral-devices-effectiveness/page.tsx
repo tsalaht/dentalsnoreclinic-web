@@ -38,7 +38,7 @@ export default function OralDevicesEffectivenessPage() {
             <CardContent className="p-4 sm:p-6 lg:p-8 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">دور الأجهزة الفموية في علاج الشخير واضطرابات النوم</h2>
-                <p className="text-primary/90 text-sm sm:text-lg leading-relaxed break-words">
+                <p className="text-gray-700 text-sm sm:text-lg leading-relaxed break-words">
                   تُظهر الدراسات العلمية أن الأجهزة الفموية المخصصة، مثل أجهزة تقدم الفك السفلي (MADs)، تُعد خيارًا فعالًا وغير جراحي لعلاج الشخير وتوقف التنفس الانسدادي أثناء النوم (OSA). تعمل هذه الأجهزة على إبقاء مجرى الهواء العلوي مفتوحًا عن طريق تعديل وضعية الفك أو اللسان، مما يقلل من الاهتزازات المسببة للشخير ويحسن تدفق الهواء.
                 </p>
               </div>

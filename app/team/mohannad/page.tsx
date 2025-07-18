@@ -7,11 +7,11 @@ export default function MohannadPage() {
         <img src="/73.jpg" alt="د. مهند الكسواني" className="w-48 h-auto mx-auto mb-4 rounded-xl" />
         <h1 className="text-2xl font-bold mb-2">د. مهند الكسواني</h1>
         <p className="text-gray-600 mb-4">أخصائي علاج الشخير والتنفس الفموي</p>
-        <p className="text-primary/90 mb-4">
+        <p className="text-gray-700 mb-4">
           المحاضر الدولي في علوم طب الأسنان الرقمي وإطباق الأسنان والابتسامة الرقمية وطب الأسنان المتعلق بالشخير واضطراب التنفس أثناء النوم
         </p>
 
-        <div className="text-primary/90 text-right">
+        <div className="text-gray-700 text-right">
           <h2 className="text-xl font-semibold mb-3">نبذة عن الدكتور مهند</h2>
           <p className="mb-4">
             حصل الدكتور مهند الكسواني على درجة الماجستير في علوم الخدمة الصحية من كلية الجراحين في لندن. يعرف الدكتور بشهاداته وخبراته الواسعة في مجال طب الأسنان وزراعة الأسنان.

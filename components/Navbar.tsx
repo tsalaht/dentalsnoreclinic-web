@@ -90,7 +90,7 @@ export default function Navbar() {
               className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/about" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
               <span className="relative z-10">من نحن</span>
-              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/about" ? " bg-primary-80 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
+              <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/about" ? " bg-primary w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
             {/* Dropdown for خدماتنا */}
             <div className="relative" ref={servicesRef}>

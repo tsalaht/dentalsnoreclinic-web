@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog5.jpg" alt="أفضل الطرق لحل مشكلة الشخير" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">أفضل الطرق لحل مشكلة الشخير</h1>
-              <p className="text-primary/90 text-lg mb-4">تعرف على أفضل الطرق للتخلص من الشخير من خلال تمارين الوجه، تحسين وضعية النوم، وبعض الأعشاب الطبيعية.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">تعرف على أفضل الطرق للتخلص من الشخير من خلال تمارين الوجه، تحسين وضعية النوم، وبعض الأعشاب الطبيعية.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">ما هو الشخير؟</h2>
                 <p>الشخير هو الصوت الذي يصدره النائم نتيجة اهتزاز الأجزاء التنفسية بسبب حركة الهواء المتعسرة خلال التنفس أثناء النوم، وذلك نتيجة تضيق في ممرات التنفس. الشخير الهادئ قد يحدث بسبب وضعية غير صحيحة للرأس بالنسبة للعنق، بينما الشخير العالي قد يكون مصحوبًا بتوقف متقطع في التنفس واضطراب النوم، مما يشير إلى انقطاع التنفس الإنسدادي أثناء النوم. ليس كل من يشخر مصابًا بهذا الاضطراب، لكن الشخير قد يكون علامة تحذيرية.</p>
                 

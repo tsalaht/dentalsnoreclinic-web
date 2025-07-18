@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog8.jpg" alt="المعالجة الوظيفية العضلية" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">العلاج الوظيفي لتحسين حالة انقطاع النفس أثناء النوم</h1>
-              <p className="text-primary/90 text-lg mb-4">اكتشف كيف يمكن للعلاج الوظيفي العضلي تحسين انقطاع النفس أثناء النوم من خلال تقوية عضلات اللسان والفم والحلق بتمارين بسيطة وآمنة.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">اكتشف كيف يمكن للعلاج الوظيفي العضلي تحسين انقطاع النفس أثناء النوم من خلال تقوية عضلات اللسان والفم والحلق بتمارين بسيطة وآمنة.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">نظرة عامة</h2>
                 <p>المعالجة الوظيفية العضلية هي برنامج تمارين مخصصة تستهدف عضلات الوجه المستخدمة في المضغ والبلع والتنفس. تركز هذه التمارين على تقوية اللسان والحلق للحفاظ على مجرى تنفس مفتوح، خاصة أثناء النوم. ضعف عضلات البلعوم قد يؤدي إلى الشخير وانقطاع النفس النومي، حيث يمكن أن يرتخي اللسان ويسد مجرى الهواء.</p>
                 

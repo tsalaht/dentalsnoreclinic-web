@@ -7,7 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import { Star, Phone, Clock, Users, Award, Stethoscope, BookOpen, CheckCircle, Zap, MessageCircle, Calendar, Building, GraduationCap, Shield, Smile, Trophy, Baby } from "lucide-react"
 import WhatsAppButton from "@/components/WhatsAppButton"
 import Navbar from "@/components/Navbar"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
+import { useRouter } from "next/navigation";
+
 export default function AboutPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -23,6 +25,18 @@ export default function AboutPage() {
   };
 
     const [isExpanded, setIsExpanded] = useState(false);
+  const sleepMedicineRef = useRef(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (window.location.hash === "#sleep-medicine") {
+      setIsExpanded(true);
+      setTimeout(() => {
+        sleepMedicineRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 100); // slight delay to ensure expansion
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Navigation */}
@@ -46,7 +60,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/79.jpg"
+                  src="/18.png"
                   alt="د. مهند الكسواني في عيادة علاج الشخير"
                   width={600}
                   height={500}
@@ -163,7 +177,7 @@ export default function AboutPage() {
               <Award className="w-8 h-8 text-primar" />
               شهادات الدكتور مهند
             </h2>
-            <p className="text-lg text-primary/90 mb-6">
+            <p className="text-lg text-gray-700 mb-6">
               شهادات واعتمادات دولية تؤكد خبرة الدكتور مهند في علاج الشخير واضطرابات النوم
             </p>
           </div>
@@ -293,8 +307,12 @@ export default function AboutPage() {
       </div>
     </div>
     {/* Dental Sleep Medicine */}
-<div className="my-20">
-      <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative">
+<div className="mt-20">
+      <h3
+        id="sleep-medicine"
+        ref={sleepMedicineRef}
+        className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center relative"
+      >
         طب الأسنان المتعلق بأمراض النوم
         <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
       </h3>
@@ -316,7 +334,10 @@ export default function AboutPage() {
           )}
           <div className="flex justify-center mb-6">
             <button
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={() => {
+                setIsExpanded(!isExpanded);
+                router.push('/about#sleep-medicine');
+              }}
               className="text-primary font-semibold hover:underline focus:outline-none"
             >
               {isExpanded ? 'اقرأ أقل' : 'اقرأ المزيد'}
@@ -342,7 +363,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary mb-4">عيادة علاج الشخير - المركز الأوروبي</h2>
-            <p className="text-lg text-gray-600">أول عيادة متخصصة في علاج الشخير واضطرابات النوم في الأردن</p>
+            <p className="text-lg text-gray-600">أول عيادة أسنان متخصصة في علاج الشخير واضطرابات النوم في الأردن</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">

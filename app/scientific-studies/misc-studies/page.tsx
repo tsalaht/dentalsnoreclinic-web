@@ -38,7 +38,7 @@ export default function MiscStudiesPage() {
             <CardContent className="p-4 sm:p-6 lg:p-8 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">أبحاث حول اضطرابات النوم والشخير</h2>
-                <p className="text-primary/90 text-sm sm:text-lg leading-relaxed">
+                <p className="text-gray-700 text-sm sm:text-lg leading-relaxed">
                   تستعرض هذه الصفحة مجموعة من الدراسات العلمية التي تتناول أسباب اضطرابات النوم، بما في ذلك تأثير نمط الحياة، العوامل الوراثية، والتدخلات العلاجية المبتكرة. كما تشمل الأبحاث دور طب الأسنان في الكشف المبكر عن مشاكل التنفس الفموي وتأثيرها على نمو الفكين.
                 </p>
               </div>

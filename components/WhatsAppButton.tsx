@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react"
 
 export default function WhatsAppButton() {
-  const whatsappNumber = "962796759251"
+  const whatsappNumber = "9620797377375"
   const defaultMessage = "مرحباً، أريد الاستفسار عن خدمات Dentalsnore Clinic"
 
   return (

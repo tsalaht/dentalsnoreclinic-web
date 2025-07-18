@@ -7,15 +7,29 @@ export default function MajdPage() {
         <img src="/majd.png" alt="د. مجد" className="w-48 h-auto mx-auto mb-4 rounded-xl" />
         <h1 className="text-2xl font-bold mb-2">د. مجد المدني</h1>
         <p className="text-gray-600 mb-4">أخصائية علاج الشخير والتنفس الفموي</p>
-        <p className="text-primary/90 mb-4">
+        <p className="text-gray-700 mb-4">
           طبيبة أسنان وأخصائية علاج الشخير والتنفس الفموي
         </p>
 
-        <div className="text-primary/90 text-right">
-          <h2 className="text-xl font-semibold mb-3">نبذة عن الدكتورة مجد</h2>
+        <div className="text-gray-700 text-right">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+  <div className=" flex-1">
+   <h2 className="text-xl font-semibold mb-3">نبذة عن الدكتورة مجد</h2>
           <p className="mb-4">
             الدكتورة مجد ماهرة في مجال طب الأسنان، حاصلة على درجة دكتور في جراحة الأسنان (DDS) من الجامعة الأردنية. بفضل خلفيتها التعليمية القوية وشغفها برعاية الأسنان، تكرس الدكتورة مجد جهودها لتقديم أعلى جودة علاج لمرضاها.
           </p>
+
+          </div>
+            <Image
+                        src="/iman2.jpg"
+                        alt="د. إيمان نزال - صورة إضافية"
+                        width={160}
+                        height={160}
+                        className="w-40 h-40 rounded-2xl object-cover shadow-md md:w-48 md:h-48"
+                      />
+          </div>
+        
+       
 
           <h2 className="text-xl font-semibold mb-3">المؤهلات الأكاديمية</h2>
           <p className="mb-4">

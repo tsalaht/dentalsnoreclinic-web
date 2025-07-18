@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog1.jpg" alt="علاج الشخير في الأردن" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">علاج الشخير في الأردن: دليل شامل لحلول فعالة</h1>
-              <p className="text-primary/90 text-lg mb-4">إذا كنت تعاني من الشخير المزعج، فأنت لست وحدك. الشخير مشكلة شائعة تؤثر على جودة النوم والحياة اليومية. في هذا المقال، سنستعرض أفضل طرق علاج الشخير في الأردن، بما في ذلك العيادات المتخصصة والعلاجات المتاحة.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">إذا كنت تعاني من الشخير المزعج، فأنت لست وحدك. الشخير مشكلة شائعة تؤثر على جودة النوم والحياة اليومية. في هذا المقال، سنستعرض أفضل طرق علاج الشخير في الأردن، بما في ذلك العيادات المتخصصة والعلاجات المتاحة.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">ما هو الشخير؟</h2>
                 <p>الشخير هو صوت مزعج يحدث نتيجة لاهتزاز الأنسجة في الحلق والأنف بسبب انسداد جزئي في مجرى الهواء أثناء النوم. قد يكون الشخير عرضًا لمشكلة صحية أكبر مثل انقطاع النفس الانسدادي النومي (OSA).</p>
                 

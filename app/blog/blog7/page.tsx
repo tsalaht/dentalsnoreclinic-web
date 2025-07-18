@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog7.jpeg" alt="النظام الغذائي لانقطاع النفس أثناء النوم" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">النظام الغذائي لانقطاع النفس أثناء النوم</h1>
-              <p className="text-primary/90 text-lg mb-4">تعرف على النظام الغذائي الأمثل لتحسين أعراض انقطاع النفس أثناء النوم من خلال التركيز على الأطعمة الغنية بالفيتامينات والمعادن وتجنب الأطعمة المصنعة.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">تعرف على النظام الغذائي الأمثل لتحسين أعراض انقطاع النفس أثناء النوم من خلال التركيز على الأطعمة الغنية بالفيتامينات والمعادن وتجنب الأطعمة المصنعة.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">ماذا يجب أن يشمل النظام الغذائي الجيد لانقطاع النفس أثناء النوم؟</h2>
                 <p>يجب أن يحتوي النظام الغذائي على الفواكه والخضروات العضوية الطازجة، الغنية بالفيتامينات والمعادن. وفقًا لبيانات من عامي 2007 و2008، وجد الباحثون أن تناول المغذيات يرتبط ارتباطًا وثيقًا بجودة النوم. الأشخاص الذين يعانون من نقص المغذيات يواجهون صعوبة في النوم المتواصل لليلة كاملة.</p>
                 

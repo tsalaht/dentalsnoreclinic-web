@@ -38,7 +38,7 @@ export default function LaserEffectivenessPage() {
             <CardContent className="p-4 sm:p-6 lg:p-8 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary">دور الليزر في علاج الشخير واضطرابات النوم</h2>
-                <p className="text-primary/90 text-sm sm:text-lg leading-relaxed">
+                <p className="text-gray-700 text-sm sm:text-lg leading-relaxed">
                   تشير الأبحاث العلمية إلى أن العلاج بالليزر، مثل تقنية NightLase وجراحة الحلق بمساعدة الليزر (LAUP)، يُعد خيارًا فعالًا وغير جراحي لتقليل الشخير وتحسين جودة النوم. يعمل الليزر على شد الأنسجة الرخوة في سقف الحلق واللهاة، مما يقلل من الاهتزازات المسببة للشخير ويحسن تدفق الهواء.
                 </p>
               </div>

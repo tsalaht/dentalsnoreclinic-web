@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog6.png" alt="انقطاع التنفس أثناء النوم" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">انقطاع التنفس أثناء النوم: التعريف، الأسباب، الأعراض وأفضل طرق العلاج</h1>
-              <p className="text-primary/90 text-lg mb-4">تعرف على انقطاع التنفس أثناء النوم، أسبابه، أعراضه، وأفضل الطرق العلاجية المنزلية لتحسين جودة النوم والصحة العامة.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">تعرف على انقطاع التنفس أثناء النوم، أسبابه، أعراضه، وأفضل الطرق العلاجية المنزلية لتحسين جودة النوم والصحة العامة.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">ما هو انقطاع التنفس أثناء النوم؟</h2>
                 <p>قد يبدو انقطاع التنفس أثناء النوم أمرًا بسيطًا، لكنه يؤثر بشكل كبير على الحياة اليومية للمصابين به. يعاني هؤلاء من صعوبة في النوم الهادئ والمريح بسبب توقف التنفس المفاجئ، مما يؤدي إلى الإرهاق والتعب خلال النهار حتى بدون بذل مجهود كبير. بعض الأشخاص لا يدركون إصابتهم بهذه المشكلة، ويشعرون فقط بالتعب العام وقلة الراحة دون معرفة السبب الحقيقي.</p>
                 

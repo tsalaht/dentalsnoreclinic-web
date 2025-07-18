@@ -105,7 +105,7 @@ export default function ChildrenPage() {
                 لماذا الشخير عند الأطفال خطير جداً؟
                 <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
               </h2>
-              <p className="text-xl text-primary/90 max-w-3xl mx-auto leading-relaxed tracking-wide">
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed tracking-wide">
                 الشخير عند الأطفال ليس أمراً عادياً - إنه علامة على تحديات صحية قد تؤثر على تطورهم
               </p>
             </div>
@@ -422,9 +422,9 @@ export default function ChildrenPage() {
       </div>
       <div className="max-w-2xl mx-auto">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
-          loop
+       
             dir="ltr"
           spaceBetween={20}
           slidesPerView={2}

@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog3.jpg" alt="الحساسية وصحة الأسنان عند الأطفال" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">الحساسية وصحة الأسنان عند الأطفال</h1>
-              <p className="text-primary/90 text-lg mb-4">اكتشف كيف تؤثر الحساسية على التنفس وصحة الأسنان عند الأطفال، وكيفية الوقاية من المضاعفات المرتبطة بها.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">اكتشف كيف تؤثر الحساسية على التنفس وصحة الأسنان عند الأطفال، وكيفية الوقاية من المضاعفات المرتبطة بها.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <p>إذا كان طفلك يعاني من التهابات متكررة في اللوزتين أو اللحميات الأنفية، فقد يؤثر ذلك على مجرى التنفس العلوي، مما يدفعه للتنفس من الفم بدلاً من الأنف. التنفس من الفم يزيد من مخاطر الإصابة بالالتهابات والأمراض بسبب دخول هواء جاف وبارد وغير منقى إلى الجهاز التنفسي والهضمي.</p>
                 
                 <h2 className="text-2xl font-semibold">تأثير الحساسية على التنفس</h2>

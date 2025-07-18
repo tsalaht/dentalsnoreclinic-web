@@ -27,8 +27,8 @@ export default function BlogDetail() {
             <CardContent className="p-8">
               <img src="/blog9.jpg" alt="التنفس من الفم" className="w-full h-64 object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">التنفس من الفم: التوابع الجسدية، العقلية والعاطفية</h1>
-              <p className="text-primary/90 text-lg mb-4">تعرف على تأثيرات التنفس من الفم على الصحة الجسدية والعقلية والعاطفية، وكيف يمكن للتنفس الأنفي أن يحسن جودة الحياة.</p>
-              <div className="text-primary/90 leading-relaxed space-y-4 text-base">
+              <p className="text-gray-700 text-lg mb-4">تعرف على تأثيرات التنفس من الفم على الصحة الجسدية والعقلية والعاطفية، وكيف يمكن للتنفس الأنفي أن يحسن جودة الحياة.</p>
+              <div className="text-gray-700 leading-relaxed space-y-4 text-base">
                 <h2 className="text-2xl font-semibold">أهمية التنفس من الأنف</h2>
                 <p>التنفس هو وظيفة حيوية تؤثر على الجسم بشكل إيجابي أو سلبي حسب طريقته. التنفس الصحيح يكون عبر الأنف، حيث يتمدد البطن ويتقلص بهدوء أثناء الشهيق والزفير دون مجهود. في المقابل، التنفس من الفم غالبًا يكون سريعًا، مسموعًا، ومصحوبًا بحركة الصدر، خاصة في حالات التوتر. الاعتياد على التنفس من الفم يسبب آثارًا سلبية على الصحة الجسدية والعقلية، خاصة في نمو الوجه عند الأطفال.</p>
                 
