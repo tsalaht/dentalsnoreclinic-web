@@ -58,7 +58,7 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              {/* <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/18.png"
                   alt="د. مهند الكسواني في عيادة علاج الشخير"
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4">
                   <p className="text-sm font-medium text-gray-800">خبرة وثقة ونتائج مؤكدة</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
