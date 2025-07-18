@@ -225,7 +225,7 @@ export default function InteractiveSleepChallenge() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
-              href={`https://wa.me/962796759251?text=أكملت تحدي النوم التفاعلي وحصلت على نتيجة ${percentage}%. أريد الانضمام للتحدي المناسب لي: ${getRecommendedChallenge()}`}
+              href={`https://wa.me/9620797377375?text=أكملت تحدي النوم التفاعلي وحصلت على نتيجة ${percentage}%. أريد الانضمام للتحدي المناسب لي: ${getRecommendedChallenge()}`}
               target="_blank"
               className="flex-1"
             >

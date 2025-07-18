@@ -251,7 +251,7 @@ export default function MedicalLibrarySearch() {
                     </span>
                   </div>
                   
-                  <a href={`https://wa.me/962796759251?text=أريد معرفة المزيد عن: ${item.title}`} target="_blank">
+                  <a href={`https://wa.me/9620797377375?text=أريد معرفة المزيد عن: ${item.title}`} target="_blank">
                     <Button className="w-full bg-blue-600 hover:bg-primary text-white flex items-center justify-center gap-2">
                       {item.type === 'video' ? (
                         <>

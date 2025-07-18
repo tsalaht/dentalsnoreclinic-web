@@ -107,7 +107,7 @@ export default function MiscStudiesPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center" >
                 <a
-                  href="https://wa.me/962796759251?text=أريد استشارة حول اضطرابات النوم"
+                  href="https://wa.me/9620797377375?text=أريد استشارة حول اضطرابات النوم"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

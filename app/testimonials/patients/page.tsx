@@ -133,7 +133,7 @@ export default function PatientTestimonialsPage() {
                 احجز عبر النموذج
               </Button>
             </Link>
-            <a href="https://wa.me/962796759251?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="group">
+            <a href="https://wa.me/9620797377375?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="group">
               <Button size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-600 px-8 py-4 text-lg w-full sm:w-auto transition-all duration-300 hover:scale-105">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز عبر واتساب

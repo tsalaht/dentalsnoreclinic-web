@@ -169,7 +169,7 @@ export default function DoctorTestimonialsPage() {
                   <span>احجز استشارة</span>
                 </Button>
               </Link>
-              <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن التعاون مع المركز الأوروبي" target="_blank" className="group">
+              <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن التعاون مع المركز الأوروبي" target="_blank" className="group">
                 <Button size="lg" variant="outline" className=" text-blue-600 border-blue-600 hover:bg-blue-100 hover:text-blue-600 px-8 py-4 text-lg w-full sm:w-auto transition-all duration-300 hover:scale-105">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   <span>تواصل عبر واتساب</span>

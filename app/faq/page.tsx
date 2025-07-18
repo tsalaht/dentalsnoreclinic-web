@@ -114,7 +114,7 @@ export default function FAQPage() {
                     <span>1,200</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو الفرق بين الشخير الطبيعي والمرضي" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو الفرق بين الشخير الطبيعي والمرضي" target="_blank">
                   <Button className="w-full bg-blue-600 hover:bg-primary text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -148,7 +148,7 @@ export default function FAQPage() {
                     <span>980</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو علاج الشخير بدون جراحة" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو علاج الشخير بدون جراحة" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -182,7 +182,7 @@ export default function FAQPage() {
                     <span>750</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو علامات احتياج الطفل للعلاج" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو علامات احتياج الطفل للعلاج" target="_blank">
                   <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -216,7 +216,7 @@ export default function FAQPage() {
                     <span>650</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو فعالية العلاج بالليزر" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو فعالية العلاج بالليزر" target="_blank">
                   <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -250,7 +250,7 @@ export default function FAQPage() {
                     <span>540</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو مدة العلاج والنتائج" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو مدة العلاج والنتائج" target="_blank">
                   <Button className="w-full bg-pink-600 hover:bg-pink-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -284,7 +284,7 @@ export default function FAQPage() {
                     <span>480</span>
                   </span>
                 </div>
-                <a href="https://wa.me/962796759251?text=أريد مشاهدة فيديو أمان العلاج للأطفال" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو أمان العلاج للأطفال" target="_blank">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد الإجابة
@@ -395,7 +395,7 @@ export default function FAQPage() {
                   <p className="text-gray-600 mb-4">
                     تكلفة العلاج بالليزر تتراوح من 500-800 دينار حسب حالة المريض وعدد الجلسات المطلوبة. نقدم استشارة مجانية لتحديد الخطة والتكلفة المناسبة.
                   </p>
-                  <a href="https://wa.me/962796759251?text=أريد معرفة تكلفة العلاج بالليزر لحالتي" target="_blank">
+                  <a href="https://wa.me/9620797377375?text=أريد معرفة تكلفة العلاج بالليزر لحالتي" target="_blank">
                     <Button className="bg-blue-600 hover:bg-primary text-white">
                       <MessageCircle className="w-4 h-4 ml-2" />
                       استفسر عن التكلفة
@@ -413,7 +413,7 @@ export default function FAQPage() {
                   <p className="text-gray-600 mb-4">
                     مدة العلاج تتراوح من 12-24 شهر حسب عمر الطفل وشدة الحالة. النتائج الأولية تظهر خلال 3-6 أشهر، والتحسن الكامل يحتاج للمدة الكاملة.
                   </p>
-                  <a href="https://wa.me/962796759251?text=أريد معرفة مدة علاج طفلي بأجهزة Myobrace" target="_blank">
+                  <a href="https://wa.me/9620797377375?text=أريد معرفة مدة علاج طفلي بأجهزة Myobrace" target="_blank">
                     <Button className="bg-green-600 hover:bg-green-700 text-white">
                       <MessageCircle className="w-4 h-4 ml-2" />
                       استشارة للطفل
@@ -431,7 +431,7 @@ export default function FAQPage() {
                   <p className="text-gray-600 mb-4">
                     معظم شركات التأمين في الأردن تغطي علاج الشخير إذا كان مرتبط بتوقف التنفس أثناء النوم. نساعدكم في إعداد التقارير المطلوبة للتأمين.
                   </p>
-                  <a href="https://wa.me/962796759251?text=أريد معرفة تفاصيل التغطية التأمينية لعلاج الشخير" target="_blank">
+                  <a href="https://wa.me/9620797377375?text=أريد معرفة تفاصيل التغطية التأمينية لعلاج الشخير" target="_blank">
                     <Button className="bg-purple-600 hover:bg-purple-700 text-white">
                       <MessageCircle className="w-4 h-4 ml-2" />
                       استفسار التأمين
@@ -449,7 +449,7 @@ export default function FAQPage() {
                   <p className="text-gray-600 mb-4">
                     العلاجات التي نستخدمها آمنة جداً. قد يشعر المريض بانزعاج بسيط في الأيام الأولى مع الأجهزة الفموية، وهذا طبيعي ويختفي خلال أسبوع.
                   </p>
-                  <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن أمان العلاج والآثار الجانبية" target="_blank">
+                  <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن أمان العلاج والآثار الجانبية" target="_blank">
                     <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                       <MessageCircle className="w-4 h-4 ml-2" />
                       معلومات الأمان
@@ -486,7 +486,7 @@ export default function FAQPage() {
                     className="w-full p-3 border border-white/30 rounded-lg bg-white/10 text-white placeholder-white/70 focus:ring-2 focus:ring-white focus:border-transparent"
                   ></textarea>
                   <div className="grid grid-cols-2 gap-4">
-                    <a href="https://wa.me/962796759251?text=لدي سؤال خاص حول الشخير وأريد إجابة من الدكتور" target="_blank" className="w-full">
+                    <a href="https://wa.me/9620797377375?text=لدي سؤال خاص حول الشخير وأريد إجابة من الدكتور" target="_blank" className="w-full">
                       <Button className="bg-green-500 hover:bg-green-600 text-white w-full py-3">
                         <MessageCircle className="w-4 h-4 ml-2" />
                         أرسل عبر واتساب
@@ -543,7 +543,7 @@ export default function FAQPage() {
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-3">اختبار التقييم</h3>
                 <p className="text-gray-600 text-sm mb-4">قيّم حالتك واكتشف مدى خطورة الشخير</p>
-                <a href="https://wa.me/962796759251?text=أريد إجراء اختبار تقييم الشخير" target="_blank">
+                <a href="https://wa.me/9620797377375?text=أريد إجراء اختبار تقييم الشخير" target="_blank">
                   <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50 w-full">
                     ابدأ التقييم
                   </Button>
