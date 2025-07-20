@@ -271,7 +271,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
+              <h3 className="font-bold text-lg mb-4">Dental Snore Clinic</h3>
               <p className="text-gray-400 mb-4">المركز الأوروبي للطب الأسنان</p>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>د. مهند الكسواني</p>
@@ -308,7 +308,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="border-t border-primary/90 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>© 2024 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
+            <p>© 2024 Dental Snore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>

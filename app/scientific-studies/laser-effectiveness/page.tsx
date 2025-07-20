@@ -5,9 +5,18 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { BookOpen, CheckCircle, Calendar } from "lucide-react"
+import { BookOpen, CheckCircle, Calendar, Download } from "lucide-react"
 
 export default function LaserEffectivenessPage() {
+  const handleDownloadSingle = (file) => {
+    const link = document.createElement("a");
+    link.href = file;
+    link.download = file.split("/").pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       <Navbar />
@@ -87,12 +96,12 @@ export default function LaserEffectivenessPage() {
                       <p className="italic">Non-ablative laser therapy for snoring and obstructive sleep apnea.</p>
                       <p><i>Journal of Clinical Sleep Medicine</i>.</p>
                       <a
-                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/"
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/CMC9879649/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline break-all"
                       >
-                        https://pmc.ncbi.nlm.nih.gov/articles/PMC9879649/
+                        https://pmc.ncbi.nlm.nih.gov/articles/CMC9879649/
                       </a>
                     </div>
                   </li>
@@ -129,16 +138,44 @@ export default function LaserEffectivenessPage() {
                     </div>
                   </li>
                 </ul>
+                <div className="flex flex-col sm:flex-row gap-4">
+                            <Button
+                  onClick={() => handleDownloadSingle("/nightlase_compendium.pdf")}
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
+                >
+                  <Download className="w-4 h-4 ml-2" />
+                  تحميل NightLase Compendium
+                </Button>
+                <Button
+                  onClick={() => handleDownloadSingle("/BJSTR.MS.ID.003447.pdf")}
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
+                >
+                  <Download className="w-4 h-4 ml-2" />
+                  تحميل BJSTR Study
+                </Button>
+                <Button
+                  onClick={() => handleDownloadSingle("/ART ER-YAG FOTONA 2018PDF.pdf")}
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
+                >
+                  <Download className="w-4 h-4 ml-2" />
+                  تحميل Fotona 2018
+                </Button>
+                <Button
+                  onClick={() => handleDownloadSingle("/ART ELEXXION 2021.pdf")}
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
+                >
+                  <Download className="w[The rest of the code was cut off. Please provide the complete code or let me know if you want me to continue from here with assumptions.]4 h-4 ml-2" />
+                  تحميل Elexxion 2021
+                </Button>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
                 <a
                   href="https://wa.me/9620797377375?text=أريد استشارة حول علاج الشخير بالليزر"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button className="bg-blue-600 hover:bg-primary text-white px görül
-
-System: -4 py-2 text-sm sm:text-base">
+                  <Button className="bg-blue-600 hover:bg-primary text-white px-4 py-2 text-sm sm:text-base">
                     <Calendar className="w-4 h-4 ml-2" />
                     احجز استشارة
                   </Button>
@@ -152,6 +189,7 @@ System: -4 py-2 text-sm sm:text-base">
                     المزيد من الدراسات
                   </Button>
                 </Link>
+      
               </div>
             </CardContent>
           </Card>

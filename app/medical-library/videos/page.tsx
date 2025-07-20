@@ -64,7 +64,7 @@ export default function MedicalLibraryVideosPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/l7RlJzxwk_k"
                     title="كيف يساعد الليزر؟"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -75,9 +75,9 @@ export default function MedicalLibraryVideosPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">كيف يساعد الليزر؟</h4>
-                  <p className="text-sm text-gray-600 mb-3">العلاج بالليزر وفوائده في علاج الشخير</p>
-                  <div className="text-xs text-gray-500">👁️ 32,100 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">رحلة الدكتور مهند الكسواني لعلاج الشخي</h4>
+                  <p className="text-sm text-gray-600 mb-3">   رحلة الدكتور مهند الكسواني لعلاج الشخير: تقنيات الليزر المتطورة في المركز الأوروبي لطب الأسنان  </p>
+                 
                 </div>
               </CardContent>
             </Card>
@@ -87,7 +87,7 @@ export default function MedicalLibraryVideosPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/haWdsUIrJeg"
                     title="الشخير عند الأطفال - الخطر الخفي"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -98,9 +98,10 @@ export default function MedicalLibraryVideosPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">الشخير عند الأطفال - الخطر الخفي</h4>
-                  <p className="text-sm text-gray-600 mb-3">لماذا الشخير عند الأطفال خطير جداً؟</p>
-                  <div className="text-xs text-gray-500">👁️ 29,800 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2"> ما يميز عيادتنا في علاج الشخير واضطراب التنفس أثناء النوم</h4>
+                  <p className="text-sm text-gray-600 mb-3">ما يميز عيادتنا في علاج الشخير هو التعاون مع الأطباء المختصين لعلاج الشخير مثل :
+طبيب الصدرية وطبيب الأنف والأذن والحنجرة، وطبيب الأطفال </p>
+              
                 </div>
               </CardContent>
             </Card>
@@ -110,7 +111,7 @@ export default function MedicalLibraryVideosPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/fqgjlBycmCo"
                     title="توقف التنفس أثناء النوم"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -121,9 +122,9 @@ export default function MedicalLibraryVideosPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">توقف التنفس أثناء النوم</h4>
-                  <p className="text-sm text-gray-600 mb-3">الأعراض والمخاطر وطرق العلاج</p>
-                  <div className="text-xs text-gray-500">👁️ 25,600 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">البروتوكول العلاجي المتبع لمعالجة الشخير واضطراب التنفس أثناء النوم</h4>
+                  <p className="text-sm text-gray-600 mb-3">عيادة تخصصية في علاج الشخير ضمن المركز الأوروبي لطب الأسنان بإدارة د. مهند الكسواني، تتبع بروتوكولًا متقدمًا يهدف إلى توفير أفضل الطرق للتخلص من عادة الشخير والتنفس الفموي.</p>
+        
                 </div>
               </CardContent>
             </Card>
@@ -133,7 +134,7 @@ export default function MedicalLibraryVideosPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/SmuFVRI0AEQ"
                     title="الأجهزة الفموية - دليل شامل"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -144,9 +145,9 @@ export default function MedicalLibraryVideosPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">الأجهزة الفموية - دليل شامل</h4>
-                  <p className="text-sm text-gray-600 mb-3">كيفية عمل الأجهزة الفموية وفعاليتها</p>
-                  <div className="text-xs text-gray-500">👁️ 22,400 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">لماذا طبيب الأسنان يعالج الشخير ؟</h4>
+                  <p className="text-sm text-gray-600 mb-3">يطرح الدكتور مهند الكسواني تعاوناً مُبتكراً مع الأطباء في التخصصات  الطبية المختلفة  لِعلاجِ الشخير واضطراب التنفس الليلي والتحدياتِ الطبيةِ  التي قد  يواجهها بعض  الأشخاص اثناء رحلتهم ومحاولتهم   الحصول  على نوم هانىء ومريح  و التخلص من الشخير </p>
+                
                 </div>
               </CardContent>
             </Card>

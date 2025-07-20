@@ -288,9 +288,12 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
           { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير والتنفس الفموي", image: "/73.jpg", slug: "mohannad" },
-          { name: "د. عايدة", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/aida.jpg", slug: "aida" },
-          { name: "د. مجد", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/majd.png", slug: "majd" },
-          { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG", slug: "iman" },
+          { name: "د. عايدة", role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/aida.jpg", slug: "aida" },
+          { name: "د. مجد",  role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/majd.png", slug: "majd" },
+          { name: "د. إيمان",  role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/iman.JPG", slug: "iman" },
         ].map((doctor, idx) => (
           <Link key={idx} href={`/team/${doctor.slug}`}>
             <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">

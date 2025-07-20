@@ -1,6 +1,6 @@
-# Dentalsnore Clinic - د. مهند الكسواني
+# Dental Snore Clinic - د. مهند الكسواني
 
-موقع Dentalsnore Clinic المتخصصة في المركز الأوروبي - عمان، الأردن
+موقع Dental Snore Clinic المتخصصة في المركز الأوروبي - عمان، الأردن
 
 ## نظرة عامة
 
@@ -65,4 +65,4 @@ npm start
 
 ## الترخيص
 
-جميع الحقوق محفوظة © 2024 Dentalsnore Clinic - المركز الأوروبي
+جميع الحقوق محفوظة © 2024 Dental Snore Clinic - المركز الأوروبي

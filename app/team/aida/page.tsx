@@ -15,7 +15,8 @@ export default function AidaPage() {
             priority
           />
           <h1 className="text-3xl font-extrabold text-primary mt-6 mb-2">د. عايدة أبو سالم</h1>
-          <p className="text-lg text-gray-600 mb-4">أخصائية علاج الشخير والتنفس الفموي</p>
+          <p className="text-lg text-gray-600 mb-4"> Airway dentist
+Snoring and mouth breathing physician</p>
           <p className="text-primary/80 text-base leading-relaxed">
             طبيبة أسنان وأخصائية علاج الشخير والتنفس الفموي
           </p>

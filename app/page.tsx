@@ -125,11 +125,11 @@ export default function ArabicSnoringClinic() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-extrabold text-primary mb-4 animate-fade-in-down relative">
-              لماذا تختار Dentalsnore Clinic؟
+              لماذا تختار Dental Snore Clinic؟
               <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
             </h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed tracking-wide">
-              تفخر Dentalsnore Clinic التابعة للمركز الأوروبي لطب الأسنان  تقديم بروتوكول علاجي متكامل  واضطرابات التنفس الليلي، والتنفس الفموي.يتضمن برنامجنا حصولك على الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
+              تفخر Dental Snore Clinic التابعة للمركز الأوروبي لطب الأسنان  تقديم بروتوكول علاجي متكامل  واضطرابات التنفس الليلي، والتنفس الفموي.يتضمن برنامجنا حصولك على الراحة اللازمة لنوم هانئ، تحسين الصحة العامة، وتفادي مضاعفات مثل ضعف عضلة القلب والجلطات المفاجئة.
             </p>
           </div>
           <div className="space-y-16">
@@ -184,8 +184,8 @@ export default function ArabicSnoringClinic() {
             </div>
           </div>
           <div className="text-center mt-16">
-            <p className="text-xl text-gray-700 font-semibold animate-pulse relative">
-              مع Dentalsnore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
+            <p className="text-xl text-primary font-semibold animate-pulse relative">
+              مع Dental Snore Clinic، قل وداعًا لليالي المزعجة وأهلاً بالراحة والنوم الهانئ.
               <span className="block w-32 h-1 bg-primary mx-auto mt-3 rounded-full"></span>
             </p>
           </div>
@@ -469,7 +469,7 @@ export default function ArabicSnoringClinic() {
         <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
       </h2>
       <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        تعرف على عيادة Dentalsnore Clinic، الرائدة في علاج الشخير واضطرابات التنفس أثناء النوم في الأردن والمنطقة
+        تعرف على عيادة Dental Snore Clinic، الرائدة في علاج الشخير واضطرابات التنفس أثناء النوم في الأردن والمنطقة
       </p>
     </div>
 
@@ -553,9 +553,12 @@ export default function ArabicSnoringClinic() {
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { name: "د. مهند الكسواني", role: "أخصائي علاج الشخير والتنفس الفموي", image: "/73.jpg", slug: "mohannad" },
-          { name: "د. عايدة", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/aida.jpg", slug: "aida" },
-          { name: "د. مجد", role: "أخصائية علاج الشخير والتنفس الفموي", image: "/majd.png", slug: "majd" },
+          { name: "د. مهند الكسواني",  role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/73.jpg", slug: "mohannad" },
+          { name: "د. عايدة", role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/aida.jpg", slug: "aida" },
+          { name: "د. مجد",  role: `Airway dentist
+Snoring and mouth breathing physician`, image: "/majd.png", slug: "majd" },
           { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG", slug: "iman" },
         ].map((doctor, idx) => (
           <Link key={idx} href={`/team/${doctor.slug}`}>
@@ -682,7 +685,7 @@ export default function ArabicSnoringClinic() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">Dentalsnore Clinic</h3>
+              <h3 className="font-bold text-lg mb-4">Dental Snore Clinic</h3>
               <p className="text-gray-300 mb-4">المركز الأوروبي للطب الأسنان</p>
               <div className="space-y-2 text-sm text-gray-300">
                 <p>د. مهند الكسواني</p>
@@ -728,7 +731,7 @@ export default function ArabicSnoringClinic() {
             </div>
           </div>
           <div className="border-t border-gray-600 mt-8 pt-8 text-center text-sm text-gray-300">
-            <p>© 2025 Dentalsnore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
+            <p>© 2025 Dental Snore Clinic - المركز الأوروبي. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>

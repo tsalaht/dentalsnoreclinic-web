@@ -6,7 +6,8 @@ export default function MajdPage() {
       <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
         <img src="/majd.png" alt="د. مجد" className="w-48 h-auto mx-auto mb-4 rounded-xl" />
         <h1 className="text-2xl font-bold mb-2">د. مجد المدني</h1>
-        <p className="text-gray-600 mb-4">أخصائية علاج الشخير والتنفس الفموي</p>
+        <p className="text-gray-600 mb-4">Airway dentist
+Snoring and mouth breathing physician</p>
         <p className="text-gray-700 mb-4">
           طبيبة أسنان وأخصائية علاج الشخير والتنفس الفموي
         </p>

@@ -11,7 +11,7 @@ import Breadcrumb from "@/components/Breadcrumb"
 const testimonials = [
   {
     name: "د. ليلى المصري",
-    text: "أوصي دائمًا بعيادة Dentalsnore Clinic لمرضاى الذين يعانون من اضطرابات النوم. النتائج ممتازة والفريق الطبي متميز.",
+    text: "أوصي دائمًا بعيادة Dental Snore Clinic لمرضاى الذين يعانون من اضطرابات النوم. النتائج ممتازة والفريق الطبي متميز.",
     rating: 5,
   },
   {

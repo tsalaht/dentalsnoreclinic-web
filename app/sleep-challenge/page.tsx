@@ -199,12 +199,7 @@ export default function SleepChallengePage() {
             انضم إلى أكثر من 5000 مشارك وبدأ رحلة تحسين نومك مع تحدي النوم لمدة 14 يوم
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/9620797377375?text=أريد الانضمام فوراً لتحدي النوم والاستفادة من العرض المحدود" target="_blank">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg">
-                <GamepadIcon className="w-5 h-5 ml-2" />
-                انضم للتحدي فوراً
-              </Button>
-            </a>
+          
             <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن تحدي النوم قبل البدء" target="_blank">
               <Button size="lg" variant="outline" className="border-purple-500 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />

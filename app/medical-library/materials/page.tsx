@@ -7,7 +7,11 @@ import { Badge } from "@/components/ui/badge"
 import { BookOpen, Play } from "lucide-react"
 import Navbar from "@/components/Navbar"
 import Breadcrumb from "@/components/Breadcrumb"
-
+import { Video } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { MessageCircle } from "lucide-react"
+import { Brain } from "lucide-react"
+import { PlayCircle } from "lucide-react"
 const blogPosts = [
   {
     slug: "laser-snoring-treatment",
@@ -61,11 +65,11 @@ export default function MedicalLibraryMaterialsPage() {
           <div className="text-center mb-16">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 animate-fade-in-up mb-4">المدونة الطبية</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4 animate-fade-in-down relative">
-              اكتشف أحدث المقالات الطبية
+       أحدث المواد التعليمية
               <span className="block w-28 h-1 bg-secondary mx-auto mt-3 rounded-full opacity-90"></span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              تعرف على معلومات قيمة حول الشخير، اضطرابات النوم، وصحة الفم والأسنان من خلال مقالاتنا العلمية
+              تعرف على معلومات قيمة حول الشخير، اضطرابات النوم، وصحة الفم والأسنان من خلال  أحدث المواد التعليمية
             </p>
           </div>
 
@@ -99,6 +103,104 @@ export default function MedicalLibraryMaterialsPage() {
                 </Card>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+   
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative bg-blue-100 p-6 text-center">
+                  <h3 className="text-xl font-bold text-primary mb-2">كيف أعرف أنني أتنفس عن طريق الفم عندما أكون نائمًا؟</h3>
+                  <p className="text-gray-600 text-sm mb-4">قد لا تشعر أنك تقوم بالتنفس عن طريق الفم بدلًا من الأنف، بالأخص في ساعات النوم، ولكن عادة ما تظهر الأعراض الآتية عليك إن كنت تقوم بذلك:</p>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600 text-sm mb-2">الأعراض العامة:</p>
+                  <ul className="list-disc list-inside text-gray-600 text-sm mb-4 space-y-1">
+                    <li>الشخير</li>
+                    <li>الناس يقولون إني أفتح فمي ساعات النوم</li>
+                    <li>جفاف الشفاه وتشققها</li>
+                    <li>رائحة الفم الكريهة</li>
+                    <li>خشونة في الصوت</li>
+                    <li>جفاف الفم</li>
+                    <li>مشاكل في التركيز</li>
+                  </ul>
+                  <p className="text-gray-600 text-sm mb-2">الأعراض التي تظهر لدى الأطفال:</p>
+                  <ul className="list-disc list-inside text-gray-600 text-sm mb-4 space-y-1">
+                    <li>تعب مزمن</li>
+                    <li>تضخم اللوزتين</li>
+                    <li>الاستيقاظ متعبًا</li>
+                    <li>بطء في عملية النمو</li>
+                    <li>السواد حول العينين</li>
+                    <li>زيادة عدد مرات التبول ليلًا</li>
+                  </ul>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
+                  <Button className="w-full bg-blue-600 hover:bg-primary text-white btn-hover-scale">
+                    <MessageCircle className="w-4 h-4 ml-2" />
+                    احجز استشارة
+                  </Button>
+                </a>
+              </div>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative bg-green-100 p-6 text-center">
+                  <h3 className="text-xl font-bold text-primary mb-2">تعرف على حالات طبيعية للتنفس عن طريق الفم؟</h3>
+                  <p className="text-gray-600 text-sm mb-4">هناك بعض الحالات التي تكون حقًا بحاجة خلالها إلى اللجوء إلى التنفس عن طريق الفم لأخذ الشهيق، ولكن إن لاحظت أنك تتنفس عبر الفم طوال الوقت وخلال النوم، فهذا قد يكون يؤدي إلى الإصابة بمشكلة ما.</p>
+                </div>
+                <div className="p-6">
+                  <div className="bg-blue-100 p-4 rounded-lg mb-4">
+                    <p className="text-gray-600 text-sm">من الممكن أن تلجأ إلى التنفس عن طريق الفم عندما تعاني من احتقان الأنف نتيجة الإصابة بالحساسية أو الزكام، أو حتى عندما تمارس التمارين الرياضية بشدة فتكون عضلاتك بحاجة إلى وصول الأكسجين لها بصورة أسرع.</p>
+                  </div>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://wa.me/962796759251?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-scale">
+                    <MessageCircle className="w-4 h-4 ml-2" />
+                    احجز استشارة
+                  </Button>
+                </a>
+              </div>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer flex flex-col">
+              <CardContent className="p-0 flex-grow">
+                <div className="relative bg-orange-100 p-6 text-center">
+                  <h3 className="text-xl font-bold text-primary mb-2">لماذا تقوم بالتنفس عن طريق الفم؟</h3>
+                  <p className="text-gray-600 text-sm mb-4">هناك دائمًا أسباب كامنة وراء قيامك بالتنفس عن طريق الفم، ومن أهم هذه الأسباب هو انسداد مجرى الأنف، فعندما يحدث ذلك يقوم الجسم بشكل تلقائي بالتوجه إلى الفم كبديل عن الأنف لتزويده بالأكسجين اللازم. ومن الأسباب التي تؤدي إلى انسداد مجرى الأنف:</p>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600 text-sm mb-2">الأسباب:</p>
+                  <ul className="list-disc list-inside text-gray-600 text-sm mb-4 space-y-1">
+                    <li>احتقان الأنف</li>
+                    <li>تضخم اللوزتين</li>
+                    <li>انحراف الحاجز الأنفي</li>
+                    <li>شكل الأنف والفك</li>
+                    <li>متلازمة توقف التنفس الانسدادي أثناء النوم</li>
+                    <li>الإصابة بالتوتر والقلق</li>
+                  </ul>
+                  <p className="text-gray-600 text-sm mb-4">ملاحظة: في كثير من الحالات يعود الإنسان على التنفس عن طريق الفم حتى بعد زوال سبب انسداد الأنف. لذا يجب على الطبيب أو أخصائي التنفس أن يساعدك في كسر عادة التنفس الفموي.</p>
+                </div>
+              </CardContent>
+              <div className="px-6 pb-6">
+                <a href="https://wa.me/962796759251?text=أريد معرفة أسباب التنفس الفموي" target="_blank">
+                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white btn-hover-scale">
+                    <MessageCircle className="w-4 h-4 ml-2" />
+                    احجز استشارة
+                  </Button>
+                </a>
+              </div>
+            </Card>
+
+       
           </div>
         </div>
       </section>
