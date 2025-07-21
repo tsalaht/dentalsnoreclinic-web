@@ -24,7 +24,7 @@ export default function BlogDetail() {
           </div>
           <Card className="bg-white border-0 shadow-xl rounded-2xl">
             <CardContent className="p-8">
-              <div className="w-full h-64 rounded-xl overflow-hidden mb-6 flex items-center justify-center bg-gray-100">
+              <div className="w-full h-auto rounded-xl overflow-hidden mb-6 flex items-center justify-center bg-gray-100">
                 <img src="/blog4.jpg" className="w-full h-full object-cover"  />
               </div>
               <h1 className="text-3xl font-bold text-primary mb-4">الأكل والحساسية وانقطاع التنفس أثناء النوم: كل ما تحتاج لمعرفته</h1>

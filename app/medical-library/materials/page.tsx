@@ -28,7 +28,7 @@ const blogPosts = [
   {
     slug: "oral-devices-benefits",
     title: "فوائد الأجهزة الفموية في علاج اضطرابات النوم",
-    image: "/baby.png",
+    image: "/blog3.jpg",
     description: "الأجهزة الفموية المخصصة تقدم حلولاً فعالة وغير جراحية لمشاكل الشخير وانقطاع التنفس أثناء النوم.",
   },
   {

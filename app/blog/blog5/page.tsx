@@ -25,7 +25,7 @@ export default function BlogDetail() {
           </div>
           <Card className="bg-white border-0 shadow-xl rounded-2xl">
             <CardContent className="p-8">
-              <img src="/blog5.jpg" alt="أفضل الطرق لحل مشكلة الشخير" className="w-full h-64 object-cover rounded-xl mb-6" />
+              <img src="/blog5.jpg" alt="أفضل الطرق لحل مشكلة الشخير" className="w-full h-auto object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">أفضل الطرق لحل مشكلة الشخير</h1>
               <p className="text-gray-700 text-lg mb-4">تعرف على أفضل الطرق للتخلص من الشخير من خلال تمارين الوجه، تحسين وضعية النوم، وبعض الأعشاب الطبيعية.</p>
               <div className="text-gray-700 leading-relaxed space-y-4 text-base">

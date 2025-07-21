@@ -58,7 +58,69 @@ export default function MedicalLibraryVideosPage() {
                 </div>
               </CardContent>
             </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/QCQBFqfRzaM"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">التنفس الفموي.. أعراضه و مضاره</h4>
+                  <p className="text-sm text-gray-600 mb-3">يعد المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني واحد من أكبر مراكز طب الأسنان على مستوى الشرق الأوسط، ويتميز بخدماته التجميلية والطبية فيما يخص زراعة الاسنان وتجميل الاسنان وجراحة الوجه والفكين وعلاج الشخير وانقطاع التنفس الانسدادي 
+وغيرها من الخدمات التي تتم على ايدي أمهر الاخصائيين والأطباء بخبرات تجاوزت ال 25 سنة.</p>
+                </div>
+              </CardContent>
+            </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/MI_P6dhPfh8"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">اختناقات النوم تذكرني بسكرات الموت!</h4>
+                  <p className="text-sm text-gray-600 mb-3"> 
+                    لو كنت تعتقد أن انقطاع نفسك وأنت نائم شيء طبيعي؛ عليك أن تراجع الطبيب فورا 
+انتقطاع التنفس والشخير عبارة عن مؤشرات من الجسم تنبيها منه بالخطر
+يؤدي الاختناق المتكرر إلى نقص الأوكسجين وضعف عضلة القلب ووصولا الموت
+ </p>
+                </div>
+              </CardContent>
+            </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/rF6D2mnqM3A"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">
+ما هو علاج الشخير وانقطاع التنفس عند النوم؟</h4>
+                  <p className="text-sm text-gray-600 mb-3"> 
+لا تترددوا باستشارة #الدكتور_مهند_الكسواني  ليقدم لكم أفضل الحلول للتخلص من الشخير و انقطاع النفس أثناء النوم.
 
+ </p>
+                </div>
+              </CardContent>
+            </Card>
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-0">
                 <div className="relative">

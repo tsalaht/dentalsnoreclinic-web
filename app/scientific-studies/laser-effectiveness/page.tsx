@@ -180,15 +180,7 @@ export default function LaserEffectivenessPage() {
                     احجز استشارة
                   </Button>
                 </a>
-                <Link href="/scientific-studies">
-                  <Button
-                    variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50 px-4 py-2 text-sm sm:text-base"
-                  >
-                    <BookOpen className="w-4 h-4 ml-2" />
-                    المزيد من الدراسات
-                  </Button>
-                </Link>
+         
       
               </div>
             </CardContent>

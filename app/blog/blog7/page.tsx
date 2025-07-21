@@ -25,7 +25,7 @@ export default function BlogDetail() {
           </div>
           <Card className="bg-white border-0 shadow-xl rounded-2xl">
             <CardContent className="p-8">
-              <img src="/blog7.jpeg" alt="النظام الغذائي لانقطاع النفس أثناء النوم" className="w-full h-64 object-cover rounded-xl mb-6" />
+              <img src="/blog7.jpeg" alt="النظام الغذائي لانقطاع النفس أثناء النوم" className="w-full h-auto object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">النظام الغذائي لانقطاع النفس أثناء النوم</h1>
               <p className="text-gray-700 text-lg mb-4">تعرف على النظام الغذائي الأمثل لتحسين أعراض انقطاع النفس أثناء النوم من خلال التركيز على الأطعمة الغنية بالفيتامينات والمعادن وتجنب الأطعمة المصنعة.</p>
               <div className="text-gray-700 leading-relaxed space-y-4 text-base">

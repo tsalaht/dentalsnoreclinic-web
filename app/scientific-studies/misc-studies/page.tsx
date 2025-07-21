@@ -61,7 +61,7 @@ export default function MiscStudiesPage() {
                   <div>
                     <h4 className="font-semibold text-accent text-base sm:text-lg">التنفس الفموي ونمو الفكين</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                      يمكن لطبيب الأسنان، خاصة المتخصص في تقويم الأسنان، اكتشاف علامات التنفس الفموي مبكرًا. التنفس الفموي غير المصحح يؤدي إلى تطور غير طبيعي في الأسنان والفكين، مما يؤثر على صحة الجهاز الفموي الوجهي. التدخل المبكر يمنع مشاكل أكثر تعقيدًا في المستقبل <sup>[2]</sup>.
+                      يمكن لطبيب الأسنان، خاصة المتخصص في تقويم الأسنان، اكتشاف علامات التنفس الفموي مبكرًا. التنفس الفموي غير المصحح يؤدي إلى تطور غير طبيعي في الأسنان والفكين، مما يؤثر على صحة الجهاز الفموي الوجهي. التدخل المبكر يمنع مشاكل أكثر تعقيدًا في المستقبل <sup>[2]</sup>. تشير الدراسات إلى أن أطباء الأسنان يلعبون دورًا حاسمًا في تحديد مشاكل التنفس الفموي لدى الأطفال، مما يستلزم التعاون مع أخصائيي الأنف والأذن والحنجرة لتقديم تدخلات فعالة <sup>[3]</sup>.
                     </p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function MiscStudiesPage() {
                   <div>
                     <h4 className="font-semibold text-secondary text-base sm:text-lg">العلاجات المبتكرة</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                      تشمل العلاجات الحديثة استخدام تقنيات التنبيه العصبي وأجهزة فموية مخصصة لتحسين تدفق الهواء أثناء النوم، مما يوفر خيارات غير جراحية فعالة لتقليل الشخير وتحسين جودة النوم <sup>[1]</sup>.
+                      تشمل العلاجات الحديثة استخدام تقنيات التنبيه العصبي وأجهزة فموية مخصصة لتحسين تدفق الهواء أثناء النوم، مما يوفر خيارات غير جراحية فعالة لتقليل الشخير وتحسين جودة النوم <sup>[1]</sup>. كما أظهرت الأبحاث أن التعاون بين أطباء الأسنان وأخصائيي النوم يمكن أن يعزز فعالية هذه العلاجات من خلال تصميم أجهزة فموية مخصصة تتناسب مع احتياجات المريض <sup>[4]</sup>.
                     </p>
                   </div>
                 </div>
@@ -99,8 +99,48 @@ export default function MiscStudiesPage() {
                   <li className="flex items-start gap-3">
                     <span className="text-primary font-medium">[2]</span>
                     <div>
-                      <p className="font-medium">The impact of mouth breathing on dentofacial development. (n.d.).</p>
+                      <p className="font-medium">The impact of mouth breathing on dentofacial development. (2022).</p>
                       <p className="italic">Study on the effects of uncorrected mouth breathing on dental and facial development.</p>
+                      <a
+                        href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.929165/full"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.929165/full
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[3]</span>
+                    <div>
+                      <p className="font-medium">Rose, E., & Schessl, J. (2014).</p>
+                      <p className="italic">The role of orthodontists in diagnosing airway problems.</p>
+                      <p><i>Journal of Orofacial Orthopedics</i>.</p>
+                      <a
+                        href="https://www.ncbi.nlm.nih.gov/pubmed/25206135"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://www.ncbi.nlm.nih.gov/pubmed/25206135
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary font-medium">[4]</span>
+                    <div>
+                      <p className="font-medium">Klineberg, I., & Eckhardt, A. (2024).</p>
+                      <p className="italic">Oral Health Implications of Obstructive Sleep Apnea: A Literature Review.</p>
+                      <p><i>Biomedicines</i>.</p>
+                      <a
+                        href="https://www.mdpi.com/2227-9059/12/7/1382"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all"
+                      >
+                        https://www.mdpi.com/2227-9059/12/7/1382
+                      </a>
                     </div>
                   </li>
                 </ul>
@@ -116,15 +156,7 @@ export default function MiscStudiesPage() {
                     احجز استشارة
                   </Button>
                 </a>
-                <Link href="/scientific-studies">
-                  <Button
-                    variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50 px-4 py-2 text-sm sm:text-base"
-                  >
-                    <BookOpen className="w-4 h-4 ml-2" />
-                    المزيد من الدراجات
-                  </Button>
-                </Link>
+         
               </div>
             </CardContent>
           </Card>

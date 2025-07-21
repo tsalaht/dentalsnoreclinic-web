@@ -17,67 +17,73 @@ export default function AdultSnoringAssessment() {
   const [answers, setAnswers] = useState<Record<string, number>>({})
   const [showResults, setShowResults] = useState(false)
 
-  const questions: Question[] = [
-    {
-      id: "loudness",
-      question: "كيف تصف قوة صوت شخيرك؟",
-      options: [
-        { value: 0, text: "لا أشخر أبداً" },
-        { value: 1, text: "شخير خفيف أحياناً" },
-        { value: 2, text: "شخير متوسط معظم الليالي" },
-        { value: 3, text: "شخير قوي كل ليلة" }
-      ]
-    },
-    {
-      id: "breathing",
-      question: "هل تشعر بتوقف التنفس أثناء النوم؟",
-      options: [
-        { value: 0, text: "لا، أبداً" },
-        { value: 1, text: "نادراً (مرة في الشهر)" },
-        { value: 2, text: "أحياناً (عدة مرات في الشهر)" },
-        { value: 3, text: "كثيراً (عدة مرات في الليلة)" }
-      ]
-    },
-    {
-      id: "tiredness",
-      question: "كيف تشعر عند الاستيقاظ صباحاً؟",
-      options: [
-        { value: 0, text: "نشيط ومرتاح" },
-        { value: 1, text: "متعب قليلاً" },
-        { value: 2, text: "متعب ومرهق" },
-        { value: 3, text: "منهك جداً وغير مرتاح" }
-      ]
-    },
-    {
-      id: "daytime",
-      question: "هل تشعر بالنعاس أثناء النهار؟",
-      options: [
-        { value: 0, text: "لا، أشعر بالنشاط" },
-        { value: 1, text: "أحياناً بعد الغداء" },
-        { value: 2, text: "كثيراً خلال اليوم" },
-        { value: 3, text: "أنام بسهولة في أي مكان" }
-      ]
-    },
-    {
-      id: "concentration",
-      question: "كيف مستوى تركيزك في العمل؟",
-      options: [
-        { value: 0, text: "ممتاز، لا مشاكل" },
-        { value: 1, text: "جيد مع صعوبة بسيطة" },
-        { value: 2, text: "متوسط، أواجه صعوبات" },
-        { value: 3, text: "ضعيف، مشاكل كبيرة" }
-      ]
-    },    {
-      id: "partner",
-      question: "هل يشتكي أفراد الأسرة من شخيرك؟",
-      options: [
-        { value: 0, text: "لا يشتكي أحد أبداً" },
-        { value: 1, text: "يشتكون أحياناً" },
-        { value: 2, text: "يشتكون كثيراً" },
-        { value: 3, text: "ينامون في غرف منفصلة" }
-      ]
-    }
-  ]
+const questions: Question[] = [
+  {
+    id: "snore",
+    question: "هل تشخر أثناء النوم بصوت عالٍ لدرجة إزعاج من حولك؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "tired",
+    question: "هل تشعر أنك مرهق أو متعب أو تشعر بالنعاس خلال النهار؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "stopBreath",
+    question: "هل لاحظ أحد أنك تتوقف عن التنفس أو تختنق / تلهث أثناء النوم؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "bloodPressure",
+    question: "هل كنت تأخذ أو تتناول علاجاً حالياً لارتفاع ضغط الدم؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "age",
+    question: "هل يزيد عمرك عن 50 عاماً؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "neck",
+    question: "هل مقياس رقبتك كبير (القياس حول تفاحة آدم)؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "gender",
+    question: "هل أنت ذكر؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  },
+  {
+    id: "weight",
+    question: "هل وزنك يزيد عن 100 كغ للرجال / 75 كغ للنساء؟",
+    options: [
+      { value: 1, text: "نعم" },
+      { value: 0, text: "لا" }
+    ]
+  }
+]
+
 
   const handleAnswer = (value: number) => {
     const newAnswers = { ...answers, [questions[currentQuestion].id]: value }
@@ -94,56 +100,58 @@ export default function AdultSnoringAssessment() {
     return Object.values(answers).reduce((sum, value) => sum + value, 0)
   }
 
-  const getResultsData = () => {
-    const score = getTotalScore()
-    
-    if (score <= 3) {
-      return {
-        level: "منخفض",
-        color: "green",
-        icon: CheckCircle,
-        title: "حالتك جيدة نسبياً",
-        description: "لا توجد مؤشرات خطيرة، لكن المتابعة الدورية مهمة",
-        recommendations: [
-          "حافظ على وزن صحي",
-          "تجنب النوم على الظهر",
-          "قلل من الكحول والتدخين",
-          "فحص دوري سنوياً"
-        ],
-        urgency: "استشارة وقائية"
-      }
-    } else if (score <= 9) {
-      return {
-        level: "متوسط",
-        color: "yellow",
-        icon: AlertTriangle,
-        title: "تحتاج لمراجعة طبية",
-        description: "هناك مؤشرات تستدعي الفحص والمتابعة الطبية",
-        recommendations: [
-          "فحص طبي شامل للتنفس",
-          "تقييم انقطاع التنفس النومي",
-          "ضبط نمط النوم",
-          "علاج مخصص حسب الحالة"
-        ],
-        urgency: "موعد خلال أسبوعين"
-      }
-    } else {
-      return {
-        level: "عالي",
-        color: "red",
-        icon: AlertTriangle,
-        title: "تحتاج لعلاج فوري",
-        description: "حالتك تتطلب تدخل طبي عاجل لتجنب المضاعفات",
-        recommendations: [
-          "فحص طبي فوري",
-          "دراسة نوم متخصصة",
-          "علاج انقطاع التنفس النومي",
-          "متابعة طبية مكثفة"
-        ],
-        urgency: "موعد عاجل خلال 48 ساعة"
-      }
+const getResultsData = () => {
+  const score = getTotalScore()
+
+  if (score <= 2) {
+    return {
+      level: "قليل",
+      color: "green",
+      icon: CheckCircle,
+      title: "خطر منخفض لانقطاع التنفس الانسدادي",
+      description: "أمورك جيدة لكن ننصحك باتباع بعض العادات الصحية للوقاية.",
+      recommendations: [
+        "تقليل الوزن إن وجد",
+        "المشي لمدة 20 دقيقة يوميًا",
+        "تناول آخر وجبة قبل الساعة 8 مساءً",
+        "ممارسة تمارين التنفس الصحيحة",
+        "الابتعاد عن مسببات الحساسية"
+      ],
+      urgency: "متابعة دورية ونمط حياة صحي"
+    }
+  } else if (score <= 4) {
+    return {
+      level: "متوسط",
+      color: "yellow",
+      icon: AlertTriangle,
+      title: "خطر متوسط - ننصح بزيارة الطبيب",
+      description: "بعض المؤشرات تستدعي التقييم الطبي لتجنب التدهور.",
+      recommendations: [
+        "فحص سريري لتقييم الحالة",
+        "المشي اليومي وتحسين النوم",
+        "الالتزام بوجبات صحية ومواعيد منتظمة",
+        "زيارة الطبيب في أقرب وقت"
+      ],
+      urgency: "زيارة خلال أسبوعين"
+    }
+  } else {
+    return {
+      level: "عالي",
+      color: "red",
+      icon: AlertTriangle,
+      title: "خطر مرتفع - تحتاج لفحص عاجل",
+      description: "قد تكون تعاني من انقطاع التنفس الانسدادي وتحتاج تدخل طبي فوري.",
+      recommendations: [
+        "إجراء فحص طبي شامل",
+        "دراسة نوم ليلية",
+        "بدء علاج حسب تشخيص الحالة",
+        "متابعة طبية مكثفة"
+      ],
+      urgency: "موعد خلال 48 ساعة"
     }
   }
+}
+
 
   const restartAssessment = () => {
     setCurrentQuestion(0)

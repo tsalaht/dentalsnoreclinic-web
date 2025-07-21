@@ -25,7 +25,7 @@ export default function BlogDetail() {
           </div>
           <Card className="bg-white border-0 shadow-xl rounded-2xl">
             <CardContent className="p-8">
-              <img src="/blog1.jpg" alt="علاج الشخير في الأردن" className="w-full h-64 object-cover rounded-xl mb-6" />
+              <img src="/blog1.jpg" alt="علاج الشخير في الأردن" className="w-full h-auto object-cover rounded-xl mb-6" />
               <h1 className="text-3xl font-bold text-primary mb-4">علاج الشخير في الأردن: دليل شامل لحلول فعالة</h1>
               <p className="text-gray-700 text-lg mb-4">إذا كنت تعاني من الشخير المزعج، فأنت لست وحدك. الشخير مشكلة شائعة تؤثر على جودة النوم والحياة اليومية. في هذا المقال، سنستعرض أفضل طرق علاج الشخير في الأردن، بما في ذلك العيادات المتخصصة والعلاجات المتاحة.</p>
               <div className="text-gray-700 leading-relaxed space-y-4 text-base">

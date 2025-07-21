@@ -15,8 +15,8 @@ export default function AidaPage() {
             priority
           />
           <h1 className="text-3xl font-extrabold text-primary mt-6 mb-2">د. عايدة أبو سالم</h1>
-          <p className="text-lg text-gray-600 mb-4"> Airway dentist
-Snoring and mouth breathing physician</p>
+          <p className="text-lg text-gray-600 mb-4"> Airway dentist <br/>
+Snoring and mouth breathing physician</p>
           <p className="text-primary/80 text-base leading-relaxed">
             طبيبة أسنان وأخصائية علاج الشخير والتنفس الفموي
           </p>
@@ -40,12 +40,21 @@ Snoring and mouth breathing physician</p>
             />
           </div>
 
-          {/* Academic Qualifications Section */}
+          {/* Academic Qualifications Section with Certificate Image */}
           <div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">المؤهلات الأكاديمية</h2>
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 mb-6">
               تحمل شهادة بكالوريوس في جراحة الأسنان (BDS)، ومعتمدة في استخدام جهاز Myosa، أحد أشهر الأجهزة العالمية المستخدمة في العلاج العضلي الوظيفي.
             </p>
+            <div className="flex justify-center">
+              <Image
+                src="/sartafica7.png"
+                alt="شهادة د. عايدة أبو سالم الأكاديمية"
+                width={300}
+                height={200}
+                className="w-full max-w-sm rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </div>
 
           {/* Technical Expertise Section */}

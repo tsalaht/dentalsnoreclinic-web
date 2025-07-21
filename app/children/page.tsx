@@ -336,6 +336,55 @@ export default function ChildrenPage() {
           </div>
         </div>
       </section>
+      {/* Educational Comparison Images Section */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4 animate-fade-in-down">
+          مقارنة تعليمية: تأثير التنفس على صحة طفلك
+        </h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+      تعرف على الفرق بين التنفس الفموي والتنفس الأنفي، وأعراض  انقطاع التنفس الانسدادي أثناء النوم
+        </p>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Image 1: Mouth Breathing vs. Nasal Breathing */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 card-hover-lift">
+          <div className="relative">
+            <Image
+              src="/childe1.jpg" // Replace with the actual uploaded image path
+              alt="مقارنة بين التنفس الفموي والتنفس الأنفي"
+              width={500}
+              height={400}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+            <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-2">
+              <p className="text-sm font-medium text-primary">التنفس الفموي vs التنفس الأنفي</p>
+            </div>
+          </div>
+        </div>
+        {/* Image 2: Symptoms of Snoring in Children */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 card-hover-lift">
+          <div className="relative">
+            <Image
+              src="/childe2.jpg" // Replace with the actual uploaded image path
+              alt="أعراض الشخير عند الأطفال"
+              width={500}
+              height={400}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+            <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-2">
+              <p className="text-sm font-medium text-primary">أعراض الشخير لدى الأطفال</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {/* Before and After Treatment Section */}
 <section className="py-16 bg-gradient-to-b from-white to-gray-50">
   <div className="container mx-auto px-4">
@@ -420,7 +469,7 @@ export default function ChildrenPage() {
           قد تكون قصة هذه الأم والنصيحة التي قلبت حياة طفلها للأفضل مصدر إلهام للكثير!! لتي تروي رحلة علاج طفلها لسنوات من التنفس الفموي مسببا له الهالات السوداء تحت عينيه وشخير مزمن، مما كان يجعله يستيقظ متعبا في الصباح، إلى أن أصبح يتنفس من أنفه بشكل طبيعي.
         </p>
       </div>
-      <div className="max-w-2xl mx-auto">
+      <div className=" mx-auto">
         <Swiper
           modules={[Pagination]}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
@@ -434,7 +483,7 @@ export default function ChildrenPage() {
       slidesPerView: 1, // for small screens (mobile)
     },
     640: {
-      slidesPerView: 2, // from 640px and up
+      slidesPerView: 3, // from 640px and up
     },
   }}
         >

@@ -551,29 +551,30 @@ export default function ArabicSnoringClinic() {
         فريق العمل
         <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {[
-          { name: "د. مهند الكسواني",  role: `Airway dentist
-Snoring and mouth breathing physician`, image: "/73.jpg", slug: "mohannad" },
-          { name: "د. عايدة", role: `Airway dentist
-Snoring and mouth breathing physician`, image: "/aida.jpg", slug: "aida" },
-          { name: "د. مجد",  role: `Airway dentist
-Snoring and mouth breathing physician`, image: "/majd.png", slug: "majd" },
-          { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG", slug: "iman" },
-        ].map((doctor, idx) => (
-          <Link key={idx} href={`/team/${doctor.slug}`}>
-            <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="w-48 h-auto mx-auto mb-4 rounded-xl overflow-hidden">
-                  <img src={doctor.image} alt={doctor.name} className="w-full h-full object-contain" />
-                </div>
-                <h4 className="text-lg font-bold text-primary mb-2">{doctor.name}</h4>
-                <p className="text-gray-600 leading-relaxed text-base">{doctor.role}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {[
+    { name: "د. مهند الكسواني", role: `Airway Dentist\nSnoring and mouth breathing physician`, image: "/73.jpg", slug: "mohannad" },
+    { name: "د. عايدة", role: `Airway Dentist\nSnoring and mouth breathing physician`, image: "/aida.jpg", slug: "aida" },
+    { name: "د. مجد", role: `Airway Dentist\nSnoring and mouth breathing physician`, image: "/majd.png", slug: "majd" },
+    { name: "د. إيمان", role: "أخصائية الأشعة السنية التشخيصية", image: "/iman.JPG", slug: "iman" },
+  ].map((doctor, idx) => (
+    <Link key={idx} href={`/team/${doctor.slug}`}>
+      <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
+        <CardContent className="p-6 text-center">
+          <div className="w-48 h-auto mx-auto mb-4 rounded-xl overflow-hidden">
+            <img src={doctor.image} alt={doctor.name} className="w-full h-full object-contain" />
+          </div>
+          <h4 className="text-lg font-bold text-primary mb-2">{doctor.name}</h4>
+          <div className="text-gray-600 leading-relaxed text-base">
+            {doctor.role.split('\n').map((line, index) => (
+              <p key={index} className={index === 0 ? "font-semibold" : ""}>{line}</p>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
+  ))}
+</div>
     </div>
   </div>
 </section>

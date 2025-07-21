@@ -435,7 +435,34 @@ export default function AdultsPage() {
   </div>
 </section>
 
-
+{/* Laser Treatment Video Section */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4">
+          طريقة عمل جهاز الليزر لشد عضلات سقف الحلق
+        </h2>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          شاهد كيف يعمل العلاج بالليزر لتقليص الأنسجة الرخوة وتحسين تدفق الهواء بطريقة آمنة وفعالة
+        </p>
+      </div>
+      <div className="relative rounded-2xl overflow-hidden shadow-xl border border-primary/10 max-w-4xl mx-auto">
+        <video
+          src="/adult.mp4" // Replace with your actual video path or URL
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto object-cover"
+        />
+        <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-md">
+          <p className="text-sm font-medium text-primary">علاج غير جراحي بتقنية متقدمة</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Assessment Section */}
       <section className="py-16 bg-gradient-to-r from-yellow-50 to-orange-50 border-t-4 border-yellow-400" id="assessment">
         <div className="container mx-auto px-4">
