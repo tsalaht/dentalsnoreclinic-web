@@ -329,6 +329,8 @@ export default function ArabicSnoringClinic() {  return (
                 <li><Link href="/medical-library" className="hover:text-white">المكتبة الطبية</Link></li>
                 <li><Link href="/sleep-challenge" className="hover:text-white">تحدي النوم</Link></li>
                 <li><Link href="/faq" className="hover:text-white">الأسئلة الشائعة</Link></li>
+                <li><Link href="/user-policy" className="hover:text-white">سياسة المستخدم</Link></li>
+                <li><Link href="/privacy-policy" className="hover:text-white">سياسة الخصوصية</Link></li>
               </ul>
             </div>
             <div>
