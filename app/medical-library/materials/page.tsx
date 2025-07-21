@@ -22,7 +22,7 @@ const blogPosts = [
   {
     slug: "child-sleep-health",
     title: "صحة نوم الأطفال: نصائح ذهبية للأهل",
-    image: "/baby.png",
+    image: "/Sleeping_baby.jpg",
     description: "اكتشف كيف يؤثر الشخير واضطرابات التنفس على نمو الأطفال وأفضل طرق الوقاية والعلاج المبكر.",
   },
   {
