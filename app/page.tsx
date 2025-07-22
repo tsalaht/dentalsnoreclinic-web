@@ -740,7 +740,7 @@ export default function ArabicSnoringClinic() {
       </footer>
 
       {/* WhatsApp Button */}
-      {/* <WhatsAppButton /> */}
+      <WhatsAppButton />
     </div>
   )
 }

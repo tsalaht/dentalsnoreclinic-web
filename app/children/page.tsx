@@ -456,7 +456,35 @@ export default function ChildrenPage() {
     </div>
   </div>
 </section>
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4">
+هل لاحظت أن طفلك يتنفس من فمه؟ انتبه!
 
+        </h2>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+    قد يكون التنفس الفموي المزمن هو السبب الرئيسي وراء تغيرات غير صحيحة في شكل فك طفلك، خصوصاً خلال سنوات النمو الحرجة. يؤثر هذا النمط من التنفس سلباً على نمو الفك العلوي، فيجعله ضيقاً، مما يؤدي إلى تزاحم الأسنان ومشاكل في إطباق الفكين. الأدهى من ذلك، أنه يعيق قدرة طفلك على التنفس من الأنف بشكل صحيح. لذا، إن معالجة التنفس الفموي مبكراً لطفلك أمر حيوي لضمان نمو فك سليم، ابتسامة صحية، وتنفّس طبيعي يضمن له صحة أفضل.
+
+        </p>
+      </div>
+      <div className="relative rounded-2xl overflow-hidden shadow-xl border border-primary/10 max-w-4xl mx-auto">
+        <video
+          src="/adult.mp4" // Replace with your actual video path or URL
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto object-cover"
+        />
+        <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-md">
+          <p className="text-sm font-medium text-primary">هل لاحظت أن طفلك يتنفس من فمه</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {/* Mother's Story Section */}
 <section className="py-16 bg-gray-100">
   <div className="container mx-auto px-4">
@@ -512,6 +540,7 @@ export default function ChildrenPage() {
     </div>
   </div>
 </section>
+
       {/* Assessment Section */}
       <section className="py-16 bg-gradient-to-r from-green-50 to-emerald-50 border-t-4 border-green-400" id="assessment">
         <div className="container mx-auto px-4">
@@ -569,7 +598,7 @@ export default function ChildrenPage() {
       </section>
 
       {/* WhatsApp Button */}
-      {/* <WhatsAppButton /> */}
+      <WhatsAppButton />
     </div>
   )
 }

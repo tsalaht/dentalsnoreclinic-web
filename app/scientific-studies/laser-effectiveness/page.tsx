@@ -88,85 +88,88 @@ export default function LaserEffectivenessPage() {
               </div>
               <div className="space-y-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
-                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[1]</span>
-                    <div>
-                      <p className="font-medium">Kotecha, B., et al. (2023).</p>
-                      <p className="italic">Non-ablative laser therapy for snoring and obstructive sleep apnea.</p>
-                      <p><i>Journal of Clinical Sleep Medicine</i>.</p>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-6">
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[1]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Kotecha, B., et al. (2023).</p>
+                      <p className="italic text-gray-800">Non-ablative laser therapy for snoring and obstructive sleep apnea.</p>
+                      <p className="text-gray-600"><i>Journal of Clinical Sleep Medicine</i>.</p>
                       <a
                         href="https://pmc.ncbi.nlm.nih.gov/articles/CMC9879649/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pmc.ncbi.nlm.nih.gov/articles/CMC9879649/
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[2]</span>
-                    <div>
-                      <p className="font-medium">Camacho, M., et al. (2022).</p>
-                      <p className="italic">Laser-assisted uvulopalatoplasty for snoring: A systematic review.</p>
-                      <p><i>European Archives of Oto-Rhino-Laryngology</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[2]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Camacho, M., et al. (2022).</p>
+                      <p className="italic text-gray-800">Laser-assisted uvulopalatoplasty for snoring: A systematic review.</p>
+                      <p className="text-gray-600"><i>European Archives of Oto-Rhino-Laryngology</i>.</p>
                       <a
                         href="https://link.springer.com/article/10.1007/s00405-022-07539-9"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://link.springer.com/article/10.1007/s00405-022-07539-9
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[3]</span>
-                    <div>
-                      <p className="font-medium">Stupak, H. D. (2023).</p>
-                      <p className="italic">Efficacy of Er:YAG laser therapy (NightLase) in the treatment of snoring.</p>
-                      <p><i>Lasers in Medical Science</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[3]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Stupak, H. D. (2023).</p>
+                      <p className="italic text-gray-800">Efficacy of Er:YAG laser therapy (NightLase) in the treatment of snoring.</p>
+                      <p className="text-gray-600"><i>Lasers in Medical Science</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/37579131/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/37579131/
                       </a>
                     </div>
                   </li>
                 </ul>
-                <div className="flex flex-col sm:flex-row gap-4">
-                            <Button
-                  onClick={() => handleDownloadSingle("/nightlase_compendium.pdf")}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
-                >
-                  <Download className="w-4 h-4 ml-2" />
-                  تحميل NightLase Compendium
-                </Button>
-                <Button
-                  onClick={() => handleDownloadSingle("/BJSTR.MS.ID.003447.pdf")}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
-                >
-                  <Download className="w-4 h-4 ml-2" />
-                  تحميل BJSTR Study
-                </Button>
-                <Button
-                  onClick={() => handleDownloadSingle("/ART ER-YAG FOTONA 2018PDF.pdf")}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
-                >
-                  <Download className="w-4 h-4 ml-2" />
-                  تحميل Fotona 2018
-                </Button>
-                <Button
-                  onClick={() => handleDownloadSingle("/ART ELEXXION 2021.pdf")}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base"
-                >
-                  <Download className="w[The rest of the code was cut off. Please provide the complete code or let me know if you want me to continue from here with assumptions.]4 h-4 ml-2" />
-                  تحميل Elexxion 2021
-                </Button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <Button
+                    onClick={() => handleDownloadSingle("/nightlase_compendium.pdf")}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                  >
+                    <Download className="w-4 h-4" />
+                    NightLase Compendium
+                  </Button>
+                  <Button
+                    onClick={() => handleDownloadSingle("/BJSTR.MS.ID.003447.pdf")}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                  >
+                    <Download className="w-4 h-4" />
+                    BJSTR Study
+                  </Button>
+                  <Button
+                    onClick={() => handleDownloadSingle("/ART ER-YAG FOTONA 2018PDF.pdf")}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                  >
+                    <Download className="w-4 h-4" />
+                    Fotona 2018
+                  </Button>
+                  <Button
+                    onClick={() => handleDownloadSingle("/ART ELEXXION 2021.pdf")}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:text-base flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                  >
+                    <Download className="w-4 h-4" />
+                    Elexxion 2021
+                  </Button>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
@@ -180,8 +183,6 @@ export default function LaserEffectivenessPage() {
                     احجز استشارة
                   </Button>
                 </a>
-         
-      
               </div>
             </CardContent>
           </Card>

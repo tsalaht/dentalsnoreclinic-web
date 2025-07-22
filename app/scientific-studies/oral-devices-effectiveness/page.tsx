@@ -79,83 +79,88 @@ export default function OralDevicesEffectivenessPage() {
               </div>
               <div className="space-y-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
-                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[1]</span>
-                    <div>
-                      <p className="font-medium">Ferguson, K. A., et al. (1996).</p>
-                      <p className="italic">A Randomized Crossover Study of an Oral Appliance vs Nasal-Continuous Positive Airway Pressure in the Treatment of Mild-Moderate Obstructive Sleep Apnea.</p>
-                      <p><i>Chest</i>.</p>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-6">
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[1]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Ferguson, K. A., et al. (1996).</p>
+                      <p className="italic text-gray-800">A Randomized Crossover Study of an Oral Appliance vs Nasal-Continuous Positive Airway Pressure in the Treatment of Mild-Moderate Obstructive Sleep Apnea.</p>
+                      <p className="text-gray-600"><i>Chest</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/8625679/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/8625679/
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[2]</span>
-                    <div>
-                      <p className="font-medium">Sharples, L. D., et al. (2024).</p>
-                      <p className="italic">Mandibular Advancement Devices for Obstructive Sleep Apnoea: A Randomised Controlled Trial.</p>
-                      <p><i>Thorax</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[2]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Sharples, L. D., et al. (2024).</p>
+                      <p className="italic text-gray-800">Mandibular Advancement Devices for Obstructive Sleep Apnoea: A Randomised Controlled Trial.</p>
+                      <p className="text-gray-600"><i>Thorax</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/39756869/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/39756869/
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[3]</span>
-                    <div>
-                      <p className="font-medium">Ramar, K., et al. (2019).</p>
-                      <p className="italic">Clinical Practice Guideline for the Treatment of Obstructive Sleep Apnea and Snoring with Oral Appliance Therapy.</p>
-                      <p><i>Journal of Clinical Sleep Medicine</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[3]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Ramar, K., et al. (2019).</p>
+                      <p className="italic text-gray-800">Clinical Practice Guideline for the Treatment of Obstructive Sleep Apnea and Snoring with Oral Appliance Therapy.</p>
+                      <p className="text-gray-600"><i>Journal of Clinical Sleep Medicine</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/31588866/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/31588866/
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[4]</span>
-                    <div>
-                      <p className="font-medium">Marklund, M., et al. (2012).</p>
-                      <p className="italic">Non-CPAP Therapies in Obstructive Sleep Apnoea: Mandibular Advancement Device Therapy.</p>
-                      <p><i>European Respiratory Journal</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[4]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Marklund, M., et al. (2012).</p>
+                      <p className="italic text-gray-800">Non-CPAP Therapies in Obstructive Sleep Apnoea: Mandibular Advancement Device Therapy.</p>
+                      <p className="text-gray-600"><i>European Respiratory Journal</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/23074535/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/23074535/
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[5]</span>
-                    <div>
-                      <p className="font-medium">Gotsopoulos, H., et al. (2013).</p>
-                      <p className="italic">Oral Appliance Therapy Improves Symptoms in Obstructive Sleep Apnea.</p>
-                      <p><i>American Journal of Respiratory and Critical Care Medicine</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[5]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Gotsopoulos, H., et al. (2013).</p>
+                      <p className="italic text-gray-800">Oral Appliance Therapy Improves Symptoms in Obstructive Sleep Apnea.</p>
+                      <p className="text-gray-600"><i>American Journal of Respiratory and Critical Care Medicine</i>.</p>
                       <a
                         href="https://pubmed.ncbi.nlm.nih.gov/23461257/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://pubmed.ncbi.nlm.nih.gov/23461257/
                       </a>
                     </div>
@@ -173,7 +178,6 @@ export default function OralDevicesEffectivenessPage() {
                     احجز استشارة
                   </Button>
                 </a>
-           
               </div>
             </CardContent>
           </Card>

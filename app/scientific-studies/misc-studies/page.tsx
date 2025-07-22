@@ -50,7 +50,7 @@ export default function MiscStudiesPage() {
                   <div>
                     <h4 className="font-semibold text-primary text-base sm:text-lg">تأثير نمط الحياة</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                      أظهرت الدراسات أن تحسين نمط الحياة، مثل تقليل الوزن وممارسة الرياضة بانتظام، يمكن أن يقلل من شدة الشخير وتوقف التنفس أثناء النوم بنسبة تصل إلى 40% في الحالات الخفيفة إلى المتوسطة <sup>[1]</sup>.
+                      أظهرت الدراسات أن تحسين نمط الحياة، مثل تقليل الوزن وممارسة الرياضة بانتظام، يمكن أن يقلل من شدة الشخير وتوقف التنفس أثناء النوم بنسبة تصل إلى 40% في الحالات الخفيفة إلى المتوسطة <sup>[1,5]</sup>.
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function MiscStudiesPage() {
                   <div>
                     <h4 className="font-semibold text-accent text-base sm:text-lg">التنفس الفموي ونمو الفكين</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                      يمكن لطبيب الأسنان، خاصة المتخصص في تقويم الأسنان، اكتشاف علامات التنفس الفموي مبكرًا. التنفس الفموي غير المصحح يؤدي إلى تطور غير طبيعي في الأسنان والفكين، مما يؤثر على صحة الجهاز الفموي الوجهي. التدخل المبكر يمنع مشاكل أكثر تعقيدًا في المستقبل <sup>[2]</sup>. تشير الدراسات إلى أن أطباء الأسنان يلعبون دورًا حاسمًا في تحديد مشاكل التنفس الفموي لدى الأطفال، مما يستلزم التعاون مع أخصائيي الأنف والأذن والحنجرة لتقديم تدخلات فعالة <sup>[3]</sup>.
+                      يمكن لطبيب الأسنان، خاصة المتخصص في تقويم الأسنان، اكتشاف علامات التنفس الفموي مبكرًا. التنفس الفموي غير المصحح يؤدي إلى تطور غير طبيعي في الأسنان والفكين، مما يؤثر على صحة الجهاز الفموي الوجهي. التدخل المبكر يمنع مشاكل أكثر تعقيدًا في المستقبل <sup>[2,6]</sup>. تشير الدراسات إلى أن أطباء الأسنان يلعبون دورًا حاسمًا في تحديد مشاكل التنفس الفموي لدى الأطفال، مما يستلزم التعاون مع أخصائيي الأنف والأذن والحنجرة لتقديم تدخلات فعالة <sup>[3,7]</sup>.
                     </p>
                   </div>
                 </div>
@@ -72,80 +72,136 @@ export default function MiscStudiesPage() {
                   <div>
                     <h4 className="font-semibold text-secondary text-base sm:text-lg">العلاجات المبتكرة</h4>
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                      تشمل العلاجات الحديثة استخدام تقنيات التنبيه العصبي وأجهزة فموية مخصصة لتحسين تدفق الهواء أثناء النوم، مما يوفر خيارات غير جراحية فعالة لتقليل الشخير وتحسين جودة النوم <sup>[1]</sup>. كما أظهرت الأبحاث أن التعاون بين أطباء الأسنان وأخصائيي النوم يمكن أن يعزز فعالية هذه العلاجات من خلال تصميم أجهزة فموية مخصصة تتناسب مع احتياجات المريض <sup>[4]</sup>.
+                      تشمل العلاجات الحديثة استخدام تقنيات التنبيه العصبي وأجهزة فموية مخصصة لتحسين تدفق الهواء أثناء النوم، مما يوفر خيارات غير جراحية فعالة لتقليل الشخير وتحسين جودة النوم <sup>[1,4]</sup>. كما أظهرت الأبحاث أن التعاون بين أطباء الأسنان وأخصائيي النوم يمكن أن يعزز فعالية هذه العلاجات من خلال تصميم أجهزة فموية مخصصة تتناسب مع احتياجات المريض <sup>[4,6]</sup>.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="space-y-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-primary border-b-2 border-primary/20 pb-2">المراجع</h3>
-                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[1]</span>
-                    <div>
-                      <p className="font-medium">Alkhalil, M., & Alshammari, A. (2024).</p>
-                      <p className="italic">Sleep-Disordered Breathing: Advances in Diagnosis and Management.</p>
-                      <p><i>Sleep Medicine: X</i>.</p>
+                <ul className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-6">
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[1]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Alkhalil, M., & Alshammari, A. (2024).</p>
+                      <p className="italic text-gray-800">Sleep-Disordered Breathing: Advances in Diagnosis and Management.</p>
+                      <p className="text-gray-600"><i>Sleep Medicine: X</i>.</p>
                       <a
                         href="https://www.sciencedirect.com/science/article/pii/S2667343624000027"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://www.sciencedirect.com/science/article/pii/S2667343624000027
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[2]</span>
-                    <div>
-                      <p className="font-medium">The impact of mouth breathing on dentofacial development. (2022).</p>
-                      <p className="italic">Study on the effects of uncorrected mouth breathing on dental and facial development.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[2]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Pereira, S. R., et al. (2022).</p>
+                      <p className="italic text-gray-800">The Impact of Mouth Breathing on Dentofacial Development.</p>
+                      <p className="text-gray-600"><i>Frontiers in Public Health</i>.</p>
                       <a
                         href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.929165/full"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.929165/full
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[3]</span>
-                    <div>
-                      <p className="font-medium">Rose, E., & Schessl, J. (2014).</p>
-                      <p className="italic">The role of orthodontists in diagnosing airway problems.</p>
-                      <p><i>Journal of Orofacial Orthopedics</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[3]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Rose, E., & Schessl, J. (2014).</p>
+                      <p className="italic text-gray-800">The Role of Orthodontists in Diagnosing Airway Problems.</p>
+                      <p className="text-gray-600"><i>Journal of Orofacial Orthopedics</i>.</p>
                       <a
                         href="https://www.ncbi.nlm.nih.gov/pubmed/25206135"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://www.ncbi.nlm.nih.gov/pubmed/25206135
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-medium">[4]</span>
-                    <div>
-                      <p className="font-medium">Klineberg, I., & Eckhardt, A. (2024).</p>
-                      <p className="italic">Oral Health Implications of Obstructive Sleep Apnea: A Literature Review.</p>
-                      <p><i>Biomedicines</i>.</p>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[4]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Klineberg, I., & Eckhardt, A. (2024).</p>
+                      <p className="italic text-gray-800">Oral Health Implications of Obstructive Sleep Apnea: A Literature Review.</p>
+                      <p className="text-gray-600"><i>Biomedicines</i>.</p>
                       <a
                         href="https://www.mdpi.com/2227-9059/12/7/1382"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline break-all"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
                       >
+                        <BookOpen className="w-4 h-4" />
                         https://www.mdpi.com/2227-9059/12/7/1382
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[5]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Peppard, P. E., et al. (2013).</p>
+                      <p className="italic text-gray-800">Increased Prevalence of Sleep-Disordered Breathing in Adults.</p>
+                      <p className="text-gray-600"><i>American Journal of Epidemiology</i>.</p>
+                      <a
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0012369215313039"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
+                      >
+                        <BookOpen className="w-4 h-4" />
+                        https://www.sciencedirect.com/science/article/abs/pii/S0012369215313039
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[6]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">Gong, X., et al. (2024).</p>
+                      <p className="italic text-gray-800">Oral Health Implications of Obstructive Sleep Apnea: A Literature Review.</p>
+                      <p className="text-gray-600"><i>ResearchGate</i>.</p>
+                      <a
+                        href="https://www.researchgate.net/publication/381628402_Oral_Health_Implications_of_Obstructive_Sleep_Apnea_A_Literature_Review"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
+                      >
+                        <BookOpen className="w-4 h-4" />
+                        https://www.researchgate.net/publication/381628402_Oral_Health_Implications_of_Obstructive_Sleep_Apnea_A_Literature_Review
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4 bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+                    <span className="text-primary font-bold text-lg">[7]</span>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-primary">D’Onofrio, L., et al. (2023).</p>
+                      <p className="italic text-gray-800">Oral and Maxillofacial Implications of Obstructive Sleep Apnea in Children: A Systematic Review.</p>
+                      <p className="text-gray-600"><i>Children</i>.</p>
+                      <a
+                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10199385/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline break-all flex items-center gap-2"
+                      >
+                        <BookOpen className="w-4 h-4" />
+                        https://pmc.ncbi.nlm.nih.gov/articles/PMC10199385/
                       </a>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center" >
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="https://wa.me/9620797377375?text=أريد استشارة حول اضطرابات النوم"
                   target="_blank"
@@ -156,7 +212,6 @@ export default function MiscStudiesPage() {
                     احجز استشارة
                   </Button>
                 </a>
-         
               </div>
             </CardContent>
           </Card>

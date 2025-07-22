@@ -449,12 +449,12 @@ export default function AdultsPage() {
       </div>
       <div className="relative rounded-2xl overflow-hidden shadow-xl border border-primary/10 max-w-4xl mx-auto">
         <video
-          src="/adult.mp4" // Replace with your actual video path or URL
+          src="/v4.mov" // Replace with your actual video path or URL
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-auto object-cover"
+          className="w-full h-[900px] object-cover"
         />
         <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-md">
           <p className="text-sm font-medium text-primary">علاج غير جراحي بتقنية متقدمة</p>
