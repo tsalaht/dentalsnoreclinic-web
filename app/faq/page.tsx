@@ -511,6 +511,9 @@ export default function FAQPage() {
                     rows={4}
                     className="w-full p-3 border border-white/30 rounded-lg bg-white/10 text-white placeholder-white/70 focus:ring-2 focus:ring-white focus:border-transparent"
                   ></textarea>
+                    <Button className="bg-blue-500 hover:bg-blue-700 text-white w-full py-3">
+    إرسال
+  </Button>
                   <div className="grid grid-cols-2 gap-4">
                     <a href="https://wa.me/962797377131?text=لدي سؤال خاص حول الشخير وأريد إجابة من الدكتور" target="_blank" className="w-full">
                       <Button className="bg-green-500 hover:bg-green-600 text-white w-full py-3">
