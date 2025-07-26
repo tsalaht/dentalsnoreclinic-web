@@ -288,7 +288,7 @@ export default function MobileMenu() {
                     className="block py-3 px-4 text-primary/90 hover:text-primary hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium text-lg"
                     onClick={() => setIsOpen(false)}
                   >
-                    تواصل معنا
+           احجز استشارتك
                   </Link>
                 </li>
               </ul>

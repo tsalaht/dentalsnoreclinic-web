@@ -717,7 +717,7 @@ export default function ArabicSnoringClinic() {
             <div>
               <h4 className="font-semibold mb-4">تواصل معنا</h4>
               <div className="space-y-2 text-sm text-gray-300">
-                <p>📞 07-9737-71-31</p>
+                <p>📞 962797377131</p>
                 <p>📍 الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
                <p>السبت - الأربعاء : 10:00  - 6:00 </p>
                             <p>الخميس  : 10:00  - 2:00 </p>

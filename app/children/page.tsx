@@ -10,11 +10,22 @@ import WhatsAppButton from "@/components/WhatsAppButton"
 import Navbar from "@/components/Navbar"
 import Breadcrumb from "@/components/Breadcrumb"
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css/navigation';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import { useRef } from "react"
+import { useState, useEffect } from "react"
 
 export default function ChildrenPage() {
+  // Custom navigation refs
+  const prevRef = useRef(null)
+  const nextRef = useRef(null)
+  const [navigationReady, setNavigationReady] = useState(false)
+  useEffect(() => {
+    setNavigationReady(true)
+  }, [])
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Navigation */}
@@ -360,9 +371,7 @@ export default function ChildrenPage() {
               className="w-full h-auto object-cover"
               loading="lazy"
             />
-            <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-2">
-              <p className="text-sm font-medium text-primary">التنفس الفموي vs التنفس الأنفي</p>
-            </div>
+ 
           </div>
         </div>
         {/* Image 2: Symptoms of Snoring in Children */}
@@ -376,9 +385,7 @@ export default function ChildrenPage() {
               className="w-full h-auto object-cover"
               loading="lazy"
             />
-            <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-2">
-              <p className="text-sm font-medium text-primary">أعراض الشخير لدى الأطفال</p>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -478,9 +485,7 @@ export default function ChildrenPage() {
           playsInline
           className="w-full h-auto object-cover"
         />
-        <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-md">
-          <p className="text-sm font-medium text-primary">هل لاحظت أن طفلك يتنفس من فمه</p>
-        </div>
+    
       </div>
     </div>
   </div>
@@ -497,45 +502,79 @@ export default function ChildrenPage() {
           قد تكون قصة هذه الأم والنصيحة التي قلبت حياة طفلها للأفضل مصدر إلهام للكثير!! لتي تروي رحلة علاج طفلها لسنوات من التنفس الفموي مسببا له الهالات السوداء تحت عينيه وشخير مزمن، مما كان يجعله يستيقظ متعبا في الصباح، إلى أن أصبح يتنفس من أنفه بشكل طبيعي.
         </p>
       </div>
-      <div className=" mx-auto">
-        <Swiper
-          modules={[Pagination]}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-       
+      <div className="mx-auto">
+        {/* Swiper and custom navigation buttons */}
+        {navigationReady && (
+          <Swiper
+            modules={[Pagination, Navigation]}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
             dir="ltr"
-          spaceBetween={20}
-          slidesPerView={2}
-          className="rounded-2xl shadow-lg"
-           breakpoints={{
-    0: {
-      slidesPerView: 1, // for small screens (mobile)
-    },
-    640: {
-      slidesPerView: 3, // from 640px and up
-    },
-  }}
-        >
-          {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).map((src, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="relative flex flex-col items-center">
-                <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl border-2 border-primary/30">
-                  <Image
-                    src={src}
-                    alt={`رحلة علاج الطفل - صورة ${idx + 1}`}
-                    width={500}
-                    height={400}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    loading="lazy"
-                  />
-                  {/* Image number badge */}
-                  <div className="absolute bottom-3 left-3 bg-primary/80 text-white text-xs px-3 py-1 rounded-full shadow-lg">
-                    {idx + 1} / {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).length}
+            spaceBetween={20}
+            slidesPerView={2}
+            navigation={{ prevEl: nextRef.current, nextEl: prevRef.current }}
+            onInit={(swiper) => {
+              // @ts-ignore
+              swiper.params.navigation.prevEl = nextRef.current;
+              // @ts-ignore
+              swiper.params.navigation.nextEl = prevRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
+            className="rounded-2xl shadow-lg"
+            breakpoints={{
+              0: {
+                slidesPerView: 1, // for small screens (mobile)
+              },
+              640: {
+                slidesPerView: 3, // from 640px and up
+              },
+            }}
+          >
+            {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).map((src, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="relative flex flex-col items-center">
+                  <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl border-2 border-primary/30">
+                    <Image
+                      src={src}
+                      alt={`رحلة علاج الطفل - صورة ${idx + 1}`}
+                      width={500}
+                      height={500}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                      loading="lazy"
+                    />
+                    {/* Image number badge */}
+                    <div className="absolute bottom-3 left-3 bg-primary/80 text-white text-xs px-3 py-1 rounded-full shadow-lg">
+                      {idx + 1} / {Array.from({ length: 13 }, (_, i) => `/tr${i + 1}.png`).length}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+        {/* Custom navigation buttons under the Swiper */}
+        <div className="flex justify-center mt-4 gap-2">
+              <button
+            ref={prevRef}
+            className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-primary/80 transition"
+            aria-label="السابق"
+            
+            type="button"
+          >
+            {/* Right arrow icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </button>
+          <button
+            ref={nextRef}
+            className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-primary/80 transition"
+            aria-label="التالي"
+            type="button"
+          >
+            {/* Left arrow icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+          </button>
+      
+        </div>
       </div>
     </div>
   </div>

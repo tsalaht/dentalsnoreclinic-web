@@ -67,7 +67,7 @@ export default function MedicalLibraryPage() {
             <p className="text-lg text-gray-600">المحتوى الذي يهتم به المرضى أكثر</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-0">
                 <div className="relative">
@@ -105,13 +105,75 @@ export default function MedicalLibraryPage() {
                 </div>
               </CardContent>
             </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/QCQBFqfRzaM"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">التنفس الفموي.. أعراضه و مضاره</h4>
+                  <p className="text-sm text-gray-600 mb-3">يعد المركز الأوروبي لطب الأسنان بإدارة الدكتور مهند الكسواني واحد من أكبر مراكز طب الأسنان على مستوى الشرق الأوسط، ويتميز بخدماته التجميلية والطبية فيما يخص زراعة الاسنان وتجميل الاسنان وجراحة الوجه والفكين وعلاج الشخير وانقطاع التنفس الانسدادي 
+وغيرها من الخدمات التي تتم على ايدي أمهر الاخصائيين والأطباء بخبرات تجاوزت ال 25 سنة.</p>
+                </div>
+              </CardContent>
+            </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/MI_P6dhPfh8"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">اختناقات النوم تذكرني بسكرات الموت!</h4>
+                  <p className="text-sm text-gray-600 mb-3"> 
+                    لو كنت تعتقد أن انقطاع نفسك وأنت نائم شيء طبيعي؛ عليك أن تراجع الطبيب فورا 
+انتقطاع التنفس والشخير عبارة عن مؤشرات من الجسم تنبيها منه بالخطر
+يؤدي الاختناق المتكرر إلى نقص الأوكسجين وضعف عضلة القلب ووصولا الموت
+ </p>
+                </div>
+              </CardContent>
+            </Card>
+     <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
+              <CardContent className="p-0">
+                <div className="relative">
+                  <iframe
+                    className="w-full aspect-video rounded-t-lg"
+                    src="https://www.youtube.com/embed/rF6D2mnqM3A"
+                    title="أفضل العلاجات الحديثة"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-primary mb-2">
+ما هو علاج الشخير وانقطاع التنفس عند النوم؟</h4>
+                  <p className="text-sm text-gray-600 mb-3"> 
+لا تترددوا باستشارة #الدكتور_مهند_الكسواني  ليقدم لكم أفضل الحلول للتخلص من الشخير و انقطاع النفس أثناء النوم.
 
+ </p>
+                </div>
+              </CardContent>
+            </Card>
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-0">
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/l7RlJzxwk_k"
                     title="كيف يساعد الليزر؟"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -122,9 +184,9 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">كيف يساعد الليزر؟</h4>
-                  <p className="text-sm text-gray-600 mb-3">العلاج بالليزر وفوائده في علاج الشخير</p>
-                  <div className="text-xs text-gray-500">👁️ 32,100 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">رحلة الدكتور مهند الكسواني لعلاج الشخي</h4>
+                  <p className="text-sm text-gray-600 mb-3">   رحلة الدكتور مهند الكسواني لعلاج الشخير: تقنيات الليزر المتطورة في المركز الأوروبي لطب الأسنان  </p>
+                 
                 </div>
               </CardContent>
             </Card>
@@ -134,7 +196,7 @@ export default function MedicalLibraryPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/haWdsUIrJeg"
                     title="الشخير عند الأطفال - الخطر الخفي"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -145,9 +207,10 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">الشخير عند الأطفال - الخطر الخفي</h4>
-                  <p className="text-sm text-gray-600 mb-3">لماذا الشخير عند الأطفال خطير جداً؟</p>
-                  <div className="text-xs text-gray-500">👁️ 29,800 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2"> ما يميز عيادتنا في علاج الشخير واضطراب التنفس أثناء النوم</h4>
+                  <p className="text-sm text-gray-600 mb-3">ما يميز عيادتنا في علاج الشخير هو التعاون مع الأطباء المختصين لعلاج الشخير مثل :
+طبيب الصدرية وطبيب الأنف والأذن والحنجرة، وطبيب الأطفال </p>
+              
                 </div>
               </CardContent>
             </Card>
@@ -157,7 +220,7 @@ export default function MedicalLibraryPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/fqgjlBycmCo"
                     title="توقف التنفس أثناء النوم"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -168,9 +231,9 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">توقف التنفس أثناء النوم</h4>
-                  <p className="text-sm text-gray-600 mb-3">الأعراض والمخاطر وطرق العلاج</p>
-                  <div className="text-xs text-gray-500">👁️ 25,600 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">البروتوكول العلاجي المتبع لمعالجة الشخير واضطراب التنفس أثناء النوم</h4>
+                  <p className="text-sm text-gray-600 mb-3">عيادة تخصصية في علاج الشخير ضمن المركز الأوروبي لطب الأسنان بإدارة د. مهند الكسواني، تتبع بروتوكولًا متقدمًا يهدف إلى توفير أفضل الطرق للتخلص من عادة الشخير والتنفس الفموي.</p>
+        
                 </div>
               </CardContent>
             </Card>
@@ -180,7 +243,7 @@ export default function MedicalLibraryPage() {
                 <div className="relative">
                   <iframe
                     className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/NQK5SWteZbE"
+                    src="https://www.youtube.com/embed/SmuFVRI0AEQ"
                     title="الأجهزة الفموية - دليل شامل"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -191,12 +254,16 @@ export default function MedicalLibraryPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="font-bold text-primary mb-2">الأجهزة الفموية - دليل شامل</h4>
-                  <p className="text-sm text-gray-600 mb-3">كيفية عمل الأجهزة الفموية وفعاليتها</p>
-                  <div className="text-xs text-gray-500">👁️ 22,400 مشاهدة</div>
+                  <h4 className="font-bold text-primary mb-2">لماذا طبيب الأسنان يعالج الشخير ؟</h4>
+                  <p className="text-sm text-gray-600 mb-3">يطرح الدكتور مهند الكسواني تعاوناً مُبتكراً مع الأطباء في التخصصات  الطبية المختلفة  لِعلاجِ الشخير واضطراب التنفس الليلي والتحدياتِ الطبيةِ  التي قد  يواجهها بعض  الأشخاص اثناء رحلتهم ومحاولتهم   الحصول  على نوم هانىء ومريح  و التخلص من الشخير </p>
+                
                 </div>
               </CardContent>
             </Card>
+        
+
+    
+
           </div>
 
           <div className="text-center mt-12">
@@ -246,7 +313,7 @@ export default function MedicalLibraryPage() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-0">
                 <div className="relative">
@@ -260,7 +327,7 @@ export default function MedicalLibraryPage() {
                   ></iframe>
                 </div>
                 <div className="p-4">
-                  {/* <h4 className="font-bold text-primary mb-2">جلسة افتتاح مؤتمر الشخير</h4> */}
+      
                   <p className="text-sm text-gray-600 mb-3">نظم المركز الأوروبي ورشة بحث علمية حول الشخير واضطرابات التنفس أثناء النوم</p>
                 </div>
               </CardContent>
@@ -298,30 +365,12 @@ export default function MedicalLibraryPage() {
                   ></iframe>
                 </div>
                 <div className="p-4">
-                  {/* <h4 className="font-bold text-primary mb-2">تقنيات الليزر في علاج الشخير</h4> */}
+                
                   <p className="text-sm text-gray-600 mb-3">  لقطات من ورشة الشخير التي أقامها المركز الأوروبي وحضرها عدد من الأطباء المهتمين</p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
-              <CardContent className="p-0">
-                <div className="relative">
-                  <iframe
-                    className="w-full aspect-video rounded-t-lg"
-                    src="https://www.youtube.com/embed/K4-KYwk8n8U"
-                    title="الشخير عند الأطفال"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-                <div className="p-4">
-                  {/* <h4 className="font-bold text-primary mb-2">الشخير عند الأطفال</h4> */}
-                  <p className="text-sm text-gray-600 mb-3">مقتطفات من مؤتمر المركز الأوروبي لطب الأسنان لعرض البروتوكول الخاص بعلاج الشخير 22 May 2024</p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

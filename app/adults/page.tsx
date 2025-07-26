@@ -454,11 +454,9 @@ export default function AdultsPage() {
           loop
           muted
           playsInline
-          className="w-full h-[900px] object-cover"
+          className="w-full h-[700px] object-cover"
         />
-        <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-md">
-          <p className="text-sm font-medium text-primary">علاج غير جراحي بتقنية متقدمة</p>
-        </div>
+      
       </div>
     </div>
   </div>

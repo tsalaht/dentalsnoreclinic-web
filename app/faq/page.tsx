@@ -72,10 +72,7 @@ export default function FAQPage() {
               <Stethoscope className="w-4 h-4 ml-2" />
               الأجهزة الفموية
             </Button>
-            <Button variant="outline" className="border-red-500 text-red-600 hover:bg-red-50">
-              <Heart className="w-4 h-4 ml-2" />
-              الأسعار
-            </Button>
+       
           </div>
         </div>
       </section>
@@ -92,32 +89,26 @@ export default function FAQPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-6">
                 <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-blue-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    5:32
-                  </div>
+                  <iframe
+                    src="https://www.youtube.com/embed/UlDWKP1QOiU"
+                    title="أسباب ظهور الحمو داخل الفم !!"
+                    className="w-full aspect-video rounded-lg"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                   <div className="absolute top-2 left-2">
                     <Badge className="bg-red-500 text-white">الأكثر مشاهدة</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-primary mb-2">ما الفرق بين الشخير الطبيعي والمرضي؟</h4>
-                <p className="text-sm text-gray-600 mb-4">د. مهند يشرح كيفية التمييز بين الشخير العادي والشخير الذي يحتاج علاج</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>45,200 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>1,200</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو الفرق بين الشخير الطبيعي والمرضي" target="_blank">
+                <h4 className="font-bold text-lg text-primary mb-2">أسباب ظهور الحمو داخل الفم !!</h4>
+                <p className="text-sm text-gray-600 mb-4">تقرح الفم و التهابات الفم؛ هي بثور صغيرة سطحية تظهر في الأغشية المبطنة للفم أو على اللثة
+                و تعتبر واحده من اشهر قرح الفم و التهابات الفم التى تتسبب الم مع الأكل والكلام</p>
+         
+                <a href="https://www.youtube.com/embed/UlDWKP1QOiU" target="_blank">
                   <Button className="w-full bg-blue-600 hover:bg-primary text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
+                    شاهد على يوتيوب
                   </Button>
                 </a>
               </CardContent>
@@ -126,32 +117,30 @@ export default function FAQPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-6">
                 <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-green-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    7:15
-                  </div>
+                  <iframe
+                    src="https://www.youtube.com/embed/_3c5gjsxKvg"
+                    title="
+هل الزرعات الفورية افضل من التقليدية ؟ "
+                    className="w-full aspect-video rounded-lg"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                   <div className="absolute top-2 left-2">
                     <Badge className="bg-green-500 text-white">شائع</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-primary mb-2">هل يمكن علاج الشخير بدون جراحة؟</h4>
-                <p className="text-sm text-gray-600 mb-4">البدائل غير الجراحية المتاحة والعلاجات الحديثة وفعاليتها</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>38,900 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>980</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو علاج الشخير بدون جراحة" target="_blank">
+                <h4 className="font-bold text-lg text-primary mb-2">
+                هل الزرعات الفورية افضل من التقليدية ؟ </h4>
+                <p className="text-sm text-gray-600 mb-4">يفضل اطباء الاسنان الزراعة العادية عن الزراعة الفورية لما لها من اثار صحية و طبية 
+حيث يجب وضع الزرعة و الانتظار مدة 3 اشهر حتى يحدث ما يسمى بالاندماج العظمي بين الزرعة و عظام الفك و من ثم يتم التركيب على الزرعة 
+على عكس الزراعة الفورية التي تكون لحالات خاصة جدا او فقط في زراعة الاسنان الامامية او لحالات لا تستطيع الانتظار مع التنبيه بالخطورة المحتملة 
+</p>
+          
+                <a href="https://www.youtube.com/embed/_3c5gjsxKvg" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
+                    شاهد على يوتيوب
                   </Button>
                 </a>
               </CardContent>
@@ -160,221 +149,136 @@ export default function FAQPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
               <CardContent className="p-6">
                 <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-purple-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    6:48
-                  </div>
+                  <iframe
+                    src="https://www.youtube.com/embed/Qqy35fGyOI0"
+                    title="
+هل يوجد زراعة أسنان بدون جراحة؟"
+                    className="w-full aspect-video rounded-lg"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                   <div className="absolute top-2 left-2">
-                    <Badge className="bg-purple-500 text-white">للوالدين</Badge>
+                  <Badge className="bg-green-500 text-white">شائع</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-primary mb-2">كيف أعرف أن طفلي يحتاج علاج؟</h4>
-                <p className="text-sm text-gray-600 mb-4">العلامات التي تدل على ضرورة فحص الطفل للتنفس أثناء النوم</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>32,100 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>750</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو علامات احتياج الطفل للعلاج" target="_blank">
+                <h4 className="font-bold text-lg text-primary mb-2">
+                هل يوجد زراعة أسنان بدون جراحة؟</h4>
+                <p className="text-sm text-gray-600 mb-4">سواء الزراعة الموجهة بالحاسوب او الزراعة العادية كلها تحتاج الى جراحة 
+                و الفكرة من استخدام تقنية الزراعة الموجهة بالحاسوب </p>
+           
+                <a href="https://www.youtube.com/watch?v=Qqy35fGyOI0" target="_blank">
                   <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
+                    شاهد على يوتيوب
                   </Button>
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
-              <CardContent className="p-6">
-                <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-orange-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    4:22
-                  </div>
-                  <div className="absolute top-2 left-2">
-                    <Badge className="bg-orange-500 text-white">علاج حديث</Badge>
-                  </div>
-                </div>
-                <h4 className="font-bold text-lg text-primary mb-2">ما هي فعالية العلاج بالليزر؟</h4>
-                <p className="text-sm text-gray-600 mb-4">شرح تفصيلي عن تقنية الليزر ونسب نجاحها والنتائج المتوقعة</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>29,800 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>650</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو فعالية العلاج بالليزر" target="_blank">
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
-                    <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
-                  </Button>
-                </a>
-              </CardContent>
-            </Card>
+          
 
-            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
-              <CardContent className="p-6">
-                <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-pink-100 to-pink-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-pink-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    8:10
-                  </div>
-                  <div className="absolute top-2 left-2">
-                    <Badge className="bg-pink-500 text-white">مدة العلاج</Badge>
-                  </div>
-                </div>
-                <h4 className="font-bold text-lg text-primary mb-2">كم يستغرق العلاج للحصول على نتائج؟</h4>
-                <p className="text-sm text-gray-600 mb-4">الجدول الزمني المتوقع لعلاج الشخير والنتائج المنتظرة</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>25,600 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>540</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو مدة العلاج والنتائج" target="_blank">
-                  <Button className="w-full bg-pink-600 hover:bg-pink-700 text-white">
-                    <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
-                  </Button>
-                </a>
-              </CardContent>
-            </Card>
+    
 
-            <Card className="bg-white hover:shadow-lg transition-shadow cursor-pointer">
-              <CardContent className="p-6">
-                <div className="relative mb-4">
-                  <div className="bg-gradient-to-br from-teal-100 to-teal-200 rounded-lg aspect-video flex items-center justify-center">
-                    <Play className="w-12 h-12 text-teal-600" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    6:33
-                  </div>
-                  <div className="absolute top-2 left-2">
-                    <Badge className="bg-teal-500 text-white">أمان</Badge>
-                  </div>
-                </div>
-                <h4 className="font-bold text-lg text-primary mb-2">هل العلاج آمن للأطفال؟</h4>
-                <p className="text-sm text-gray-600 mb-4">أمان العلاجات المختلفة وخصوصيتها للأطفال والآثار الجانبية</p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Eye className="w-4 h-4" />
-                    <span>22,400 مشاهدة</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <ThumbsUp className="w-4 h-4" />
-                    <span>480</span>
-                  </span>
-                </div>
-                <a href="https://wa.me/9620797377375?text=أريد مشاهدة فيديو أمان العلاج للأطفال" target="_blank">
-                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    <PlayCircle className="w-4 h-4 ml-2" />
-                    شاهد الإجابة
-                  </Button>
-                </a>
-              </CardContent>
-            </Card>
+      
           </div>
         </div>
       </section>
 
       {/* FAQ by Category */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">تصفح حسب الموضوع</h2>
-            <p className="text-lg text-gray-600">أسئلة منظمة حسب الموضوع لسهولة الوصول</p>
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold text-primary mb-4">الأسئلة الشائعة</h2>
+      <p className="text-lg text-gray-600">إجابات مفصلة عن الشخير، علاج الأطفال، الأجهزة الفموية، والعلاج بالليزر</p>
+    </div>
+
+    <div className="space-y-12">
+      {/* Snoring Questions */}
+      <div>
+        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الشخير</h3>
+        <div className="space-y-6">
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">كل الناس بتشخر... بس هل ممكن يكون علامة على مشكلة صحية محتاجة انتباه؟</h4>
+            <p className="text-gray-600">الشخير هو الصوت الذي يصدر عندما يضيق مجرى الهواء أثناء النوم وتتذبذب الأنسجة الرخوة في الحلق. على الرغم من أنه قد يبدو غير ضار، إلا أنه غالباً ما يكون عرضاً لمشكلة أكبر تسمى "انقطاع التنفس الانسدادي النومي" (OSA). هذا الاضطراب يمكن أن يؤدي إلى نقص الأكسجين في الدم، مما يزيد من مخاطر الإصابة بأمراض القلب، ارتفاع ضغط الدم، السكري، الجلطات، والإرهاق المزمن. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤكد على أهمية تشخيص الشخير بدقة لتحديد ما إذا كان مجرد شخير بسيط أم جزءاً من مشكلة صحية أعمق.</p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="bg-white hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Zap className="w-6 h-6 text-blue-600" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">العلاج بالليزر</h3>
-                <p className="text-gray-600 text-sm mb-4">كل ما تريد معرفته عن تقنية الليزر</p>
-                <div className="text-xs text-gray-500 mb-4">
-                  <span>📹 12 فيديو • 📝 8 إجابات نصية</span>
-                </div>
-                <Button variant="outline" className="w-full border-primary/70 text-blue-600 hover:bg-blue-50">
-                  <Video className="w-4 h-4 ml-2" />
-                  شاهد الأسئلة
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Baby className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">علاج الأطفال</h3>
-                <p className="text-gray-600 text-sm mb-4">أسئلة الوالدين حول مشاكل الأطفال</p>
-                <div className="text-xs text-gray-500 mb-4">
-                  <span>📹 15 فيديو • 📝 12 إجابة نصية</span>
-                </div>
-                <Button variant="outline" className="w-full border-green-500 text-green-600 hover:bg-green-50">
-                  <Video className="w-4 h-4 ml-2" />
-                  شاهد الأسئلة
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <Stethoscope className="w-6 h-6 text-purple-600" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">الأجهزة الفموية</h3>
-                <p className="text-gray-600 text-sm mb-4">معلومات عن أجهزة الفم والعلاج</p>
-                <div className="text-xs text-gray-500 mb-4">
-                  <span>📹 10 فيديو • 📝 6 إجابات نصية</span>
-                </div>
-                <Button variant="outline" className="w-full border-purple-500 text-purple-600 hover:bg-purple-50">
-                  <Video className="w-4 h-4 ml-2" />
-                  شاهد الأسئلة
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                  <Heart className="w-6 h-6 text-orange-600" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">التكلفة والأسعار</h3>
-                <p className="text-gray-600 text-sm mb-4">أسئلة حول تكلفة العلاج والتأمين</p>
-                <div className="text-xs text-gray-500 mb-4">
-                  <span>📹 8 فيديو • 📝 10 إجابات نصية</span>
-                </div>
-                <Button variant="outline" className="w-full border-orange-500 text-orange-600 hover:bg-orange-50">
-                  <Video className="w-4 h-4 ml-2" />
-                  شاهد الأسئلة
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">كيف يختلف التنفس الفموي عن التنفس الأنفي، وما هي مخاطره؟</h4>
+            <p className="text-gray-600">الأنف هو الفلتر الطبيعي للجسم، حيث يقوم بترطيب وتدفئة وتصفية الهواء قبل وصوله إلى الرئتين. التنفس الفموي المزمن، خصوصاً لدى الأطفال، يؤثر على نمو عظام الوجه والفكين، مما قد يؤدي إلى ضيق الفك العلوي، تزاحم الأسنان، وتغيرات في ملامح الوجه. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نركز على إعادة تأهيل نمط التنفس الصحي.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير يتطلب جراحة؟</h4>
+            <p className="text-gray-600"><strong>الإجابة السريعة:</strong> لا، في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نقدم حلول غير جراحية فعالة لمعظم حالات الشخير والتنفس الفموي.<br /><br />على عكس الاعتقاد الشائع، فإن العديد من حالات الشخير واضطرابات التنفس الفموي يمكن علاجها بنجاح دون الحاجة إلى تدخل جراحي. يعتمد نهجنا في المركز الأوروبي على التشخيص الدقيق أولاً لتحديد السبب الجذري للمشكلة، ثم وضع خطة علاجية مخصصة قد تشمل الليزر، الأجهزة الفموية، التمارين، وتغييرات في نمط الحياة. الجراحة تتم بالتعاون مع أطباء الأنف والأذن والحنجرة للحالات التي تستدعي ذلك.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هي أحدث التقنيات المستخدمة لعلاج الشخير في المركز الأوروبي؟</h4>
+            <p className="text-gray-600">في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي - عيادة الشخير، نفخر بتقديم بروتوكول علاجي متكامل ومتطور وغير جراحي. نستخدم تقنية الليزر المتطورة التي تعمل على شد الأنسجة الرخوة في سقف الحلق، مما يقلل من اهتزازها ويحسن تدفق الهواء بشكل ملحوظ، وكل ذلك يتم بدون ألم أو جراحة. كما نقدم حلولاً مثل الأجهزة الفموية المخصصة التي تساعد على كسر عادة التنفس الفموي، بالإضافة إلى برامج تمارين الوجه والعضلات لتعزيز قوة الأنسجة وتحسين وظيفة التنفس.</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Children's Treatment Questions */}
+      <div>
+        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن علاج الأطفال</h3>
+        <div className="space-y-6">
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">متى يجب أن أقلق بشأن تنفس طفلي من فمه؟</h4>
+            <p className="text-gray-600">من المهم جداً مراقبة طريقة تنفس الأطفال، فالتنفس الأنفي هو الأساس لنمو صحي. يجب القلق إذا لاحظت أن طفلك:<br />
+            • يتنفس من فمه معظم الوقت، حتى أثناء اللعب أو مشاهدة التلفاز.<br />
+            • يشخر بصوت عالٍ أو يتوقف تنفسه لفترات قصيرة أثناء النوم.<br />
+            • يعاني من جفاف الفم أو الشفاه المتشققة.<br />
+            • يظهر عليه علامات "وجه التنفس الفموي" مثل الفك السفلي المتراجع، أو تضيق الفك العلوي، أو تزاحم الأسنان.<br />
+            • يعاني من التهابات متكررة في الحلق أو الأذن.<br />
+            • يواجه صعوبة في التركيز أو يعاني من فرط النشاط بسبب قلة النوم.<br />
+            التدخل المبكر أمر حيوي لتصحيح هذه العادة ومنع المضاعفات المستقبلية.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل الأجهزة الفموية آمنة ومريحة للأطفال؟</h4>
+            <p className="text-gray-600">الأجهزة الفموية المستخدمة للأطفال تختلف عن تلك المخصصة للبالغين. فهي لا تعالج الشخير فقط، بل تهدف أيضاً إلى توجيه نمو الفك العلوي والسفلي بشكل صحيح، وتوسيع مجرى الهواء، وتشجيع التنفس الأنفي. هذه الأجهزة مصممة لتكون مريحة قدر الإمكان، ويتم تعديلها بانتظام لتناسب مراحل نمو الطفل. يحرص أطباؤنا في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي على اختيار الجهاز الأنسب لكل طفل وشرح كيفية استخدامه والعناية به لضمان أقصى درجات الأمان والفعالية.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل يمكن علاج التنفس الفموي عند الأطفال دون جراحة؟</h4>
+            <p className="text-gray-600">في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤمن بالنهج الشامل للعلاج. حتى لو كان هناك عائق مثل اللحمية أو اللوزتين وتمت إزالته جراحياً، فإن عادة التنفس الفموي قد تستمر كنمط سلوكي. لذلك، نركز على العلاج الوظيفي لعضلات الوجه والفكين، والذي يشمل تمارين محددة واستخدام أجهزة فموية مصممة لتدريب الطفل على التنفس من الأنف بشكل صحيح. هذا النهج يساعد على تصحيح نمو الفك وتطوير عادات تنفس صحية ودائمة، مما يقلل الحاجة إلى التدخلات الجراحية المتكررة.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Oral Appliances Questions */}
+      <div>
+        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الأجهزة الفموية</h3>
+        <div className="space-y-6">
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هي الأجهزة الفموية المستخدمة في علاج الشخير والتنفس الفموي؟</h4>
+            <p className="text-gray-600">الأجهزة الفموية هي حلول غير جراحية وفعالة لعلاج الشخير وانقطاع التنفس الانسدادي الخفيف إلى المتوسط. يتم تصميمها لتناسب كل مريض، تعمل عن طريق دفع الفك السفلي أو اللسان إلى الأمام قليلاً أثناء النوم، مما يوسع مجرى الهواء ويمنع انسداده. هذه الأجهزة مريحة وسهلة الاستخدام.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل الأجهزة الفموية مريحة للاستخدام أثناء النوم؟</h4>
+            <p className="text-gray-600">على الرغم من أن التكيف الأولي قد يستغرق بضعة أيام، إلا أن الأجهزة الفموية الحديثة مصممة لتكون مريحة قدر الإمكان. يحرص أطباؤنا على تعديل الجهاز حتى يشعر المريض بالراحة التامة، مما يسمح له بالنوم بشكل طبيعي دون إزعاج. يجد معظم المرضى أنهم يتكيفون مع الجهاز بسرعة ويصبح جزءًا طبيعيًا من روتين نومهم.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Laser Treatment Questions */}
+      <div>
+        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الليزر</h3>
+        <div className="space-y-6">
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هو علاج الشخير بالليزر وكيف يعمل؟</h4>
+            <p className="text-gray-600">يعتمد علاج الشخير بالليزر على استخدام طاقة ليزر آمنة وموجهة بدقة، لتسخين الأنسجة الرخوة في الحلق وسقف الحلق. هذا التسخين اللطيف يحفز إنتاج الكولاجين الجديد في الأنسجة، مما يؤدي إلى شدها وتقويتها بمرور الوقت. النتيجة هي فتح مجرى الهواء بشكل أكبر وتقليل اهتزاز الأنسجة المسببة لصوت الشخير، مما يمنحك نوماً أعمق وأكثر هدوءاً.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير بالليزر مؤلم؟ وهل يتطلب فترة تعافٍ طويلة؟</h4>
+            <p className="text-gray-600">يتميز علاج الشخير بالليزر بكونه إجراءً لطيفاً وغير مؤلمٍ. معظم المرضى لا يشعرون بأي ألم أثناء الجلسة، وقد يشعر البعض بانزعاج خفيف أو شعور بالدفء. لا يتطلب العلاج تخديراً، وبعد الجلسة مباشرة، يمكن للمريض العودة إلى أنشطته اليومية بشكل طبيعي، بخلاف تجنب الأطعمة والمشروبات شديدة الحرارة أو البرودة لبضع ساعات.</p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير بالليزر آمن وفعال؟</h4>
+            <p className="text-gray-600">يعتبر علاج الشخير بالليزر إجراءً آمناً للغاية عند إجرائه بواسطة أطباء متخصصين ومدربين. تم اعتماد هذه التقنية على نطاق واسع وأظهرت الدراسات العلمية نتائج فعالة في تقليل الشخير وتحسين جودة النوم لدى العديد من المرضى. كما أن الليزر المستخدم آمن للأنسجة الرخوة ولا يسبب أي ضرر للأصوات أو التنفس. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نستخدم أحدث أجهزة الليزر ونتّبع بروتوكولات علاجية دقيقة لضمان أعلى مستويات الأمان والفعالية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Text FAQ Section */}
       <section className="py-16 bg-white">
@@ -386,7 +290,7 @@ export default function FAQPage() {
             </div>
 
             <div className="space-y-6">
-              <Card className="bg-blue-50 border-blue-200">
+              {/* <Card className="bg-blue-50 border-blue-200">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-blue-600" />
@@ -402,13 +306,13 @@ export default function FAQPage() {
                     </Button>
                   </a>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="bg-green-50 border-green-200">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-green-600" />
-                    كم مدة علاج الأطفال بأجهزة Myobrace؟
+                    كم مدة علاج الأطفال بالجهاز العضلي الوظيفي الفموي 
                   </h3>
                   <p className="text-gray-600 mb-4">
                     مدة العلاج تتراوح من 12-24 شهر حسب عمر الطفل وشدة الحالة. النتائج الأولية تظهر خلال 3-6 أشهر، والتحسن الكامل يحتاج للمدة الكاملة.
@@ -422,7 +326,7 @@ export default function FAQPage() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-purple-50 border-purple-200">
+              {/* <Card className="bg-purple-50 border-purple-200">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-purple-600" />
@@ -438,7 +342,7 @@ export default function FAQPage() {
                     </Button>
                   </a>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="bg-orange-50 border-orange-200">
                 <CardContent className="p-6">

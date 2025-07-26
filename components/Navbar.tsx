@@ -50,7 +50,7 @@ export default function Navbar() {
     { href: "/sleep-challenge", label: "تحدي النوم" },
     { href: "/blog", label: "المدونة" },
     { href: "/medical-library", label: "المكتبة الطبية" },
-    { href: "/contact", label: "تواصل معنا" },
+    { href: "/contact", label: "احجز استشارتك" },
   ]
 
   return (
@@ -277,7 +277,7 @@ export default function Navbar() {
               href="/contact"
               className={`relative font-medium px-4 py-2 rounded-none transition-all duration-300${pathname === "/contact" ? " text-primary" : " text-primary/90 hover:text-primary"}`}
             >
-              <span className="relative z-10">تواصل معنا</span>
+              <span className="relative z-10">احجز استشارتك</span>
               <span className={`absolute left-0 right-0 -bottom-1 h-[3px] rounded-full transition-all duration-300${pathname === "/contact" ? " bg-primary/70 w-full" : " bg-blue-200 w-0 group-hover:w-full hover:w-full"}`} aria-hidden="true" />
             </Link>
           </div>

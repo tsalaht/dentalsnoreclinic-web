@@ -59,7 +59,7 @@ export default function ContactPage() {
                           <h3 className="font-bold text-lg mb-2">الهاتف</h3>
                           <p className="text-gray-600 mb-2">للمواعيد والاستفسارات</p>
                           <a href="tel:+962796611561" className="text-blue-600 font-medium hover:underline">
-                            07-9737-71-31
+                            962797377131
                           </a>
                         </div>
                       </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="bg-red-50 py-12">
+      {/* <section className="bg-red-50 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-red-800 mb-4">حالات الطوارئ</h2>
@@ -248,7 +248,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Quick Access */}
       <section className="py-16 bg-gray-50">
@@ -299,7 +299,7 @@ export default function ContactPage() {
             <div>
               <h4 className="font-semibold mb-4">تواصل معنا</h4>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📞 07-9737-71-31</p>
+                <p>📞 962797377131</p>
                 <p>📍الأردن - عمان - صويفية - شارع باريس - مجمع الشانزليزيه</p>
              <p>السبت - الأربعاء : 10:00  - 6:00 </p>
                             <p>الخميس  : 10:00  - 2:00 </p>
