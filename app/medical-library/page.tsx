@@ -434,7 +434,7 @@ export default function MedicalLibraryPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/962797377131?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=معرفة المزيد عن التنفس الفموي أثناء النوم" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة

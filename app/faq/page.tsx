@@ -232,7 +232,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة مدة علاج طفلي بأجهزة     فموية" target="_blank">
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة للطفل
+        فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -250,7 +250,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أمان العلاج والآثار الجانبية" target="_blank">
               <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                معلومات الأمان
+         فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -269,7 +269,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تشخيص الشخير" target="_blank">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول الشخير
+        فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -287,7 +287,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول التنفس
+       فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -306,7 +306,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج الشخير غير الجراحي" target="_blank">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول العلاج
+       فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -324,7 +324,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تقنيات علاج الشخير" target="_blank">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول التقنيات
+          فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -350,7 +350,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد استشارة حول تنفس طفلي من فمه" target="_blank">
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول تنفس الأطفال
+          فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -368,7 +368,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أجهزة الفم للأطفال" target="_blank">
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول أجهزة الأطفال
+                فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -386,7 +386,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج التنفس الفموي للأطفال" target="_blank">
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول علاج الأطفال
+             فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -405,7 +405,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن الأجهزة الفموية" target="_blank">
               <Button className="bg-purple-600 hover:bg-purple-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول الأجهزة الفموية
+            فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -423,7 +423,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن راحة الأجهزة الفموية" target="_blank">
               <Button className="bg-purple-600 hover:bg-purple-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول راحة الأجهزة
+                فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -440,9 +440,9 @@ export default function FAQPage() {
               يعتمد علاج الشخير بالليزر على استخدام طاقة ليزر آمنة وموجهة بدقة، لتسخين الأنسجة الرخوة في الحلق وسقف الحلق. هذا التسخين اللطيف يحفز إنتاج الكولاجين الجديد في الأنسجة، مما يؤدي إلى شدها وتقويتها بمرور الوقت. النتيجة هي فتح مجرى الهواء بشكل أكبر وتقليل اهتزاز الأنسجة المسببة لصوت الشخير، مما يمنحك نوماً أعمق وأكثر هدوءاً.
             </p>
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج الشخير بالليزر" target="_blank">
-              <Button className="bg-text-orange-600 hover:bg-orange-700 text-white">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول العلاج بالليزر
+               فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -460,7 +460,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن راحة علاج الليزر" target="_blank">
               <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول راحة الليزر
+           فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
@@ -478,7 +478,7 @@ export default function FAQPage() {
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أمان وفعالية علاج الليزر" target="_blank">
               <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                 <MessageCircle className="w-4 h-4 ml-2" />
-                استشارة حول أمان الليزر
+               فريقنا هنا للمساعدة
               </Button>
             </a>
           </CardContent>
