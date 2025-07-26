@@ -530,11 +530,7 @@ export default function FAQPage() {
             </Card>
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-blue-100 text-sm">
-              💬 نجيب على جميع الأسئلة خلال 24 ساعة • 📞 الاستشارة الأولى مجانية
-            </p>
-          </div>
+  
         </div>
       </section>
 
