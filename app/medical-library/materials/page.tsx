@@ -56,11 +56,10 @@ export default function MedicalLibraryMaterialsPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           {/* Breadcrumb */}
-          <Breadcrumb 
-            items={[
-              { label: "المدونة" }
-            ]} 
-          />
+           <Breadcrumb items={[
+                 { label: "المكتبة الطبية", href: "/medical-library" },
+                 { label: "المواد التعليمية" }
+               ]} />
 
           <div className="text-center mb-16">
             <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 animate-fade-in-up mb-4">المدونة الطبية</Badge>
@@ -140,7 +139,7 @@ export default function MedicalLibraryMaterialsPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/962796759251?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
                   <Button className="w-full bg-blue-600 hover:bg-primary text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
@@ -162,7 +161,7 @@ export default function MedicalLibraryMaterialsPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/962796759251?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
@@ -191,7 +190,7 @@ export default function MedicalLibraryMaterialsPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/962796759251?text=أريد معرفة أسباب التنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة أسباب التنفس الفموي" target="_blank">
                   <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة

@@ -29,7 +29,7 @@ export default function ContactPage() {
                   احجز عبر الواتساب
                 </Button>
               </a>
-              <a href="tel:+96267592513">
+              <a href="tel:+962797377131">
                 <Button size="lg" variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg">
                   <Phone className="w-5 h-5 ml-2" />
                   اتصل الآن
@@ -58,7 +58,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-bold text-lg mb-2">الهاتف</h3>
                           <p className="text-gray-600 mb-2">للمواعيد والاستفسارات</p>
-                          <a href="tel:+962796611561" className="text-blue-600 font-medium hover:underline">
+                          <a href="tel:+962797377131" className="text-blue-600 font-medium hover:underline">
                             962797377131
                           </a>
                         </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-bold text-lg mb-2">الواتساب</h3>
                           <p className="text-gray-600 mb-2">حجز سريع ومباشر</p>
-                          <a href="https://wa.me/+96279661 1561?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="text-green-600 font-medium hover:underline">
+                          <a href="https://wa.me/962797377131?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="text-green-600 font-medium hover:underline">
                             اضغط للدردشة
                           </a>
                         </div>

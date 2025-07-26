@@ -298,7 +298,7 @@ export default function ArabicSnoringClinic() {  return (
                   واتساب مباشر
                 </Button>
               </a>
-              <a href="tel:+96267592513" className="flex-1">
+              <a href="tel:+962797377131" className="flex-1">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 w-full">
                   <Phone className="w-5 h-5 ml-2" />
                   اتصل الآن
@@ -354,7 +354,7 @@ export default function ArabicSnoringClinic() {  return (
                   <a href="https://wa.me/962797377131" target="_blank" className="hover:text-green-400">
                     <MessageCircle className="w-5 h-5" />
                   </a>
-                  <a href="tel:+96267592513" className="hover:text-blue-400">
+                  <a href="tel:+962797377131" className="hover:text-blue-400">
                     <Phone className="w-5 h-5" />
                   </a>
                 </div>

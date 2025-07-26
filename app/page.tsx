@@ -726,7 +726,7 @@ export default function ArabicSnoringClinic() {
                   <a href="https://wa.me/962797377131" target="_blank" className="hover:text-green-300">
                     <MessageCircle className="w-5 h-5" />
                   </a>
-                  <a href="tel:+96267592513" className="hover:text-blue-300">
+                  <a href="tel:+962797377131" className="hover:text-blue-300">
                     <Phone className="w-5 h-5" />
                   </a>
                 </div>

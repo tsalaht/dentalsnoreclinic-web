@@ -90,8 +90,9 @@ export default function FAQPage() {
               <CardContent className="p-6">
                 <div className="relative mb-4">
                   <iframe
-                    src="https://www.youtube.com/embed/UlDWKP1QOiU"
-                    title="أسباب ظهور الحمو داخل الفم !!"
+                    src="https://www.youtube.com/embed/SmuFVRI0AEQ"
+                    title="لماذا طبيب الأسنان يعالج الشخير ؟
+"
                     className="w-full aspect-video rounded-lg"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -101,11 +102,15 @@ export default function FAQPage() {
                     <Badge className="bg-red-500 text-white">الأكثر مشاهدة</Badge>
                   </div>
                 </div>
-                <h4 className="font-bold text-lg text-primary mb-2">أسباب ظهور الحمو داخل الفم !!</h4>
-                <p className="text-sm text-gray-600 mb-4">تقرح الفم و التهابات الفم؛ هي بثور صغيرة سطحية تظهر في الأغشية المبطنة للفم أو على اللثة
-                و تعتبر واحده من اشهر قرح الفم و التهابات الفم التى تتسبب الم مع الأكل والكلام</p>
+                <h4 className="font-bold text-lg text-primary mb-2">لماذا طبيب الأسنان يعالج الشخير ؟
+</h4>
+                <p className="text-sm text-gray-600 mb-4">
+                  هل أنت أيضا تعتقد أن الأمر غريب ؟
+"لماذا طبيب الأسنان يعالج الشخير ؟"
+
+                </p>
          
-                <a href="https://www.youtube.com/embed/UlDWKP1QOiU" target="_blank">
+                <a href="https://www.youtube.com/embed/SmuFVRI0AEQ" target="_blank">
                   <Button className="w-full bg-blue-600 hover:bg-primary text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد على يوتيوب
@@ -118,9 +123,9 @@ export default function FAQPage() {
               <CardContent className="p-6">
                 <div className="relative mb-4">
                   <iframe
-                    src="https://www.youtube.com/embed/_3c5gjsxKvg"
+                    src="https://www.youtube.com/embed/Je8bOUxaRTU"
                     title="
-هل الزرعات الفورية افضل من التقليدية ؟ "
+لا يكفي علاج انغلاق الانف لننتقل من مرحلة تنفس الأنفي إلى الفموي"
                     className="w-full aspect-video rounded-lg"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -131,13 +136,13 @@ export default function FAQPage() {
                   </div>
                 </div>
                 <h4 className="font-bold text-lg text-primary mb-2">
-                هل الزرعات الفورية افضل من التقليدية ؟ </h4>
-                <p className="text-sm text-gray-600 mb-4">يفضل اطباء الاسنان الزراعة العادية عن الزراعة الفورية لما لها من اثار صحية و طبية 
-حيث يجب وضع الزرعة و الانتظار مدة 3 اشهر حتى يحدث ما يسمى بالاندماج العظمي بين الزرعة و عظام الفك و من ثم يتم التركيب على الزرعة 
-على عكس الزراعة الفورية التي تكون لحالات خاصة جدا او فقط في زراعة الاسنان الامامية او لحالات لا تستطيع الانتظار مع التنبيه بالخطورة المحتملة 
+                 لا يكفي علاج انغلاق الانف لننتقل من مرحلة تنفس الأنفي إلى الفموي
+                 </h4>
+                <p className="text-sm text-gray-600 mb-4">
+  لا يكفي علاج انغلاق الانف لننتقل من مرحلة تنفس الأنفي إلى الفموي
 </p>
           
-                <a href="https://www.youtube.com/embed/_3c5gjsxKvg" target="_blank">
+                <a href="https://www.youtube.com/embed/Je8bOUxaRTU" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد على يوتيوب
@@ -150,9 +155,9 @@ export default function FAQPage() {
               <CardContent className="p-6">
                 <div className="relative mb-4">
                   <iframe
-                    src="https://www.youtube.com/embed/Qqy35fGyOI0"
+                    src="https://www.youtube.com/embed/_XhyV1vNMuI"
                     title="
-هل يوجد زراعة أسنان بدون جراحة؟"
+مكافحة الشخير مع طبيب الأسنان"
                     className="w-full aspect-video rounded-lg"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -163,11 +168,14 @@ export default function FAQPage() {
                   </div>
                 </div>
                 <h4 className="font-bold text-lg text-primary mb-2">
-                هل يوجد زراعة أسنان بدون جراحة؟</h4>
-                <p className="text-sm text-gray-600 mb-4">سواء الزراعة الموجهة بالحاسوب او الزراعة العادية كلها تحتاج الى جراحة 
-                و الفكرة من استخدام تقنية الزراعة الموجهة بالحاسوب </p>
+                 مكافحة الشخير مع طبيب الأسنان</h4>
+                <p className="text-sm text-gray-600 mb-4"> 
+                  كيف يمكن لطبيب الأسنان مساعدتك؟
+ يعمل أطباء الأسنان على تشخيص وعلاج العديد من الحالات التي تؤدي إلى الشخير
+
+                 </p>
            
-                <a href="https://www.youtube.com/watch?v=Qqy35fGyOI0" target="_blank">
+                <a href="https://www.youtube.com/watch?v=_XhyV1vNMuI" target="_blank">
                   <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
                     <PlayCircle className="w-4 h-4 ml-2" />
                     شاهد على يوتيوب
@@ -396,7 +404,7 @@ export default function FAQPage() {
                         أرسل عبر واتساب
                       </Button>
                     </a>
-                    <a href="tel:+96267592513" className="w-full">
+                    <a href="tel:+962797377131" className="w-full">
                       <Button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 w-full py-3">
                         <Phone className="w-4 h-4 ml-2" />
                         اتصل مباشرة
