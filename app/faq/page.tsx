@@ -56,22 +56,33 @@ export default function FAQPage() {
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-3 justify-center">
-            <Button variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50">
+            <a href="/scientific-studies/laser-effectiveness">
+              <Button variant="outline" className="border-primary/70 text-blue-600 hover:bg-blue-50">
               <Video className="w-4 h-4 ml-2" />
               العلاج بالليزر
             </Button>
-            <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50">
+            </a>
+          <a href="/children">
+                 <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50">
               <Baby className="w-4 h-4 ml-2" />
               الأطفال
             </Button>
-            <Button variant="outline" className="border-purple-500 text-purple-600 hover:bg-purple-50">
+          </a>
+          <a href="/adults">
+                <Button variant="outline" className="border-purple-500 text-purple-600 hover:bg-purple-50">
               <User className="w-4 h-4 ml-2" />
               البالغين
             </Button>
-            <Button variant="outline" className="border-orange-500 text-orange-600 hover:bg-orange-50">
+          </a>
+          <a href="/scientific-studies/oral-devices-effectiveness">
+    <Button variant="outline" className="border-orange-500 text-orange-600 hover:bg-orange-50">
               <Stethoscope className="w-4 h-4 ml-2" />
               الأجهزة الفموية
             </Button>
+          </a>
+      
+        
+        
        
           </div>
         </div>
@@ -194,185 +205,288 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ by Category */}
-<section className="py-16 bg-gray-50">
+
+
+      {/* Text FAQ Section */}
+
+
+<section className="py-16 bg-white">
   <div className="container mx-auto px-4">
-    <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-primary mb-4">الأسئلة الشائعة</h2>
-      <p className="text-lg text-gray-600">إجابات مفصلة عن الشخير، علاج الأطفال، الأجهزة الفموية، والعلاج بالليزر</p>
-    </div>
-
-    <div className="space-y-12">
-      {/* Snoring Questions */}
-      <div>
-        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الشخير</h3>
-        <div className="space-y-6">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">كل الناس بتشخر... بس هل ممكن يكون علامة على مشكلة صحية محتاجة انتباه؟</h4>
-            <p className="text-gray-600">الشخير هو الصوت الذي يصدر عندما يضيق مجرى الهواء أثناء النوم وتتذبذب الأنسجة الرخوة في الحلق. على الرغم من أنه قد يبدو غير ضار، إلا أنه غالباً ما يكون عرضاً لمشكلة أكبر تسمى "انقطاع التنفس الانسدادي النومي" (OSA). هذا الاضطراب يمكن أن يؤدي إلى نقص الأكسجين في الدم، مما يزيد من مخاطر الإصابة بأمراض القلب، ارتفاع ضغط الدم، السكري، الجلطات، والإرهاق المزمن. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤكد على أهمية تشخيص الشخير بدقة لتحديد ما إذا كان مجرد شخير بسيط أم جزءاً من مشكلة صحية أعمق.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">كيف يختلف التنفس الفموي عن التنفس الأنفي، وما هي مخاطره؟</h4>
-            <p className="text-gray-600">الأنف هو الفلتر الطبيعي للجسم، حيث يقوم بترطيب وتدفئة وتصفية الهواء قبل وصوله إلى الرئتين. التنفس الفموي المزمن، خصوصاً لدى الأطفال، يؤثر على نمو عظام الوجه والفكين، مما قد يؤدي إلى ضيق الفك العلوي، تزاحم الأسنان، وتغيرات في ملامح الوجه. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نركز على إعادة تأهيل نمط التنفس الصحي.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير يتطلب جراحة؟</h4>
-            <p className="text-gray-600"><strong>الإجابة السريعة:</strong> لا، في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نقدم حلول غير جراحية فعالة لمعظم حالات الشخير والتنفس الفموي.<br /><br />على عكس الاعتقاد الشائع، فإن العديد من حالات الشخير واضطرابات التنفس الفموي يمكن علاجها بنجاح دون الحاجة إلى تدخل جراحي. يعتمد نهجنا في المركز الأوروبي على التشخيص الدقيق أولاً لتحديد السبب الجذري للمشكلة، ثم وضع خطة علاجية مخصصة قد تشمل الليزر، الأجهزة الفموية، التمارين، وتغييرات في نمط الحياة. الجراحة تتم بالتعاون مع أطباء الأنف والأذن والحنجرة للحالات التي تستدعي ذلك.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هي أحدث التقنيات المستخدمة لعلاج الشخير في المركز الأوروبي؟</h4>
-            <p className="text-gray-600">في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي - عيادة الشخير، نفخر بتقديم بروتوكول علاجي متكامل ومتطور وغير جراحي. نستخدم تقنية الليزر المتطورة التي تعمل على شد الأنسجة الرخوة في سقف الحلق، مما يقلل من اهتزازها ويحسن تدفق الهواء بشكل ملحوظ، وكل ذلك يتم بدون ألم أو جراحة. كما نقدم حلولاً مثل الأجهزة الفموية المخصصة التي تساعد على كسر عادة التنفس الفموي، بالإضافة إلى برامج تمارين الوجه والعضلات لتعزيز قوة الأنسجة وتحسين وظيفة التنفس.</p>
-          </div>
-        </div>
+    <div className="max-w-4xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-primary mb-4">الأسئلة النصية الشائعة</h2>
+        <p className="text-lg text-gray-600">إجابات سريعة ومفصلة للأسئلة الأكثر تكراراً</p>
       </div>
 
-      {/* Children's Treatment Questions */}
-      <div>
-        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن علاج الأطفال</h3>
-        <div className="space-y-6">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">متى يجب أن أقلق بشأن تنفس طفلي من فمه؟</h4>
-            <p className="text-gray-600">من المهم جداً مراقبة طريقة تنفس الأطفال، فالتنفس الأنفي هو الأساس لنمو صحي. يجب القلق إذا لاحظت أن طفلك:<br />
-            • يتنفس من فمه معظم الوقت، حتى أثناء اللعب أو مشاهدة التلفاز.<br />
-            • يشخر بصوت عالٍ أو يتوقف تنفسه لفترات قصيرة أثناء النوم.<br />
-            • يعاني من جفاف الفم أو الشفاه المتشققة.<br />
-            • يظهر عليه علامات "وجه التنفس الفموي" مثل الفك السفلي المتراجع، أو تضيق الفك العلوي، أو تزاحم الأسنان.<br />
-            • يعاني من التهابات متكررة في الحلق أو الأذن.<br />
-            • يواجه صعوبة في التركيز أو يعاني من فرط النشاط بسبب قلة النوم.<br />
-            التدخل المبكر أمر حيوي لتصحيح هذه العادة ومنع المضاعفات المستقبلية.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل الأجهزة الفموية آمنة ومريحة للأطفال؟</h4>
-            <p className="text-gray-600">الأجهزة الفموية المستخدمة للأطفال تختلف عن تلك المخصصة للبالغين. فهي لا تعالج الشخير فقط، بل تهدف أيضاً إلى توجيه نمو الفك العلوي والسفلي بشكل صحيح، وتوسيع مجرى الهواء، وتشجيع التنفس الأنفي. هذه الأجهزة مصممة لتكون مريحة قدر الإمكان، ويتم تعديلها بانتظام لتناسب مراحل نمو الطفل. يحرص أطباؤنا في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي على اختيار الجهاز الأنسب لكل طفل وشرح كيفية استخدامه والعناية به لضمان أقصى درجات الأمان والفعالية.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل يمكن علاج التنفس الفموي عند الأطفال دون جراحة؟</h4>
-            <p className="text-gray-600">في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤمن بالنهج الشامل للعلاج. حتى لو كان هناك عائق مثل اللحمية أو اللوزتين وتمت إزالته جراحياً، فإن عادة التنفس الفموي قد تستمر كنمط سلوكي. لذلك، نركز على العلاج الوظيفي لعضلات الوجه والفكين، والذي يشمل تمارين محددة واستخدام أجهزة فموية مصممة لتدريب الطفل على التنفس من الأنف بشكل صحيح. هذا النهج يساعد على تصحيح نمو الفك وتطوير عادات تنفس صحية ودائمة، مما يقلل الحاجة إلى التدخلات الجراحية المتكررة.</p>
-          </div>
-        </div>
-      </div>
+      <div className="space-y-6">
+        {/* Existing Questions */}
+        <Card className="bg-green-50 border-green-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-green-600" />
+              كم مدة علاج الأطفال بالجهاز العضلي الوظيفي الفموي
+            </h3>
+            <p className="text-gray-600 mb-4">
+              مدة العلاج تتراوح من 12-24 شهر حسب عمر الطفل وشدة الحالة. النتائج الأولية تظهر خلال 3-6 أشهر، والتحسن الكامل يحتاج للمدة الكاملة.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة مدة علاج طفلي بأجهزة     فموية" target="_blank">
+              <Button className="bg-green-600 hover:bg-green-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة للطفل
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
 
-      {/* Oral Appliances Questions */}
-      <div>
-        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الأجهزة الفموية</h3>
-        <div className="space-y-6">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هي الأجهزة الفموية المستخدمة في علاج الشخير والتنفس الفموي؟</h4>
-            <p className="text-gray-600">الأجهزة الفموية هي حلول غير جراحية وفعالة لعلاج الشخير وانقطاع التنفس الانسدادي الخفيف إلى المتوسط. يتم تصميمها لتناسب كل مريض، تعمل عن طريق دفع الفك السفلي أو اللسان إلى الأمام قليلاً أثناء النوم، مما يوسع مجرى الهواء ويمنع انسداده. هذه الأجهزة مريحة وسهلة الاستخدام.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل الأجهزة الفموية مريحة للاستخدام أثناء النوم؟</h4>
-            <p className="text-gray-600">على الرغم من أن التكيف الأولي قد يستغرق بضعة أيام، إلا أن الأجهزة الفموية الحديثة مصممة لتكون مريحة قدر الإمكان. يحرص أطباؤنا على تعديل الجهاز حتى يشعر المريض بالراحة التامة، مما يسمح له بالنوم بشكل طبيعي دون إزعاج. يجد معظم المرضى أنهم يتكيفون مع الجهاز بسرعة ويصبح جزءًا طبيعيًا من روتين نومهم.</p>
-          </div>
-        </div>
-      </div>
+        <Card className="bg-orange-50 border-orange-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-orange-600" />
+              هل هناك آثار جانبية للعلاج؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              العلاجات التي نستخدمها آمنة جداً. قد يشعر المريض بانزعاج بسيط في الأيام الأولى مع الأجهزة الفموية، وهذا طبيعي ويختفي خلال أسبوع.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أمان العلاج والآثار الجانبية" target="_blank">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                معلومات الأمان
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
 
-      {/* Laser Treatment Questions */}
-      <div>
-        <h3 className="text-2xl font-bold text-primary mb-6">أسئلة عن الليزر</h3>
-        <div className="space-y-6">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">ما هو علاج الشخير بالليزر وكيف يعمل؟</h4>
-            <p className="text-gray-600">يعتمد علاج الشخير بالليزر على استخدام طاقة ليزر آمنة وموجهة بدقة، لتسخين الأنسجة الرخوة في الحلق وسقف الحلق. هذا التسخين اللطيف يحفز إنتاج الكولاجين الجديد في الأنسجة، مما يؤدي إلى شدها وتقويتها بمرور الوقت. النتيجة هي فتح مجرى الهواء بشكل أكبر وتقليل اهتزاز الأنسجة المسببة لصوت الشخير، مما يمنحك نوماً أعمق وأكثر هدوءاً.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير بالليزر مؤلم؟ وهل يتطلب فترة تعافٍ طويلة؟</h4>
-            <p className="text-gray-600">يتميز علاج الشخير بالليزر بكونه إجراءً لطيفاً وغير مؤلمٍ. معظم المرضى لا يشعرون بأي ألم أثناء الجلسة، وقد يشعر البعض بانزعاج خفيف أو شعور بالدفء. لا يتطلب العلاج تخديراً، وبعد الجلسة مباشرة، يمكن للمريض العودة إلى أنشطته اليومية بشكل طبيعي، بخلاف تجنب الأطعمة والمشروبات شديدة الحرارة أو البرودة لبضع ساعات.</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">هل علاج الشخير بالليزر آمن وفعال؟</h4>
-            <p className="text-gray-600">يعتبر علاج الشخير بالليزر إجراءً آمناً للغاية عند إجرائه بواسطة أطباء متخصصين ومدربين. تم اعتماد هذه التقنية على نطاق واسع وأظهرت الدراسات العلمية نتائج فعالة في تقليل الشخير وتحسين جودة النوم لدى العديد من المرضى. كما أن الليزر المستخدم آمن للأنسجة الرخوة ولا يسبب أي ضرر للأصوات أو التنفس. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نستخدم أحدث أجهزة الليزر ونتّبع بروتوكولات علاجية دقيقة لضمان أعلى مستويات الأمان والفعالية.</p>
-          </div>
-        </div>
+        {/* Snoring Questions */}
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-blue-600" />
+              كل الناس بتشخر... بس هل ممكن يكون علامة على مشكلة صحية محتاجة انتباه؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              الشخير هو الصوت الذي يصدر عندما يضيق مجرى الهواء أثناء النوم وتتذبذب الأنسجة الرخوة في الحلق. على الرغم من أنه قد يبدو غير ضار، إلا أنه غالباً ما يكون عرضاً لمشكلة أكبر تسمى "انقطاع التنفس الانسدادي النومي" (OSA). هذا الاضطراب يمكن أن يؤدي إلى نقص الأكسجين في الدم، مما يزيد من مخاطر الإصابة بأمراض القلب، ارتفاع ضغط الدم، السكري، الجلطات، والإرهاق المزمن. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤكد على أهمية تشخيص الشخير بدقة لتحديد ما إذا كان مجرد شخير بسيط أم جزءاً من مشكلة صحية أعمق.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تشخيص الشخير" target="_blank">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول الشخير
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-blue-600" />
+              كيف يختلف التنفس الفموي عن التنفس الأنفي، وما هي مخاطره؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              الأنف هو الفلتر الطبيعي للجسم، حيث يقوم بترطيب وتدفئة وتصفية الهواء قبل وصوله إلى الرئتين. التنفس الفموي المزمن، خصوصاً لدى الأطفال، يؤثر على نمو عظام الوجه والفكين، مما قد يؤدي إلى ضيق الفك العلوي، تزاحم الأسنان، وتغيرات في ملامح الوجه. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نركز على إعادة تأهيل نمط التنفس الصحي.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول التنفس
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-blue-600" />
+              هل علاج الشخير يتطلب جراحة؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              <strong>الإجابة السريعة:</strong> لا، في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نقدم حلول غير جراحية فعالة لمعظم حالات الشخير والتنفس الفموي.<br /><br />
+              على عكس الاعتقاد الشائع، فإن العديد من حالات الشخير واضطرابات التنفس الفموي يمكن علاجها بنجاح دون الحاجة إلى تدخل جراحي. يعتمد نهجنا في المركز الأوروبي على التشخيص الدقيق أولاً لتحديد السبب الجذري للمشكلة، ثم وضع خطة علاجية مخصصة قد تشمل الليزر، الأجهزة الفموية، التمارين، وتغييرات في نمط الحياة. الجراحة تتم بالتعاون مع أطباء الأنف والأذن والحنجرة للحالات التي تستدعي ذلك.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج الشخير غير الجراحي" target="_blank">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول العلاج
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-blue-600" />
+              ما هي أحدث التقنيات المستخدمة لعلاج الشخير في المركز الأوروبي؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي - عيادة الشخير، نفخر بتقديم بروتوكول علاجي متكامل ومتطور وغير جراحي. نستخدم تقنية الليزر المتطورة التي تعمل على شد الأنسجة الرخوة في سقف الحلق، مما يقلل من اهتزازها ويحسن تدفق الهواء بشكل ملحوظ، وكل ذلك يتم بدون ألم أو جراحة. كما نقدم حلولاً مثل الأجهزة الفموية المخصصة التي تساعد على كسر عادة التنفس الفموي، بالإضافة إلى برامج تمارين الوجه والعضلات لتعزيز قوة الأنسجة وتحسين وظيفة التنفس.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تقنيات علاج الشخير" target="_blank">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول التقنيات
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        {/* Children's Treatment Questions */}
+        <Card className="bg-green-50 border-green-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-green-600" />
+              متى يجب أن أقلق بشأن تنفس طفلي من فمه؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              من المهم جداً مراقبة طريقة تنفس الأطفال، فالتنفس الأنفي هو الأساس لنمو صحي. يجب القلق إذا لاحظت أن طفلك:<br />
+              • يتنفس من فمه معظم الوقت، حتى أثناء اللعب أو مشاهدة التلفاز.<br />
+              • يشخر بصوت عالٍ أو يتوقف تنفسه لفترات قصيرة أثناء النوم.<br />
+              • يعاني من جفاف الفم أو الشفاه المتشققة.<br />
+              • يظهر عليه علامات "وجه التنفس الفموي" مثل الفك السفلي المتراجع، أو تضيق الفك العلوي، أو تزاحم الأسنان.<br />
+              • يعاني من التهابات متكررة في الحلق أو الأذن.<br />
+              • يواجه صعوبة في التركيز أو يعاني من فرط النشاط بسبب قلة النوم.<br />
+              التدخل المبكر أمر حيوي لتصحيح هذه العادة ومنع المضاعفات المستقبلية.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد استشارة حول تنفس طفلي من فمه" target="_blank">
+              <Button className="bg-green-600 hover:bg-green-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول تنفس الأطفال
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-green-50 border-green-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-green-600" />
+              هل الأجهزة الفموية آمنة ومريحة للأطفال؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              الأجهزة الفموية المستخدمة للأطفال تختلف عن تلك المخصصة للبالغين. فهي لا تعالج الشخير فقط، بل تهدف أيضاً إلى توجيه نمو الفك العلوي والسفلي بشكل صحيح، وتوسيع مجرى الهواء، وتشجيع التنفس الأنفي. هذه الأجهزة مصممة لتكون مريحة قدر الإمكان، ويتم تعديلها بانتظام لتناسب مراحل نمو الطفل. يحرص أطباؤنا في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي على اختيار الجهاز الأنسب لكل طفل وشرح كيفية استخدامه والعناية به لضمان أقصى درجات الأمان والفعالية.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أجهزة الفم للأطفال" target="_blank">
+              <Button className="bg-green-600 hover:bg-green-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول أجهزة الأطفال
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-green-50 border-green-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-green-600" />
+              هل يمكن علاج التنفس الفموي عند الأطفال دون جراحة؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نؤمن بالنهج الشامل للعلاج. حتى لو كان هناك عائق مثل اللحمية أو اللوزتين وتمت إزالته جراحياً، فإن عادة التنفس الفموي قد تستمر كنمط سلوكي. لذلك، نركز على العلاج الوظيفي لعضلات الوجه والفكين، والذي يشمل تمارين محددة واستخدام أجهزة فموية مصممة لتدريب الطفل على التنفس من الأنف بشكل صحيح. هذا النهج يساعد على تصحيح نمو الفك وتطوير عادات تنفس صحية ودائمة، مما يقلل الحاجة إلى التدخلات الجراحية المتكررة.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج التنفس الفموي للأطفال" target="_blank">
+              <Button className="bg-green-600 hover:bg-green-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول علاج الأطفال
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        {/* Oral Appliances Questions */}
+        <Card className="bg-purple-50 border-purple-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-purple-600" />
+              ما هي الأجهزة الفموية المستخدمة في علاج الشخير والتنفس الفموي؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              الأجهزة الفموية هي حلول غير جراحية وفعالة لعلاج الشخير وانقطاع التنفس الانسدادي الخفيف إلى المتوسط. يتم تصميمها لتناسب كل مريض، تعمل عن طريق دفع الفك السفلي أو اللسان إلى الأمام قليلاً أثناء النوم، مما يوسع مجرى الهواء ويمنع انسداده. هذه الأجهزة مريحة وسهلة الاستخدام.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن الأجهزة الفموية" target="_blank">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول الأجهزة الفموية
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-purple-50 border-purple-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-purple-600" />
+              هل الأجهزة الفموية مريحة للاستخدام أثناء النوم؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              على الرغم من أن التكيف الأولي قد يستغرق بضعة أيام، إلا أن الأجهزة الفموية الحديثة مصممة لتكون مريحة قدر الإمكان. يحرص أطباؤنا على تعديل الجهاز حتى يشعر المريض بالراحة التامة، مما يسمح له بالنوم بشكل طبيعي دون إزعاج. يجد معظم المرضى أنهم يتكيفون مع الجهاز بسرعة ويصبح جزءًا طبيعيًا من روتين نومهم.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن راحة الأجهزة الفموية" target="_blank">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول راحة الأجهزة
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        {/* Laser Treatment Questions */}
+        <Card className="bg-red-50 border-red-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-orange-600" />
+              ما هو علاج الشخير بالليزر وكيف يعمل؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              يعتمد علاج الشخير بالليزر على استخدام طاقة ليزر آمنة وموجهة بدقة، لتسخين الأنسجة الرخوة في الحلق وسقف الحلق. هذا التسخين اللطيف يحفز إنتاج الكولاجين الجديد في الأنسجة، مما يؤدي إلى شدها وتقويتها بمرور الوقت. النتيجة هي فتح مجرى الهواء بشكل أكبر وتقليل اهتزاز الأنسجة المسببة لصوت الشخير، مما يمنحك نوماً أعمق وأكثر هدوءاً.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن علاج الشخير بالليزر" target="_blank">
+              <Button className="bg-text-orange-600 hover:bg-orange-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول العلاج بالليزر
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-red-50 border-red-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-orange-600" />
+              هل علاج الشخير بالليزر مؤلم؟ وهل يتطلب فترة تعافٍ طويلة؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              يتميز علاج الشخير بالليزر بكونه إجراءً لطيفاً وغير مؤلمٍ. معظم المرضى لا يشعرون بأي ألم أثناء الج sepsis: "لسة، وقد يشعر البعض بانزعاج خفيف أو شعور بالدفء. لا يتطلب العلاج تخديراً، وبعد الجلسة مباشرة، يمكن للمريض العودة إلى أنشطته اليومية بشكل طبيعي، بخلاف تجنب الأطعمة والمشروبات شديدة الحرارة أو البرودة لبضع ساعات.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن راحة علاج الليزر" target="_blank">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول راحة الليزر
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-red-50 border-red-200">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-orange-600" />
+              هل علاج الشخير بالليزر آمن وفعال؟
+            </h3>
+            <p className="text-gray-600 mb-4">
+              يعتبر علاج الشخير بالليزر إجراءً آمناً للغاية عند إجرائه بواسطة أطباء متخصصين ومدربين. تم اعتماد هذه التقنية على نطاق واسع وأظهرت الدراسات العلمية نتائج فعالة في تقليل الشخير وتحسين جودة النوم لدى العديد من المرضى. كما أن الليزر المستخدم آمن للأنسجة الرخوة ولا يسبب أي ضرر للأصوات أو التنفس. في عيادة المركز الأوروبي لعلاج الشخير والتنفس الفموي، نستخدم أحدث أجهزة الليزر ونتبع بروتوكولات علاجية دقيقة لضمان أعلى مستويات الأمان والفعالية.
+            </p>
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أمان وفعالية علاج الليزر" target="_blank">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+                <MessageCircle className="w-4 h-4 ml-2" />
+                استشارة حول أمان الليزر
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
       </div>
     </div>
   </div>
 </section>
-
-      {/* Text FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-4">الأسئلة النصية الشائعة</h2>
-              <p className="text-lg text-gray-600">إجابات سريعة ومفصلة للأسئلة الأكثر تكراراً</p>
-            </div>
-
-            <div className="space-y-6">
-              {/* <Card className="bg-blue-50 border-blue-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-blue-600" />
-                    كم تبلغ تكلفة العلاج بالليزر؟
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    تكلفة العلاج بالليزر تتراوح من 500-800 دينار حسب حالة المريض وعدد الجلسات المطلوبة. نقدم استشارة مجانية لتحديد الخطة والتكلفة المناسبة.
-                  </p>
-                  <a href="https://wa.me/962797377131?text=أريد معرفة تكلفة العلاج بالليزر لحالتي" target="_blank">
-                    <Button className="bg-blue-600 hover:bg-primary text-white">
-                      <MessageCircle className="w-4 h-4 ml-2" />
-                      استفسر عن التكلفة
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card> */}
-
-              <Card className="bg-green-50 border-green-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-green-600" />
-                    كم مدة علاج الأطفال بالجهاز العضلي الوظيفي الفموي 
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    مدة العلاج تتراوح من 12-24 شهر حسب عمر الطفل وشدة الحالة. النتائج الأولية تظهر خلال 3-6 أشهر، والتحسن الكامل يحتاج للمدة الكاملة.
-                  </p>
-                  <a href="https://wa.me/962797377131?text=أريد معرفة مدة علاج طفلي بأجهزة Myobrace" target="_blank">
-                    <Button className="bg-green-600 hover:bg-green-700 text-white">
-                      <MessageCircle className="w-4 h-4 ml-2" />
-                      استشارة للطفل
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-
-              {/* <Card className="bg-purple-50 border-purple-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-purple-600" />
-                    هل يغطي التأمين الصحي علاج الشخير؟
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    معظم شركات التأمين في الأردن تغطي علاج الشخير إذا كان مرتبط بتوقف التنفس أثناء النوم. نساعدكم في إعداد التقارير المطلوبة للتأمين.
-                  </p>
-                  <a href="https://wa.me/962797377131?text=أريد معرفة تفاصيل التغطية التأمينية لعلاج الشخير" target="_blank">
-                    <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-                      <MessageCircle className="w-4 h-4 ml-2" />
-                      استفسار التأمين
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card> */}
-
-              <Card className="bg-orange-50 border-orange-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-3 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-orange-600" />
-                    هل هناك آثار جانبية للعلاج؟
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    العلاجات التي نستخدمها آمنة جداً. قد يشعر المريض بانزعاج بسيط في الأيام الأولى مع الأجهزة الفموية، وهذا طبيعي ويختفي خلال أسبوع.
-                  </p>
-                  <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أمان العلاج والآثار الجانبية" target="_blank">
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-white">
-                      <MessageCircle className="w-4 h-4 ml-2" />
-                      معلومات الأمان
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Ask Your Question */}
       <section className="py-16 bg-blue-600 text-white">

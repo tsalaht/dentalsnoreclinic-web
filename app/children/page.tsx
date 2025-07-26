@@ -208,9 +208,12 @@ export default function ChildrenPage() {
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                     <Target className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-4">أجهزة Myobrace</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">
+                    أجهزة فموية
+
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    أجهزة فموية مثل Myobrace تدفع الفك السفلي للأمام، تعزز تدفق الهواء وتحسن التنفس الأنفي
+                    أجهزة فموية   تدفع الفك السفلي للأمام، تعزز تدفق الهواء وتحسن التنفس الأنفي
                   </p>
                   <ul className="text-sm text-gray-600 space-y-2 mb-6">
                     <li>✓ تقوي عضلات الفك</li>
@@ -218,7 +221,7 @@ export default function ChildrenPage() {
                     <li>✓ آمنة ومريحة للأطفال</li>
                     <li>✓ تعزز التنفس الطبيعي</li>
                   </ul>
-                  <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أجهزة Myobrace للأطفال" target="_blank">
+                  <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أجهزة    أجهزة فموية للأطفال" target="_blank">
                     <Button className="bg-primary/90 hover:bg-primary text-white w-full">
                       اعرف المزيد
                     </Button>
@@ -241,7 +244,7 @@ export default function ChildrenPage() {
                     <li>✓ يمكن ممارستها بالمنزل</li>
                     <li>✓ نتائج ملحوظة بسرعة</li>
                   </ul>
-                  <a href="https://wa.me/962797377131?text=أريد تعلم تمارين الوجه والفم للأطفال" target="_blank">
+                  <a href="https://wa.me/962797377131" target="_blank">
                     <Button className="bg-accent/90 hover:bg-accent text-white w-full">
                       تعلم التمارين
                     </Button>
@@ -256,7 +259,7 @@ export default function ChildrenPage() {
                   </div>
                   <h3 className="text-xl font-bold text-secondary mb-4">علاج شامل مخصص</h3>
                   <p className="text-gray-600 mb-4">
-                    برامج علاجية مدمجة مع أجهزة Myobrace وتمارين الوجه لنتائج مثالية
+                    برامج علاجية مدمجة مع   أجهزة فموية  وتمارين الوجه لنتائج مثالية
                   </p>
                   <ul className="text-sm text-gray-600 space-y-2 mb-6">
                     <li>✓ تصميم علاجي مخصص</li>
@@ -619,14 +622,14 @@ export default function ChildrenPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-white">لا تنتظروا - صحة طفلكم أهم من كل شيء</h2>
           <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-            احجزوا الآن واحصلوا على استشارة مجانية للأطفال دون سن 12 عاماً
+            احجزوا الآن واحصلوا على استشارة  للأطفال 
           </p>          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg">
                 <Calendar className="w-5 h-5 ml-2" />
                 احجز عبر النموذج
               </Button>
-            </Link>            <a href="https://wa.me/962797377131?text=أريد حجز موعد مجاني لطفلي لعلاج الشخير" target="_blank">
+            </Link>            <a href="https://wa.me/962797377131?text=أريد حجز موعد  لطفلي لعلاج الشخير" target="_blank">
               <Button size="lg" variant="outline" className="border-white text-green-600 hover:bg-white hover:text-green-600 px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز عبر واتساب

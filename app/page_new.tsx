@@ -98,7 +98,7 @@ export default function ArabicSnoringClinic() {  return (
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-3">اختبار البالغين</h3>
                   <p className="text-gray-600 mb-4">تقييم شامل للشخير وانقطاع التنفس أثناء النوم</p>
-                  <a href="https://wa.me/962797377131?text=أريد إجراء اختبار الشخير للبالغين" target="_blank" className="w-full">
+                  <a href="https://wa.me/962797377131" target="_blank" className="w-full">
                     <Button className="w-full bg-blue-600 hover:bg-primary text-white py-3 text-lg">
                       ابدأ اختبار البالغين
                     </Button>
@@ -113,7 +113,7 @@ export default function ArabicSnoringClinic() {  return (
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-3">اختبار الأطفال</h3>
                   <p className="text-gray-600 mb-4">فحص مبكر للتنفس الفموي ومشاكل النوم عند الأطفال</p>
-                  <a href="https://wa.me/962797377131?text=أريد إجراء اختبار الشخير للأطفال" target="_blank" className="w-full">
+                  <a href="https://wa.me/962797377131" target="_blank" className="w-full">
                     <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg">
                       ابدأ اختبار الأطفال
                     </Button>
@@ -231,7 +231,7 @@ export default function ArabicSnoringClinic() {  return (
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-2">فيديو ترحيبي من د. مهند</h3>
                   <p className="text-gray-600 mb-4">تعرف على العيادة وأهمية علاج الشخير</p>
-                  <a href="https://wa.me/962797377131?text=أريد مشاهدة الفيديو الترحيبي" target="_blank">
+                  <a href="https://wa.me/962797377131" target="_blank">
                     <Button className="bg-blue-600 hover:bg-primary text-white">
                       <PlayCircle className="w-5 h-5 ml-2" />
                       شاهد الفيديو
@@ -292,7 +292,7 @@ export default function ArabicSnoringClinic() {  return (
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <a href="https://wa.me/962797377131?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="flex-1">
+              <a href="https://wa.me/962797377131" target="_blank" className="flex-1">
                 <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white w-full">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   واتساب مباشر

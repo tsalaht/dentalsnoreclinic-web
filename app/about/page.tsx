@@ -199,7 +199,7 @@ export default function AboutPage() {
                 className="rounded-lg mb-3 w-full h-40 object-cover cursor-pointer"
                 onClick={() => openModal('/sartafica2.jpeg')}
               />
-              <span className="text-primary font-semibold text-sm">شهادة تخصص في علاج الشخير</span>
+              <span className="text-primary font-semibold text-sm">شهادة تدريب في علاج الشخير</span>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300 border border-blue-100">
               <img

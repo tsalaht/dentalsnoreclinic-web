@@ -307,7 +307,7 @@ export default function ArabicSnoringClinic() {
                     احجز عبر النموذج
                   </Button>
                 </Link>
-                <a href="https://wa.me/962797377131?text=أريد حجز موعد لاستشارة طبية" target="_blank">
+                <a href="https://wa.me/962797377131" target="_blank">
                   <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
                     <MessageCircle className="w-5 h-5 ml-2" />
                     احجز عبر واتساب
@@ -575,6 +575,46 @@ export default function ArabicSnoringClinic() {
     </Link>
   ))}
 </div>
+    </div>
+  </div>
+</section>
+<section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50">
+  <div className="container mx-auto px-6 lg:px-12">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 relative">
+        البروتوكول العلاجي في Dental Snore Clinic
+        <span className="block w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></span>
+      </h2>
+      <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        ندرك في Dental Snore Clinic أهمية اتباع طرق العلاج التي توصل لها العلم الحديث في علاج الشخير المتعلق بمجال طب الأسنان والتنفس الفموي. نقدم لك بروتوكول علاجي متكامل وفعال للتخلص من هذه المشكلة المزعجة، بدءًا من التشخيص الدقيق مع الدكتور مهند باستخدام أحدث التقنيات وصولًا إلى خطط علاجية مخصصة تناسب احتياجاتك الفردية.
+      </p>
+    </div>
+    <div className="max-w-4xl mx-auto">
+      <Card className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+        <div className="relative h-[320px]">
+          <video
+            controls
+            className="w-full h-full object-cover"
+            src="/treatment-protocol.mp4"
+            poster="/2.jpg"
+          ></video>
+        </div>
+        <CardContent className="p-6 text-center">
+          <h3 className="text-xl font-bold text-primary mb-3 relative">
+            بروتوكول علاجي متكامل
+            <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded-full"></span>
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            اكتشف كيف يمكن لخططنا العلاجية المخصصة تحسين جودة نومك وصحتك العامة
+          </p>
+          <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن البروتوكول العلاجي" target="_blank" className="mt-4 inline-block">
+            <Button className="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300">
+              <MessageCircle className="w-5 h-5 ml-2" />
+              استشر الآن
+            </Button>
+          </a>
+        </CardContent>
+      </Card>
     </div>
   </div>
 </section>

@@ -226,7 +226,7 @@ export default function AdultsPage() {
             </ul>
             <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن الأجهزة الفموية" target="_blank">
               <Button className="bg-primary hover:bg-primary/90 text-white w-full rounded-xl shadow-md">
-                احجز قياسات
+                احجز الآن
               </Button>
             </a>
           </CardContent>
@@ -246,7 +246,7 @@ export default function AdultsPage() {
               <li>✓ نصائح يومية للوقاية</li>
               <li>✓ نتائج طويلة الأمد</li>
             </ul>
-            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تمارين الوجه وتغيير أسلوب الحياة" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تمارين عضلات الوجه والفكين ونصائح تغيير أسلوب الحياة" target="_blank">
               <Button className="bg-accent hover:bg-accent/90 text-white w-full rounded-xl shadow-md">
                 ابدأ التمارين
               </Button>
