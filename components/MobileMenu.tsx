@@ -294,7 +294,7 @@ export default function MobileMenu() {
               </ul>
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <a
-                  href="https://wa.me/9620797377375?text=أريد حجز موعد في Dental Snore Clinic"
+                  href="https://wa.me/962797377131?text=أريد حجز موعد في Dental Snore Clinic"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full"

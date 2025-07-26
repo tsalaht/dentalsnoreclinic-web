@@ -412,7 +412,7 @@ export default function MedicalLibraryPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن التنفس الفموي" target="_blank">
                   <Button className="w-full bg-blue-600 hover:bg-primary text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
@@ -434,7 +434,7 @@ export default function MedicalLibraryPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/9620797377375?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة الحالات الطبيعية للتنفس الفموي" target="_blank">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
@@ -463,7 +463,7 @@ export default function MedicalLibraryPage() {
                 </div>
               </CardContent>
               <div className="px-6 pb-6">
-                <a href="https://wa.me/9620797377375?text=أريد معرفة أسباب التنفس الفموي" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد معرفة أسباب التنفس الفموي" target="_blank">
                   <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white btn-hover-scale">
                     <MessageCircle className="w-4 h-4 ml-2" />
                     احجز استشارة
@@ -594,7 +594,7 @@ export default function MedicalLibraryPage() {
             بعد مراجعة المواد التعليمية، احجز استشارة مع د. مهند للحصول على تشخيص دقيق وخطة علاج مخصصة
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/9620797377375?text=راجعت المكتبة الطبية وأريد استشارة مخصصة" target="_blank">
+            <a href="https://wa.me/962797377131?text=راجعت المكتبة الطبية وأريد استشارة مخصصة" target="_blank">
               <Button size="lg" className="bg-blue-600 hover:bg-primary text-white px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز استشارة الآن

@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
             <p>
               لأي استفسار أو ملاحظة تتعلق بسياسة الخصوصية، يرجى التواصل معنا عبر:
             </p>
-            <p>رقم الهاتف: <a href="tel:+9620797377375" className="text-primary hover:underline">+9620797377375</a></p>
+            <p>رقم الهاتف: <a href="tel:+962797377131" className="text-primary hover:underline">+962797377131</a></p>
           </section>
         </div>
       </main>

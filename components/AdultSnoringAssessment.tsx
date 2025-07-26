@@ -222,7 +222,7 @@ const getResultsData = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href={`https://wa.me/9620797377375?text=أريد حجز موعد عاجل - نتيجة اختبار الشخير: ${results.level} (${score}/18)`}
+                href={`https://wa.me/962797377131?text=أريد حجز موعد عاجل - نتيجة اختبار الشخير: ${results.level} (${score}/18)`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

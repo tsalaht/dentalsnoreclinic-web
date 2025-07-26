@@ -279,7 +279,7 @@ export default function ComprehensivePatientEvaluation() {
 
           <div className="text-center">
             <a 
-              href={`https://wa.me/9620797377375?text=أكملت تقييم تجربة المريض الشامل وحصلت على متوسط ${averageRating.toFixed(1)}/5. أريد مشاركة المزيد من الملاحظات.`}
+              href={`https://wa.me/962797377131?text=أكملت تقييم تجربة المريض الشامل وحصلت على متوسط ${averageRating.toFixed(1)}/5. أريد مشاركة المزيد من الملاحظات.`}
               target="_blank"
               rel="noopener noreferrer"
             >

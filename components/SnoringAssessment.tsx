@@ -146,7 +146,7 @@ export default function SnoringAssessment() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={`https://wa.me/9620797377375?text=أجريت اختبار الشخير وحصلت على نتيجة: ${result.level}. أريد استشارة طبية.`} target="_blank">
+              <a href={`https://wa.me/962797377131?text=أجريت اختبار الشخير وحصلت على نتيجة: ${result.level}. أريد استشارة طبية.`} target="_blank">
                 <Button size="lg" className={`${result.color === 'green' ? 'bg-green-600 hover:bg-green-700' : result.color === 'yellow' ? 'bg-yellow-600 hover:bg-yellow-700' : 'bg-red-600 hover:bg-red-700'} text-white px-8 py-3`}>
                   احجز استشارة طبية
                 </Button>

@@ -23,7 +23,7 @@ export default function ContactPage() {
               فريقنا الطبي جاهز لمساعدتك في علاج الشخير واضطرابات النوم
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/9620797377375?text=أريد حجز موعد لعلاج الشخير" target="_blank">
+              <a href="https://wa.me/962797377131?text=أريد حجز موعد لعلاج الشخير" target="_blank">
                 <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   احجز عبر الواتساب
@@ -239,7 +239,7 @@ export default function ContactPage() {
                   اتصل بالطوارئ: 911
                 </Button>
               </a>
-              <a href="https://wa.me/9620797377375?text=لدي حالة طارئة متعلقة بالتنفس" target="_blank">
+              <a href="https://wa.me/962797377131?text=لدي حالة طارئة متعلقة بالتنفس" target="_blank">
                 <Button size="lg" variant="outline" className="border-red-500 text-red-600 hover:bg-red-50">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   واتساب الطوارئ

@@ -62,7 +62,7 @@ export default function AdultsPage() {
                   احجز عبر النموذج
                 </Button>
               </Link>
-              <a href="https://wa.me/9620797377375?text=أريد حجز موعد لعلاج الشخير للبالغين" target="_blank">
+              <a href="https://wa.me/962797377131?text=أريد حجز موعد لعلاج الشخير للبالغين" target="_blank">
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 px-8 py-4 text-lg w-full sm:w-auto rounded-2xl shadow-md">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   احجز عبر واتساب
@@ -162,7 +162,7 @@ export default function AdultsPage() {
         إذا كنت تعاني من الشخير الشديد أو توقف التنفس أثناء النوم، فأنت في خطر حقيقي
       </p>
     </div>
-    <a href="https://wa.me/9620797377375?text=أعاني من شخير شديد وأحتاج استشارة عاجلة" target="_blank" className="w-full sm:w-auto">
+    <a href="https://wa.me/962797377131?text=أعاني من شخير شديد وأحتاج استشارة عاجلة" target="_blank" className="w-full sm:w-auto">
       <Button className="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 text-base rounded-full flex items-center justify-center gap-2 shadow-md w-full sm:w-auto">
         <MessageCircle className="w-5 h-5" />
         احجز استشارة عاجلة
@@ -202,7 +202,7 @@ export default function AdultsPage() {
               <li>✓ تحسين فوري للتنفس</li>
               <li>✓ نتائج فعالة ومستمرة</li>
             </ul>
-            <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن العلاج بالليزر" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن العلاج بالليزر" target="_blank">
               <Button className="bg-accent hover:bg-accent/90 text-white w-full rounded-xl shadow-md">
                 اعرف المزيد
               </Button>
@@ -224,7 +224,7 @@ export default function AdultsPage() {
               <li>✓ مريحة وسهلة الاستخدام</li>
               <li>✓ بديل آمن للجراحة</li>
             </ul>
-            <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن الأجهزة الفموية" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن الأجهزة الفموية" target="_blank">
               <Button className="bg-primary hover:bg-primary/90 text-white w-full rounded-xl shadow-md">
                 احجز قياسات
               </Button>
@@ -246,7 +246,7 @@ export default function AdultsPage() {
               <li>✓ نصائح يومية للوقاية</li>
               <li>✓ نتائج طويلة الأمد</li>
             </ul>
-            <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن تمارين الوجه وتغيير أسلوب الحياة" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن تمارين الوجه وتغيير أسلوب الحياة" target="_blank">
               <Button className="bg-accent hover:bg-accent/90 text-white w-full rounded-xl shadow-md">
                 ابدأ التمارين
               </Button>
@@ -526,7 +526,7 @@ export default function AdultsPage() {
                 <Calendar className="w-5 h-5 ml-2" />
                 احجز عبر النموذج
               </Button>
-            </Link>            <a href="https://wa.me/9620797377375?text=أريد حجز استشارة لعلاج الشخير للبالغين" target="_blank">
+            </Link>            <a href="https://wa.me/962797377131?text=أريد حجز استشارة لعلاج الشخير للبالغين" target="_blank">
               <Button size="lg" variant="outline" className="border-white text-primary/70 hover:bg-white hover:text-blue-600 px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز عبر واتساب

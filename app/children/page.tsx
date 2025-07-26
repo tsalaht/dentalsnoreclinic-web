@@ -86,7 +86,7 @@ export default function ChildrenPage() {
                   احجز عبر النموذج
                 </Button>
               </Link>
-              <a href="https://wa.me/9620797377375?text=أريد حجز موعد لطفلي لعلاج الشخير والتنفس الفموي" target="_blank" className="group">
+              <a href="https://wa.me/962797377131?text=أريد حجز موعد لطفلي لعلاج الشخير والتنفس الفموي" target="_blank" className="group">
                 <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 text-lg w-full sm:w-auto transition-all duration-300 hover:scale-105">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   احجز عبر واتساب
@@ -177,7 +177,7 @@ export default function ChildrenPage() {
                     التدخل المبكر يمكن أن يحمي طفلك من التأثيرات طويلة الأمد على صحته ونموه
                   </p>
                 </div>
-                <a href="https://wa.me/9620797377375?text=طفلي يعاني من الشخير وأحتاج استشارة عاجلة" target="_blank">
+                <a href="https://wa.me/962797377131?text=طفلي يعاني من الشخير وأحتاج استشارة عاجلة" target="_blank">
                   <Button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 text-sm sm:text-base rounded-full flex-shrink-0 shadow-md w-full sm:w-auto">
                     <MessageCircle className="w-4 h-4 sm:w-5  ml-2" />
                     استشارة فورية
@@ -218,7 +218,7 @@ export default function ChildrenPage() {
                     <li>✓ آمنة ومريحة للأطفال</li>
                     <li>✓ تعزز التنفس الطبيعي</li>
                   </ul>
-                  <a href="https://wa.me/9620797377375?text=أريد معرفة المزيد عن أجهزة Myobrace للأطفال" target="_blank">
+                  <a href="https://wa.me/962797377131?text=أريد معرفة المزيد عن أجهزة Myobrace للأطفال" target="_blank">
                     <Button className="bg-primary/90 hover:bg-primary text-white w-full">
                       اعرف المزيد
                     </Button>
@@ -241,7 +241,7 @@ export default function ChildrenPage() {
                     <li>✓ يمكن ممارستها بالمنزل</li>
                     <li>✓ نتائج ملحوظة بسرعة</li>
                   </ul>
-                  <a href="https://wa.me/9620797377375?text=أريد تعلم تمارين الوجه والفم للأطفال" target="_blank">
+                  <a href="https://wa.me/962797377131?text=أريد تعلم تمارين الوجه والفم للأطفال" target="_blank">
                     <Button className="bg-accent/90 hover:bg-accent text-white w-full">
                       تعلم التمارين
                     </Button>
@@ -264,7 +264,7 @@ export default function ChildrenPage() {
                     <li>✓ دعم نمو صحي</li>
                     <li>✓ متابعة طبية مستمرة</li>
                   </ul>
-                  <a href="https://wa.me/9620797377375?text=أريد استشارة حول علاج شخير الأطفال" target="_blank">
+                  <a href="https://wa.me/962797377131?text=أريد استشارة حول علاج شخير الأطفال" target="_blank">
                     <Button className="bg-secondary/90 hover:bg-secondary text-white w-full">
                       احجز استشارة
                     </Button>
@@ -626,7 +626,7 @@ export default function ChildrenPage() {
                 <Calendar className="w-5 h-5 ml-2" />
                 احجز عبر النموذج
               </Button>
-            </Link>            <a href="https://wa.me/9620797377375?text=أريد حجز موعد مجاني لطفلي لعلاج الشخير" target="_blank">
+            </Link>            <a href="https://wa.me/962797377131?text=أريد حجز موعد مجاني لطفلي لعلاج الشخير" target="_blank">
               <Button size="lg" variant="outline" className="border-white text-green-600 hover:bg-white hover:text-green-600 px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز عبر واتساب

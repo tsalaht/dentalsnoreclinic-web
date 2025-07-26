@@ -151,7 +151,7 @@ export default function AboutPage() {
           </div>
 
           <div className="flex gap-4">
-            <a href="https://wa.me/9620797377375?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
               <Button className="bg-blue-600 hover:bg primary text-white px-6 py-3">
                 <Calendar className="w-4 h-4 ml-2" />
                 احجز استشارة
@@ -348,7 +348,7 @@ export default function AboutPage() {
             </button>
           </div>
           <div className="flex justify-center">
-            <a href="tel:+9620797377375" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
+            <a href="tel:+962797377131" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
               <Phone className="w-5 h-5 ml-2" />
               تواصلوا معنا: 0797377131
             </a>
@@ -472,7 +472,7 @@ export default function AboutPage() {
             احجز استشارتك مع د. مهند الكسواني واكتشف الحل المناسب لحالتك
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/9620797377375?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
+            <a href="https://wa.me/962797377131?text=أريد حجز استشارة مع د. مهند الكسواني" target="_blank">
               <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg">
                 <MessageCircle className="w-5 h-5 ml-2" />
                 احجز عبر واتساب

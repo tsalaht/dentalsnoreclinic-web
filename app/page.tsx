@@ -307,7 +307,7 @@ export default function ArabicSnoringClinic() {
                     احجز عبر النموذج
                   </Button>
                 </Link>
-                <a href="https://wa.me/9620797377375?text=أريد حجز موعد لاستشارة طبية" target="_blank">
+                <a href="https://wa.me/962797377131?text=أريد حجز موعد لاستشارة طبية" target="_blank">
                   <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 w-full md:w-auto">
                     <MessageCircle className="w-5 h-5 ml-2" />
                     احجز عبر واتساب
@@ -536,7 +536,7 @@ export default function ArabicSnoringClinic() {
             </button>
           </div>
           <div className="flex justify-center">
-            <a href="tel:+9620797377375" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
+            <a href="tel:+962797377131" className="inline-flex items-center bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:bg-primary-dark">
               <Phone className="w-5 h-5 ml-2" />
               تواصلوا معنا: 0797377131
             </a>
@@ -670,7 +670,7 @@ export default function ArabicSnoringClinic() {
                   احجز عبر النموذج
                 </Button>
               </Link>
-              <a href="https://wa.me/9620797377375?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="flex-1">
+              <a href="https://wa.me/962797377131?text=أريد حجز موعد لعلاج الشخير" target="_blank" className="flex-1">
                 <Button size="lg" variant="outline" className="border-white text-primary/70 hover:bg-white hover:text-primary/70 w-full">
                   <MessageCircle className="w-5 h-5 ml-2" />
                   احجز عبر واتساب
@@ -723,7 +723,7 @@ export default function ArabicSnoringClinic() {
                             <p>الخميس  : 10:00  - 2:00 </p>
                             <p>الجمعة:  عطلة </p>
                 <div className="flex gap-2 mt-4">
-                  <a href="https://wa.me/9620797377375" target="_blank" className="hover:text-green-300">
+                  <a href="https://wa.me/962797377131" target="_blank" className="hover:text-green-300">
                     <MessageCircle className="w-5 h-5" />
                   </a>
                   <a href="tel:+96267592513" className="hover:text-blue-300">
