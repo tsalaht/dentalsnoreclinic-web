@@ -591,7 +591,7 @@ export default function ArabicSnoringClinic() {
     </div>
     <div className="max-w-4xl mx-auto">
       <Card className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
-        <div className="relative h-[320px]">
+        <div className="relative h-[550px]">
           <video
             controls
             className="w-full h-full object-cover"

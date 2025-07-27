@@ -359,7 +359,7 @@ export default function ChildrenPage() {
           مقارنة تعليمية: تأثير التنفس على صحة طفلك
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-      تعرف على الفرق بين التنفس الفموي والتنفس الأنفي، وأعراض  انقطاع التنفس الانسدادي أثناء النوم
+      تعرف على الفرق بين التنفس الفموي والتنفس الأنفي، وأعراض  الشخير والتنفس الفموي أثناء النوم
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-8">
