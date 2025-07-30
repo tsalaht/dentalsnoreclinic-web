@@ -6,8 +6,11 @@ export default function MohannadPage() {
       <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
         <img src="/73.jpg" alt="د. مهند الكسواني" className="w-48 h-auto mx-auto mb-4 rounded-xl" />
         <h1 className="text-2xl font-bold mb-2">د. مهند الكسواني</h1>
-       <p className="text-lg text-gray-600 mb-4"> Airway dentist <br/>
-Snoring and mouth breathing physician</p>
+   <p className="text-lg text-gray-600 mb-4">
+          Airway dentist <br/>
+          Snoring and mouth breathing physician <br/>
+          عضو في الجمعية البريطانية لطب أمراض النوم المتعلق بطب الأسنان
+        </p>
         <p className="text-gray-700 mb-4">
           المحاضر الدولي في علوم طب الأسنان الرقمي وإطباق الأسنان والابتسامة الرقمية وطب الأسنان المتعلق بالشخير واضطراب التنفس أثناء النوم
         </p>
@@ -25,7 +28,7 @@ Snoring and mouth breathing physician</p>
 
           <h2 className="text-xl font-semibold mb-3">الإنجازات والعضويات</h2>
           <p className="mb-4">
-            عضو في الجمعية الأوروبية لتجميل الأسنان. محاضر دولي في طب الأسنان الرقمي، والابتسامة الرقمية.
+            عضو في الجمعية الأوروبية لتجميل الأسنان. محاضر دولي في طب الأسنان الرقمي، والابتسامة الرقمية. أصبح الدكتور مهند الكسواني مؤخراً عضواً في الجمعية البريطانية لطب أمراض النوم المتعلق بطب الأسنان (British Society of Dental Sleep Medicine)، مما يعكس التزامه المستمر بأحدث التطورات في مجال صحة النوم والعلاقة الوثيقة بينها وبين طب الأسنان، ويؤكد سعيه الدائم لتقديم أفضل الحلول العلاجية لمشاكل الشخير واضطرابات التنفس المرتبطة بالحجرة الفموية.
           </p>
 
           <h2 className="text-xl font-semibold mb-3">نهجه العلاجي والتوعوي</h2>

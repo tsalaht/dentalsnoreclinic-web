@@ -273,7 +273,34 @@ export default function AboutPage() {
         </div>
       )}
 
-
+<section className="py-16 bg-white" dir="rtl">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="space-y-8">
+          <div>
+            <Badge className="bg-blue-100 text-blue-800 mb-4">عضوية جديدة</Badge>
+            <h2 className="text-3xl font-bold text-primary mb-4">عضو في الجمعية البريطانية لطب أمراض النوم المتعلق بطب الأسنان</h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              الإضافة إلى خبرته الواسعة، أصبح الدكتور مهند الكسواني مؤخراً عضو في الجمعية البريطانية لطب أمراض النوم المتعلق بطب الأسنان (British Society of Dental Sleep Medicine). 
+              يعكس هذا الانضمام التزامه المستمر بأحدث التطورات في مجال صحة النوم والعلاقة الوثيقة بينها وبين طب الأسنان، ويؤكد سعيه الدائم لتقديم أفضل الحلول العلاجية لمشاكل الشخير واضطرابات التنفس المرتبطة بالحجرة الفموية.
+            </p>
+          </div>
+        </div>
+        <div>
+          <Image
+            src="/new.png"
+            alt="عضوية الجمعية البريطانية لطب أمراض النوم"
+            width={500}
+            height={400}
+            className="rounded-2xl shadow-lg w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section className="py-12 bg-gradient-to-br from-blue-50 to-teal-50" dir="rtl">
   <div className="container mx-auto px-6 lg:px-12">
     {/* Section Header */}
